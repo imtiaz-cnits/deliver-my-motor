@@ -1,0 +1,128 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300&display=swap");
+
+/* Universal Start */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: var(--header-font);
+}
+
+:root {
+  --header-font: "Rubik", sans-serif;
+  --tomato: #ff861c;
+  --blue: #055dbc;
+  --white: #ffffff;
+  --black: #000000;
+}
+
+/* Universal End */
+
+/* Navbar Start */
+
+.logo {
+  width: 100%;
+}
+
+.navbar .nav-link {
+  font-family: var(--header-font);
+  font-size: 14px;
+  font-weight: 400;
+  margin: 0 10px 0 0;
+  color: var(--black);
+}
+
+/* Navbar End */
+
+/* Form Start  */
+
+#from {
+  padding: 100px 0;
+}
+
+.form-header h1 {
+  font-family: var(--header-font);
+  color: var(--tomato);
+  font-size: 2.8em;
+  font-weight: 600;
+}
+
+.form-header h1 span {
+  color: var(--black);
+}
+
+.sign-up-bg-content h2,
+p {
+  font-family: var(--header-font);
+}
+
+.form-cols h2,
+p {
+  font-family: var(--header-font);
+}
+
+.devider {
+  width: 200px;
+  height: 4px;
+  background-color: var(--black);
+  border-radius: 50px;
+  position: relative;
+  margin: auto;
+  margin-bottom: 80px;
+}
+
+.devider::after {
+  content: "";
+  position: absolute;
+  width: 70%;
+  height: 5px;
+  background-color: var(--tomato);
+  border-radius: 30px;
+  top: -0.6px;
+  left: 0;
+}
+
+.form-cols {
+  padding: 0 !important;
+}
+
+.sign-up-bg {
+  background: url(../img/form-bg.png);
+  width: 100%;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  align-items: center;
+  padding: 90px 50px;
+  border-top-left-radius: 8px;
+  border-bottom-left-radius: 8px;
+}
+
+.sign-up-bg-content {
+  color: var(--white);
+}
+
+.sign-up-bg-content .from-transport-provider {
+  color: var(--white);
+}
+
+.sign-up-bg-content .form-google-btn {
+  color: var(--black);
+  text-decoration: none;
+  background-color: var(--white);
+  display: block;
+  padding: 3px;
+  border-radius: 4px;
+}
+
+.form-cols {
+  border-top-right-radius: 8px;
+  border-bottom-right-radius: 8px;
+}
+
+.main-form {
+  padding: 50px 50px;
+}
+
+/* Form End  */
