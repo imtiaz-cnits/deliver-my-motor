@@ -25,9 +25,16 @@
   width: 100%;
 }
 
+.nav-bg {
+  background: url(./img/nav-bar-bg.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
 .navbar .nav-link {
   font-family: var(--header-font);
-  font-size: 14px;
+  font-size: 16px;
   font-weight: 400;
   margin: 0 10px 0 0;
   color: var(--black);
@@ -42,9 +49,21 @@
   color: var(--tomato) !important;
 }
 
+.menu-btn a {
+  border: 1px solid #ffffff;
+  padding: 8px 10px;
+  text-decoration: none;
+  border-radius: 6px;
+  text-decoration: none;
+}
+
 @media screen and (max-width: 575px) {
   .navbar-brand {
     width: 250px;
+  }
+
+  .nav-bg {
+    display: none;
   }
 }
 
@@ -141,7 +160,7 @@ p {
   text-decoration: none;
   background-color: var(--white);
   display: block;
-  padding: 3px;
+  padding: 8px 5px;
   border-radius: 4px;
   margin-top: 20px;
   transition: 0.5s;
@@ -179,6 +198,10 @@ p {
   border-radius: 6px;
   margin-top: 20px;
   transition: 0.5s;
+}
+
+.from-login-btn a {
+  text-decoration: none;
 }
 
 .main-form .from-login-btn button:hover {
@@ -227,6 +250,12 @@ p {
     border-top-right-radius: 0px;
     border-bottom-right-radius: 0px;
     border-bottom-right-radius: 16px;
+  }
+}
+
+@media screen and (max-width: 575px) {
+  .sign-up-bg-content {
+    display: none;
   }
 }
 
@@ -305,6 +334,10 @@ p {
   color: var(--white);
 }
 
+.footer-first-cols-content {
+  margin-top: 50px;
+}
+
 .footer-first-cols-content .footer-logo {
   width: 80%;
   margin-bottom: 20px;
@@ -326,6 +359,7 @@ p {
 
 .footer-social-icons-item {
   margin-top: 40px;
+  margin-bottom: 40px;
 }
 
 .footer-social-icons-item .social-icons-link i {
@@ -340,6 +374,12 @@ p {
   margin-right: 5px;
 }
 
+@media screen and (max-width: 575px) {
+  #footer {
+    text-align: center;
+  }
+}
+
 /* Footer End */
 
 /* Copyright Footer Start */
@@ -350,4 +390,54 @@ p {
   text-align: center;
   color: var(--white);
 }
+
+@media screen and (max-width: 575px) {
+  .hostxwhite-img {
+    width: 100px;
+  }
+}
 /* Copyright Footer End */
+
+/* ............................... */
+
+/* LOGIN PAGE CSS */
+/* >>>>>>>>>>>>>>>>>>>>>>>>>> */
+
+/* Form Col 1 Start */
+.form-col {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  border-bottom-left-radius: 8px;
+}
+
+.form-col-2 {
+  width: 100%;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 90px 50px;
+  font-family: var(--header-font);
+  border-top-right-radius: 8px;
+  border-bottom-right-radius: 8px;
+}
+
+.login-bg {
+  padding: 30px;
+  color: #ffffff;
+}
+
+.from-transport-provider {
+  color: #ffffff;
+}
+
+.form-google-btn {
+  color: var(--black);
+  text-decoration: none;
+  background-color: var(--white);
+  display: block;
+  padding: 8px 5px;
+  border-radius: 4px;
+  margin-top: 20px;
+  transition: 0.5s;
+}

@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Deliver-My-Motor</title>
+    <title>Deliver My Motor - Login Now</title>
 
     <!-- CSS Link -->
     <link rel="stylesheet" href="./css/style.css" />
@@ -25,7 +25,10 @@
   <body>
     <!-- Navbar Start -->
     <nav class="navbar navbar-expand-lg">
-      <div class="container">
+      <div
+        class="container nav-bg"
+        style="background: url(./img/nav-bar-bg.png)"
+      >
         <a class="navbar-brand" href="#"
           ><img src="./img/logo.png" alt="logo" class="logo"
         /></a>
@@ -62,7 +65,7 @@
             </li>
           </ul>
           <div class="menu-btn">
-            <a href="#" class="navbar-btn">Become a Transporter ?</a>
+            <a href="#" class="navbar-btn text-white">Become a Transporter ?</a>
           </div>
         </div>
       </div>
@@ -86,35 +89,13 @@
           <div class="col-lg-2"></div>
           <div class="col-lg-8">
             <div class="row login-box">
-              <div class="col-lg-6 form-cols">
-                <div class="sign-up-bg d-flex">
-                  <div class="sign-up-bg-content">
-                    <h2>Welcome Back</h2>
-                    <p>
-                      Please do not use Company names for usernames or emails
-                      when joining our network - Be unique.
-                    </p>
-                    <p>Don’t have an account? Join Now</p>
-                    <p>
-                      <a href="#" class="from-transport-provider"
-                        >See Our Transport Provider Rules</a
-                      >
-                    </p>
-                    <p class="text-center">
-                      <a href="#" class="form-google-btn"
-                        ><img src="./icon/google.png" alt="google" /> Sign in
-                        With Google</a
-                      >
-                    </p>
-                  </div>
-                </div>
-              </div>
-              <!-- Form Col 1 Start -->
-
-              <!-- Form Col 2 Start -->
-              <div class="col-lg-6 form-cols">
-                <div class="main-form">
-                  <h2 class="">Quick Join</h2>
+              <div
+                class="col-lg-6 form-col"
+                style="background: url(./img/loginform-bg-col-2.png)"
+              >
+                <div class="main-form mt-5">
+                  <h2 class="">Quick Login</h2>
+                  <br />
                   <form action="#">
                     <input
                       type="text"
@@ -122,29 +103,16 @@
                       placeholder="Username"
                     />
                     <input
-                      type="email"
-                      class="form-control fm-input"
-                      placeholder="Email"
-                    />
-                    <input
                       type="password"
                       class="form-control fm-input"
                       placeholder="Password"
                     />
-                    <input
-                      type="password"
-                      class="form-control fm-input"
-                      placeholder="Confirm Password"
-                    />
-                    <select name="Select" id="select" class="form-select">
-                      <option value="Customer or Company?">
-                        Customer or Company?
-                      </option>
-                      <option value="Transporter">Transporter</option>
-                      <option value="Customer">Customer</option>
-                    </select>
                     <div class="forget-remember d-flex justify-content-between">
-                      <label for="#" class="form-check-label">
+                      <label
+                        for="#"
+                        class="form-check-label"
+                        style="font-size: 13px"
+                      >
                         <input
                           type="checkbox"
                           name="#"
@@ -153,14 +121,43 @@
                         />
                         Remember for 30 days
                       </label>
-                      <div><a href="#">Forgot Password</a></div>
+                      <div>
+                        <a href="#" style="font-size: 13px">Forgot Password</a>
+                      </div>
                     </div>
                     <div class="from-login-btn text-center">
-                      <button type="button">JOIN NETWORK</button>
+                      <button type="button">LOGIN</button>
                     </div>
                   </form>
                 </div>
               </div>
+
+              <!-- Form Col 2 Start -->
+              <div
+                class="col-lg-6 form-col-2"
+                style="background: url(./img/login-form-bg.png)"
+              >
+                <div class="login-bg d-flex">
+                  <div class="login-bg-content">
+                    <h2>Welcome Back</h2>
+                    <p>
+                      Please, Login with your username and password. Thank You
+                    </p>
+                    <br /><br />
+                    <p>
+                      <a href="#" class="from-transport-provider"
+                        >See Our Transport Provider Rules</a
+                      >
+                    </p>
+                    <p class="text-center fw-semibold">
+                      <a href="./registration.html" class="form-google-btn"
+                        >Don’t have an account? Join Now</a
+                      >
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <!-- Form Col 2 Start -->
             </div>
             <div class="col-lg-2"></div>
           </div>
@@ -362,7 +359,14 @@
 
     <!-- Copyright Footer Start -->
     <footer id="copyright-footer">
-      Copyright © DeliverMyMotor Ltd. Powered by CodeNext IT
+      Copyright © DeliverMyMotor Ltd. Powered by
+      <span
+        ><img
+          class="hostxwhite-img"
+          src="./img/hostoxwhite.png"
+          alt=""
+          width="90px"
+      /></span>
     </footer>
     <!-- Copyright Footer End -->
   </body>
