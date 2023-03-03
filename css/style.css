@@ -31,6 +31,21 @@
   font-weight: 400;
   margin: 0 10px 0 0;
   color: var(--black);
+  transition: 0.5s;
+}
+
+.nav-item .nav-link:hover {
+  color: var(--tomato);
+}
+
+.nav-item .active {
+  color: var(--tomato) !important;
+}
+
+@media screen and (max-width: 575px) {
+  .navbar-brand {
+    width: 250px;
+  }
 }
 
 /* Navbar End */
@@ -95,12 +110,26 @@ p {
   background-size: cover;
   align-items: center;
   padding: 90px 50px;
+  font-family: var(--header-font);
   border-top-left-radius: 8px;
   border-bottom-left-radius: 8px;
 }
 
 .sign-up-bg-content {
   color: var(--white);
+}
+
+.sign-up-bg-content p:nth-child(3) {
+  font-weight: 500;
+  font-size: 1em;
+  font-family: var(--header-font);
+  margin: 20px 0 40px 0;
+}
+
+.sign-up-bg-content p:nth-child(4) {
+  font-weight: 300;
+  font-size: 1em;
+  font-family: var(--header-font);
 }
 
 .sign-up-bg-content .from-transport-provider {
@@ -114,15 +143,91 @@ p {
   display: block;
   padding: 3px;
   border-radius: 4px;
+  margin-top: 20px;
+  transition: 0.5s;
+}
+
+.sign-up-bg-content .form-google-btn:hover {
+  background-color: rgb(231, 246, 248);
 }
 
 .form-cols {
+  background: url(../img/form-bg-col-2.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
   border-top-right-radius: 8px;
   border-bottom-right-radius: 8px;
 }
 
 .main-form {
   padding: 50px 50px;
+  font-family: var(--header-font);
+}
+
+.main-form input,
+.form-select {
+  margin-bottom: 10px;
+}
+
+.main-form .from-login-btn button {
+  font-size: 14px;
+  background-color: var(--tomato);
+  color: var(--white);
+  padding: 8px 25px;
+  border: none;
+  border-radius: 6px;
+  margin-top: 20px;
+  transition: 0.5s;
+}
+
+.main-form .from-login-btn button:hover {
+  background-color: var(--blue);
+}
+
+.forget-remember div a {
+  text-decoration: none;
+}
+
+@media screen and (max-width: 1400px) {
+  .forget-remember {
+    font-family: var(--header-font);
+    font-size: 13px;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .sign-up-bg {
+    padding: 90px 30px;
+  }
+
+  .main-form {
+    padding: 50px 20px;
+    font-family: var(--header-font);
+  }
+}
+
+@media screen and (max-width: 990px) {
+  .sign-up-bg {
+    padding: 50px 30px;
+  }
+
+  .main-form {
+    padding: 50px 30px;
+    font-family: var(--header-font);
+  }
+
+  .sign-up-bg {
+    border-top-left-radius: 0px;
+    border-bottom-left-radius: 0px;
+    border-top-left-radius: 16px;
+  }
+
+  .form-cols {
+    border-top-right-radius: 0px;
+    border-bottom-right-radius: 0px;
+    border-bottom-right-radius: 16px;
+  }
 }
 
 /* Form End  */
