@@ -231,3 +231,123 @@ p {
 }
 
 /* Form End  */
+
+/* Devider Start */
+
+.footer-devider {
+  width: 150px;
+  height: 5px;
+  background-color: var(--tomato);
+  border-radius: 30px;
+  margin: auto;
+  margin-bottom: 100px;
+}
+
+/* Devider End */
+
+/* Transport Company Start */
+
+#transport-company {
+  background: url(../img/footer-bg.png);
+  width: 100%;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+}
+
+.tarnsport-company-content {
+  color: var(--white);
+  padding: 50px 0 20px 0;
+  font-family: var(--header-font);
+}
+
+.tarnsport-company-content h1 {
+  color: var(--white);
+  padding-bottom: 20px;
+  font-family: var(--header-font);
+  font-size: 2.4em;
+}
+
+.tarnsport-company-content p {
+  color: var(--white);
+  font-family: var(--header-font);
+  font-size: 1em;
+}
+
+.tarnsport-company-content p:nth-child(4) {
+  margin-top: -15px;
+}
+
+.transport-company-btn {
+  text-decoration: none;
+  border: none;
+  background-color: #ca1f26;
+  color: var(--white);
+  padding: 12px 30px;
+  border-radius: 6px;
+  font-family: var(--header-font);
+  font-size: 14px;
+  transition: 0.5s;
+}
+
+.transport-company-btn:hover {
+  background-color: var(--white);
+  color: var(--black);
+}
+
+/* Transport Company End */
+
+/* Footer Start */
+
+#footer {
+  background-color: #161616;
+  padding: 70px 0;
+  color: var(--white);
+}
+
+.footer-first-cols-content .footer-logo {
+  width: 80%;
+  margin-bottom: 20px;
+}
+
+.footer-first-cols-content ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-first-cols-content ul li {
+  margin: 20px 0;
+}
+
+.footer-first-cols-content ul li a {
+  text-decoration: none;
+  color: var(--white);
+}
+
+.footer-social-icons-item {
+  margin-top: 40px;
+}
+
+.footer-social-icons-item .social-icons-link i {
+  text-decoration: none;
+  background-color: #055dbc;
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  text-align: center;
+  color: var(--white);
+  border-radius: 50%;
+  margin-right: 5px;
+}
+
+/* Footer End */
+
+/* Copyright Footer Start */
+
+#copyright-footer {
+  background-color: var(--black);
+  padding: 20px;
+  text-align: center;
+  color: var(--white);
+}
+/* Copyright Footer End */
