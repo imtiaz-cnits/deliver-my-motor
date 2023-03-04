@@ -441,3 +441,137 @@ p {
   margin-top: 20px;
   transition: 0.5s;
 }
+
+/* ............................... */
+
+/* DASHBOARD PAGE CSS */
+/* >>>>>>>>>>>>>>>>>>>>>>>>>> */
+
+/* Dashboard Start */
+.dashboard-cols {
+  padding: 0 !important;
+  margin: 0 !important;
+}
+
+.dahsboard-navbar {
+  background: rgba(7, 118, 238, 0.85);
+  height: 100vh;
+  background-attachment: fixed;
+}
+
+.dahsboard-navbar ul {
+  list-style: none;
+  padding: 50px 0 0 50px;
+}
+
+.dahsboard-navbar ul li {
+  margin-bottom: 20px;
+}
+
+.dahsboard-navbar ul li a {
+  text-decoration: none;
+  color: var(--white);
+  font-size: 1.1em;
+  font-family: var(--header-font);
+}
+
+.dahsboard-navbar ul li a i {
+  padding-right: 10px;
+}
+
+.dashboard-content {
+  background: url(../img/dashboard-bg.png);
+  width: 100%;
+  box-shadow: 3px 3px 25px rgba(0, 0, 0, 0.15);
+  background-position: top center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  /* position: relative; */
+  padding: 60px 30px;
+}
+
+/* .dashboard-men-img {
+  position: absolute;
+  width: 40%;
+  left: 40%;
+  bottom: 0;
+} */
+
+.dashboard-price {
+  text-align: right;
+}
+
+.dashboard-content-header h2 {
+  font-size: 1.7em;
+  font-family: var(--header-font);
+  color: var(--black);
+  font-weight: 500;
+}
+
+.dashboard-content-header p {
+  font-size: 1em;
+  font-family: var(--header-font);
+  color: var(--black);
+  font-weight: 400;
+}
+
+.dashboard-content-btn {
+  margin-top: 50px;
+}
+
+.dashboard-content-btn a:nth-child(1) {
+  text-decoration: none;
+  background-color: rgba(7, 118, 238, 0.85);
+  color: var(--white);
+  font-size: 14px;
+  padding: 10px 20px;
+  border-radius: 6px;
+  margin-right: 15px;
+}
+
+.dashboard-content-btn a:nth-child(2) {
+  text-decoration: none;
+  background-color: var(--tomato);
+  color: var(--white);
+  font-size: 14px;
+  padding: 10px 20px;
+  border-radius: 6px;
+}
+
+.dashboard-price h4 {
+  font-size: 1.6em;
+  font-family: var(--header-font);
+  color: var(--black);
+  font-weight: 500;
+}
+
+.dashboard-price p {
+  font-size: 2em;
+  font-family: var(--header-font);
+  color: #003670;
+  font-weight: 500;
+}
+
+@media screen and (max-width: 1200px) {
+  .dahsboard-navbar ul {
+    padding: 40px 0 0 40px;
+  }
+
+  .dahsboard-navbar ul li a {
+    font-size: 1em;
+  }
+
+  .dashboard-content-header h2 {
+    font-size: 1.4em;
+  }
+
+  .dashboard-price h4 {
+    font-size: 1.3em;
+  }
+
+  .dashboard-price p {
+    font-size: 1.8em;
+  }
+}
+
+/* Dashboard End */
