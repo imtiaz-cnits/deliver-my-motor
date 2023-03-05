@@ -48,45 +48,38 @@
   <section id="dashboard">
     <div class="container">
       <div class="row">
-        <div class="col-lg-3 dashboard-cols">
-
+        <div class="col-lg-3 dashboard-sidebar">
           <div class="dahsboard-navbar" id="sidenavbar">
-            <div class="">
-              <ul class="navbar-nav m-auto">
-                <li>
-                  <a href="#"><i class="fa-solid fa-house-user"></i> Dashboard</a>
-                </li>
-                <li>
-                  <a href="#"><i class="fa-regular fa-comment-dots"></i> Messages</a>
-                </li>
-                <li>
-                  <a href="#"><i class="fa-regular fa-file"></i> My Quotes</a>
-                </li>
-                <li>
-                  <a href="#"><i class="fa-solid fa-briefcase"></i> My Jobs</a>
-                </li>
-                <li>
-                  <a href="#"><i class="fa-solid fa-pen-to-square"></i> Post New Jobs</a>
-                </li>
-                <li>
-                  <a href="#"><i class="fa-regular fa-thumbs-up"></i> Reviews</a>
-                </li>
-                <li>
-                  <a href="#"><i class="fa-sharp fa-solid fa-circle-info"></i> Help And FAQ</a>
-                </li>
-                <li>
-                  <a href="#"><i class="fa-solid fa-arrow-right-from-bracket"></i> Logout</a>
-                </li>
-              </ul>
-            </div>
+            <ul class="navbar-nav m-auto">
+              <li>
+                <a href="#"><i class="fa-solid fa-house-user"></i> Dashboard</a>
+              </li>
+              <li>
+                <a href="#"><i class="fa-regular fa-comment-dots"></i> Messages</a>
+              </li>
+              <li>
+                <a href="#"><i class="fa-regular fa-file"></i> My Quotes</a>
+              </li>
+              <li>
+                <a href="#"><i class="fa-solid fa-briefcase"></i> My Jobs</a>
+              </li>
+              <li>
+                <a href="#"><i class="fa-solid fa-pen-to-square"></i> Post New Jobs</a>
+              </li>
+              <li>
+                <a href="#"><i class="fa-regular fa-thumbs-up"></i> Reviews</a>
+              </li>
+              <li>
+                <a href="#"><i class="fa-sharp fa-solid fa-circle-info"></i> Help And FAQ</a>
+              </li>
+              <li>
+                <a href="#"><i class="fa-solid fa-arrow-right-from-bracket"></i> Logout</a>
+              </li>
+            </ul>
           </div>
         </div>
-      </div>
-
-      <div class="row">
-        <div class="col-lg-12">
+        <div class="col-lg-12 dashboard-content-cols">
           <div class="dashboard-content">
-            <!-- <img src="./img/Coins.png" alt="" class="dashboard-men-img"> -->
             <div class="row">
               <div class="col-lg-6">
                 <div class="dashboard-content-header">
@@ -152,7 +145,6 @@
             </div>
           </div>
         </div>
-      </div>
     </div>
     </div>
   </section>
@@ -308,6 +300,8 @@
   <script>
     let sideNavbarBtn = document.querySelector('#sideNavbarIcon');
     let sidenavbar = document.querySelector("#sidenavbar");
+    let sideNavbar = document.querySelector('.dashboard-sidebar');
+    let dashboardCols = document.querySelector('.dashboard-content-cols');
 
     sideNavbarBtn.addEventListener('click', function () {
       if (sideNavbarBtn.firstElementChild.classList.contains("fa-bars-staggered")) {
@@ -317,8 +311,14 @@
         sideNavbarBtn.firstElementChild.classList.replace("fa-xmark", "fa-bars-staggered");
         sideNavbarBtn.style.color = "#000000";
       }
-
-      sidenavbar.classList.toggle("showSidebar");
+      if (dashboardCols.classList.contains('col-lg-12')) {
+        dashboardCols.classList.replace("col-lg-12", "col-lg-9");
+        sideNavbar.style.display = "block";
+      } else {
+        dashboardCols.classList.replace("col-lg-9", "col-lg-12");
+        sideNavbar.style.display = "none";
+      }
+      // sidenavbar.classList.toggle("showSidebar");
     })
   </script>
   <!-- Script End -->
