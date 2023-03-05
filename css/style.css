@@ -483,13 +483,14 @@ p {
 
 .dahsboard-navbar {
   background: rgba(7, 118, 238, 0.85);
-  height: 85vh;
-  background-attachment: fixed;
+  height: 100vh;
+  position: absolute;
+  overflow: auto;
 }
 
 .dahsboard-navbar ul {
   list-style: none;
-  padding: 50px 0 0 50px;
+  padding: 50px 50px 0 50px;
 }
 
 .dahsboard-navbar ul li {
@@ -519,19 +520,11 @@ p {
   background-position: center center;
   background-size: cover;
   background-repeat: no-repeat;
-  /* position: relative; */
   padding: 60px 30px;
   border-radius: 8px;
   margin-top: 40px;
   margin-bottom: 50px;
 }
-
-/* .dashboard-men-img {
-  position: absolute;
-  width: 40%;
-  left: 40%;
-  bottom: 0;
-} */
 
 .dashboard-price {
   text-align: right;
@@ -589,21 +582,25 @@ p {
 }
 
 #sideNavbarIcon {
-  display: none;
+  /* display: none; */
   border: none;
   background-color: transparent;
-  font-size: 1em;
+  font-size: 1.6em;
+  display: inline-block;
+  width: 50px;
+  margin-right: 50px;
+}
+
+#sidenavbar {
+  left: -100%;
+  transition: 0.5s;
+}
+
+.showSidebar {
+  left: 8% !important;
 }
 
 @media screen and (max-width: 1200px) {
-  .dahsboard-navbar ul {
-    padding: 40px 0 0 40px;
-  }
-
-  .dahsboard-navbar ul li a {
-    font-size: 1em;
-  }
-
   .dashboard-content-header h2 {
     font-size: 1.4em;
   }
@@ -627,23 +624,21 @@ p {
     display: block;
   }
 
-  #sidenavbar {
-    transform: translate(-120%);
-    transition: 0.5s;
+  .dahsboard-navbar ul li a {
+    font-size: 1em;
   }
 
-  .showSidebar {
-    transform: translate(0%) !important;
+  .navbar-toggler {
+    display: none !important;
   }
 
-  .dashboard-content {
-    margin-top: -105%;
+  .dahsboard-navbar ul li a:hover {
+    color: var(--tomato) !important;
   }
-}
 
-@media screen and (max-width: 768px) {
-  .dashboard-content {
-    margin-top: -145%;
+  .dashboard-price {
+    text-align: left;
+    padding-top: 50px;
   }
 }
 
@@ -652,18 +647,24 @@ p {
     display: block;
     width: 100%;
     margin-top: 10px;
+    text-align: center;
   }
 
   .dashboard-content {
     background-image: none;
+    margin-top: 0 !important;
   }
 
   .dashboard-price {
     margin-top: 50px;
   }
 
-  .dashboard-content {
-    margin-top: -145% !important;
+  .dahsboard-navbar {
+    background: rgba(7, 118, 238, 0.85) !important;
+  }
+
+  .dahsboard-navbar ul li a {
+    color: var(--white) !important;
   }
 }
 
@@ -693,7 +694,6 @@ p {
 
 .job-table {
   width: 100%;
-  display: block;
 }
 
 .job-table th,
