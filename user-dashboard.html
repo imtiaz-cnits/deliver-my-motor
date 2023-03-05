@@ -22,8 +22,8 @@
   <!-- Navbar Start -->
   <nav class="navbar navbar-expand-lg">
     <div class="container">
-      <button class="btn"><a href="#sidenavbar"><i class="fa-solid fa-bars-staggered"></i></a></button>
-      <a class="navbar-brand" href="#"><img src="./img/logo.png" alt="logo" class="logo" /></a>
+      <button type="button" id="sideNavbarIcon"><i class="fa-solid fa-bars-staggered"></i></button>
+      <a class="navbar-brand" href="#"><img src="./img/logo.png" alt="logo" class="logo dashboard-navbar-logo" /></a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mynavbar">
         <span class="navbar-toggler-icon"></span>
       </button>
@@ -48,65 +48,38 @@
     <div class="container">
       <div class="row">
         <div class="col-lg-3 dashboard-cols">
-          
-          <div class="dahsboard-navbar">
-            <!-- <button
-          class="dahsboard-navbar-toggler btn btn-outline-primary"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#sidenavbar"
-        >
-          <span><i class="fa-solid fa-house-chimney"></i></span>
-        </button> -->
-        <div class="" id="sidenavbar">
-            <ul class="navbar-nav m-auto">
-              <li>
-                <a href="#"><i class="fa-solid fa-house-user"></i> Dashboard</a>
-              </li>
-              <li>
-                <a href="#"><i class="fa-regular fa-comment-dots"></i> Messages</a>
-              </li>
-              <li>
-                <a href="#"><i class="fa-regular fa-file"></i> My Quotes</a>
-              </li>
-              <li>
-                <a href="#"><i class="fa-solid fa-briefcase"></i> My Jobs</a>
-              </li>
-              <li>
-                <a href="#"><i class="fa-solid fa-pen-to-square"></i> Post New Jobs</a>
-              </li>
-              <li>
-                <a href="#"><i class="fa-regular fa-thumbs-up"></i> Reviews</a>
-              </li>
-              <li>
-                <a href="#"><i class="fa-sharp fa-solid fa-circle-info"></i> Help And FAQ</a>
-              </li>
-              <li>
-                <a href="#"><i class="fa-solid fa-arrow-right-from-bracket"></i> Logout</a>
-              </li>
-            </ul>
-          </div>
+
+          <div class="dahsboard-navbar" id="sidenavbar">
+            <div class="">
+              <ul class="navbar-nav m-auto">
+                <li>
+                  <a href="#"><i class="fa-solid fa-house-user"></i> Dashboard</a>
+                </li>
+                <li>
+                  <a href="#"><i class="fa-regular fa-comment-dots"></i> Messages</a>
+                </li>
+                <li>
+                  <a href="#"><i class="fa-regular fa-file"></i> My Quotes</a>
+                </li>
+                <li>
+                  <a href="#"><i class="fa-solid fa-briefcase"></i> My Jobs</a>
+                </li>
+                <li>
+                  <a href="#"><i class="fa-solid fa-pen-to-square"></i> Post New Jobs</a>
+                </li>
+                <li>
+                  <a href="#"><i class="fa-regular fa-thumbs-up"></i> Reviews</a>
+                </li>
+                <li>
+                  <a href="#"><i class="fa-sharp fa-solid fa-circle-info"></i> Help And FAQ</a>
+                </li>
+                <li>
+                  <a href="#"><i class="fa-solid fa-arrow-right-from-bracket"></i> Logout</a>
+                </li>
+              </ul>
+            </div>
           </div>
         </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
         <div class="col-lg-9">
           <div class="dashboard-content">
@@ -115,7 +88,7 @@
               <div class="col-lg-6">
                 <div class="dashboard-content-header">
                   <h2>Welcome Back, DonnaH!</h2>
-                  <p>We're glad you're here. Enjoy your time on the<br /> platform!</p>
+                  <p>We're glad you're here. Enjoy your time on the platform!</p>
                   <div class="dashboard-content-btn">
                     <a href="#"><i class="fa-solid fa-pen-to-square"></i> Post a Job</a>
 
@@ -148,14 +121,14 @@
                       <td>12 January, 2023</td>
                       <td>12 January, 2023</td>
                       <td>Sports Car Freights</td>
-                        <td class="tb-view-btn"><a href="#">View Job</a></td>
+                      <td class="tb-view-btn"><a href="#">View Job</a></td>
                     </tr>
                     <tr>
                       <td>Sports Car Freights</td>
                       <td>12 January, 2023</td>
                       <td>12 January, 2023</td>
                       <td>Sports Car Freights</td>
-                        <td class="tb-view-btn"><a href="#">View Job</a></td>
+                      <td class="tb-view-btn"><a href="#">View Job</a></td>
                     </tr>
                     <tr>
                       <td>Sports Car Freights</td>
@@ -234,7 +207,7 @@
               </li>
             </ul>
             <div class="footer-social-icons-item">
-              <a href="#" class="social-icons-link facebook"><i class="fa-brands fa-facebook-f"></i></a>
+              <a href="#" class="social-icons-link"><i class="fa-brands fa-facebook-f"></i></a>
               <a href="#" class="social-icons-link"><i class="fa-brands fa-twitter"></i></a>
               <a href="#" class="social-icons-link"><i class="fa-brands fa-linkedin-in"></i></a>
               <a href="#" class="social-icons-link"><i class="fa-brands fa-instagram"></i></a>
@@ -326,6 +299,25 @@
     <span><img class="hostxwhite-img" src="./img/hostoxwhite.png" alt="" width="90px" /></span>
   </footer>
   <!-- Copyright Footer End -->
+
+  <!-- Script Start -->
+  <script>
+    let sideNavbarBtn = document.querySelector('#sideNavbarIcon');
+    let sidenavbar = document.querySelector("#sidenavbar");
+
+    sideNavbarBtn.addEventListener('click', function () {
+      if (sideNavbarBtn.firstElementChild.classList.contains("fa-bars-staggered")) {
+        sideNavbarBtn.firstElementChild.classList.replace("fa-bars-staggered", "fa-xmark");
+        sideNavbarBtn.style.color = "#ff861c";
+      } else {
+        sideNavbarBtn.firstElementChild.classList.replace("fa-xmark", "fa-bars-staggered");
+        sideNavbarBtn.style.color = "#000000";
+      }
+
+      sidenavbar.classList.toggle("showSidebar");
+    })
+  </script>
+  <!-- Script End -->
 </body>
 
 </html>

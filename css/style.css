@@ -374,6 +374,30 @@ p {
   margin-right: 5px;
 }
 
+.footer-social-icons-item .social-icons-link .fa-facebook-f {
+  background-color: #2374e0;
+}
+
+.footer-social-icons-item .social-icons-link .fa-twitter {
+  background-color: #1da1f3;
+}
+
+.footer-social-icons-item .social-icons-link .fa-linkedin-in {
+  background-color: #0077b4;
+}
+
+.footer-social-icons-item .social-icons-link .fa-instagram {
+  background: radial-gradient(
+    circle at 30% 107%,
+    #fdf497 0%,
+    #fdf497 5%,
+    #fd5949 45%,
+    #d6249f 60%,
+    #285aeb 90%
+  );
+  font-size: 1.4em;
+}
+
 @media screen and (max-width: 575px) {
   #footer {
     text-align: center;
@@ -477,6 +501,11 @@ p {
   color: var(--white);
   font-size: 1.1em;
   font-family: var(--header-font);
+  transition: 0.5s;
+}
+
+.dahsboard-navbar ul li a:hover {
+  color: var(--tomato);
 }
 
 .dahsboard-navbar ul li a i {
@@ -559,6 +588,13 @@ p {
   font-weight: 500;
 }
 
+#sideNavbarIcon {
+  display: none;
+  border: none;
+  background-color: transparent;
+  font-size: 1em;
+}
+
 @media screen and (max-width: 1200px) {
   .dahsboard-navbar ul {
     padding: 40px 0 0 40px;
@@ -579,6 +615,36 @@ p {
   .dashboard-price p {
     font-size: 1.8em;
   }
+
+  .dashboard-content-btn a:nth-child(1),
+  .dashboard-content-btn a:nth-child(2) {
+    padding: 8px 20px;
+  }
+}
+
+@media screen and (max-width: 990px) {
+  #sideNavbarIcon {
+    display: block;
+  }
+
+  #sidenavbar {
+    transform: translate(-120%);
+    transition: 0.5s;
+  }
+
+  .showSidebar {
+    transform: translate(0%) !important;
+  }
+
+  .dashboard-content {
+    margin-top: -105%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .dashboard-content {
+    margin-top: -145%;
+  }
 }
 
 @media screen and (max-width: 575px) {
@@ -594,6 +660,16 @@ p {
 
   .dashboard-price {
     margin-top: 50px;
+  }
+
+  .dashboard-content {
+    margin-top: -145% !important;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .navbar-brand {
+    width: 230px;
   }
 }
 
@@ -628,12 +704,25 @@ td {
 }
 
 .tb-view-btn a {
-  background-color: #055dbc;
+  background-color: var(--blue);
   padding: 8px;
   text-decoration: none;
-  color: #ffffff;
+  color: var(--white);
   border-radius: 6px;
   font-size: 14px;
+  font-family: var(--header-font);
+}
+
+.tb-view-btn a:hover {
+  color: var(--white);
+}
+
+@media screen and (max-width: 1400px) {
+  .job-table {
+    display: block;
+    overflow-x: scroll;
+    white-space: nowrap;
+  }
 }
 
 @media screen and (max-width: 575px) {
