@@ -717,7 +717,7 @@ td {
   color: var(--white);
 }
 
-@media screen and (max-width: 1400px) {
+@media screen and (max-width: 990px) {
   .job-table {
     display: block;
     overflow-x: scroll;
