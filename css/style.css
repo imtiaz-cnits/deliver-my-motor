@@ -488,7 +488,7 @@ p {
 .dahsboard-navbar {
   background: rgba(7, 118, 238, 0.85);
   width: 100%;
-  height: 100vh;
+  height: 80vh;
   transition: 0.5s;
 }
 
@@ -509,9 +509,15 @@ p {
   transition: 0.5s;
 }
 
-.dahsboard-navbar ul li a:hover {
-  color: var(--tomato);
+.dahsboard-navbar ul li:hover {
+  background-color: rgba(13, 95, 183, 0.85);
+  padding: 5px 10px 5px 5px;
+  transition: 0.3s ease;
 }
+
+/* .dahsboard-navbar ul li a:hover {
+  color: var(--tomato);
+} */
 
 .dahsboard-navbar ul li a i {
   padding-right: 10px;
@@ -562,6 +568,11 @@ p {
   margin-right: 15px;
 }
 
+.dashboard-content-btn a:nth-child(1):hover {
+  background-color: rgba(6, 93, 187, 0.85);
+  transition: 0.3s ease;
+}
+
 .dashboard-content-btn a:nth-child(2) {
   text-decoration: none;
   background-color: var(--tomato);
@@ -569,6 +580,11 @@ p {
   font-size: 14px;
   padding: 15px 40px;
   border-radius: 6px;
+}
+
+.dashboard-content-btn a:nth-child(2):hover {
+  background-color: #da6a08;
+  transition: 0.3s ease;
 }
 
 .dashboard-price h4 {
@@ -665,6 +681,7 @@ p {
 
   .dahsboard-navbar {
     background: rgba(7, 118, 238, 0.85) !important;
+    height: 50vh;
   }
 
   .dahsboard-navbar ul li a {
