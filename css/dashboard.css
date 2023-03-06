@@ -486,6 +486,54 @@ td {
 
 /* Post New Job Start */
 
+.progress-bar .active-btn {
+  display: table;
+  margin: auto;
+  list-style: none;
+  padding-left: 0;
+}
+
+.progress-bar .active-btn li {
+  display: inline-block;
+  width: 180px;
+}
+
+.progress-bar .active-btn li .round-btn {
+  width: 30px;
+  height: 30px;
+  line-height: 30px;
+  background-color: rgba(7, 118, 238, 0.3);
+  display: block;
+  border-radius: 50%;
+  color: var(--white);
+  font-family: var(--header-font);
+  font-weight: 500;
+  margin: auto;
+  max-width: 100%;
+  position: relative;
+  z-index: 1;
+}
+
+.progress-bar .active-btn li:not(:first-child) .round-btn::before {
+  content: "";
+  position: absolute;
+  width: 150px;
+  height: 5px;
+  background-color: rgba(7, 118, 238, 0.3);
+  left: -150px;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: -1;
+}
+
+.progress-bar .active-btn li.active .round-btn {
+  background-color: #0776ee;
+}
+
+.progress-bar .active-btn li.active:not(:first-child) .round-btn::before {
+  background-color: #0776ee;
+}
+
 .basic-info-header h1 {
   font-family: var(--header-font);
   color: var(--tomato);
@@ -520,51 +568,80 @@ td {
   left: 0;
 }
 
-/* .basic-info-progress ul {
-  display: flex;
+.main-basic-from-box {
+  background-color: #f8f8f8;
+  box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.15);
+  padding: 20px;
+  border-radius: 6px;
+  margin-bottom: 50px;
 }
 
-.basic-info-progress ul li {
-  list-style: none;
-  display: flex;
-  flex-direction: column;
-  text-align: center;
-}
-
-.basic-info-progress ul li .progress-desc {
-  font-size: 1em;
+.basic-from-input label {
   font-family: var(--header-font);
+  font-size: 1.1em;
   color: var(--black);
   font-weight: 500;
 }
 
-.basic-info-progress ul li .progressbar .fa-check {
-  display: none;
+.basic-from-input input {
+  margin-bottom: 40px;
+  height: 50px;
 }
 
-.basic-info-progress ul li .progressbar {
-  width: 30px;
-  height: 30px;
-  border-radius: 50%;
-  background: var(--blue);
-  margin: 12px auto;
-  display: grid;
-  place-items: center;
-  color: var(--white);
-  position: relative;
+.basic-from-input select {
+  margin-bottom: 40px;
+  height: 50px;
 }
 
-.basic-info-progress ul li .progressbar::after {
-  content: "";
-  position: absolute;
-  width: 300px;
-  height: 5px;
-  background-color: var(--blue);
-  right: 30px;
+.basic-from-input label i {
+  padding-right: 10px;
 }
 
-.basic-info-progress ul li .progressbar p {
+.basic-from-input #textarea {
+  resize: none;
+  height: 150px;
+  margin-top: 15px;
+}
+
+.basic-from-last-input input {
+  margin-bottom: 0;
+}
+
+.basic-from-last-input select {
+  margin-bottom: 0;
+}
+
+.next-step-btn .next-btn {
   font-size: 14px;
-} */
+  font-family: var(--header-font);
+  border: none;
+  padding: 8px 30px;
+  border-radius: 6px;
+  background-color: #0776ee;
+  color: var(--white);
+  margin: 30px 0 80px 0;
+}
+
+.next-step-btn .prev-btn {
+  font-size: 14px;
+  font-family: var(--header-font);
+  border: none;
+  padding: 8px 30px;
+  border-radius: 6px;
+  background-color: #0776ee;
+  color: var(--white);
+  margin: 30px 0 80px 0;
+  margin-right: 10px;
+}
+
+@media screen and (max-width: 990px) {
+  .basic-from-last-input label {
+    padding-top: 20px;
+  }
+
+  .basic-info-header h1 {
+    font-size: 2em;
+  }
+}
 
 /* Post New Job End */
