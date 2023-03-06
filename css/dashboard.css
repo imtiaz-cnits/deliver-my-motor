@@ -39,7 +39,7 @@
 .dahsboard-navbar {
   background: rgba(7, 118, 238, 0.85);
   width: 100%;
-  height: 80vh;
+  height: 100vh;
   transition: 0.5s;
 }
 
@@ -49,26 +49,23 @@
 }
 
 .dahsboard-navbar ul li {
-  margin-bottom: 20px;
+  margin-bottom: 10px;
+  padding: 5px 10px 5px 10px;
+  overflow: auto;
 }
 
 .dahsboard-navbar ul li a {
   text-decoration: none;
   color: var(--white);
-  font-size: 1.1em;
+  font-size: 1em;
   font-family: var(--header-font);
   transition: 0.5s;
 }
 
 .dahsboard-navbar ul li:hover {
   background-color: rgba(13, 95, 183, 0.85);
-  padding: 5px 10px 5px 5px;
   transition: 0.3s ease;
 }
-
-/* .dahsboard-navbar ul li a:hover {
-    color: var(--tomato);
-  } */
 
 .dahsboard-navbar ul li a i {
   padding-right: 10px;
@@ -153,7 +150,6 @@
 }
 
 #sideNavbarIcon {
-  /* display: none; */
   border: none;
   background-color: transparent;
   font-size: 1.6em;
@@ -169,6 +165,12 @@
 
 .showSidebar {
   left: 0% !important;
+}
+
+@media screen and (max-width: 1400px) {
+  .dahsboard-navbar ul {
+    padding: 20px 20px 0 20px;
+  }
 }
 
 @media screen and (max-width: 1200px) {
@@ -232,7 +234,7 @@
 
   .dahsboard-navbar {
     background: rgba(7, 118, 238, 0.85) !important;
-    height: 50vh;
+    height: 60vh;
   }
 
   .dahsboard-navbar ul li a {
@@ -476,3 +478,93 @@ td {
   }
 }
 /* Copyright Footer End */
+
+/* ............................... */
+
+/* LOGIN PAGE CSS */
+/* >>>>>>>>>>>>>>>>>>>>>>>>>> */
+
+/* Post New Job Start */
+
+.basic-info-header h1 {
+  font-family: var(--header-font);
+  color: var(--tomato);
+  font-size: 2.8em;
+  font-weight: 600;
+  text-align: center;
+  padding-top: 50px;
+}
+
+.basic-info-header h1 span {
+  color: var(--black);
+}
+
+.devider {
+  width: 200px;
+  height: 4px;
+  background-color: var(--black);
+  border-radius: 50px;
+  position: relative;
+  margin: auto;
+  margin-bottom: 80px;
+}
+
+.devider::after {
+  content: "";
+  position: absolute;
+  width: 70%;
+  height: 5px;
+  background-color: var(--tomato);
+  border-radius: 30px;
+  top: -0.6px;
+  left: 0;
+}
+
+/* .basic-info-progress ul {
+  display: flex;
+}
+
+.basic-info-progress ul li {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.basic-info-progress ul li .progress-desc {
+  font-size: 1em;
+  font-family: var(--header-font);
+  color: var(--black);
+  font-weight: 500;
+}
+
+.basic-info-progress ul li .progressbar .fa-check {
+  display: none;
+}
+
+.basic-info-progress ul li .progressbar {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background: var(--blue);
+  margin: 12px auto;
+  display: grid;
+  place-items: center;
+  color: var(--white);
+  position: relative;
+}
+
+.basic-info-progress ul li .progressbar::after {
+  content: "";
+  position: absolute;
+  width: 300px;
+  height: 5px;
+  background-color: var(--blue);
+  right: 30px;
+}
+
+.basic-info-progress ul li .progressbar p {
+  font-size: 14px;
+} */
+
+/* Post New Job End */
