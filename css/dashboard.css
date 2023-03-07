@@ -630,7 +630,7 @@ td {
   font-size: 14px;
   font-family: var(--header-font);
   border: none;
-  padding: 8px 30px;
+  padding: 10px 25px;
   border-radius: 6px;
   background-color: #0776ee;
   color: var(--white);
@@ -646,7 +646,7 @@ td {
   font-size: 14px;
   font-family: var(--header-font);
   border: none;
-  padding: 8px 30px;
+  padding: 10px 25px;
   border-radius: 6px;
   background-color: #0776ee;
   color: var(--white);
