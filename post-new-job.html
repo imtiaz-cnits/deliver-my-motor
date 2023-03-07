@@ -114,7 +114,7 @@
           </div>
 
           <div class="col-lg-12 dashboard-content-cols">
-            <div class="main-basic-info-box">
+            <div class="main-basic-info-box-1">
               <div class="row">
                 <div class="col-sm-12">
                   <div class="basic-info-header">
@@ -274,7 +274,7 @@
               <div class="row">
                 <div class="col-sm-12">
                   <div class="next-step-btn text-center">
-                    <button type="button" class="next-btn">
+                    <button type="button" id="first-step-next-btn" class="next-btn">
                       NEXT STEP <i class="fa-solid fa-chevron-right"></i>
                     </button>
                   </div>
@@ -289,8 +289,8 @@
           /
           -->
 
-          <div class="col-lg-12 dashboard-content-cols">
-            <div class="main-basic-info-box">
+          <div class="col-lg-12 dashboard-content-cols1">
+            <div class="main-basic-info-box-2">
               <div class="row">
                 <div class="col-sm-12">
                   <div class="basic-info-header">
@@ -319,145 +319,38 @@
               </div>
 
               <div class="main-basic-from-box">
-                <div class="row">
-                  <div class="col-lg-6">
-                    <div class="basic-from-input">
-                      <label for="text" class="form-label"
-                        ><i class="fa-solid fa-car-on"></i>Make & Models:</label
-                      >
-                      <input
-                        type="text"
-                        class="form-control"
-                        placeholder="eg. vehicle models usually"
-                      />
-                      <label for="text" class="form-label"
-                        ><i class="fa-solid fa-hashtag"></i>Number of
-                        Vehicles?</label
-                      >
-                      <input
-                        type="text"
-                        class="form-control"
-                        placeholder="eg. 2"
-                      />
-                    </div>
+                <div class="container">
+                  <div class="row mb-5">
+                      <div class="col-lg-12 text-center">
+                          <form action="#">
+                              <label class="form-check-label">
+                                  <input class="form-check-input" type="checkbox" name="remember" />
+                                  Featured listing. Makes your job appear first in searches, shared
+                                  on socials and internal transporter groups. Extra cost: £5.00
+                              </label>
+                          </form>
+                          <div class="down-arrow mt-5">
+                              <img src="./img/down-arrow.png" alt="" />
+                          </div>
+                      </div>
+                      <div class="col-lg-10 text-center m-auto">
+                          <div class="file-upload-bg">
+                              <h5 class="pb-4">Want to add photo? Click choose file below</h3>
+                                  <form action="#">
+                                      <input class="form-control form-control-md m-auto" id="formFileLg" type="file" multiple />
+                                  </form>
+                          </div>
+                      </div>
+          
+                      <div class="next-step-btn mt-3 mb-5 text-center">
+                        <button type="button" id="second-step-back-btn" class="prev-btn">
+                          <i class="fa-solid fa-chevron-left"></i> GO BACK
+                        </button>
+                        <button type="button" id="second-step-next-btn" class="next-btn">
+                          NEXT STEP <i class="fa-solid fa-chevron-right"></i>
+                        </button>
+                      </div>
                   </div>
-                  <div class="col-lg-6">
-                    <div class="basic-from-input">
-                      <label class="form-label"
-                        ><i class="fa-solid fa-truck"></i>Driven or
-                        Transported?</label
-                      >
-                      <select class="form-select">
-                        <option value="No Preference">No Preference</option>
-                        <option value="Transported">Transported</option>
-                        <option value="Driven">Driven</option>
-                        <option value="Both">Both</option>
-                      </select>
-                      <label for="text" class="form-label"
-                        ><i class="fa-solid fa-hashtag"></i>Number of
-                        Vehicles?</label
-                      >
-                      <input
-                        type="text"
-                        class="form-control"
-                        placeholder="eg. 2"
-                      />
-                    </div>
-                  </div>
-                </div>
-
-                <div class="row justify-content-center">
-                  <div class="col-lg-8">
-                    <div class="basic-from-input">
-                      <label for="text"
-                        ><i class="fa-solid fa-pen-to-square"></i> Brief
-                        description of requirements</label
-                      >
-                      <textarea
-                        name="textarea"
-                        id="textarea"
-                        class="form-control"
-                        placeholder="Brief Description"
-                      ></textarea>
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-              <div class="row">
-                <div class="col-sm-12">
-                  <div class="basic-from-last-header">
-                    <h4>COLLECTION ADDRESS</h4>
-                  </div>
-                </div>
-              </div>
-              <div class="main-basic-from-box">
-                <div class="row">
-                  <div class="col-lg-12">
-                    <div class="basic-from-input basic-from-last-input">
-                      <label for="text" class="form-label"
-                        ><i class="fa-sharp fa-solid fa-location-dot"></i
-                        >Location (ZIP/Postcode)</label
-                      >
-                      <input
-                        type="text"
-                        class="form-control"
-                        placeholder="eg. 2"
-                      />
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-              <div class="row">
-                <div class="col-sm-12">
-                  <div class="basic-from-last-header">
-                    <h4>DELIVERY LOCATION</h4>
-                  </div>
-                </div>
-              </div>
-              <div class="main-basic-from-box">
-                <div class="row">
-                  <div class="col-lg-6">
-                    <div class="basic-from-input basic-from-last-input">
-                      <label for="text" class="form-label"
-                        ><i class="fa-sharp fa-solid fa-location-dot"></i
-                        >Location (ZIP/Postcode)</label
-                      >
-                      <input
-                        type="text"
-                        class="form-control"
-                        placeholder="eg. 2"
-                      />
-                    </div>
-                  </div>
-                  <div class="col-lg-6">
-                    <div class="basic-from-input basic-from-last-input">
-                      <label for="text" class="form-label"
-                        ><i class="fa-sharp fa-solid fa-clock-rotate-left"></i
-                        >Delivery Timeframe?</label
-                      >
-                      <select class="form-select">
-                        <option value="ASAP">ASAP</option>
-                        <option value="1 Week">1 Week</option>
-                        <option value="2 Week">2 Week</option>
-                      </select>
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-              <div class="row">
-                <div class="col-sm-12">
-                  <div class="next-step-btn text-center">
-                    <button type="button" class="prev-btn">
-                      <i class="fa-solid fa-chevron-left"></i> GO BACK
-                    </button>
-                    <button type="button" class="next-btn">
-                      NEXT STEP <i class="fa-solid fa-chevron-right"></i>
-                    </button>
-                  </div>
-                </div>
               </div>
             </div>
           </div>
@@ -468,8 +361,8 @@
           /
           -->
 
-          <div class="col-lg-12 dashboard-content-cols">
-            <div class="main-basic-info-box">
+          <div class="col-lg-12 dashboard-content-cols2">
+            <div class="main-basic-info-box-3">
               <div class="row">
                 <div class="col-sm-12">
                   <div class="basic-info-header">
@@ -498,146 +391,24 @@
               </div>
 
               <div class="main-basic-from-box">
+                <!-- Post Job Step 2 Section -->
+              <div class="container">
                 <div class="row">
-                  <div class="col-lg-6">
-                    <div class="basic-from-input">
-                      <label for="text" class="form-label"
-                        ><i class="fa-solid fa-car-on"></i>Make & Models:</label
-                      >
-                      <input
-                        type="text"
-                        class="form-control"
-                        placeholder="eg. vehicle models usually"
-                      />
-                      <label for="text" class="form-label"
-                        ><i class="fa-solid fa-hashtag"></i>Number of
-                        Vehicles?</label
-                      >
-                      <input
-                        type="text"
-                        class="form-control"
-                        placeholder="eg. 2"
-                      />
+                    <div class="col-lg-10 text-center m-auto">
+                        <div class="file-upload-bg">
+                            <h5 class="pb-3">You are about to publish your job in our website.</h3>
+                        </div>
                     </div>
-                  </div>
-                  <div class="col-lg-6">
-                    <div class="basic-from-input">
-                      <label class="form-label"
-                        ><i class="fa-solid fa-truck"></i>Driven or
-                        Transported?</label
-                      >
-                      <select class="form-select">
-                        <option value="No Preference">No Preference</option>
-                        <option value="Transported">Transported</option>
-                        <option value="Driven">Driven</option>
-                        <option value="Both">Both</option>
-                      </select>
-                      <label for="text" class="form-label"
-                        ><i class="fa-solid fa-hashtag"></i>Number of
-                        Vehicles?</label
-                      >
-                      <input
-                        type="text"
-                        class="form-control"
-                        placeholder="eg. 2"
-                      />
+                    <div class="next-step-btn mt-3 mb-5 text-center">
+                      <button type="button" id="third-step-back-btn" class="prev-btn">
+                        <i class="fa-solid fa-chevron-left"></i> GO BACK
+                      </button>
+                      <button type="button" class="next-btn">
+                        PUBLISH <i class="fa-solid fa-chevron-right"></i>
+                      </button>
                     </div>
-                  </div>
                 </div>
-
-                <div class="row justify-content-center">
-                  <div class="col-lg-8">
-                    <div class="basic-from-input">
-                      <label for="text"
-                        ><i class="fa-solid fa-pen-to-square"></i> Brief
-                        description of requirements</label
-                      >
-                      <textarea
-                        name="textarea"
-                        id="textarea"
-                        class="form-control"
-                        placeholder="Brief Description"
-                      ></textarea>
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-              <div class="row">
-                <div class="col-sm-12">
-                  <div class="basic-from-last-header">
-                    <h4>COLLECTION ADDRESS</h4>
-                  </div>
-                </div>
-              </div>
-              <div class="main-basic-from-box">
-                <div class="row">
-                  <div class="col-lg-12">
-                    <div class="basic-from-input basic-from-last-input">
-                      <label for="text" class="form-label"
-                        ><i class="fa-sharp fa-solid fa-location-dot"></i
-                        >Location (ZIP/Postcode)</label
-                      >
-                      <input
-                        type="text"
-                        class="form-control"
-                        placeholder="eg. 2"
-                      />
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-              <div class="row">
-                <div class="col-sm-12">
-                  <div class="basic-from-last-header">
-                    <h4>DELIVERY LOCATION</h4>
-                  </div>
-                </div>
-              </div>
-              <div class="main-basic-from-box">
-                <div class="row">
-                  <div class="col-lg-6">
-                    <div class="basic-from-input basic-from-last-input">
-                      <label for="text" class="form-label"
-                        ><i class="fa-sharp fa-solid fa-location-dot"></i
-                        >Location (ZIP/Postcode)</label
-                      >
-                      <input
-                        type="text"
-                        class="form-control"
-                        placeholder="eg. 2"
-                      />
-                    </div>
-                  </div>
-                  <div class="col-lg-6">
-                    <div class="basic-from-input basic-from-last-input">
-                      <label for="text" class="form-label"
-                        ><i class="fa-sharp fa-solid fa-clock-rotate-left"></i
-                        >Delivery Timeframe?</label
-                      >
-                      <select class="form-select">
-                        <option value="ASAP">ASAP</option>
-                        <option value="1 Week">1 Week</option>
-                        <option value="2 Week">2 Week</option>
-                      </select>
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-              <div class="row">
-                <div class="col-sm-12">
-                  <div class="next-step-btn text-center">
-                    <button type="button" class="prev-btn">
-                      <i class="fa-solid fa-chevron-left"></i> GO BACK
-                    </button>
-                    <button type="button" class="next-btn">
-                      PUBLISH <i class="fa-solid fa-chevron-right"></i>
-                    </button>
-                  </div>
-                </div>
-              </div>
+            </div>
             </div>
           </div>
 
@@ -852,40 +623,7 @@
     <!-- Copyright Footer End -->
 
     <!-- Script Start -->
-    <script>
-      let sideNavbarBtn = document.querySelector("#sideNavbarIcon");
-      let sidenavbar = document.querySelector("#sidenavbar");
-      let sideNavbar = document.querySelector(".dashboard-sidebar");
-      let dashboardCols = document.querySelector(".dashboard-content-cols");
-
-      sideNavbarBtn.addEventListener("click", function () {
-        if (
-          sideNavbarBtn.firstElementChild.classList.contains(
-            "fa-bars-staggered"
-          )
-        ) {
-          sideNavbarBtn.firstElementChild.classList.replace(
-            "fa-bars-staggered",
-            "fa-xmark"
-          );
-          sideNavbarBtn.style.color = "#ff861c";
-        } else {
-          sideNavbarBtn.firstElementChild.classList.replace(
-            "fa-xmark",
-            "fa-bars-staggered"
-          );
-          sideNavbarBtn.style.color = "#000000";
-        }
-        if (dashboardCols.classList.contains("col-lg-12")) {
-          dashboardCols.classList.replace("col-lg-12", "col-lg-9");
-          sideNavbar.style.display = "block";
-        } else {
-          dashboardCols.classList.replace("col-lg-9", "col-lg-12");
-          sideNavbar.style.display = "none";
-        }
-        // sidenavbar.classList.toggle("showSidebar");
-      });
-    </script>
+    <script src="./js/script.js"></script>
     <!-- Script End -->
   </body>
 </html>

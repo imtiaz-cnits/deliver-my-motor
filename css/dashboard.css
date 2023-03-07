@@ -486,6 +486,10 @@ td {
 
 /* Post New Job Start */
 
+.progress-bar {
+  margin-bottom: 50px;
+}
+
 .progress-bar .active-btn {
   display: table;
   margin: auto;
@@ -634,6 +638,14 @@ td {
   margin-right: 10px;
 }
 
+.main-basic-info-box-2 {
+  display: none;
+}
+
+.main-basic-info-box-3 {
+  display: none;
+}
+
 @media screen and (max-width: 990px) {
   .basic-from-last-input label {
     padding-top: 20px;
@@ -641,6 +653,18 @@ td {
 
   .basic-info-header h1 {
     font-size: 2em;
+  }
+}
+
+@media screen and (max-width: 575px) {
+  .progress-bar .active-btn li {
+    width: 120px;
+  }
+
+  .progress-bar .active-btn li:not(:first-child) .round-btn::before {
+    width: 90px;
+    height: 3px;
+    left: -90px;
   }
 }
 
