@@ -518,6 +518,13 @@ td {
   z-index: 1;
 }
 
+.progress-bar .active-btn li .round-btn-text {
+  font-family: var(--header-font);
+  font-size: 1em;
+  color: var(--black);
+  font-weight: 500;
+}
+
 .progress-bar .active-btn li:not(:first-child) .round-btn::before {
   content: "";
   position: absolute;
@@ -615,6 +622,10 @@ td {
   margin-bottom: 0;
 }
 
+.next-step-btn {
+  margin-bottom: 80px;
+}
+
 .next-step-btn .next-btn {
   font-size: 14px;
   font-family: var(--header-font);
@@ -623,7 +634,12 @@ td {
   border-radius: 6px;
   background-color: #0776ee;
   color: var(--white);
-  margin: 30px 0 80px 0;
+  text-decoration: none;
+  transition: 0.5s;
+}
+
+.next-step-btn .next-btn:hover {
+  background-color: var(--tomato);
 }
 
 .next-step-btn .prev-btn {
@@ -634,8 +650,14 @@ td {
   border-radius: 6px;
   background-color: #0776ee;
   color: var(--white);
-  margin: 30px 0 80px 0;
+  margin: 30px 0 60px 0;
   margin-right: 10px;
+  text-decoration: none;
+  transition: 0.5s;
+}
+
+.next-step-btn .prev-btn:hover {
+  background-color: var(--tomato);
 }
 
 .main-basic-info-box-2 {
