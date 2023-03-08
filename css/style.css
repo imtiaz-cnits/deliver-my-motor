@@ -43,12 +43,32 @@
 }
 
 .menu-btn a {
-  border: 2px solid #055dbc;
-  padding: 8px 10px;
+  background-color: var(--blue);
+  padding: 10px 15px;
   text-decoration: none;
   border-radius: 6px;
   text-decoration: none;
-  color: #055dbc;
+  color: #fff;
+}
+
+.menu-btn a:hover {
+  background-color: var(--tomato);
+  color: #fff;
+  transition: 0.3s all;
+}
+
+@media screen and (max-width: 1400px) {
+  .navbar .nav-link {
+    font-size: 15px;
+  }
+
+  .menu-btn a {
+    font-size: 12px;
+  }
+
+  .navbar-brand {
+    width: 200px;
+  }
 }
 
 @media screen and (max-width: 1200px) {
@@ -57,11 +77,49 @@
   }
 
   .menu-btn a {
-    font-size: 13px;
+    font-size: 12px;
   }
 
   .navbar-brand {
     width: 200px;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .navbar .nav-link {
+    font-size: 13px;
+  }
+
+  .menu-btn a {
+    font-size: 12px;
+  }
+
+  .navbar-brand {
+    width: 180px;
+  }
+}
+
+@media screen and (max-width: 990px) {
+  .navbar .nav-link {
+    font-size: 16px;
+  }
+
+  .menu-btn a {
+    font-size: 15px;
+  }
+
+  .navbar-brand {
+    width: 180px;
+  }
+
+  .navbar-nav {
+    padding-left: 30px !important;
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+
+  .navbar-btn {
+    margin-left: 30px !important;
   }
 }
 
@@ -70,12 +128,30 @@
     width: 250px;
   }
 
+  .navbar-nav {
+    padding-left: 30px !important;
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+
+  .navbar .nav-link {
+    font-size: 16px;
+  }
+
+  .menu-btn a {
+    font-size: 15px;
+  }
+
   .navbar {
     display: block;
   }
 
   .nav-bg {
     display: none;
+  }
+
+  .navbar-btn {
+    margin-left: 30px !important;
   }
 }
 
@@ -184,7 +260,7 @@ p {
 
 .form-cols {
   background: url(../img/form-bg-col-2.png);
-  background-repeat: no-repeat;
+  background-repeat: no-repeat !important;
   background-size: cover;
   background-position: center center;
   border-top-right-radius: 8px;
@@ -441,30 +517,36 @@ p {
 
 /* Form Col 1 Start */
 .form-col {
+  background: url(../img/loginform-bg-col-2.png);
   background-repeat: no-repeat !important;
   background-size: cover;
   background-position: center center;
+  border-top-left-radius: 8px;
   border-bottom-left-radius: 8px;
 }
 
-.form-col-2 {
+.login-bg {
+  background: url(../img/login-form-bg.png);
   width: 100%;
   background-position: center center;
   background-repeat: no-repeat !important;
   background-size: cover;
   padding: 90px 50px;
-  font-family: var(--header-font);
+  color: #fff;
   border-top-right-radius: 8px;
   border-bottom-right-radius: 8px;
 }
 
-.login-bg {
-  padding: 30px;
-  color: #ffffff;
+.login-bg-content {
+  padding: 0 30px 0 30px;
 }
 
 .from-transport-provider {
   color: #ffffff;
+}
+
+.from-transport-provider:hover {
+  color: var(--tomato);
 }
 
 .form-google-btn {
