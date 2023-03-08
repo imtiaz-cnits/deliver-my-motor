@@ -19,136 +19,150 @@
 </head>
 
 <body>
-  <!-- Navbar Start -->
-  <nav class="navbar navbar-expand-lg">
-    <div class="container">
-      <button type="button" id="sideNavbarIcon"><i class="fa-solid fa-bars-staggered"></i></button>
-      <a class="navbar-brand" href="#"><img src="./img/logo.png" alt="logo" class="logo dashboard-navbar-logo" /></a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#yournavbar">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="mynavbar">
-        <ul class="navbar-nav ms-auto">
-          <li class="nav-item">
-            <a class="nav-link" href="#">Messages <span class="badge rounded-circle bg-danger">2</span></a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">My Quotes</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Post a New Job</a>
-          </li>
-        </ul>
+
+  <!-- sidebar Start -->
+  <div class="dashboard-sidebar close">
+    <div class="dahsboard-navbar" id="sidenavbar">
+      <div class="sidebar-header d-flex justify-content-between">
+        <img src="./img/footer-logo.png" alt="" class="sidebar-logo">
+        <button type="button" id="sideNavbarXmarkIcon" class="toggles">
+          <i class="fa-solid fa-xmark"></i>
+        </button>
       </div>
+      <ul class="navbar-nav">
+        <li>
+          <a href="#"><i class="fa-solid fa-house-user"></i> Dashboard</a>
+        </li>
+        <li>
+          <a href="#"><i class="fa-regular fa-comment-dots"></i> Messages</a>
+        </li>
+        <li>
+          <a href="#"><i class="fa-regular fa-file"></i> My Quotes</a>
+        </li>
+        <li>
+          <a href="#"><i class="fa-solid fa-briefcase"></i> My Jobs</a>
+        </li>
+        <li>
+          <a href="#"><i class="fa-solid fa-pen-to-square"></i> Post New Jobs</a>
+        </li>
+        <li>
+          <a href="#"><i class="fa-regular fa-thumbs-up"></i> Reviews</a>
+        </li>
+        <li>
+          <a href="#"><i class="fa-sharp fa-solid fa-circle-info"></i> Help And
+            FAQ</a>
+        </li>
+        <li>
+          <a href="#"><i class="fa-solid fa-arrow-right-from-bracket"></i>
+            Logout</a>
+        </li>
+      </ul>
     </div>
-  </nav>
-  <!-- Navbar End -->
+  </div>
+  <!-- sidebar End -->
 
-  <!-- Dashboard Start -->
-  <section id="dashboard">
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-3 dashboard-sidebar">
-          <div class="dahsboard-navbar" id="sidenavbar">
-            <ul class="navbar-nav m-auto">
-              <li>
-                <a href="#"><i class="fa-solid fa-house-user"></i> Dashboard</a>
-              </li>
-              <li>
-                <a href="#"><i class="fa-regular fa-comment-dots"></i> Messages</a>
-              </li>
-              <li>
-                <a href="#"><i class="fa-regular fa-file"></i> My Quotes</a>
-              </li>
-              <li>
-                <a href="#"><i class="fa-solid fa-briefcase"></i> My Jobs</a>
-              </li>
-              <li>
-                <a href="#"><i class="fa-solid fa-pen-to-square"></i> Post New Jobs</a>
-              </li>
-              <li>
-                <a href="#"><i class="fa-regular fa-thumbs-up"></i> Reviews</a>
-              </li>
-              <li>
-                <a href="#"><i class="fa-sharp fa-solid fa-circle-info"></i> Help And FAQ</a>
-              </li>
-              <li>
-                <a href="#"><i class="fa-solid fa-arrow-right-from-bracket"></i> Logout</a>
-              </li>
-            </ul>
-          </div>
+  <div class="home">
+    <!-- Navbar Start -->
+    <nav class="navbar navbar-expand-lg">
+      <div class="container">
+        <button type="button" id="sideNavbarIcon"><i class="fa-solid fa-bars-staggered"></i></button>
+        <a class="navbar-brand" href="#"><img src="./img/logo.png" alt="logo" class="logo dashboard-navbar-logo" /></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#yournavbar">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="mynavbar">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="#">Messages <span class="badge rounded-circle bg-danger">2</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">My Quotes</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Post a New Job</a>
+            </li>
+          </ul>
         </div>
-        <div class="col-lg-12 dashboard-content-cols">
-          <div class="dashboard-content">
-            <div class="row">
-              <div class="col-lg-6">
-                <div class="dashboard-content-header">
-                  <h2>Welcome Back, DonnaH!</h2>
-                  <p>We're glad you're here. Enjoy your time on the platform!</p>
-                  <div class="dashboard-content-btn">
-                    <a href="#"><i class="fa-solid fa-pen-to-square"></i> Post a Job</a>
+      </div>
+    </nav>
+    <!-- Navbar End -->
 
-                    <a href="#"><i class="fa-solid fa-envelope-open-text"></i> Messages</a>
+    <!-- Dashboard Start -->
+    <section id="dashboard">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12 dashboard-content-cols">
+            <div class="dashboard-content">
+              <div class="row">
+                <div class="col-lg-6">
+                  <div class="dashboard-content-header">
+                    <h2>Welcome Back, DonnaH!</h2>
+                    <p>We're glad you're here. Enjoy your time on the platform!</p>
+                    <div class="dashboard-content-btn">
+                      <a href="#"><i class="fa-solid fa-pen-to-square"></i> Post a Job</a>
+
+                      <a href="#"><i class="fa-solid fa-envelope-open-text"></i> Messages</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-6">
+                  <div class="dashboard-price">
+                    <h4>User Balance</h4>
+                    <p>$40.59</p>
                   </div>
                 </div>
               </div>
-              <div class="col-lg-6">
-                <div class="dashboard-price">
-                  <h4>User Balance</h4>
-                  <p>$40.59</p>
+            </div>
+
+            <div class="row">
+              <div class="col-lg-12">
+                <div class="dashboard-job-posts">
+                  <h5>Job Posts</h2>
+                    <table class="job-table">
+                      <tr>
+                        <th>Job Title</th>
+                        <th>Posted On</th>
+                        <th>Deadline</th>
+                        <th>Job Description</th>
+                      </tr>
+                      <tr>
+                        <td>Sports Car Freights</td>
+                        <td>12 January, 2023</td>
+                        <td>12 January, 2023</td>
+                        <td>Sports Car Freights</td>
+                        <td class="tb-view-btn"><a href="#">View Job</a></td>
+                      </tr>
+                      <tr>
+                        <td>Sports Car Freights</td>
+                        <td>12 January, 2023</td>
+                        <td>12 January, 2023</td>
+                        <td>Sports Car Freights</td>
+                        <td class="tb-view-btn"><a href="#">View Job</a></td>
+                      </tr>
+                      <tr>
+                        <td>Sports Car Freights</td>
+                        <td>12 January, 2023</td>
+                        <td>12 January, 2023</td>
+                        <td>Sports Car Freights</td>
+                        <td class="tb-view-btn"><a href="#">View Job</a></td>
+                      </tr>
+                      <tr>
+                        <td>Sports Car Freights</td>
+                        <td>12 January, 2023</td>
+                        <td>12 January, 2023</td>
+                        <td>Sports Car Freights</td>
+                        <td class="tb-view-btn"><a href="#">View Job</a></td>
+                      </tr>
+                    </table>
                 </div>
               </div>
             </div>
           </div>
-
-          <div class="row">
-            <div class="col-lg-12">
-              <div class="dashboard-job-posts">
-                <h5>Job Posts</h2>
-                  <table class="job-table">
-                    <tr>
-                      <th>Job Title</th>
-                      <th>Posted On</th>
-                      <th>Deadline</th>
-                      <th>Job Description</th>
-                    </tr>
-                    <tr>
-                      <td>Sports Car Freights</td>
-                      <td>12 January, 2023</td>
-                      <td>12 January, 2023</td>
-                      <td>Sports Car Freights</td>
-                      <td class="tb-view-btn"><a href="#">View Job</a></td>
-                    </tr>
-                    <tr>
-                      <td>Sports Car Freights</td>
-                      <td>12 January, 2023</td>
-                      <td>12 January, 2023</td>
-                      <td>Sports Car Freights</td>
-                      <td class="tb-view-btn"><a href="#">View Job</a></td>
-                    </tr>
-                    <tr>
-                      <td>Sports Car Freights</td>
-                      <td>12 January, 2023</td>
-                      <td>12 January, 2023</td>
-                      <td>Sports Car Freights</td>
-                      <td class="tb-view-btn"><a href="#">View Job</a></td>
-                    </tr>
-                    <tr>
-                      <td>Sports Car Freights</td>
-                      <td>12 January, 2023</td>
-                      <td>12 January, 2023</td>
-                      <td>Sports Car Freights</td>
-                      <td class="tb-view-btn"><a href="#">View Job</a></td>
-                    </tr>
-                  </table>
-              </div>
-            </div>
-          </div>
         </div>
-    </div>
-    </div>
-  </section>
-  <!-- Dashboard End -->
+      </div>
+    </section>
+    <!-- Dashboard End -->
+  </div>
 
   <!-- Transport Company Start -->
   <section id="transport-company">
@@ -298,28 +312,20 @@
 
   <!-- Script Start -->
   <script>
-    let sideNavbarBtn = document.querySelector('#sideNavbarIcon');
-    let sidenavbar = document.querySelector("#sidenavbar");
-    let sideNavbar = document.querySelector('.dashboard-sidebar');
-    let dashboardCols = document.querySelector('.dashboard-content-cols');
+    const body = document.querySelector("body"),
+      sidebar = body.querySelector(".dashboard-sidebar"),
+      toggle = body.querySelector("#sideNavbarIcon");
+    toggles = body.querySelector("#sideNavbarXmarkIcon");
 
-    sideNavbarBtn.addEventListener('click', function () {
-      if (sideNavbarBtn.firstElementChild.classList.contains("fa-bars-staggered")) {
-        sideNavbarBtn.firstElementChild.classList.replace("fa-bars-staggered", "fa-xmark");
-        sideNavbarBtn.style.color = "#ff861c";
-      } else {
-        sideNavbarBtn.firstElementChild.classList.replace("fa-xmark", "fa-bars-staggered");
-        sideNavbarBtn.style.color = "#000000";
-      }
-      if (dashboardCols.classList.contains('col-lg-12')) {
-        dashboardCols.classList.replace("col-lg-12", "col-lg-9");
-        sideNavbar.style.display = "block";
-      } else {
-        dashboardCols.classList.replace("col-lg-9", "col-lg-12");
-        sideNavbar.style.display = "none";
-      }
-      // sidenavbar.classList.toggle("showSidebar");
-    })
+    toggle.addEventListener("click", () => {
+      sidebar.classList.toggle("close");
+      toggle.style.visibility = "hidden";
+    });
+
+    toggles.addEventListener("click", () => {
+      sidebar.classList.toggle("close");
+      toggle.style.visibility = "visible";
+    });
   </script>
   <!-- Script End -->
 </body>
