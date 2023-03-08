@@ -33,42 +33,69 @@
 }
 
 .dashboard-sidebar {
-  display: none;
-}
-
-.dahsboard-navbar {
-  background: rgba(7, 118, 238, 0.85);
-  width: 100%;
-  height: 100vh;
+  position: fixed;
+  width: 250px;
+  top: 0;
+  left: 0;
+  height: 100%;
+  background-color: #0776ee;
+  padding: 20px;
   transition: 0.5s;
 }
 
-.dahsboard-navbar ul {
+.dashboard-sidebar.close {
+  width: 0px;
+  opacity: 0;
+}
+
+.home {
+  position: relative;
+  left: 250px;
+  width: calc(100% - 250px);
+  transition: 0.5s;
+}
+
+.dashboard-sidebar.close ~ .home {
+  left: 0;
+  width: calc(100%);
+}
+
+.sidebar-header {
+  align-items: center;
+}
+
+.sidebar-header .sidebar-logo {
+  width: 180px;
+}
+
+#sideNavbarXmarkIcon {
+  border: none;
+  background-color: transparent;
+  color: var(--white);
+  font-size: 1.3em;
+}
+
+.dashboard-sidebar .navbar-nav {
   list-style: none;
-  padding: 50px 50px 0 50px;
 }
 
-.dahsboard-navbar ul li {
-  margin-bottom: 10px;
-  padding: 5px 10px 5px 10px;
-  overflow: auto;
+.dashboard-sidebar .navbar-nav li {
+  padding: 8px;
+  transition: 0.5s;
 }
 
-.dahsboard-navbar ul li a {
-  text-decoration: none;
+.dashboard-sidebar .navbar-nav li a {
   color: var(--white);
   font-size: 1em;
-  font-family: var(--header-font);
-  transition: 0.5s;
+  text-decoration: none;
 }
 
-.dahsboard-navbar ul li:hover {
-  background-color: rgba(13, 95, 183, 0.85);
-  transition: 0.3s ease;
-}
-
-.dahsboard-navbar ul li a i {
+.dashboard-sidebar .navbar-nav li a i {
   padding-right: 10px;
+}
+
+.dashboard-sidebar .navbar-nav li:hover {
+  background-color: #003670;
 }
 
 .dashboard-content {
@@ -156,6 +183,7 @@
   display: inline-block;
   width: 50px;
   margin-right: 50px;
+  color: var(--tomato);
 }
 
 #sidenavbar {
@@ -193,10 +221,6 @@
 }
 
 @media screen and (max-width: 990px) {
-  #sideNavbarIcon {
-    display: block;
-  }
-
   .dahsboard-navbar ul li a {
     font-size: 1em;
   }
@@ -212,6 +236,23 @@
   .dashboard-price {
     text-align: left;
     padding-top: 50px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .home {
+    position: relative;
+    left: 0px;
+    width: calc(100%);
+    transition: 0.5s;
+  }
+
+  #sideNavbarIcon {
+    z-index: 11;
+  }
+
+  .dashboard-sidebar {
+    z-index: 10;
   }
 }
 
