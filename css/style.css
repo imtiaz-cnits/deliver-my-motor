@@ -25,13 +25,6 @@
   width: 100%;
 }
 
-.nav-bg {
-  background: url(./img/nav-bar-bg.png);
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-}
-
 .navbar .nav-link {
   font-family: var(--header-font);
   font-size: 16px;
@@ -50,22 +43,25 @@
 }
 
 .menu-btn a {
-  border: 1px solid #ffffff;
+  border: 2px solid #055dbc;
   padding: 8px 10px;
   text-decoration: none;
   border-radius: 6px;
   text-decoration: none;
-}
-
-@media screen and (max-width: 1400px) {
-  .nav-bg {
-    display: none;
-  }
+  color: #055dbc;
 }
 
 @media screen and (max-width: 1200px) {
   .navbar .nav-link {
-    font-size: 14px;
+    font-size: 13px;
+  }
+
+  .menu-btn a {
+    font-size: 13px;
+  }
+
+  .navbar-brand {
+    width: 200px;
   }
 }
 
@@ -445,7 +441,7 @@ p {
 
 /* Form Col 1 Start */
 .form-col {
-  background-repeat: no-repeat;
+  background-repeat: no-repeat !important;
   background-size: cover;
   background-position: center center;
   border-bottom-left-radius: 8px;
@@ -454,7 +450,7 @@ p {
 .form-col-2 {
   width: 100%;
   background-position: center center;
-  background-repeat: no-repeat;
+  background-repeat: no-repeat !important;
   background-size: cover;
   padding: 90px 50px;
   font-family: var(--header-font);
