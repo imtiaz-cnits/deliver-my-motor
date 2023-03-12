@@ -398,6 +398,10 @@ td {
     margin-top: -500px;
     z-index: 5;
   }
+
+  .nav {
+    padding-left: 0 !important;
+  }
 }
 
 /* Dashboard End */
@@ -789,4 +793,73 @@ td {
   #formFileLg {
     width: 70%;
   }
+}
+
+/* >>>>>>>>>>>>>>>>>>>>>>>> */
+
+/* MY JOB Page */
+#tabs-id {
+  position: relative;
+}
+
+.nav-tabs {
+  border-bottom: none !important;
+  position: absolute;
+  top: 50%;
+  left: 40%;
+  transform: translate(-35%, -50%);
+}
+
+.nav-item {
+  position: relative;
+  padding: 0 !important;
+}
+
+.nav-tabs .nav-link {
+  border: none !important;
+}
+
+.nav-item a {
+  font-size: 1rem;
+  color: #000000;
+}
+
+.nav-item a.active {
+  font-weight: 600;
+  color: var(--blue) !important;
+}
+
+@media screen and (max-width: 576px) {
+  .nav-tabs {
+    width: 100%;
+  }
+
+  .nav-tabs {
+    border-bottom: none !important;
+    position: absolute;
+    top: 50%;
+    left: 45%;
+    transform: translate(-40%, -50%);
+  }
+}
+
+.nav-tabs .nav-item .nav-link.active::after {
+  content: "";
+  position: absolute;
+  height: 4px;
+  width: 100%;
+  top: calc(100% - 2px);
+  background: var(--tomato);
+  border-radius: 50px;
+  left: 0;
+  transition: 0.3s all linear;
+}
+
+.table-bg {
+  background: url(../img/my-job-table-bg.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center right;
+  box-shadow: 3px 3px 15px #00000017;
+  border-radius: 8px;
 }
