@@ -38,7 +38,7 @@
   width: 300px;
   top: 0;
   left: 0;
-  height: 150%;
+  height: 180%;
   background-color: #0776ee;
   padding: 20px;
   transition: 0.5s;
@@ -46,31 +46,31 @@
 
 @media screen and (max-width: 7680px) {
   .dashboard-sidebar {
-    height: 60%;
+    height: 90%;
   }
 }
 
 @media screen and (max-width: 3840px) {
   .dashboard-sidebar {
-    height: 80%;
+    height: 130%;
   }
 }
 
 @media screen and (max-width: 2560px) {
   .dashboard-sidebar {
-    height: 140%;
+    height: 180%;
   }
 }
 
 @media screen and (max-width: 1920px) {
   .dashboard-sidebar {
-    height: 170%;
+    height: 250%;
   }
 }
 
 @media screen and (max-width: 993px) {
   .dashboard-sidebar {
-    height: 250%;
+    height: 480%;
   }
 }
 
