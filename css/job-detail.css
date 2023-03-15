@@ -889,7 +889,7 @@ td {
 
 .job-inform-card {
   background-color: var(--white);
-  box-shadow: 0px 0px 20px rgb(0, 0, 0, 0.2);
+  box-shadow: 0px 0px 15px rgb(0, 0, 0, 0.2);
   padding: 10px 20px;
   text-align: center;
   border-radius: 6px;
@@ -911,7 +911,7 @@ td {
 
 .job-inform-time-cards {
   background-color: var(--white);
-  box-shadow: 0px 0px 20px rgb(0, 0, 0, 0.2);
+  box-shadow: 0px 0px 15px rgb(0, 0, 0, 0.2);
   padding: 20px;
   border-radius: 6px;
   margin-top: 20px;
@@ -952,7 +952,7 @@ td {
 .job-inform-comment p {
   font-family: var(--header-font);
   color: var(--black);
-  box-shadow: 0px 0px 20px rgb(0, 0, 0, 0.2);
+  box-shadow: 0px 0px 15px rgb(0, 0, 0, 0.2);
   font-size: 1em;
   font-weight: 500;
   padding: 10px 0 10px 20px;
@@ -978,7 +978,7 @@ td {
 .live-job-profile {
   background-color: var(--white);
   border-radius: 6px;
-  box-shadow: 0px 0px 20px rgb(0, 0, 0, 0.2);
+  box-shadow: 0px 0px 15px rgb(0, 0, 0, 0.2);
   padding: 40px 20px;
   margin-top: 30px;
 }
@@ -1090,7 +1090,7 @@ td {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: right center;
-  box-shadow: 0px 0px 20px rgb(0, 0, 0, 0.2);
+  box-shadow: 0px 0px 15px rgb(0, 0, 0, 0.2);
   padding: 40px;
   margin-top: 30px;
 }
@@ -1118,7 +1118,7 @@ td {
   border-radius: 6px;
   margin-top: 40px;
   margin-bottom: 80px;
-  box-shadow: 0px 0px 20px rgb(0, 0, 0, 0.2);
+  box-shadow: 0px 0px 15px rgb(0, 0, 0, 0.2);
 }
 
 .job-details-comment p {
