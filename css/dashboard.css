@@ -907,62 +907,71 @@ td {
 
 /* Transporter Card Start */
 
-.transporter-card h3 {
-  font-family: var(--header-font);
-  font-size: 1.6em;
-  color: var(--black);
-  margin-top: 30px;
-}
-
-.transporter-card-content {
+.transporter-card {
   background-color: var(--white);
   box-shadow: 0px 0px 15px rgb(0, 0, 0, 0.2);
   padding: 10px 20px;
   text-align: center;
   border-radius: 6px;
-  height: 100px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-top: 20px;
+  height: 150px;
+  display: grid;
+  place-items: center;
+  margin-top: 30px;
 }
 
-.transporter-card-content p {
+.transporter-card h3 {
+  font-family: var(--header-font);
+  font-size: 1.6em;
+  color: var(--black);
   margin-bottom: 0;
 }
 
-.transporter-card-content p a {
+.transporter-card p a {
   text-decoration: none;
-  color: var(--white);
   font-size: 1em;
-  font-weight: 500;
-  background-color: var(--tomato);
-  border-radius: 6px;
+  color: var(--white);
+  background-color: var(--light-blue);
   padding: 8px 20px;
   display: inline-block;
+  border-radius: 6px;
 }
 
-.transporter-card-icon {
-  font-size: 2.5em;
-  color: var(--tomato);
-  width: 85px;
+.transporter-card-content {
+  display: flex;
+  align-items: center;
+  font-family: var(--header-font);
+}
+
+.transporter-card-icon-msg i {
+  font-size: 2.4em;
+  color: var(--light-blue);
+}
+
+.transporter-card-icon-msg {
+  position: relative;
+}
+
+.transporter-card-icon-msg .badge {
+  position: absolute;
+  top: -10px;
+  left: 35px;
 }
 
 .transporter-card-icon-7 {
-  width: 60px;
-  height: 60px;
-  background-color: #ca1f26;
+  width: 50px;
+  height: 50px;
   color: var(--white);
-  font-size: 2.4em;
+  background-color: #ca1f26;
   border-radius: 6px;
+  font-size: 2.4em;
   text-align: center;
-  line-height: 60px;
+  line-height: 50px;
 }
 
 .transporter-card-icon-whatsapp {
   width: 50px;
   height: 50px;
-  color: rgb(0, 255, 149);
+  color: #26d367;
   font-size: 2.4em;
   text-align: center;
   line-height: 50px;
@@ -970,7 +979,8 @@ td {
 
 .transporter-card-content a {
   text-decoration: none;
-  color: #2374e0;
+  color: var(--black);
+  font-family: var(--header-font);
 }
 
 /* Transporter Card End */
@@ -999,7 +1009,7 @@ td {
   text-align: center;
   font-family: var(--header-font);
   font-size: 1.6em;
-  font-weight: 400;
+  font-weight: 500;
   padding-top: 20px;
 }
 
@@ -1013,6 +1023,14 @@ td {
 
 .transporter-profile-rating i {
   color: var(--tomato);
+}
+
+.tranporter-profile-table i:nth-child(1) {
+  color: var(--tomato);
+}
+
+.tranporter-profile-table i:nth-child(2) {
+  color: var(--light-blue);
 }
 
 .tranporter-profile-table {
@@ -1036,7 +1054,7 @@ td {
   margin-bottom: 10px;
 }
 
-.tranporter-profile-btn p a {
+.tranporter-profile-btn .tranporter-profile-edit-btn {
   text-decoration: none;
   color: var(--white);
   font-size: 1em;
@@ -1046,10 +1064,28 @@ td {
   padding: 8px 20px;
   border: 1px solid #cccccc;
   display: block;
-  transition: background 0.5s;
+  transition: 0.5s;
 }
 
-.tranporter-profile-btn p a:hover {
+.tranporter-profile-btn p .tranporter-profile-edit-btn:hover {
+  background-color: transparent;
+  color: var(--black);
+}
+
+.tranporter-profile-btn .tranporter-profile-view-btn {
+  text-decoration: none;
+  color: var(--white);
+  font-size: 1em;
+  font-weight: 500;
+  background-color: var(--tomato);
+  border-radius: 6px;
+  padding: 8px 20px;
+  border: 1px solid #cccccc;
+  display: block;
+  transition: 0.5s;
+}
+
+.tranporter-profile-btn p .tranporter-profile-view-btn:hover {
   background-color: transparent;
   color: var(--black);
 }
@@ -1071,7 +1107,7 @@ td {
 .transporter-table {
   background: url(../img/my-job-table-bg.png);
   background-repeat: no-repeat;
-  background-position: left center;
+  background-position: right center;
   background-size: cover;
   padding: 30px;
   border-radius: 6px;
@@ -1087,6 +1123,11 @@ td {
 .transporter-table-btn a {
   text-decoration: none;
   color: #0776ee;
+}
+
+.transporter-table-avatar-img {
+  width: 50px;
+  margin-right: 10px;
 }
 
 /* Transporter Table End */
