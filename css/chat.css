@@ -715,15 +715,24 @@ td {
 .chat-landing-profile-name {
   display: flex;
   align-items: center;
-  margin: 20px 0;
+  margin: 10px 0;
+  padding: 5px;
+  border-radius: 6px;
+  transition: 0.5s;
+}
+
+.chat-landing-profile-name:hover {
+  background-color: #e9eff3;
 }
 
 .chat-landing-profile-name .avatars {
   width: 45px;
+  border-radius: 50%;
 }
 
 .chat-landing-profile-name .avatars img {
   width: 100%;
+  border-radius: 50%;
 }
 
 .chat-landing-profile-name .name-desc {
