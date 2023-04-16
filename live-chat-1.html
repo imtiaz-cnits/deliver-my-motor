@@ -1,613 +1,537 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>My Job - Deliver My Motor</title>
 
-    <!-- CSS Link -->
-    <link rel="stylesheet" href="./css/chat.css" />
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Live Chat - Deliver My Motor</title>
 
-    <!-- Bootstrap Link -->
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-    />
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- CSS Link -->
+  <link rel="stylesheet" href="./css/chat.css" />
 
-    <!-- Font Awesome Link -->
-    <script
-      src="https://kit.fontawesome.com/44f1800e1f.js"
-      crossorigin="anonymous"
-    ></script>
-  </head>
+  <!-- Bootstrap Link -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
 
-  <body>
-    <!-- sidebar Start -->
-    <div class="dashboard-sidebar close">
-      <div class="dahsboard-navbar" id="sidenavbar">
-        <div class="sidebar-header d-flex justify-content-between">
-          <img src="./img/footer-logo.png" alt="" class="sidebar-logo" />
-          <button type="button" id="sideNavbarXmarkIcon" class="toggles">
-            <i class="fa-solid fa-xmark"></i>
-          </button>
+  <!-- Font Awesome Link -->
+  <script src="https://kit.fontawesome.com/44f1800e1f.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+  <!-- sidebar Start -->
+  <div class="dashboard-sidebar close">
+    <div class="dahsboard-navbar" id="sidenavbar">
+      <div class="sidebar-header d-flex justify-content-between">
+        <img src="./img/footer-logo.png" alt="" class="sidebar-logo" />
+        <button type="button" id="sideNavbarXmarkIcon" class="toggles">
+          <i class="fa-solid fa-xmark"></i>
+        </button>
+      </div>
+      <ul class="navbar-nav">
+        <li>
+          <a href="#"><i class="fa-solid fa-house-user"></i> Dashboard</a>
+        </li>
+        <li>
+          <a href="#"><i class="fa-regular fa-comment-dots"></i> Messages</a>
+        </li>
+        <li>
+          <a href="#"><i class="fa-regular fa-file"></i> My Quotes</a>
+        </li>
+        <li>
+          <a href="#"><i class="fa-solid fa-briefcase"></i> My Jobs</a>
+        </li>
+        <li>
+          <a href="#"><i class="fa-solid fa-pen-to-square"></i> Post New Jobs</a>
+        </li>
+        <li>
+          <a href="#"><i class="fa-regular fa-thumbs-up"></i> Reviews</a>
+        </li>
+        <li>
+          <a href="#"><i class="fa-sharp fa-solid fa-circle-info"></i> Help And FAQ</a>
+        </li>
+        <li>
+          <a href="#"><i class="fa-solid fa-arrow-right-from-bracket"></i> Logout</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+  <!-- sidebar End -->
+
+  <div class="home">
+    <!-- Navbar Start -->
+    <nav class="navbar navbar-expand-lg">
+      <div class="container">
+        <button type="button" id="sideNavbarIcon" class="toggle">
+          <i class="fa-solid fa-bars-staggered"></i>
+        </button>
+        <a class="navbar-brand" href="#"><img src="./img/logo.png" alt="logo" class="logo dashboard-navbar-logo" /></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#yournavbar">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="mynavbar">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="#">Dashboard</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Messages
+                <span class="badge rounded-circle bg-danger">2</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Live Jobs</a>
+            </li>
+          </ul>
         </div>
-        <ul class="navbar-nav">
-          <li>
-            <a href="#"><i class="fa-solid fa-house-user"></i> Dashboard</a>
-          </li>
-          <li>
-            <a href="#"><i class="fa-regular fa-comment-dots"></i> Messages</a>
-          </li>
-          <li>
-            <a href="#"><i class="fa-regular fa-file"></i> My Quotes</a>
-          </li>
-          <li>
-            <a href="#"><i class="fa-solid fa-briefcase"></i> My Jobs</a>
-          </li>
-          <li>
-            <a href="#"
-              ><i class="fa-solid fa-pen-to-square"></i> Post New Jobs</a
-            >
-          </li>
-          <li>
-            <a href="#"><i class="fa-regular fa-thumbs-up"></i> Reviews</a>
-          </li>
-          <li>
-            <a href="#"
-              ><i class="fa-sharp fa-solid fa-circle-info"></i> Help And FAQ</a
-            >
-          </li>
-          <li>
-            <a href="#"
-              ><i class="fa-solid fa-arrow-right-from-bracket"></i> Logout</a
-            >
-          </li>
-        </ul>
+      </div>
+    </nav>
+    <!-- Navbar End -->
+
+    <!-- Dashboard Chat Start -->
+    <div class="container">
+      <!-- welcome msg -->
+      <div class="row">
+        <div class="col-sm-12">
+          <div class="welcome-chat-msg">
+            <h3>Welcome to <span class="fw-bold">Live Chat!</span></h3>
+          </div>
+        </div>
+      </div>
+
+      <!-- chat -->
+      <div class="dashboard-chat">
+        <div class="row">
+          <div class="col-lg-8">
+            <div class="chat">
+              <div class="response">
+                <div class="response-text">
+                  <h4>Chat Response</h4>
+                  <p>Responsed to messages, set up automations and more.</p>
+                </div>
+                <ul>
+                  <li>
+                    <a href="#">
+                      <i class="fa-regular fa-clock"></i>
+                      Available
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                      <i class="fa-solid fa-screwdriver-wrench"></i>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+
+              <div class="devider-border"></div>
+
+              <div class="row">
+                <div class="col-lg-12">
+                  <div class="chat-landing" id="chatLanding">
+                    <div class="input-box">
+                      <i class="fa-sharp fa-solid fa-magnifying-glass"></i>
+                      <input type="text" placeholder="Search..." />
+                    </div>
+
+                    <div class="chat-landing-tab">
+                      <a href="#">
+                        <i class="fa-regular fa-envelope"></i>
+                        Unread
+                      </a>
+                      <a href="#">
+                        <i class="fa-solid fa-star"></i>
+                        Follow Up
+                      </a>
+                      <a href="#">
+                        <i class="fa-solid fa-tag"></i>
+                        Labels
+                      </a>
+                    </div>
+
+                    <div class="chat-landing-main">
+                      <a href="./live-chat-2.html">
+                        <div class="chat-landing-profile-name">
+                          <div class="avatars">
+                            <img src="./img/avatar-1.png" alt="avatar1" />
+                          </div>
+                          <div class="name-desc">
+                            <h4>Alex Mason</h4>
+                            <p>You: Hello There!</p>
+                          </div>
+                        </div>
+                      </a>
+                      <a href="./live-chat-2.html">
+                        <div class="chat-landing-profile-name">
+                          <div class="avatars">
+                            <img src="./img/avatar-1.png" alt="avatar1" />
+                          </div>
+                          <div class="name-desc">
+                            <h4>Alex Mason</h4>
+                            <p>You: Hello There!</p>
+                          </div>
+                        </div>
+                      </a>
+                      <a href="./live-chat-2.html">
+                        <div class="chat-landing-profile-name">
+                          <div class="avatars">
+                            <img src="./img/avatar-1.png" alt="avatar1" />
+                          </div>
+                          <div class="name-desc">
+                            <h4>Alex Mason</h4>
+                            <p>You: Hello There!</p>
+                          </div>
+                        </div>
+                      </a>
+                      <a href="./live-chat-2.html">
+                        <div class="chat-landing-profile-name">
+                          <div class="avatars">
+                            <img src="./img/avatar-1.png" alt="avatar1" />
+                          </div>
+                          <div class="name-desc">
+                            <h4>Alex Mason</h4>
+                            <p>You: Hello There!</p>
+                          </div>
+                        </div>
+                      </a>
+                      <a href="./live-chat-2.html">
+                        <div class="chat-landing-profile-name">
+                          <div class="avatars">
+                            <img src="./img/avatar-1.png" alt="avatar1" />
+                          </div>
+                          <div class="name-desc">
+                            <h4>Alex Mason</h4>
+                            <p>You: Hello There!</p>
+                          </div>
+                        </div>
+                      </a>
+                      <a href="./live-chat-2.html">
+                        <div class="chat-landing-profile-name">
+                          <div class="avatars">
+                            <img src="./img/avatar-1.png" alt="avatar1" />
+                          </div>
+                          <div class="name-desc">
+                            <h4>Alex Mason</h4>
+                            <p>You: Hello There!</p>
+                          </div>
+                        </div>
+                      </a>
+                      <a href="./live-chat-2.html">
+                        <div class="chat-landing-profile-name">
+                          <div class="avatars">
+                            <img src="./img/avatar-1.png" alt="avatar1" />
+                          </div>
+                          <div class="name-desc">
+                            <h4>Alex Mason</h4>
+                            <p>You: Hello There!</p>
+                          </div>
+                        </div>
+                      </a>
+                      <a href="./live-chat-2.html">
+                        <div class="chat-landing-profile-name">
+                          <div class="avatars">
+                            <img src="./img/avatar-1.png" alt="avatar1" />
+                          </div>
+                          <div class="name-desc">
+                            <h4>Alex Mason</h4>
+                            <p>You: Hello There!</p>
+                          </div>
+                        </div>
+                      </a>
+                      <a href="./live-chat-2.html">
+                        <div class="chat-landing-profile-name">
+                          <div class="avatars">
+                            <img src="./img/avatar-1.png" alt="avatar1" />
+                          </div>
+                          <div class="name-desc">
+                            <h4>Alex Mason</h4>
+                            <p>You: Hello There!</p>
+                          </div>
+                        </div>
+                      </a>
+                      <a href="./live-chat-2.html">
+                        <div class="chat-landing-profile-name">
+                          <div class="avatars">
+                            <img src="./img/avatar-1.png" alt="avatar1" />
+                          </div>
+                          <div class="name-desc">
+                            <h4>Alex Mason</h4>
+                            <p>You: Hello There!</p>
+                          </div>
+                        </div>
+                      </a>
+                      <a href="./live-chat-2.html">
+                        <div class="chat-landing-profile-name">
+                          <div class="avatars">
+                            <img src="./img/avatar-1.png" alt="avatar1" />
+                          </div>
+                          <div class="name-desc">
+                            <h4>Alex Mason</h4>
+                            <p>You: Hello There!</p>
+                          </div>
+                        </div>
+                      </a>
+                      <a href="./live-chat-2.html">
+                        <div class="chat-landing-profile-name">
+                          <div class="avatars">
+                            <img src="./img/avatar-1.png" alt="avatar1" />
+                          </div>
+                          <div class="name-desc">
+                            <h4>Alex Mason</h4>
+                            <p>You: Hello There!</p>
+                          </div>
+                        </div>
+                      </a>
+                      <a href="./live-chat-2.html">
+                        <div class="chat-landing-profile-name">
+                          <div class="avatars">
+                            <img src="./img/avatar-1.png" alt="avatar1" />
+                          </div>
+                          <div class="name-desc">
+                            <h4>Alex Mason</h4>
+                            <p>You: Hello There!</p>
+                          </div>
+                        </div>
+                      </a>
+                      <a href="./live-chat-2.html">
+                        <div class="chat-landing-profile-name">
+                          <div class="avatars">
+                            <img src="./img/avatar-1.png" alt="avatar1" />
+                          </div>
+                          <div class="name-desc">
+                            <h4>Alex Mason</h4>
+                            <p>You: Hello There!</p>
+                          </div>
+                        </div>
+                      </a>
+                      <a href="./live-chat-2.html">
+                        <div class="chat-landing-profile-name">
+                          <div class="avatars">
+                            <img src="./img/avatar-1.png" alt="avatar1" />
+                          </div>
+                          <div class="name-desc">
+                            <h4>Alex Mason</h4>
+                            <p>You: Hello There!</p>
+                          </div>
+                        </div>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4">
+            <div class="profile-info">
+              <div class="profile-infos">
+                <div class="profile-name">
+                  <div class="avatar">
+                    <img src="./img/avatar-1.png" alt="avatar1" />
+                  </div>
+                  <div class="name">
+                    <h4>Jhon Doe</h4>
+                    <p><a href="#">View Profile</a></p>
+                  </div>
+                </div>
+                <div class="profile-btn">
+                  <a href="#"><i class="fa-solid fa-ellipsis"></i></a>
+                  <a href="#"><i class="fa-regular fa-circle-xmark"></i></a>
+                </div>
+              </div>
+              <div class="devider-border"></div>
+
+              <!-- about -->
+              <div class="profile-about">
+                <h4>About</h4>
+                <p>Added Details</p>
+                <ul>
+                  <li>
+                    <i class="fa-solid fa-phone"></i>
+                    <a href="#">
+                      <i class="fa-solid fa-plus"></i>
+                      Phone Number
+                    </a>
+                  </li>
+                  <li>
+                    <i class="fa-regular fa-envelope"></i>
+                    <a href="#">
+                      <i class="fa-solid fa-plus"></i>
+                      Email
+                    </a>
+                  </li>
+                  <li>
+                    <i class="fa-solid fa-earth-americas"></i>
+                    <a href="#">
+                      <i class="fa-solid fa-plus"></i>
+                      Website
+                    </a>
+                  </li>
+                  <li>
+                    <i class="fa-solid fa-house-chimney"></i>
+                    <a href="#">
+                      <i class="fa-solid fa-plus"></i>
+                      Address
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
-    <!-- sidebar End -->
+    <!-- Dashboard Chat End -->
+  </div>
 
-    <div class="home">
-      <!-- Navbar Start -->
-      <nav class="navbar navbar-expand-lg">
-        <div class="container">
-          <button type="button" id="sideNavbarIcon" class="toggle">
-            <i class="fa-solid fa-bars-staggered"></i>
-          </button>
-          <a class="navbar-brand" href="#"
-            ><img
-              src="./img/logo.png"
-              alt="logo"
-              class="logo dashboard-navbar-logo"
-          /></a>
-          <button
-            class="navbar-toggler"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#yournavbar"
-          >
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="mynavbar">
-            <ul class="navbar-nav ms-auto">
-              <li class="nav-item">
-                <a class="nav-link" href="#">Dashboard</a>
+  <!-- Transport Company Start -->
+  <section id="transport-company">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-10">
+          <div class="tarnsport-company-content">
+            <h1>Are you a Transport Company?</h1>
+            <p>
+              Deliver My Motor is used by millions of individuals to get their
+              deliveries done.
+            </p>
+            <p>
+              Use our advanced search tools to identify loads that meet your
+              specifications. Simply state how much you want to be paid.
+            </p>
+            <p>
+              When your quote is accepted, you will receive a booking
+              confirmation email with all of the pickup and delivery
+              information.
+            </p>
+            <p class="mb-5">
+              We run a transparent marketplace with a you choose model
+              integrated into the platform. Sign up Today!
+            </p>
+            <p>
+              <a href="#" class="transport-company-btn">Get Started <i class="fa-regular fa-circle-right"></i></a>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Transport Company End -->
+
+  <!-- Footer Start -->
+  <section id="footer">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-4">
+          <div class="footer-first-cols-content">
+            <img src="./img/footer-logo.png" alt="footer-logo" class="footer-logo" />
+            <ul>
+              <li>
+                <a href="#"><i class="fa-solid fa-chevron-left"></i> About</a>
               </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#"
-                  >Messages
-                  <span class="badge rounded-circle bg-danger">2</span></a
-                >
+              <li>
+                <a href="#"><i class="fa-solid fa-chevron-left"></i> Contact</a>
               </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Live Jobs</a>
+              <li>
+                <a href="#"><i class="fa-solid fa-chevron-left"></i> How it Works</a>
+              </li>
+            </ul>
+            <div class="footer-social-icons-item">
+              <a href="#" class="social-icons-link"><i class="fa-brands fa-facebook-f"></i></a>
+              <a href="#" class="social-icons-link"><i class="fa-brands fa-twitter"></i></a>
+              <a href="#" class="social-icons-link"><i class="fa-brands fa-linkedin-in"></i></a>
+              <a href="#" class="social-icons-link"><i class="fa-brands fa-instagram"></i></a>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3">
+          <div class="footer-first-cols-content">
+            <h4>Useful Links</h4>
+            <ul>
+              <li>
+                <a href="#"><i class="fa-solid fa-chevron-left"></i> Car Auction
+                  Collections</a>
+              </li>
+              <li>
+                <a href="#"><i class="fa-solid fa-chevron-left"></i> Car Collection
+                  Delivery</a>
+              </li>
+              <li>
+                <a href="#"><i class="fa-solid fa-chevron-left"></i> Motorcycle
+                  transportation</a>
+              </li>
+              <li>
+                <a href="#"><i class="fa-solid fa-chevron-left"></i> Urgent Breakdown
+                  Recovery</a>
+              </li>
+              <li>
+                <a href="#"><i class="fa-solid fa-chevron-left"></i> Van
+                  Transportation</a>
+              </li>
+              <li>
+                <a href="#"><i class="fa-solid fa-chevron-left"></i> Caravan
+                  Transport</a>
+              </li>
+              <li>
+                <a href="#"><i class="fa-solid fa-chevron-left"></i> Northern Ireland
+                  Transport</a>
               </li>
             </ul>
           </div>
         </div>
-      </nav>
-      <!-- Navbar End -->
-
-      <!-- Dashboard Chat Start -->
-      <div class="container">
-        <!-- welcome msg -->
-        <div class="row">
-          <div class="col-sm-12">
-            <div class="welcome-chat-msg">
-              <h3>Welcome to <span class="fw-bold">Live Chat!</span></h3>
-            </div>
+        <div class="col-lg-3">
+          <div class="footer-first-cols-content">
+            <h4>Support</h4>
+            <ul>
+              <li>
+                <a href="#"><i class="fa-solid fa-chevron-left"></i> Terms of Use</a>
+              </li>
+              <li>
+                <a href="#"><i class="fa-solid fa-chevron-left"></i> Privacy</a>
+              </li>
+              <li>
+                <a href="#"><i class="fa-solid fa-chevron-left"></i> Site Map</a>
+              </li>
+              <li>
+                <a href="#"><i class="fa-solid fa-chevron-left"></i> Transporter
+                  Rules</a>
+              </li>
+              <li>
+                <a href="#"><i class="fa-solid fa-chevron-left"></i> Help & FAQ's</a>
+              </li>
+            </ul>
           </div>
         </div>
-
-        <!-- chat -->
-        <div class="dashboard-chat">
-          <div class="row">
-            <div class="col-lg-8">
-              <div class="chat">
-                <div class="response">
-                  <div class="response-text">
-                    <h4>Chat Response</h4>
-                    <p>Responsed to messages, set up automations and more.</p>
-                  </div>
-                  <ul>
-                    <li>
-                      <a href="#">
-                        <i class="fa-regular fa-clock"></i>
-                        Available
-                      </a>
-                    </li>
-                    <li>
-                      <a href="#">
-                        <i class="fa-solid fa-screwdriver-wrench"></i>
-                      </a>
-                    </li>
-                  </ul>
-                </div>
-
-                <div class="devider-border"></div>
-
-                <div class="row">
-                  <div class="col-lg-12">
-                    <div class="chat-landing" id="chatLanding">
-                      <div class="input-box">
-                        <i class="fa-sharp fa-solid fa-magnifying-glass"></i>
-                        <input type="text" placeholder="Search..." />
-                      </div>
-
-                      <div class="chat-landing-tab">
-                        <a href="#">
-                          <i class="fa-regular fa-envelope"></i>
-                          Unread
-                        </a>
-                        <a href="#">
-                          <i class="fa-solid fa-star"></i>
-                          Follow Up
-                        </a>
-                        <a href="#">
-                          <i class="fa-solid fa-tag"></i>
-                          Labels
-                        </a>
-                      </div>
-
-                      <div class="chat-landing-main">
-                        <a href="./live-chat-2.html">
-                          <div class="chat-landing-profile-name">
-                            <div class="avatars">
-                              <img src="./img/avatar-1.png" alt="avatar1" />
-                            </div>
-                            <div class="name-desc">
-                              <h4>Alex Mason</h4>
-                              <p>You: Hello There!</p>
-                            </div>
-                          </div>
-                        </a>
-                        <a href="./live-chat-2.html">
-                          <div class="chat-landing-profile-name">
-                            <div class="avatars">
-                              <img src="./img/avatar-1.png" alt="avatar1" />
-                            </div>
-                            <div class="name-desc">
-                              <h4>Alex Mason</h4>
-                              <p>You: Hello There!</p>
-                            </div>
-                          </div>
-                        </a>
-                        <a href="./live-chat-2.html">
-                          <div class="chat-landing-profile-name">
-                            <div class="avatars">
-                              <img src="./img/avatar-1.png" alt="avatar1" />
-                            </div>
-                            <div class="name-desc">
-                              <h4>Alex Mason</h4>
-                              <p>You: Hello There!</p>
-                            </div>
-                          </div>
-                        </a>
-                        <a href="./live-chat-2.html">
-                          <div class="chat-landing-profile-name">
-                            <div class="avatars">
-                              <img src="./img/avatar-1.png" alt="avatar1" />
-                            </div>
-                            <div class="name-desc">
-                              <h4>Alex Mason</h4>
-                              <p>You: Hello There!</p>
-                            </div>
-                          </div>
-                        </a>
-                        <a href="./live-chat-2.html">
-                          <div class="chat-landing-profile-name">
-                            <div class="avatars">
-                              <img src="./img/avatar-1.png" alt="avatar1" />
-                            </div>
-                            <div class="name-desc">
-                              <h4>Alex Mason</h4>
-                              <p>You: Hello There!</p>
-                            </div>
-                          </div>
-                        </a>
-                        <a href="./live-chat-2.html">
-                          <div class="chat-landing-profile-name">
-                            <div class="avatars">
-                              <img src="./img/avatar-1.png" alt="avatar1" />
-                            </div>
-                            <div class="name-desc">
-                              <h4>Alex Mason</h4>
-                              <p>You: Hello There!</p>
-                            </div>
-                          </div>
-                        </a>
-                        <a href="./live-chat-2.html">
-                          <div class="chat-landing-profile-name">
-                            <div class="avatars">
-                              <img src="./img/avatar-1.png" alt="avatar1" />
-                            </div>
-                            <div class="name-desc">
-                              <h4>Alex Mason</h4>
-                              <p>You: Hello There!</p>
-                            </div>
-                          </div>
-                        </a>
-                        <a href="./live-chat-2.html">
-                          <div class="chat-landing-profile-name">
-                            <div class="avatars">
-                              <img src="./img/avatar-1.png" alt="avatar1" />
-                            </div>
-                            <div class="name-desc">
-                              <h4>Alex Mason</h4>
-                              <p>You: Hello There!</p>
-                            </div>
-                          </div>
-                        </a>
-                        <a href="./live-chat-2.html">
-                          <div class="chat-landing-profile-name">
-                            <div class="avatars">
-                              <img src="./img/avatar-1.png" alt="avatar1" />
-                            </div>
-                            <div class="name-desc">
-                              <h4>Alex Mason</h4>
-                              <p>You: Hello There!</p>
-                            </div>
-                          </div>
-                        </a>
-                        <a href="./live-chat-2.html">
-                          <div class="chat-landing-profile-name">
-                            <div class="avatars">
-                              <img src="./img/avatar-1.png" alt="avatar1" />
-                            </div>
-                            <div class="name-desc">
-                              <h4>Alex Mason</h4>
-                              <p>You: Hello There!</p>
-                            </div>
-                          </div>
-                        </a>
-                        <a href="./live-chat-2.html">
-                          <div class="chat-landing-profile-name">
-                            <div class="avatars">
-                              <img src="./img/avatar-1.png" alt="avatar1" />
-                            </div>
-                            <div class="name-desc">
-                              <h4>Alex Mason</h4>
-                              <p>You: Hello There!</p>
-                            </div>
-                          </div>
-                        </a>
-                        <a href="./live-chat-2.html">
-                          <div class="chat-landing-profile-name">
-                            <div class="avatars">
-                              <img src="./img/avatar-1.png" alt="avatar1" />
-                            </div>
-                            <div class="name-desc">
-                              <h4>Alex Mason</h4>
-                              <p>You: Hello There!</p>
-                            </div>
-                          </div>
-                        </a>
-                        <a href="./live-chat-2.html">
-                          <div class="chat-landing-profile-name">
-                            <div class="avatars">
-                              <img src="./img/avatar-1.png" alt="avatar1" />
-                            </div>
-                            <div class="name-desc">
-                              <h4>Alex Mason</h4>
-                              <p>You: Hello There!</p>
-                            </div>
-                          </div>
-                        </a>
-                        <a href="./live-chat-2.html">
-                          <div class="chat-landing-profile-name">
-                            <div class="avatars">
-                              <img src="./img/avatar-1.png" alt="avatar1" />
-                            </div>
-                            <div class="name-desc">
-                              <h4>Alex Mason</h4>
-                              <p>You: Hello There!</p>
-                            </div>
-                          </div>
-                        </a>
-                        <a href="./live-chat-2.html">
-                          <div class="chat-landing-profile-name">
-                            <div class="avatars">
-                              <img src="./img/avatar-1.png" alt="avatar1" />
-                            </div>
-                            <div class="name-desc">
-                              <h4>Alex Mason</h4>
-                              <p>You: Hello There!</p>
-                            </div>
-                          </div>
-                        </a>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <div class="col-lg-4">
-              <div class="profile-info">
-                <div class="profile-infos">
-                  <div class="profile-name">
-                    <div class="avatar">
-                      <img src="./img/avatar-1.png" alt="avatar1" />
-                    </div>
-                    <div class="name">
-                      <h4>Jhon Doe</h4>
-                      <p><a href="#">View Profile</a></p>
-                    </div>
-                  </div>
-                  <div class="profile-btn">
-                    <a href="#"><i class="fa-solid fa-ellipsis"></i></a>
-                    <a href="#"><i class="fa-regular fa-circle-xmark"></i></a>
-                  </div>
-                </div>
-                <div class="devider-border"></div>
-
-                <!-- about -->
-                <div class="profile-about">
-                  <h4>About</h4>
-                  <p>Added Details</p>
-                  <ul>
-                    <li>
-                      <i class="fa-solid fa-phone"></i>
-                      <a href="#">
-                        <i class="fa-solid fa-plus"></i>
-                        Phone Number
-                      </a>
-                    </li>
-                    <li>
-                      <i class="fa-regular fa-envelope"></i>
-                      <a href="#">
-                        <i class="fa-solid fa-plus"></i>
-                        Email
-                      </a>
-                    </li>
-                    <li>
-                      <i class="fa-solid fa-earth-americas"></i>
-                      <a href="#">
-                        <i class="fa-solid fa-plus"></i>
-                        Website
-                      </a>
-                    </li>
-                    <li>
-                      <i class="fa-solid fa-house-chimney"></i>
-                      <a href="#">
-                        <i class="fa-solid fa-plus"></i>
-                        Address
-                      </a>
-                    </li>
-                  </ul>
-                </div>
-              </div>
-            </div>
+        <div class="col-lg-2">
+          <div class="footer-first-cols-content">
+            <h4>More</h4>
+            <ul>
+              <li>
+                <a href="#"><i class="fa-solid fa-chevron-left"></i> Blog</a>
+              </li>
+              <li>
+                <a href="#"><i class="fa-solid fa-chevron-left"></i> Transporter</a>
+              </li>
+            </ul>
+            <a href="#"><img src="./img/footer-reviews-trust-logo.png" alt="footer-reviews-trust-logo"
+                class="footer-reviews-trust-logo" /></a>
           </div>
         </div>
       </div>
-      <!-- Dashboard Chat End -->
     </div>
+  </section>
 
-    <!-- Transport Company Start -->
-    <section id="transport-company">
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-10">
-            <div class="tarnsport-company-content">
-              <h1>Are you a Transport Company?</h1>
-              <p>
-                Deliver My Motor is used by millions of individuals to get their
-                deliveries done.
-              </p>
-              <p>
-                Use our advanced search tools to identify loads that meet your
-                specifications. Simply state how much you want to be paid.
-              </p>
-              <p>
-                When your quote is accepted, you will receive a booking
-                confirmation email with all of the pickup and delivery
-                information.
-              </p>
-              <p class="mb-5">
-                We run a transparent marketplace with a you choose model
-                integrated into the platform. Sign up Today!
-              </p>
-              <p>
-                <a href="#" class="transport-company-btn"
-                  >Get Started <i class="fa-regular fa-circle-right"></i
-                ></a>
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- Transport Company End -->
+  <!-- Footer End -->
 
-    <!-- Footer Start -->
-    <section id="footer">
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-4">
-            <div class="footer-first-cols-content">
-              <img
-                src="./img/footer-logo.png"
-                alt="footer-logo"
-                class="footer-logo"
-              />
-              <ul>
-                <li>
-                  <a href="#"><i class="fa-solid fa-chevron-left"></i> About</a>
-                </li>
-                <li>
-                  <a href="#"
-                    ><i class="fa-solid fa-chevron-left"></i> Contact</a
-                  >
-                </li>
-                <li>
-                  <a href="#"
-                    ><i class="fa-solid fa-chevron-left"></i> How it Works</a
-                  >
-                </li>
-              </ul>
-              <div class="footer-social-icons-item">
-                <a href="#" class="social-icons-link"
-                  ><i class="fa-brands fa-facebook-f"></i
-                ></a>
-                <a href="#" class="social-icons-link"
-                  ><i class="fa-brands fa-twitter"></i
-                ></a>
-                <a href="#" class="social-icons-link"
-                  ><i class="fa-brands fa-linkedin-in"></i
-                ></a>
-                <a href="#" class="social-icons-link"
-                  ><i class="fa-brands fa-instagram"></i
-                ></a>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-3">
-            <div class="footer-first-cols-content">
-              <h4>Useful Links</h4>
-              <ul>
-                <li>
-                  <a href="#"
-                    ><i class="fa-solid fa-chevron-left"></i> Car Auction
-                    Collections</a
-                  >
-                </li>
-                <li>
-                  <a href="#"
-                    ><i class="fa-solid fa-chevron-left"></i> Car Collection
-                    Delivery</a
-                  >
-                </li>
-                <li>
-                  <a href="#"
-                    ><i class="fa-solid fa-chevron-left"></i> Motorcycle
-                    transportation</a
-                  >
-                </li>
-                <li>
-                  <a href="#"
-                    ><i class="fa-solid fa-chevron-left"></i> Urgent Breakdown
-                    Recovery</a
-                  >
-                </li>
-                <li>
-                  <a href="#"
-                    ><i class="fa-solid fa-chevron-left"></i> Van
-                    Transportation</a
-                  >
-                </li>
-                <li>
-                  <a href="#"
-                    ><i class="fa-solid fa-chevron-left"></i> Caravan
-                    Transport</a
-                  >
-                </li>
-                <li>
-                  <a href="#"
-                    ><i class="fa-solid fa-chevron-left"></i> Northern Ireland
-                    Transport</a
-                  >
-                </li>
-              </ul>
-            </div>
-          </div>
-          <div class="col-lg-3">
-            <div class="footer-first-cols-content">
-              <h4>Support</h4>
-              <ul>
-                <li>
-                  <a href="#"
-                    ><i class="fa-solid fa-chevron-left"></i> Terms of Use</a
-                  >
-                </li>
-                <li>
-                  <a href="#"
-                    ><i class="fa-solid fa-chevron-left"></i> Privacy</a
-                  >
-                </li>
-                <li>
-                  <a href="#"
-                    ><i class="fa-solid fa-chevron-left"></i> Site Map</a
-                  >
-                </li>
-                <li>
-                  <a href="#"
-                    ><i class="fa-solid fa-chevron-left"></i> Transporter
-                    Rules</a
-                  >
-                </li>
-                <li>
-                  <a href="#"
-                    ><i class="fa-solid fa-chevron-left"></i> Help & FAQ's</a
-                  >
-                </li>
-              </ul>
-            </div>
-          </div>
-          <div class="col-lg-2">
-            <div class="footer-first-cols-content">
-              <h4>More</h4>
-              <ul>
-                <li>
-                  <a href="#"><i class="fa-solid fa-chevron-left"></i> Blog</a>
-                </li>
-                <li>
-                  <a href="#"
-                    ><i class="fa-solid fa-chevron-left"></i> Transporter</a
-                  >
-                </li>
-              </ul>
-              <a href="#"
-                ><img
-                  src="./img/footer-reviews-trust-logo.png"
-                  alt="footer-reviews-trust-logo"
-                  class="footer-reviews-trust-logo"
-              /></a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
+  <!-- Copyright Footer Start -->
+  <footer id="copyright-footer">
+    Copyright © DeliverMyMotor Ltd. Powered by
+    <span><img class="hostxwhite-img" src="./img/hostoxwhite.png" alt="" width="90px" /></span>
+  </footer>
+  <!-- Copyright Footer End -->
 
-    <!-- Footer End -->
+  <!-- Script Start -->
+  <script src="./js/script.js"></script>
+  <!-- Script End -->
+</body>
 
-    <!-- Copyright Footer Start -->
-    <footer id="copyright-footer">
-      Copyright © DeliverMyMotor Ltd. Powered by
-      <span
-        ><img
-          class="hostxwhite-img"
-          src="./img/hostoxwhite.png"
-          alt=""
-          width="90px"
-      /></span>
-    </footer>
-    <!-- Copyright Footer End -->
-
-    <!-- Script Start -->
-    <script src="./js/script.js"></script>
-    <!-- Script End -->
-  </body>
 </html>
