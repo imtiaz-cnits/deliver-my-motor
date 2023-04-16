@@ -703,6 +703,15 @@ td {
   color: var(--white);
 }
 
+.chat-landing-main a {
+  text-decoration: none;
+  color: var(--black);
+}
+
+.chat-landing-main a:hover {
+  color: var(--black);
+}
+
 .chat-landing-profile-name {
   display: flex;
   align-items: center;
@@ -711,6 +720,10 @@ td {
   border-radius: 6px;
   transition: 0.5s;
   cursor: pointer;
+}
+
+#back-btn {
+  z-index: 10;
 }
 
 .chat-landing-profile-name:hover {
@@ -746,7 +759,6 @@ td {
   font-size: 1.2em;
   cursor: pointer;
   color: var(--light-blue);
-  display: none;
   z-index: 10 !important;
 }
 
@@ -959,18 +971,6 @@ td {
 @media screen and (max-width: 990px) {
   .chat-landing-tab a {
     font-size: 14px;
-  }
-
-  .chat-field {
-    display: none;
-  }
-
-  .profile-info {
-    display: none;
-  }
-
-  .back-btn {
-    display: block;
   }
 }
 
