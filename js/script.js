@@ -46,3 +46,12 @@ thirdStepBackBtn.addEventListener("click", function () {
   mainBasicForms2.style.display = 'block';
   mainBasicForms3.style.display = 'none';
 });
+
+
+
+// imgInp.onchange = evt => {
+//   const [file] = imgInp.files
+//   if (file) {
+//     blah.src = URL.createObjectURL(file)
+//   }
+// }
