@@ -681,6 +681,14 @@ td {
   margin-bottom: 60px;
 }
 
+.main-profile-forms-input input {
+  height: 50px;
+}
+
+.main-profile-forms-input textarea {
+  height: 90px;
+}
+
 .main-profile-forms-input label {
   margin-top: 10px;
   font-size: 1.1em;
