@@ -678,6 +678,10 @@ td {
     display: block;
     text-align: center;
   }
+
+  .avatar-input {
+    margin-left: 0;
+  }
 }
 
 /* main profile forms */
@@ -727,8 +731,8 @@ td {
 }
 
 .payment-method-items {
-  display: grid;
-  justify-content: center;
+  width: 190px;
+  margin: auto;
 }
 
 .active-method p {
