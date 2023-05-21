@@ -124,7 +124,7 @@
           <div class="col-lg-10">
             <nav>
               <div
-                class="nav nav-tabs justify-content-center"
+                class="nav nav-tabs main-tabs justify-content-center"
                 id="nav-tab"
                 role="tablist"
               >
@@ -199,6 +199,633 @@
                     deliveries that are local to you or along a planned route
                     (great for finding backloads).
                   </div>
+
+                  <!-- Sub Tabs -->
+
+                  <ul
+                    class="nav sub-tabs nav-pills mb-3"
+                    id="pills-tab"
+                    role="tablist"
+                  >
+                    <li class="nav-item" role="presentation">
+                      <button
+                        class="nav-link active"
+                        id="pills-country-tab"
+                        data-bs-toggle="pill"
+                        data-bs-target="#pills-country"
+                        type="button"
+                        role="tab"
+                        aria-controls="pills-country"
+                        aria-selected="true"
+                      >
+                        Country Search
+                      </button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                      <button
+                        class="nav-link"
+                        id="pills-route-tab"
+                        data-bs-toggle="pill"
+                        data-bs-target="#pills-route"
+                        type="button"
+                        role="tab"
+                        aria-controls="pills-route"
+                        aria-selected="false"
+                      >
+                        Route Search
+                      </button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                      <button
+                        class="nav-link"
+                        id="pills-local-tab"
+                        data-bs-toggle="pill"
+                        data-bs-target="#pills-local"
+                        type="button"
+                        role="tab"
+                        aria-controls="pills-local"
+                        aria-selected="false"
+                      >
+                        Local Search
+                      </button>
+                    </li>
+                  </ul>
+                  <div class="tab-content" id="pills-tabContent">
+                    <div
+                      class="tab-pane fade show active"
+                      id="pills-country"
+                      role="tabpanel"
+                      aria-labelledby="pills-country-tab"
+                    >
+                      <div class="sub-tabs-content">
+                        <div class="row">
+                          <div class="col-lg-6">
+                            <div class="search-input-box">
+                              <label>Collection Country</label>
+                              <div class="input-box-items">
+                                <input type="text" class="input-box" />
+                                <span
+                                  ><i class="fa-solid fa-location-dot"></i
+                                ></span>
+                              </div>
+                              <label>Delivery Country</label>
+                              <div class="input-box-items">
+                                <input type="text" class="input-box" />
+                                <span class="search-icon-2"
+                                  ><i class="fa-solid fa-location-dot"></i
+                                ></span>
+                              </div>
+                            </div>
+                          </div>
+
+                          <div class="col-lg-6">
+                            <div class="search-input-box">
+                              <div class="row">
+                                <div class="col-lg-6">
+                                  <div class="form-check">
+                                    <input
+                                      class="form-check-input"
+                                      type="checkbox"
+                                      id="Furniture"
+                                    />
+                                    <label
+                                      class="form-check-label"
+                                      for="Furniture"
+                                    >
+                                      Furniture & General Items (345)
+                                    </label>
+                                  </div>
+                                  <div class="form-check">
+                                    <input
+                                      class="form-check-input"
+                                      type="checkbox"
+                                      id="Boxes"
+                                    />
+                                    <label class="form-check-label" for="Boxes">
+                                      Boxes (345)
+                                    </label>
+                                  </div>
+                                  <div class="form-check">
+                                    <input
+                                      class="form-check-input"
+                                      type="checkbox"
+                                      id="Cars"
+                                    />
+                                    <label class="form-check-label" for="Cars">
+                                      Cars (345)
+                                    </label>
+                                  </div>
+                                  <div class="form-check">
+                                    <input
+                                      class="form-check-input"
+                                      type="checkbox"
+                                      id="Motorcycles"
+                                    />
+                                    <label
+                                      class="form-check-label"
+                                      for="Motorcycles"
+                                    >
+                                      Motorcycles (345)
+                                    </label>
+                                  </div>
+                                  <div class="form-check">
+                                    <input
+                                      class="form-check-input"
+                                      type="checkbox"
+                                      id="OtherVehicles"
+                                    />
+                                    <label
+                                      class="form-check-label"
+                                      for="OtherVehicles"
+                                    >
+                                      Other Vehicles (345)
+                                    </label>
+                                  </div>
+                                  <div class="form-check">
+                                    <input
+                                      class="form-check-input"
+                                      type="checkbox"
+                                      id="VehiclesParts"
+                                    />
+                                    <label
+                                      class="form-check-label"
+                                      for="VehiclesParts"
+                                    >
+                                      Vehicles Parts (345)
+                                    </label>
+                                  </div>
+                                  <div class="form-check">
+                                    <input
+                                      class="form-check-input"
+                                      type="checkbox"
+                                      id="MovingHome"
+                                    />
+                                    <label
+                                      class="form-check-label"
+                                      for="MovingHome"
+                                    >
+                                      Moving Home (345)
+                                    </label>
+                                  </div>
+                                </div>
+
+                                <div class="col-lg-6">
+                                  <div class="form-check">
+                                    <input
+                                      class="form-check-input"
+                                      type="checkbox"
+                                      id="Haulage"
+                                    />
+                                    <label
+                                      class="form-check-label"
+                                      for="Haulage"
+                                    >
+                                      Haulage (67)
+                                    </label>
+                                  </div>
+                                  <div class="form-check">
+                                    <input
+                                      class="form-check-input"
+                                      type="checkbox"
+                                      id="Boats"
+                                    />
+                                    <label class="form-check-label" for="Boats">
+                                      Boats (67)
+                                    </label>
+                                  </div>
+                                  <div class="form-check">
+                                    <input
+                                      class="form-check-input"
+                                      type="checkbox"
+                                      id="Pianos"
+                                    />
+                                    <label
+                                      class="form-check-label"
+                                      for="Pianos"
+                                    >
+                                      Pianos (67)
+                                    </label>
+                                  </div>
+                                  <div class="form-check">
+                                    <input
+                                      class="form-check-input"
+                                      type="checkbox"
+                                      id="PetsLivestock"
+                                    />
+                                    <label
+                                      class="form-check-label"
+                                      for="PetsLivestock"
+                                    >
+                                      Pets & Livestock (34)
+                                    </label>
+                                  </div>
+                                  <div class="form-check">
+                                    <input
+                                      class="form-check-input"
+                                      type="checkbox"
+                                      id="Other"
+                                    />
+                                    <label class="form-check-label" for="Other">
+                                      Other (1496)
+                                    </label>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div
+                      class="tab-pane fade"
+                      id="pills-route"
+                      role="tabpanel"
+                      aria-labelledby="pills-route-tab"
+                    >
+                      <div class="sub-tabs-content">
+                        <div class="row">
+                          <div class="col-lg-6">
+                            <div class="search-input-box">
+                              <label>Collection Country</label>
+                              <div class="input-box-items">
+                                <input type="text" class="input-box" />
+                                <span
+                                  ><i class="fa-solid fa-location-dot"></i
+                                ></span>
+                              </div>
+                              <label>Delivery Country</label>
+                              <div class="input-box-items">
+                                <input type="text" class="input-box" />
+                                <span class="search-icon-2"
+                                  ><i class="fa-solid fa-location-dot"></i
+                                ></span>
+                              </div>
+                            </div>
+                          </div>
+
+                          <div class="col-lg-6">
+                            <div class="search-input-box">
+                              <div class="row">
+                                <div class="col-lg-6">
+                                  <div class="form-check">
+                                    <input
+                                      class="form-check-input"
+                                      type="checkbox"
+                                      id="Furniture"
+                                    />
+                                    <label
+                                      class="form-check-label"
+                                      for="Furniture"
+                                    >
+                                      Furniture & General Items (345)
+                                    </label>
+                                  </div>
+                                  <div class="form-check">
+                                    <input
+                                      class="form-check-input"
+                                      type="checkbox"
+                                      id="Boxes"
+                                    />
+                                    <label class="form-check-label" for="Boxes">
+                                      Boxes (345)
+                                    </label>
+                                  </div>
+                                  <div class="form-check">
+                                    <input
+                                      class="form-check-input"
+                                      type="checkbox"
+                                      id="Cars"
+                                    />
+                                    <label class="form-check-label" for="Cars">
+                                      Cars (345)
+                                    </label>
+                                  </div>
+                                  <div class="form-check">
+                                    <input
+                                      class="form-check-input"
+                                      type="checkbox"
+                                      id="Motorcycles"
+                                    />
+                                    <label
+                                      class="form-check-label"
+                                      for="Motorcycles"
+                                    >
+                                      Motorcycles (345)
+                                    </label>
+                                  </div>
+                                  <div class="form-check">
+                                    <input
+                                      class="form-check-input"
+                                      type="checkbox"
+                                      id="OtherVehicles"
+                                    />
+                                    <label
+                                      class="form-check-label"
+                                      for="OtherVehicles"
+                                    >
+                                      Other Vehicles (345)
+                                    </label>
+                                  </div>
+                                  <div class="form-check">
+                                    <input
+                                      class="form-check-input"
+                                      type="checkbox"
+                                      id="VehiclesParts"
+                                    />
+                                    <label
+                                      class="form-check-label"
+                                      for="VehiclesParts"
+                                    >
+                                      Vehicles Parts (345)
+                                    </label>
+                                  </div>
+                                  <div class="form-check">
+                                    <input
+                                      class="form-check-input"
+                                      type="checkbox"
+                                      id="MovingHome"
+                                    />
+                                    <label
+                                      class="form-check-label"
+                                      for="MovingHome"
+                                    >
+                                      Moving Home (345)
+                                    </label>
+                                  </div>
+                                </div>
+
+                                <div class="col-lg-6">
+                                  <div class="form-check">
+                                    <input
+                                      class="form-check-input"
+                                      type="checkbox"
+                                      id="Haulage"
+                                    />
+                                    <label
+                                      class="form-check-label"
+                                      for="Haulage"
+                                    >
+                                      Haulage (67)
+                                    </label>
+                                  </div>
+                                  <div class="form-check">
+                                    <input
+                                      class="form-check-input"
+                                      type="checkbox"
+                                      id="Boats"
+                                    />
+                                    <label class="form-check-label" for="Boats">
+                                      Boats (67)
+                                    </label>
+                                  </div>
+                                  <div class="form-check">
+                                    <input
+                                      class="form-check-input"
+                                      type="checkbox"
+                                      id="Pianos"
+                                    />
+                                    <label
+                                      class="form-check-label"
+                                      for="Pianos"
+                                    >
+                                      Pianos (67)
+                                    </label>
+                                  </div>
+                                  <div class="form-check">
+                                    <input
+                                      class="form-check-input"
+                                      type="checkbox"
+                                      id="PetsLivestock"
+                                    />
+                                    <label
+                                      class="form-check-label"
+                                      for="PetsLivestock"
+                                    >
+                                      Pets & Livestock (34)
+                                    </label>
+                                  </div>
+                                  <div class="form-check">
+                                    <input
+                                      class="form-check-input"
+                                      type="checkbox"
+                                      id="Other"
+                                    />
+                                    <label class="form-check-label" for="Other">
+                                      Other (1496)
+                                    </label>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div
+                      class="tab-pane fade"
+                      id="pills-local"
+                      role="tabpanel"
+                      aria-labelledby="pills-local-tab"
+                    >
+                      <div class="sub-tabs-content">
+                        <div class="row">
+                          <div class="col-lg-6">
+                            <div class="search-input-box">
+                              <label>Collection Country</label>
+                              <div class="input-box-items">
+                                <input type="text" class="input-box" />
+                                <span
+                                  ><i class="fa-solid fa-location-dot"></i
+                                ></span>
+                              </div>
+                              <label>Delivery Country</label>
+                              <div class="input-box-items">
+                                <input type="text" class="input-box" />
+                                <span class="search-icon-2"
+                                  ><i class="fa-solid fa-location-dot"></i
+                                ></span>
+                              </div>
+                            </div>
+                          </div>
+
+                          <div class="col-lg-6">
+                            <div class="search-input-box">
+                              <div class="row">
+                                <div class="col-lg-6">
+                                  <div class="form-check">
+                                    <input
+                                      class="form-check-input"
+                                      type="checkbox"
+                                      id="Furniture"
+                                    />
+                                    <label
+                                      class="form-check-label"
+                                      for="Furniture"
+                                    >
+                                      Furniture & General Items (345)
+                                    </label>
+                                  </div>
+                                  <div class="form-check">
+                                    <input
+                                      class="form-check-input"
+                                      type="checkbox"
+                                      id="Boxes"
+                                    />
+                                    <label class="form-check-label" for="Boxes">
+                                      Boxes (345)
+                                    </label>
+                                  </div>
+                                  <div class="form-check">
+                                    <input
+                                      class="form-check-input"
+                                      type="checkbox"
+                                      id="Cars"
+                                    />
+                                    <label class="form-check-label" for="Cars">
+                                      Cars (345)
+                                    </label>
+                                  </div>
+                                  <div class="form-check">
+                                    <input
+                                      class="form-check-input"
+                                      type="checkbox"
+                                      id="Motorcycles"
+                                    />
+                                    <label
+                                      class="form-check-label"
+                                      for="Motorcycles"
+                                    >
+                                      Motorcycles (345)
+                                    </label>
+                                  </div>
+                                  <div class="form-check">
+                                    <input
+                                      class="form-check-input"
+                                      type="checkbox"
+                                      id="OtherVehicles"
+                                    />
+                                    <label
+                                      class="form-check-label"
+                                      for="OtherVehicles"
+                                    >
+                                      Other Vehicles (345)
+                                    </label>
+                                  </div>
+                                  <div class="form-check">
+                                    <input
+                                      class="form-check-input"
+                                      type="checkbox"
+                                      id="VehiclesParts"
+                                    />
+                                    <label
+                                      class="form-check-label"
+                                      for="VehiclesParts"
+                                    >
+                                      Vehicles Parts (345)
+                                    </label>
+                                  </div>
+                                  <div class="form-check">
+                                    <input
+                                      class="form-check-input"
+                                      type="checkbox"
+                                      id="MovingHome"
+                                    />
+                                    <label
+                                      class="form-check-label"
+                                      for="MovingHome"
+                                    >
+                                      Moving Home (345)
+                                    </label>
+                                  </div>
+                                </div>
+
+                                <div class="col-lg-6">
+                                  <div class="form-check">
+                                    <input
+                                      class="form-check-input"
+                                      type="checkbox"
+                                      id="Haulage"
+                                    />
+                                    <label
+                                      class="form-check-label"
+                                      for="Haulage"
+                                    >
+                                      Haulage (67)
+                                    </label>
+                                  </div>
+                                  <div class="form-check">
+                                    <input
+                                      class="form-check-input"
+                                      type="checkbox"
+                                      id="Boats"
+                                    />
+                                    <label class="form-check-label" for="Boats">
+                                      Boats (67)
+                                    </label>
+                                  </div>
+                                  <div class="form-check">
+                                    <input
+                                      class="form-check-input"
+                                      type="checkbox"
+                                      id="Pianos"
+                                    />
+                                    <label
+                                      class="form-check-label"
+                                      for="Pianos"
+                                    >
+                                      Pianos (67)
+                                    </label>
+                                  </div>
+                                  <div class="form-check">
+                                    <input
+                                      class="form-check-input"
+                                      type="checkbox"
+                                      id="PetsLivestock"
+                                    />
+                                    <label
+                                      class="form-check-label"
+                                      for="PetsLivestock"
+                                    >
+                                      Pets & Livestock (34)
+                                    </label>
+                                  </div>
+                                  <div class="form-check">
+                                    <input
+                                      class="form-check-input"
+                                      type="checkbox"
+                                      id="Other"
+                                    />
+                                    <label class="form-check-label" for="Other">
+                                      Other (1496)
+                                    </label>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- search deliveri tab btn -->
+                  <div class="row">
+                    <div class="col-sm-12">
+                      <div
+                        class="search-deliver-tabs-btn d-flex justify-content-center"
+                      >
+                        <button type="button">
+                          <span><i class="fa-solid fa-arrows-rotate"></i></span
+                          >Reset
+                        </button>
+                        <button type="button">
+                          <span
+                            ><i class="fa-solid fa-magnifying-glass"></i></span
+                          >Search
+                        </button>
+                      </div>
+                    </div>
+                  </div>
                 </div>
               </div>
               <div
@@ -207,7 +834,647 @@
                 role="tabpanel"
                 aria-labelledby="nav-answer-tab"
               >
-                Answer
+                <div class="search-tab-content">
+                  <div class="search-alert-box">
+                    <span class="search-close-btn"
+                      ><i class="fa-solid fa-xmark"></i
+                    ></span>
+                    Below you will see thousands of deliveries awaiting quotes.
+                    You can use the search tool to find the exact kind of work
+                    you are interested in. You can search by country, category
+                    of goods, preferred dates specified by users and keywords.
+                    Using the local and route search tabs you can also find
+                    deliveries that are local to you or along a planned route
+                    (great for finding backloads).
+                  </div>
+
+                  <!-- Sub Tabs -->
+
+                  <ul
+                    class="nav sub-tabs nav-pills mb-3"
+                    id="pills-tab"
+                    role="tablist"
+                  >
+                    <li class="nav-item" role="presentation">
+                      <button
+                        class="nav-link active"
+                        id="pills-country-tab"
+                        data-bs-toggle="pill"
+                        data-bs-target="#pills-country"
+                        type="button"
+                        role="tab"
+                        aria-controls="pills-country"
+                        aria-selected="true"
+                      >
+                        Country Search
+                      </button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                      <button
+                        class="nav-link"
+                        id="pills-route-tab"
+                        data-bs-toggle="pill"
+                        data-bs-target="#pills-route"
+                        type="button"
+                        role="tab"
+                        aria-controls="pills-route"
+                        aria-selected="false"
+                      >
+                        Route Search
+                      </button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                      <button
+                        class="nav-link"
+                        id="pills-local-tab"
+                        data-bs-toggle="pill"
+                        data-bs-target="#pills-local"
+                        type="button"
+                        role="tab"
+                        aria-controls="pills-local"
+                        aria-selected="false"
+                      >
+                        Local Search
+                      </button>
+                    </li>
+                  </ul>
+                  <div class="tab-content" id="pills-tabContent">
+                    <div
+                      class="tab-pane fade show active"
+                      id="pills-country"
+                      role="tabpanel"
+                      aria-labelledby="pills-country-tab"
+                    >
+                      <div class="sub-tabs-content">
+                        <div class="row">
+                          <div class="col-lg-6">
+                            <div class="search-input-box">
+                              <label>Collection Country</label>
+                              <div class="input-box-items">
+                                <input type="text" class="input-box" />
+                                <span
+                                  ><i class="fa-solid fa-location-dot"></i
+                                ></span>
+                              </div>
+                              <label>Delivery Country</label>
+                              <div class="input-box-items">
+                                <input type="text" class="input-box" />
+                                <span class="search-icon-2"
+                                  ><i class="fa-solid fa-location-dot"></i
+                                ></span>
+                              </div>
+                            </div>
+                          </div>
+
+                          <div class="col-lg-6">
+                            <div class="search-input-box">
+                              <div class="row">
+                                <div class="col-lg-6">
+                                  <div class="form-check">
+                                    <input
+                                      class="form-check-input"
+                                      type="checkbox"
+                                      id="Furniture"
+                                    />
+                                    <label
+                                      class="form-check-label"
+                                      for="Furniture"
+                                    >
+                                      Furniture & General Items (345)
+                                    </label>
+                                  </div>
+                                  <div class="form-check">
+                                    <input
+                                      class="form-check-input"
+                                      type="checkbox"
+                                      id="Boxes"
+                                    />
+                                    <label class="form-check-label" for="Boxes">
+                                      Boxes (345)
+                                    </label>
+                                  </div>
+                                  <div class="form-check">
+                                    <input
+                                      class="form-check-input"
+                                      type="checkbox"
+                                      id="Cars"
+                                    />
+                                    <label class="form-check-label" for="Cars">
+                                      Cars (345)
+                                    </label>
+                                  </div>
+                                  <div class="form-check">
+                                    <input
+                                      class="form-check-input"
+                                      type="checkbox"
+                                      id="Motorcycles"
+                                    />
+                                    <label
+                                      class="form-check-label"
+                                      for="Motorcycles"
+                                    >
+                                      Motorcycles (345)
+                                    </label>
+                                  </div>
+                                  <div class="form-check">
+                                    <input
+                                      class="form-check-input"
+                                      type="checkbox"
+                                      id="OtherVehicles"
+                                    />
+                                    <label
+                                      class="form-check-label"
+                                      for="OtherVehicles"
+                                    >
+                                      Other Vehicles (345)
+                                    </label>
+                                  </div>
+                                  <div class="form-check">
+                                    <input
+                                      class="form-check-input"
+                                      type="checkbox"
+                                      id="VehiclesParts"
+                                    />
+                                    <label
+                                      class="form-check-label"
+                                      for="VehiclesParts"
+                                    >
+                                      Vehicles Parts (345)
+                                    </label>
+                                  </div>
+                                  <div class="form-check">
+                                    <input
+                                      class="form-check-input"
+                                      type="checkbox"
+                                      id="MovingHome"
+                                    />
+                                    <label
+                                      class="form-check-label"
+                                      for="MovingHome"
+                                    >
+                                      Moving Home (345)
+                                    </label>
+                                  </div>
+                                </div>
+
+                                <div class="col-lg-6">
+                                  <div class="form-check">
+                                    <input
+                                      class="form-check-input"
+                                      type="checkbox"
+                                      id="Haulage"
+                                    />
+                                    <label
+                                      class="form-check-label"
+                                      for="Haulage"
+                                    >
+                                      Haulage (67)
+                                    </label>
+                                  </div>
+                                  <div class="form-check">
+                                    <input
+                                      class="form-check-input"
+                                      type="checkbox"
+                                      id="Boats"
+                                    />
+                                    <label class="form-check-label" for="Boats">
+                                      Boats (67)
+                                    </label>
+                                  </div>
+                                  <div class="form-check">
+                                    <input
+                                      class="form-check-input"
+                                      type="checkbox"
+                                      id="Pianos"
+                                    />
+                                    <label
+                                      class="form-check-label"
+                                      for="Pianos"
+                                    >
+                                      Pianos (67)
+                                    </label>
+                                  </div>
+                                  <div class="form-check">
+                                    <input
+                                      class="form-check-input"
+                                      type="checkbox"
+                                      id="PetsLivestock"
+                                    />
+                                    <label
+                                      class="form-check-label"
+                                      for="PetsLivestock"
+                                    >
+                                      Pets & Livestock (34)
+                                    </label>
+                                  </div>
+                                  <div class="form-check">
+                                    <input
+                                      class="form-check-input"
+                                      type="checkbox"
+                                      id="Other"
+                                    />
+                                    <label class="form-check-label" for="Other">
+                                      Other (1496)
+                                    </label>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div
+                      class="tab-pane fade"
+                      id="pills-route"
+                      role="tabpanel"
+                      aria-labelledby="pills-route-tab"
+                    >
+                      <div class="sub-tabs-content">
+                        <div class="row">
+                          <div class="col-lg-6">
+                            <div class="search-input-box">
+                              <label>Collection Country</label>
+                              <div class="input-box-items">
+                                <input type="text" class="input-box" />
+                                <span
+                                  ><i class="fa-solid fa-location-dot"></i
+                                ></span>
+                              </div>
+                              <label>Delivery Country</label>
+                              <div class="input-box-items">
+                                <input type="text" class="input-box" />
+                                <span class="search-icon-2"
+                                  ><i class="fa-solid fa-location-dot"></i
+                                ></span>
+                              </div>
+                            </div>
+                          </div>
+
+                          <div class="col-lg-6">
+                            <div class="search-input-box">
+                              <div class="row">
+                                <div class="col-lg-6">
+                                  <div class="form-check">
+                                    <input
+                                      class="form-check-input"
+                                      type="checkbox"
+                                      id="Furniture"
+                                    />
+                                    <label
+                                      class="form-check-label"
+                                      for="Furniture"
+                                    >
+                                      Furniture & General Items (345)
+                                    </label>
+                                  </div>
+                                  <div class="form-check">
+                                    <input
+                                      class="form-check-input"
+                                      type="checkbox"
+                                      id="Boxes"
+                                    />
+                                    <label class="form-check-label" for="Boxes">
+                                      Boxes (345)
+                                    </label>
+                                  </div>
+                                  <div class="form-check">
+                                    <input
+                                      class="form-check-input"
+                                      type="checkbox"
+                                      id="Cars"
+                                    />
+                                    <label class="form-check-label" for="Cars">
+                                      Cars (345)
+                                    </label>
+                                  </div>
+                                  <div class="form-check">
+                                    <input
+                                      class="form-check-input"
+                                      type="checkbox"
+                                      id="Motorcycles"
+                                    />
+                                    <label
+                                      class="form-check-label"
+                                      for="Motorcycles"
+                                    >
+                                      Motorcycles (345)
+                                    </label>
+                                  </div>
+                                  <div class="form-check">
+                                    <input
+                                      class="form-check-input"
+                                      type="checkbox"
+                                      id="OtherVehicles"
+                                    />
+                                    <label
+                                      class="form-check-label"
+                                      for="OtherVehicles"
+                                    >
+                                      Other Vehicles (345)
+                                    </label>
+                                  </div>
+                                  <div class="form-check">
+                                    <input
+                                      class="form-check-input"
+                                      type="checkbox"
+                                      id="VehiclesParts"
+                                    />
+                                    <label
+                                      class="form-check-label"
+                                      for="VehiclesParts"
+                                    >
+                                      Vehicles Parts (345)
+                                    </label>
+                                  </div>
+                                  <div class="form-check">
+                                    <input
+                                      class="form-check-input"
+                                      type="checkbox"
+                                      id="MovingHome"
+                                    />
+                                    <label
+                                      class="form-check-label"
+                                      for="MovingHome"
+                                    >
+                                      Moving Home (345)
+                                    </label>
+                                  </div>
+                                </div>
+
+                                <div class="col-lg-6">
+                                  <div class="form-check">
+                                    <input
+                                      class="form-check-input"
+                                      type="checkbox"
+                                      id="Haulage"
+                                    />
+                                    <label
+                                      class="form-check-label"
+                                      for="Haulage"
+                                    >
+                                      Haulage (67)
+                                    </label>
+                                  </div>
+                                  <div class="form-check">
+                                    <input
+                                      class="form-check-input"
+                                      type="checkbox"
+                                      id="Boats"
+                                    />
+                                    <label class="form-check-label" for="Boats">
+                                      Boats (67)
+                                    </label>
+                                  </div>
+                                  <div class="form-check">
+                                    <input
+                                      class="form-check-input"
+                                      type="checkbox"
+                                      id="Pianos"
+                                    />
+                                    <label
+                                      class="form-check-label"
+                                      for="Pianos"
+                                    >
+                                      Pianos (67)
+                                    </label>
+                                  </div>
+                                  <div class="form-check">
+                                    <input
+                                      class="form-check-input"
+                                      type="checkbox"
+                                      id="PetsLivestock"
+                                    />
+                                    <label
+                                      class="form-check-label"
+                                      for="PetsLivestock"
+                                    >
+                                      Pets & Livestock (34)
+                                    </label>
+                                  </div>
+                                  <div class="form-check">
+                                    <input
+                                      class="form-check-input"
+                                      type="checkbox"
+                                      id="Other"
+                                    />
+                                    <label class="form-check-label" for="Other">
+                                      Other (1496)
+                                    </label>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div
+                      class="tab-pane fade"
+                      id="pills-local"
+                      role="tabpanel"
+                      aria-labelledby="pills-local-tab"
+                    >
+                      <div class="sub-tabs-content">
+                        <div class="row">
+                          <div class="col-lg-6">
+                            <div class="search-input-box">
+                              <label>Collection Country</label>
+                              <div class="input-box-items">
+                                <input type="text" class="input-box" />
+                                <span
+                                  ><i class="fa-solid fa-location-dot"></i
+                                ></span>
+                              </div>
+                              <label>Delivery Country</label>
+                              <div class="input-box-items">
+                                <input type="text" class="input-box" />
+                                <span class="search-icon-2"
+                                  ><i class="fa-solid fa-location-dot"></i
+                                ></span>
+                              </div>
+                            </div>
+                          </div>
+
+                          <div class="col-lg-6">
+                            <div class="search-input-box">
+                              <div class="row">
+                                <div class="col-lg-6">
+                                  <div class="form-check">
+                                    <input
+                                      class="form-check-input"
+                                      type="checkbox"
+                                      id="Furniture"
+                                    />
+                                    <label
+                                      class="form-check-label"
+                                      for="Furniture"
+                                    >
+                                      Furniture & General Items (345)
+                                    </label>
+                                  </div>
+                                  <div class="form-check">
+                                    <input
+                                      class="form-check-input"
+                                      type="checkbox"
+                                      id="Boxes"
+                                    />
+                                    <label class="form-check-label" for="Boxes">
+                                      Boxes (345)
+                                    </label>
+                                  </div>
+                                  <div class="form-check">
+                                    <input
+                                      class="form-check-input"
+                                      type="checkbox"
+                                      id="Cars"
+                                    />
+                                    <label class="form-check-label" for="Cars">
+                                      Cars (345)
+                                    </label>
+                                  </div>
+                                  <div class="form-check">
+                                    <input
+                                      class="form-check-input"
+                                      type="checkbox"
+                                      id="Motorcycles"
+                                    />
+                                    <label
+                                      class="form-check-label"
+                                      for="Motorcycles"
+                                    >
+                                      Motorcycles (345)
+                                    </label>
+                                  </div>
+                                  <div class="form-check">
+                                    <input
+                                      class="form-check-input"
+                                      type="checkbox"
+                                      id="OtherVehicles"
+                                    />
+                                    <label
+                                      class="form-check-label"
+                                      for="OtherVehicles"
+                                    >
+                                      Other Vehicles (345)
+                                    </label>
+                                  </div>
+                                  <div class="form-check">
+                                    <input
+                                      class="form-check-input"
+                                      type="checkbox"
+                                      id="VehiclesParts"
+                                    />
+                                    <label
+                                      class="form-check-label"
+                                      for="VehiclesParts"
+                                    >
+                                      Vehicles Parts (345)
+                                    </label>
+                                  </div>
+                                  <div class="form-check">
+                                    <input
+                                      class="form-check-input"
+                                      type="checkbox"
+                                      id="MovingHome"
+                                    />
+                                    <label
+                                      class="form-check-label"
+                                      for="MovingHome"
+                                    >
+                                      Moving Home (345)
+                                    </label>
+                                  </div>
+                                </div>
+
+                                <div class="col-lg-6">
+                                  <div class="form-check">
+                                    <input
+                                      class="form-check-input"
+                                      type="checkbox"
+                                      id="Haulage"
+                                    />
+                                    <label
+                                      class="form-check-label"
+                                      for="Haulage"
+                                    >
+                                      Haulage (67)
+                                    </label>
+                                  </div>
+                                  <div class="form-check">
+                                    <input
+                                      class="form-check-input"
+                                      type="checkbox"
+                                      id="Boats"
+                                    />
+                                    <label class="form-check-label" for="Boats">
+                                      Boats (67)
+                                    </label>
+                                  </div>
+                                  <div class="form-check">
+                                    <input
+                                      class="form-check-input"
+                                      type="checkbox"
+                                      id="Pianos"
+                                    />
+                                    <label
+                                      class="form-check-label"
+                                      for="Pianos"
+                                    >
+                                      Pianos (67)
+                                    </label>
+                                  </div>
+                                  <div class="form-check">
+                                    <input
+                                      class="form-check-input"
+                                      type="checkbox"
+                                      id="PetsLivestock"
+                                    />
+                                    <label
+                                      class="form-check-label"
+                                      for="PetsLivestock"
+                                    >
+                                      Pets & Livestock (34)
+                                    </label>
+                                  </div>
+                                  <div class="form-check">
+                                    <input
+                                      class="form-check-input"
+                                      type="checkbox"
+                                      id="Other"
+                                    />
+                                    <label class="form-check-label" for="Other">
+                                      Other (1496)
+                                    </label>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- search deliveri tab btn -->
+                  <div class="row">
+                    <div class="col-sm-12">
+                      <div
+                        class="search-deliver-tabs-btn d-flex justify-content-center"
+                      >
+                        <button type="button">
+                          <span><i class="fa-solid fa-arrows-rotate"></i></span
+                          >Reset
+                        </button>
+                        <button type="button">
+                          <span
+                            ><i class="fa-solid fa-magnifying-glass"></i></span
+                          >Search
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
               </div>
               <div
                 class="tab-pane fade"
@@ -215,7 +1482,647 @@
                 role="tabpanel"
                 aria-labelledby="nav-place-tab"
               >
-                Place
+                <div class="search-tab-content">
+                  <div class="search-alert-box">
+                    <span class="search-close-btn"
+                      ><i class="fa-solid fa-xmark"></i
+                    ></span>
+                    Below you will see thousands of deliveries awaiting quotes.
+                    You can use the search tool to find the exact kind of work
+                    you are interested in. You can search by country, category
+                    of goods, preferred dates specified by users and keywords.
+                    Using the local and route search tabs you can also find
+                    deliveries that are local to you or along a planned route
+                    (great for finding backloads).
+                  </div>
+
+                  <!-- Sub Tabs -->
+
+                  <ul
+                    class="nav sub-tabs nav-pills mb-3"
+                    id="pills-tab"
+                    role="tablist"
+                  >
+                    <li class="nav-item" role="presentation">
+                      <button
+                        class="nav-link active"
+                        id="pills-country-tab"
+                        data-bs-toggle="pill"
+                        data-bs-target="#pills-country"
+                        type="button"
+                        role="tab"
+                        aria-controls="pills-country"
+                        aria-selected="true"
+                      >
+                        Country Search
+                      </button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                      <button
+                        class="nav-link"
+                        id="pills-route-tab"
+                        data-bs-toggle="pill"
+                        data-bs-target="#pills-route"
+                        type="button"
+                        role="tab"
+                        aria-controls="pills-route"
+                        aria-selected="false"
+                      >
+                        Route Search
+                      </button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                      <button
+                        class="nav-link"
+                        id="pills-local-tab"
+                        data-bs-toggle="pill"
+                        data-bs-target="#pills-local"
+                        type="button"
+                        role="tab"
+                        aria-controls="pills-local"
+                        aria-selected="false"
+                      >
+                        Local Search
+                      </button>
+                    </li>
+                  </ul>
+                  <div class="tab-content" id="pills-tabContent">
+                    <div
+                      class="tab-pane fade show active"
+                      id="pills-country"
+                      role="tabpanel"
+                      aria-labelledby="pills-country-tab"
+                    >
+                      <div class="sub-tabs-content">
+                        <div class="row">
+                          <div class="col-lg-6">
+                            <div class="search-input-box">
+                              <label>Collection Country</label>
+                              <div class="input-box-items">
+                                <input type="text" class="input-box" />
+                                <span
+                                  ><i class="fa-solid fa-location-dot"></i
+                                ></span>
+                              </div>
+                              <label>Delivery Country</label>
+                              <div class="input-box-items">
+                                <input type="text" class="input-box" />
+                                <span class="search-icon-2"
+                                  ><i class="fa-solid fa-location-dot"></i
+                                ></span>
+                              </div>
+                            </div>
+                          </div>
+
+                          <div class="col-lg-6">
+                            <div class="search-input-box">
+                              <div class="row">
+                                <div class="col-lg-6">
+                                  <div class="form-check">
+                                    <input
+                                      class="form-check-input"
+                                      type="checkbox"
+                                      id="Furniture"
+                                    />
+                                    <label
+                                      class="form-check-label"
+                                      for="Furniture"
+                                    >
+                                      Furniture & General Items (345)
+                                    </label>
+                                  </div>
+                                  <div class="form-check">
+                                    <input
+                                      class="form-check-input"
+                                      type="checkbox"
+                                      id="Boxes"
+                                    />
+                                    <label class="form-check-label" for="Boxes">
+                                      Boxes (345)
+                                    </label>
+                                  </div>
+                                  <div class="form-check">
+                                    <input
+                                      class="form-check-input"
+                                      type="checkbox"
+                                      id="Cars"
+                                    />
+                                    <label class="form-check-label" for="Cars">
+                                      Cars (345)
+                                    </label>
+                                  </div>
+                                  <div class="form-check">
+                                    <input
+                                      class="form-check-input"
+                                      type="checkbox"
+                                      id="Motorcycles"
+                                    />
+                                    <label
+                                      class="form-check-label"
+                                      for="Motorcycles"
+                                    >
+                                      Motorcycles (345)
+                                    </label>
+                                  </div>
+                                  <div class="form-check">
+                                    <input
+                                      class="form-check-input"
+                                      type="checkbox"
+                                      id="OtherVehicles"
+                                    />
+                                    <label
+                                      class="form-check-label"
+                                      for="OtherVehicles"
+                                    >
+                                      Other Vehicles (345)
+                                    </label>
+                                  </div>
+                                  <div class="form-check">
+                                    <input
+                                      class="form-check-input"
+                                      type="checkbox"
+                                      id="VehiclesParts"
+                                    />
+                                    <label
+                                      class="form-check-label"
+                                      for="VehiclesParts"
+                                    >
+                                      Vehicles Parts (345)
+                                    </label>
+                                  </div>
+                                  <div class="form-check">
+                                    <input
+                                      class="form-check-input"
+                                      type="checkbox"
+                                      id="MovingHome"
+                                    />
+                                    <label
+                                      class="form-check-label"
+                                      for="MovingHome"
+                                    >
+                                      Moving Home (345)
+                                    </label>
+                                  </div>
+                                </div>
+
+                                <div class="col-lg-6">
+                                  <div class="form-check">
+                                    <input
+                                      class="form-check-input"
+                                      type="checkbox"
+                                      id="Haulage"
+                                    />
+                                    <label
+                                      class="form-check-label"
+                                      for="Haulage"
+                                    >
+                                      Haulage (67)
+                                    </label>
+                                  </div>
+                                  <div class="form-check">
+                                    <input
+                                      class="form-check-input"
+                                      type="checkbox"
+                                      id="Boats"
+                                    />
+                                    <label class="form-check-label" for="Boats">
+                                      Boats (67)
+                                    </label>
+                                  </div>
+                                  <div class="form-check">
+                                    <input
+                                      class="form-check-input"
+                                      type="checkbox"
+                                      id="Pianos"
+                                    />
+                                    <label
+                                      class="form-check-label"
+                                      for="Pianos"
+                                    >
+                                      Pianos (67)
+                                    </label>
+                                  </div>
+                                  <div class="form-check">
+                                    <input
+                                      class="form-check-input"
+                                      type="checkbox"
+                                      id="PetsLivestock"
+                                    />
+                                    <label
+                                      class="form-check-label"
+                                      for="PetsLivestock"
+                                    >
+                                      Pets & Livestock (34)
+                                    </label>
+                                  </div>
+                                  <div class="form-check">
+                                    <input
+                                      class="form-check-input"
+                                      type="checkbox"
+                                      id="Other"
+                                    />
+                                    <label class="form-check-label" for="Other">
+                                      Other (1496)
+                                    </label>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div
+                      class="tab-pane fade"
+                      id="pills-route"
+                      role="tabpanel"
+                      aria-labelledby="pills-route-tab"
+                    >
+                      <div class="sub-tabs-content">
+                        <div class="row">
+                          <div class="col-lg-6">
+                            <div class="search-input-box">
+                              <label>Collection Country</label>
+                              <div class="input-box-items">
+                                <input type="text" class="input-box" />
+                                <span
+                                  ><i class="fa-solid fa-location-dot"></i
+                                ></span>
+                              </div>
+                              <label>Delivery Country</label>
+                              <div class="input-box-items">
+                                <input type="text" class="input-box" />
+                                <span class="search-icon-2"
+                                  ><i class="fa-solid fa-location-dot"></i
+                                ></span>
+                              </div>
+                            </div>
+                          </div>
+
+                          <div class="col-lg-6">
+                            <div class="search-input-box">
+                              <div class="row">
+                                <div class="col-lg-6">
+                                  <div class="form-check">
+                                    <input
+                                      class="form-check-input"
+                                      type="checkbox"
+                                      id="Furniture"
+                                    />
+                                    <label
+                                      class="form-check-label"
+                                      for="Furniture"
+                                    >
+                                      Furniture & General Items (345)
+                                    </label>
+                                  </div>
+                                  <div class="form-check">
+                                    <input
+                                      class="form-check-input"
+                                      type="checkbox"
+                                      id="Boxes"
+                                    />
+                                    <label class="form-check-label" for="Boxes">
+                                      Boxes (345)
+                                    </label>
+                                  </div>
+                                  <div class="form-check">
+                                    <input
+                                      class="form-check-input"
+                                      type="checkbox"
+                                      id="Cars"
+                                    />
+                                    <label class="form-check-label" for="Cars">
+                                      Cars (345)
+                                    </label>
+                                  </div>
+                                  <div class="form-check">
+                                    <input
+                                      class="form-check-input"
+                                      type="checkbox"
+                                      id="Motorcycles"
+                                    />
+                                    <label
+                                      class="form-check-label"
+                                      for="Motorcycles"
+                                    >
+                                      Motorcycles (345)
+                                    </label>
+                                  </div>
+                                  <div class="form-check">
+                                    <input
+                                      class="form-check-input"
+                                      type="checkbox"
+                                      id="OtherVehicles"
+                                    />
+                                    <label
+                                      class="form-check-label"
+                                      for="OtherVehicles"
+                                    >
+                                      Other Vehicles (345)
+                                    </label>
+                                  </div>
+                                  <div class="form-check">
+                                    <input
+                                      class="form-check-input"
+                                      type="checkbox"
+                                      id="VehiclesParts"
+                                    />
+                                    <label
+                                      class="form-check-label"
+                                      for="VehiclesParts"
+                                    >
+                                      Vehicles Parts (345)
+                                    </label>
+                                  </div>
+                                  <div class="form-check">
+                                    <input
+                                      class="form-check-input"
+                                      type="checkbox"
+                                      id="MovingHome"
+                                    />
+                                    <label
+                                      class="form-check-label"
+                                      for="MovingHome"
+                                    >
+                                      Moving Home (345)
+                                    </label>
+                                  </div>
+                                </div>
+
+                                <div class="col-lg-6">
+                                  <div class="form-check">
+                                    <input
+                                      class="form-check-input"
+                                      type="checkbox"
+                                      id="Haulage"
+                                    />
+                                    <label
+                                      class="form-check-label"
+                                      for="Haulage"
+                                    >
+                                      Haulage (67)
+                                    </label>
+                                  </div>
+                                  <div class="form-check">
+                                    <input
+                                      class="form-check-input"
+                                      type="checkbox"
+                                      id="Boats"
+                                    />
+                                    <label class="form-check-label" for="Boats">
+                                      Boats (67)
+                                    </label>
+                                  </div>
+                                  <div class="form-check">
+                                    <input
+                                      class="form-check-input"
+                                      type="checkbox"
+                                      id="Pianos"
+                                    />
+                                    <label
+                                      class="form-check-label"
+                                      for="Pianos"
+                                    >
+                                      Pianos (67)
+                                    </label>
+                                  </div>
+                                  <div class="form-check">
+                                    <input
+                                      class="form-check-input"
+                                      type="checkbox"
+                                      id="PetsLivestock"
+                                    />
+                                    <label
+                                      class="form-check-label"
+                                      for="PetsLivestock"
+                                    >
+                                      Pets & Livestock (34)
+                                    </label>
+                                  </div>
+                                  <div class="form-check">
+                                    <input
+                                      class="form-check-input"
+                                      type="checkbox"
+                                      id="Other"
+                                    />
+                                    <label class="form-check-label" for="Other">
+                                      Other (1496)
+                                    </label>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div
+                      class="tab-pane fade"
+                      id="pills-local"
+                      role="tabpanel"
+                      aria-labelledby="pills-local-tab"
+                    >
+                      <div class="sub-tabs-content">
+                        <div class="row">
+                          <div class="col-lg-6">
+                            <div class="search-input-box">
+                              <label>Collection Country</label>
+                              <div class="input-box-items">
+                                <input type="text" class="input-box" />
+                                <span
+                                  ><i class="fa-solid fa-location-dot"></i
+                                ></span>
+                              </div>
+                              <label>Delivery Country</label>
+                              <div class="input-box-items">
+                                <input type="text" class="input-box" />
+                                <span class="search-icon-2"
+                                  ><i class="fa-solid fa-location-dot"></i
+                                ></span>
+                              </div>
+                            </div>
+                          </div>
+
+                          <div class="col-lg-6">
+                            <div class="search-input-box">
+                              <div class="row">
+                                <div class="col-lg-6">
+                                  <div class="form-check">
+                                    <input
+                                      class="form-check-input"
+                                      type="checkbox"
+                                      id="Furniture"
+                                    />
+                                    <label
+                                      class="form-check-label"
+                                      for="Furniture"
+                                    >
+                                      Furniture & General Items (345)
+                                    </label>
+                                  </div>
+                                  <div class="form-check">
+                                    <input
+                                      class="form-check-input"
+                                      type="checkbox"
+                                      id="Boxes"
+                                    />
+                                    <label class="form-check-label" for="Boxes">
+                                      Boxes (345)
+                                    </label>
+                                  </div>
+                                  <div class="form-check">
+                                    <input
+                                      class="form-check-input"
+                                      type="checkbox"
+                                      id="Cars"
+                                    />
+                                    <label class="form-check-label" for="Cars">
+                                      Cars (345)
+                                    </label>
+                                  </div>
+                                  <div class="form-check">
+                                    <input
+                                      class="form-check-input"
+                                      type="checkbox"
+                                      id="Motorcycles"
+                                    />
+                                    <label
+                                      class="form-check-label"
+                                      for="Motorcycles"
+                                    >
+                                      Motorcycles (345)
+                                    </label>
+                                  </div>
+                                  <div class="form-check">
+                                    <input
+                                      class="form-check-input"
+                                      type="checkbox"
+                                      id="OtherVehicles"
+                                    />
+                                    <label
+                                      class="form-check-label"
+                                      for="OtherVehicles"
+                                    >
+                                      Other Vehicles (345)
+                                    </label>
+                                  </div>
+                                  <div class="form-check">
+                                    <input
+                                      class="form-check-input"
+                                      type="checkbox"
+                                      id="VehiclesParts"
+                                    />
+                                    <label
+                                      class="form-check-label"
+                                      for="VehiclesParts"
+                                    >
+                                      Vehicles Parts (345)
+                                    </label>
+                                  </div>
+                                  <div class="form-check">
+                                    <input
+                                      class="form-check-input"
+                                      type="checkbox"
+                                      id="MovingHome"
+                                    />
+                                    <label
+                                      class="form-check-label"
+                                      for="MovingHome"
+                                    >
+                                      Moving Home (345)
+                                    </label>
+                                  </div>
+                                </div>
+
+                                <div class="col-lg-6">
+                                  <div class="form-check">
+                                    <input
+                                      class="form-check-input"
+                                      type="checkbox"
+                                      id="Haulage"
+                                    />
+                                    <label
+                                      class="form-check-label"
+                                      for="Haulage"
+                                    >
+                                      Haulage (67)
+                                    </label>
+                                  </div>
+                                  <div class="form-check">
+                                    <input
+                                      class="form-check-input"
+                                      type="checkbox"
+                                      id="Boats"
+                                    />
+                                    <label class="form-check-label" for="Boats">
+                                      Boats (67)
+                                    </label>
+                                  </div>
+                                  <div class="form-check">
+                                    <input
+                                      class="form-check-input"
+                                      type="checkbox"
+                                      id="Pianos"
+                                    />
+                                    <label
+                                      class="form-check-label"
+                                      for="Pianos"
+                                    >
+                                      Pianos (67)
+                                    </label>
+                                  </div>
+                                  <div class="form-check">
+                                    <input
+                                      class="form-check-input"
+                                      type="checkbox"
+                                      id="PetsLivestock"
+                                    />
+                                    <label
+                                      class="form-check-label"
+                                      for="PetsLivestock"
+                                    >
+                                      Pets & Livestock (34)
+                                    </label>
+                                  </div>
+                                  <div class="form-check">
+                                    <input
+                                      class="form-check-input"
+                                      type="checkbox"
+                                      id="Other"
+                                    />
+                                    <label class="form-check-label" for="Other">
+                                      Other (1496)
+                                    </label>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- search deliveri tab btn -->
+                  <div class="row">
+                    <div class="col-sm-12">
+                      <div
+                        class="search-deliver-tabs-btn d-flex justify-content-center"
+                      >
+                        <button type="button">
+                          <span><i class="fa-solid fa-arrows-rotate"></i></span
+                          >Reset
+                        </button>
+                        <button type="button">
+                          <span
+                            ><i class="fa-solid fa-magnifying-glass"></i></span
+                          >Search
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
               </div>
               <div
                 class="tab-pane fade"
@@ -223,7 +2130,647 @@
                 role="tabpanel"
                 aria-labelledby="nav-collect-tab"
               >
-                Collect
+                <div class="search-tab-content">
+                  <div class="search-alert-box">
+                    <span class="search-close-btn"
+                      ><i class="fa-solid fa-xmark"></i
+                    ></span>
+                    Below you will see thousands of deliveries awaiting quotes.
+                    You can use the search tool to find the exact kind of work
+                    you are interested in. You can search by country, category
+                    of goods, preferred dates specified by users and keywords.
+                    Using the local and route search tabs you can also find
+                    deliveries that are local to you or along a planned route
+                    (great for finding backloads).
+                  </div>
+
+                  <!-- Sub Tabs -->
+
+                  <ul
+                    class="nav sub-tabs nav-pills mb-3"
+                    id="pills-tab"
+                    role="tablist"
+                  >
+                    <li class="nav-item" role="presentation">
+                      <button
+                        class="nav-link active"
+                        id="pills-country-tab"
+                        data-bs-toggle="pill"
+                        data-bs-target="#pills-country"
+                        type="button"
+                        role="tab"
+                        aria-controls="pills-country"
+                        aria-selected="true"
+                      >
+                        Country Search
+                      </button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                      <button
+                        class="nav-link"
+                        id="pills-route-tab"
+                        data-bs-toggle="pill"
+                        data-bs-target="#pills-route"
+                        type="button"
+                        role="tab"
+                        aria-controls="pills-route"
+                        aria-selected="false"
+                      >
+                        Route Search
+                      </button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                      <button
+                        class="nav-link"
+                        id="pills-local-tab"
+                        data-bs-toggle="pill"
+                        data-bs-target="#pills-local"
+                        type="button"
+                        role="tab"
+                        aria-controls="pills-local"
+                        aria-selected="false"
+                      >
+                        Local Search
+                      </button>
+                    </li>
+                  </ul>
+                  <div class="tab-content" id="pills-tabContent">
+                    <div
+                      class="tab-pane fade show active"
+                      id="pills-country"
+                      role="tabpanel"
+                      aria-labelledby="pills-country-tab"
+                    >
+                      <div class="sub-tabs-content">
+                        <div class="row">
+                          <div class="col-lg-6">
+                            <div class="search-input-box">
+                              <label>Collection Country</label>
+                              <div class="input-box-items">
+                                <input type="text" class="input-box" />
+                                <span
+                                  ><i class="fa-solid fa-location-dot"></i
+                                ></span>
+                              </div>
+                              <label>Delivery Country</label>
+                              <div class="input-box-items">
+                                <input type="text" class="input-box" />
+                                <span class="search-icon-2"
+                                  ><i class="fa-solid fa-location-dot"></i
+                                ></span>
+                              </div>
+                            </div>
+                          </div>
+
+                          <div class="col-lg-6">
+                            <div class="search-input-box">
+                              <div class="row">
+                                <div class="col-lg-6">
+                                  <div class="form-check">
+                                    <input
+                                      class="form-check-input"
+                                      type="checkbox"
+                                      id="Furniture"
+                                    />
+                                    <label
+                                      class="form-check-label"
+                                      for="Furniture"
+                                    >
+                                      Furniture & General Items (345)
+                                    </label>
+                                  </div>
+                                  <div class="form-check">
+                                    <input
+                                      class="form-check-input"
+                                      type="checkbox"
+                                      id="Boxes"
+                                    />
+                                    <label class="form-check-label" for="Boxes">
+                                      Boxes (345)
+                                    </label>
+                                  </div>
+                                  <div class="form-check">
+                                    <input
+                                      class="form-check-input"
+                                      type="checkbox"
+                                      id="Cars"
+                                    />
+                                    <label class="form-check-label" for="Cars">
+                                      Cars (345)
+                                    </label>
+                                  </div>
+                                  <div class="form-check">
+                                    <input
+                                      class="form-check-input"
+                                      type="checkbox"
+                                      id="Motorcycles"
+                                    />
+                                    <label
+                                      class="form-check-label"
+                                      for="Motorcycles"
+                                    >
+                                      Motorcycles (345)
+                                    </label>
+                                  </div>
+                                  <div class="form-check">
+                                    <input
+                                      class="form-check-input"
+                                      type="checkbox"
+                                      id="OtherVehicles"
+                                    />
+                                    <label
+                                      class="form-check-label"
+                                      for="OtherVehicles"
+                                    >
+                                      Other Vehicles (345)
+                                    </label>
+                                  </div>
+                                  <div class="form-check">
+                                    <input
+                                      class="form-check-input"
+                                      type="checkbox"
+                                      id="VehiclesParts"
+                                    />
+                                    <label
+                                      class="form-check-label"
+                                      for="VehiclesParts"
+                                    >
+                                      Vehicles Parts (345)
+                                    </label>
+                                  </div>
+                                  <div class="form-check">
+                                    <input
+                                      class="form-check-input"
+                                      type="checkbox"
+                                      id="MovingHome"
+                                    />
+                                    <label
+                                      class="form-check-label"
+                                      for="MovingHome"
+                                    >
+                                      Moving Home (345)
+                                    </label>
+                                  </div>
+                                </div>
+
+                                <div class="col-lg-6">
+                                  <div class="form-check">
+                                    <input
+                                      class="form-check-input"
+                                      type="checkbox"
+                                      id="Haulage"
+                                    />
+                                    <label
+                                      class="form-check-label"
+                                      for="Haulage"
+                                    >
+                                      Haulage (67)
+                                    </label>
+                                  </div>
+                                  <div class="form-check">
+                                    <input
+                                      class="form-check-input"
+                                      type="checkbox"
+                                      id="Boats"
+                                    />
+                                    <label class="form-check-label" for="Boats">
+                                      Boats (67)
+                                    </label>
+                                  </div>
+                                  <div class="form-check">
+                                    <input
+                                      class="form-check-input"
+                                      type="checkbox"
+                                      id="Pianos"
+                                    />
+                                    <label
+                                      class="form-check-label"
+                                      for="Pianos"
+                                    >
+                                      Pianos (67)
+                                    </label>
+                                  </div>
+                                  <div class="form-check">
+                                    <input
+                                      class="form-check-input"
+                                      type="checkbox"
+                                      id="PetsLivestock"
+                                    />
+                                    <label
+                                      class="form-check-label"
+                                      for="PetsLivestock"
+                                    >
+                                      Pets & Livestock (34)
+                                    </label>
+                                  </div>
+                                  <div class="form-check">
+                                    <input
+                                      class="form-check-input"
+                                      type="checkbox"
+                                      id="Other"
+                                    />
+                                    <label class="form-check-label" for="Other">
+                                      Other (1496)
+                                    </label>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div
+                      class="tab-pane fade"
+                      id="pills-route"
+                      role="tabpanel"
+                      aria-labelledby="pills-route-tab"
+                    >
+                      <div class="sub-tabs-content">
+                        <div class="row">
+                          <div class="col-lg-6">
+                            <div class="search-input-box">
+                              <label>Collection Country</label>
+                              <div class="input-box-items">
+                                <input type="text" class="input-box" />
+                                <span
+                                  ><i class="fa-solid fa-location-dot"></i
+                                ></span>
+                              </div>
+                              <label>Delivery Country</label>
+                              <div class="input-box-items">
+                                <input type="text" class="input-box" />
+                                <span class="search-icon-2"
+                                  ><i class="fa-solid fa-location-dot"></i
+                                ></span>
+                              </div>
+                            </div>
+                          </div>
+
+                          <div class="col-lg-6">
+                            <div class="search-input-box">
+                              <div class="row">
+                                <div class="col-lg-6">
+                                  <div class="form-check">
+                                    <input
+                                      class="form-check-input"
+                                      type="checkbox"
+                                      id="Furniture"
+                                    />
+                                    <label
+                                      class="form-check-label"
+                                      for="Furniture"
+                                    >
+                                      Furniture & General Items (345)
+                                    </label>
+                                  </div>
+                                  <div class="form-check">
+                                    <input
+                                      class="form-check-input"
+                                      type="checkbox"
+                                      id="Boxes"
+                                    />
+                                    <label class="form-check-label" for="Boxes">
+                                      Boxes (345)
+                                    </label>
+                                  </div>
+                                  <div class="form-check">
+                                    <input
+                                      class="form-check-input"
+                                      type="checkbox"
+                                      id="Cars"
+                                    />
+                                    <label class="form-check-label" for="Cars">
+                                      Cars (345)
+                                    </label>
+                                  </div>
+                                  <div class="form-check">
+                                    <input
+                                      class="form-check-input"
+                                      type="checkbox"
+                                      id="Motorcycles"
+                                    />
+                                    <label
+                                      class="form-check-label"
+                                      for="Motorcycles"
+                                    >
+                                      Motorcycles (345)
+                                    </label>
+                                  </div>
+                                  <div class="form-check">
+                                    <input
+                                      class="form-check-input"
+                                      type="checkbox"
+                                      id="OtherVehicles"
+                                    />
+                                    <label
+                                      class="form-check-label"
+                                      for="OtherVehicles"
+                                    >
+                                      Other Vehicles (345)
+                                    </label>
+                                  </div>
+                                  <div class="form-check">
+                                    <input
+                                      class="form-check-input"
+                                      type="checkbox"
+                                      id="VehiclesParts"
+                                    />
+                                    <label
+                                      class="form-check-label"
+                                      for="VehiclesParts"
+                                    >
+                                      Vehicles Parts (345)
+                                    </label>
+                                  </div>
+                                  <div class="form-check">
+                                    <input
+                                      class="form-check-input"
+                                      type="checkbox"
+                                      id="MovingHome"
+                                    />
+                                    <label
+                                      class="form-check-label"
+                                      for="MovingHome"
+                                    >
+                                      Moving Home (345)
+                                    </label>
+                                  </div>
+                                </div>
+
+                                <div class="col-lg-6">
+                                  <div class="form-check">
+                                    <input
+                                      class="form-check-input"
+                                      type="checkbox"
+                                      id="Haulage"
+                                    />
+                                    <label
+                                      class="form-check-label"
+                                      for="Haulage"
+                                    >
+                                      Haulage (67)
+                                    </label>
+                                  </div>
+                                  <div class="form-check">
+                                    <input
+                                      class="form-check-input"
+                                      type="checkbox"
+                                      id="Boats"
+                                    />
+                                    <label class="form-check-label" for="Boats">
+                                      Boats (67)
+                                    </label>
+                                  </div>
+                                  <div class="form-check">
+                                    <input
+                                      class="form-check-input"
+                                      type="checkbox"
+                                      id="Pianos"
+                                    />
+                                    <label
+                                      class="form-check-label"
+                                      for="Pianos"
+                                    >
+                                      Pianos (67)
+                                    </label>
+                                  </div>
+                                  <div class="form-check">
+                                    <input
+                                      class="form-check-input"
+                                      type="checkbox"
+                                      id="PetsLivestock"
+                                    />
+                                    <label
+                                      class="form-check-label"
+                                      for="PetsLivestock"
+                                    >
+                                      Pets & Livestock (34)
+                                    </label>
+                                  </div>
+                                  <div class="form-check">
+                                    <input
+                                      class="form-check-input"
+                                      type="checkbox"
+                                      id="Other"
+                                    />
+                                    <label class="form-check-label" for="Other">
+                                      Other (1496)
+                                    </label>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div
+                      class="tab-pane fade"
+                      id="pills-local"
+                      role="tabpanel"
+                      aria-labelledby="pills-local-tab"
+                    >
+                      <div class="sub-tabs-content">
+                        <div class="row">
+                          <div class="col-lg-6">
+                            <div class="search-input-box">
+                              <label>Collection Country</label>
+                              <div class="input-box-items">
+                                <input type="text" class="input-box" />
+                                <span
+                                  ><i class="fa-solid fa-location-dot"></i
+                                ></span>
+                              </div>
+                              <label>Delivery Country</label>
+                              <div class="input-box-items">
+                                <input type="text" class="input-box" />
+                                <span class="search-icon-2"
+                                  ><i class="fa-solid fa-location-dot"></i
+                                ></span>
+                              </div>
+                            </div>
+                          </div>
+
+                          <div class="col-lg-6">
+                            <div class="search-input-box">
+                              <div class="row">
+                                <div class="col-lg-6">
+                                  <div class="form-check">
+                                    <input
+                                      class="form-check-input"
+                                      type="checkbox"
+                                      id="Furniture"
+                                    />
+                                    <label
+                                      class="form-check-label"
+                                      for="Furniture"
+                                    >
+                                      Furniture & General Items (345)
+                                    </label>
+                                  </div>
+                                  <div class="form-check">
+                                    <input
+                                      class="form-check-input"
+                                      type="checkbox"
+                                      id="Boxes"
+                                    />
+                                    <label class="form-check-label" for="Boxes">
+                                      Boxes (345)
+                                    </label>
+                                  </div>
+                                  <div class="form-check">
+                                    <input
+                                      class="form-check-input"
+                                      type="checkbox"
+                                      id="Cars"
+                                    />
+                                    <label class="form-check-label" for="Cars">
+                                      Cars (345)
+                                    </label>
+                                  </div>
+                                  <div class="form-check">
+                                    <input
+                                      class="form-check-input"
+                                      type="checkbox"
+                                      id="Motorcycles"
+                                    />
+                                    <label
+                                      class="form-check-label"
+                                      for="Motorcycles"
+                                    >
+                                      Motorcycles (345)
+                                    </label>
+                                  </div>
+                                  <div class="form-check">
+                                    <input
+                                      class="form-check-input"
+                                      type="checkbox"
+                                      id="OtherVehicles"
+                                    />
+                                    <label
+                                      class="form-check-label"
+                                      for="OtherVehicles"
+                                    >
+                                      Other Vehicles (345)
+                                    </label>
+                                  </div>
+                                  <div class="form-check">
+                                    <input
+                                      class="form-check-input"
+                                      type="checkbox"
+                                      id="VehiclesParts"
+                                    />
+                                    <label
+                                      class="form-check-label"
+                                      for="VehiclesParts"
+                                    >
+                                      Vehicles Parts (345)
+                                    </label>
+                                  </div>
+                                  <div class="form-check">
+                                    <input
+                                      class="form-check-input"
+                                      type="checkbox"
+                                      id="MovingHome"
+                                    />
+                                    <label
+                                      class="form-check-label"
+                                      for="MovingHome"
+                                    >
+                                      Moving Home (345)
+                                    </label>
+                                  </div>
+                                </div>
+
+                                <div class="col-lg-6">
+                                  <div class="form-check">
+                                    <input
+                                      class="form-check-input"
+                                      type="checkbox"
+                                      id="Haulage"
+                                    />
+                                    <label
+                                      class="form-check-label"
+                                      for="Haulage"
+                                    >
+                                      Haulage (67)
+                                    </label>
+                                  </div>
+                                  <div class="form-check">
+                                    <input
+                                      class="form-check-input"
+                                      type="checkbox"
+                                      id="Boats"
+                                    />
+                                    <label class="form-check-label" for="Boats">
+                                      Boats (67)
+                                    </label>
+                                  </div>
+                                  <div class="form-check">
+                                    <input
+                                      class="form-check-input"
+                                      type="checkbox"
+                                      id="Pianos"
+                                    />
+                                    <label
+                                      class="form-check-label"
+                                      for="Pianos"
+                                    >
+                                      Pianos (67)
+                                    </label>
+                                  </div>
+                                  <div class="form-check">
+                                    <input
+                                      class="form-check-input"
+                                      type="checkbox"
+                                      id="PetsLivestock"
+                                    />
+                                    <label
+                                      class="form-check-label"
+                                      for="PetsLivestock"
+                                    >
+                                      Pets & Livestock (34)
+                                    </label>
+                                  </div>
+                                  <div class="form-check">
+                                    <input
+                                      class="form-check-input"
+                                      type="checkbox"
+                                      id="Other"
+                                    />
+                                    <label class="form-check-label" for="Other">
+                                      Other (1496)
+                                    </label>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- search deliveri tab btn -->
+                  <div class="row">
+                    <div class="col-sm-12">
+                      <div
+                        class="search-deliver-tabs-btn d-flex justify-content-center"
+                      >
+                        <button type="button">
+                          <span><i class="fa-solid fa-arrows-rotate"></i></span
+                          >Reset
+                        </button>
+                        <button type="button">
+                          <span
+                            ><i class="fa-solid fa-magnifying-glass"></i></span
+                          >Search
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
