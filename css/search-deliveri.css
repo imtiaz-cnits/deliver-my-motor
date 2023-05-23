@@ -607,6 +607,16 @@ td {
   left: 0;
 }
 
+@media screen and (max-width: 990px) {
+  .search-deliveri-header h1 {
+    font-size: 2em;
+  }
+
+  .devider {
+    width: 200px;
+  }
+}
+
 /* search main tabs */
 
 .main-tabs {
@@ -799,5 +809,82 @@ td {
     padding: 6px 8px;
   }
 }
+
+/* search table */
+
+.search-table-pagination {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 40px;
+}
+
+.pagination-result span {
+  color: var(--light-blue);
+  font-weight: 600;
+}
+
+.search-main-table {
+  background: url(../img/search-deliver-bg.png);
+  background-position: right bottom;
+  background-repeat: no-repeat;
+  background-size: cover;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
+  border-radius: 6px;
+  padding: 20px;
+}
+
+.deliver-page-count select {
+  background: transparent;
+  border: 1px solid var(--white);
+  border-radius: 6px;
+  padding: 3px 10px;
+  margin-left: 6px;
+}
+
+.search-table-bottom-pagination {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 50px;
+}
+
+.search-table-bottom-pagination .pagination {
+  margin-bottom: 0;
+}
+
+.search-table {
+  white-space: nowrap;
+  overflow-x: auto;
+}
+
+.deviders {
+  width: 120px;
+  height: 5px;
+  border-radius: 30px;
+  background-color: var(--tomato);
+  margin: 80px auto;
+}
+
+@media screen and (max-width: 120px) {
+}
+
+@media screen and (max-width: 768px) {
+  .search-table-pagination .pagination {
+    display: none;
+  }
+
+  .search-table-bottom-pagination {
+    display: block;
+    text-align: center;
+  }
+
+  .search-table-bottom-pagination .pagination {
+    justify-content: center;
+    margin-bottom: 30px;
+  }
+}
+
+/* search table */
 
 /* Dashboard Search Deliveri End */
