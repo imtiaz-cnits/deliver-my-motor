@@ -1067,6 +1067,14 @@ td {
   color: var(--white);
 }
 
+.deviders {
+  width: 120px;
+  height: 5px;
+  border-radius: 30px;
+  background-color: var(--tomato);
+  margin: 60px auto;
+}
+
 @media screen and (max-width: 990px) {
   .tranporter-profile {
     margin-bottom: 0px;
