@@ -854,6 +854,10 @@ td {
 
 /* Transporter Dashboard Start */
 
+#transporter-dashboard {
+  padding-bottom: 100px;
+}
+
 .welcome-back-msg {
   margin-top: 50px;
 }
@@ -968,18 +972,15 @@ td {
 /* Transporter Profile Start */
 
 .tranporter-profile {
-  background-color: var(--white);
-  box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.125);
-  border-radius: 6px;
   padding: 30px;
-  margin-top: 60px;
+  margin-left: 50%;
   margin-bottom: 80px;
 }
 
 .tranporter-profile img {
   display: block;
-  width: 150px;
-  height: 150px;
+  width: 140px;
+  height: 140px;
   border-radius: 50%;
   border: 3px solid var(--tomato);
   margin: auto;
@@ -993,13 +994,13 @@ td {
   padding-top: 20px;
 }
 
-.tranporter-profile p {
+/* .tranporter-profile p {
   text-align: center;
   font-family: var(--header-font);
   padding-top: 10px;
   font-size: 1.1em;
   margin-bottom: 30px;
-}
+} */
 
 .transporter-profile-rating i {
   color: var(--tomato);
@@ -1013,25 +1014,21 @@ td {
   color: var(--light-blue);
 }
 
-.tranporter-profile-table {
+/* .tranporter-profile-table {
   display: flex;
   justify-content: space-between;
   border-bottom: 1px solid #cccccc;
-}
-
+} */
+/* 
 .tranporter-profile-table p {
   margin-bottom: 0;
   font-family: var(--header-font);
   font-size: 1.1em;
   padding: 8px 0;
-}
+} */
 
 .tranporter-profile-btn {
-  margin-top: 40px;
-}
-
-.tranporter-profile-btn p {
-  margin-bottom: 10px;
+  margin-top: 20px;
 }
 
 .tranporter-profile-btn .tranporter-profile-edit-btn {
@@ -1047,25 +1044,19 @@ td {
   transition: 0.5s;
 }
 
-.tranporter-profile-btn p .tranporter-profile-edit-btn:hover {
-  background-color: transparent;
-  color: var(--black);
-}
-
 .tranporter-profile-btn .tranporter-profile-view-btn {
   text-decoration: none;
   color: var(--white);
   font-size: 1em;
+  text-align: center;
   font-weight: 500;
-  background-color: var(--tomato);
+  background-color: var(--blue);
   border-radius: 6px;
   padding: 8px 20px;
-  border: 1px solid #cccccc;
-  display: block;
   transition: 0.5s;
 }
 
-.tranporter-profile-btn p .tranporter-profile-view-btn:hover {
+.tranporter-profile-btn .tranporter-profile-view-btn:hover {
   background-color: transparent;
   color: var(--black);
 }
@@ -1085,9 +1076,9 @@ td {
 /* Transporter Table Satrt */
 
 .transporter-table {
-  background: url(../img/my-job-table-bg.png);
+  background: url(../img/search-deliver-bg.png);
   background-repeat: no-repeat;
-  background-position: right center;
+  background-position: right bottom;
   background-size: cover;
   padding: 30px;
   border-radius: 6px;
