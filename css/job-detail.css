@@ -967,6 +967,12 @@ td {
   font-family: var(--header-font);
 }
 
+@media screen and (max-width: 1200px) {
+  .transporter-card h3 {
+    font-size: 20px;
+  }
+}
+
 /* Transporter Card End */
 
 /* Transporter Profile Start */
@@ -1057,8 +1063,8 @@ td {
 }
 
 .tranporter-profile-btn .tranporter-profile-view-btn:hover {
-  background-color: transparent;
-  color: var(--black);
+  background-color: var(--tomato);
+  color: var(--white);
 }
 
 @media screen and (max-width: 990px) {
@@ -1068,6 +1074,12 @@ td {
 
   .transporter-table {
     margin-bottom: 50px !important;
+  }
+}
+
+@media screen and (max-width: 420px) {
+  .tranporter-profile-btn .tranporter-profile-view-btn {
+    font-size: 12px;
   }
 }
 
