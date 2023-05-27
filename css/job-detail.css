@@ -331,6 +331,26 @@
   }
 }
 
+@media screen and (max-width: 575px) {
+  .dahsboard-navbar {
+    background-color: #fff;
+    color: #003670;
+  }
+
+  .dahsboard-navbar ul li a {
+    color: #003670;
+  }
+
+  .dashboard-content {
+    margin-top: -500px;
+    z-index: 5;
+  }
+
+  .nav {
+    padding-left: 0 !important;
+  }
+}
+
 .dashboard-job-posts {
   background: url(../img/dashboard-job-posts-bg.png);
   width: 100%;
