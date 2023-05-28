@@ -921,8 +921,12 @@ td {
 @media screen and (max-width: 472px) {
   .transporter-table-box {
     width: 90% !important;
-    height: 35vh;
+    height: 30vh;
     margin: 40px auto;
+  }
+
+  .avatar-img img {
+    padding-top: 10px;
   }
 }
 
