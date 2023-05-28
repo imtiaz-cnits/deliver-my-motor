@@ -910,6 +910,22 @@ td {
   }
 }
 
+@media screen and (max-width: 577px) {
+  .transporter-table-box {
+    width: 85% !important;
+    height: 30vh;
+    margin: 40px auto;
+  }
+}
+
+@media screen and (max-width: 472px) {
+  .transporter-table-box {
+    width: 90% !important;
+    height: 35vh;
+    margin: 40px auto;
+  }
+}
+
 /* Transporter Table btn end */
 
 /* Transporter Card End */
