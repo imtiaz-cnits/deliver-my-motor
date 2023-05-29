@@ -653,15 +653,22 @@ td {
   color: var(--white);
 }
 
+.transporter-job-details h2 {
+  font-size: 15px;
+}
+
 .transporter-job-details {
+  width: 60%;
+  height: 40vh;
   margin: auto;
-  object-fit: cover;
   background: #ffffff;
   box-shadow: 3px 3px 20px rgba(0, 0, 0, 0.1);
   border-radius: 5px;
 }
 
 .transporter-earning-details {
+  width: 60%;
+  height: 50vh;
   margin: auto;
   background: #ffffff;
   box-shadow: 3px 3px 20px rgba(0, 0, 0, 0.1);

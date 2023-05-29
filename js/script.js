@@ -15,6 +15,18 @@ toggles.addEventListener("click", () => {
 
 // side navbar
 
+//search-close-btn start
+
+const closeBtn = document.querySelector(".search-close-btn");
+const contentBox = document.querySelector(".search-alert-box");
+
+closeBtn.addEventListener("click", close);
+
+function close() {
+    contentBox.style.display = "none";
+}
+
+//search-close-btn end
 
 let mainBasicForms1 = document.querySelector(".main-basic-info-box-1");
 let mainBasicForms2 = document.querySelector(".main-basic-info-box-2");
@@ -46,6 +58,8 @@ thirdStepBackBtn.addEventListener("click", function () {
   mainBasicForms2.style.display = 'block';
   mainBasicForms3.style.display = 'none';
 });
+
+
 
 
 
