@@ -1097,6 +1097,8 @@ td {
 
 @media screen and (max-width: 990px) {
   .tranporter-profile {
+    padding: 30px;
+    margin-left: 0%;
     margin-bottom: 0px;
   }
 
