@@ -28,6 +28,9 @@ function close() {
 
 //search-close-btn end
 
+
+
+
 let mainBasicForms1 = document.querySelector(".main-basic-info-box-1");
 let mainBasicForms2 = document.querySelector(".main-basic-info-box-2");
 let mainBasicForms3 = document.querySelector(".main-basic-info-box-3");

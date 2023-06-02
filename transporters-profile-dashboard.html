@@ -252,19 +252,16 @@
             </div>
             <div class="col-md-8">
               <div class="transporter-job-details">
-                <h2>Total Jobs</h2>
-                <canvas
-                  id="myChart"
-                  style="
-                    display: block;
-                    box-sizing: border-box;
-                    height: 64px;
-                    width: 128px;
-                  "
-                ></canvas>
+                <div class="transporter-job-text text-start">
+                  <h2>Total Jobs</h2>
+                </div>
+                <div class="bar">
+                  <div class="chart-bar">
+                    <canvas id="myChart"></canvas>
+                  </div>
+                </div>
               </div>
-
-              <div style="margin-top: 50px" class="transporter-earning-details">
+              <div class="transporter-Earning-details justify-content-between">
                 <div
                   class="transporter-earning-text d-flex justify-content-between"
                 >
@@ -273,7 +270,9 @@
                     $ 69,989 <br /><span style="color: #ff7a12">Monthly</span>
                   </p>
                 </div>
-                <canvas id="chart-view"></canvas>
+                <div class="chart-bar">
+                  <canvas id="lineChart"></canvas>
+                </div>
               </div>
             </div>
           </div>
@@ -749,87 +748,6 @@
     </footer>
     <!-- Copyright Footer End -->
 
-    <!-- js bar link start -->
-
-    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-    <script>
-      const ctx = document.getElementById("myChart");
-      new Chart(ctx, {
-        type: "bar",
-        data: {
-          labels: [
-            "Jan",
-            "Feb",
-            "Mar",
-            "Apr",
-            "May",
-            "Jun",
-            "Jul",
-            "Aug",
-            "Sep",
-            "Oct",
-            "Nov",
-            "Dec",
-          ],
-          datasets: [
-            {
-              label: "Month Value",
-              data: [12, 19, 25, 15, 20, 28, 12, 17, 25, 35, 26, 18],
-              backgroundColor: "#0776EE",
-            },
-          ],
-        },
-        options: {
-          scales: {
-            y: {
-              beginAtZero: true,
-            },
-          },
-        },
-      });
-    </script>
-    <!-- js bar link end -->
-
-    <!-- js bar line start -->
-    <script>
-      const line = document.getElementById("chart-view");
-      new Chart(line, {
-        type: "line",
-        data: {
-          labels: [
-            "Jan",
-            "Feb",
-            "Mar",
-            "Apr",
-            "May",
-            "Jun",
-            "Jul",
-            "Aug",
-            "Sep",
-            "Oct",
-            "Nov",
-            "Dec",
-          ],
-          datasets: [
-            {
-              label: "Month Value",
-              data: [12, 19, 25, 15, 20, 28, 12, 17, 25, 35, 26, 18],
-              backgroundColor: "#FF7A12",
-            },
-          ],
-        },
-        options: {
-          scales: {
-            y: {
-              beginAtZero: true,
-            },
-          },
-        },
-      });
-    </script>
-
-    <!-- js bar line end -->
-
     <!-- Script Start -->
     <script>
       const body = document.querySelector("body"),
@@ -848,5 +766,11 @@
       });
     </script>
     <!-- Script End -->
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+    <!-- custom-js -->
+    <script src="./js/chart.js"></script>
+    <!-- custom-js -->
   </body>
 </html>
