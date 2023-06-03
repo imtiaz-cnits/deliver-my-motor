@@ -898,7 +898,11 @@ td {
   margin: 80px auto;
 }
 
-@media screen and (max-width: 120px) {
+@media screen and (max-width: 987px) {
+  .transporter-table-box {
+    width: 100%;
+    height: 28vh;
+  }
 }
 
 @media screen and (max-width: 768px) {
