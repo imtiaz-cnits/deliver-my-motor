@@ -803,7 +803,7 @@ td {
 }
 
 .search-local-options {
-  margin-top: 20px;
+  margin-bottom: -10px;
 }
 
 .reset-btn {
@@ -833,6 +833,12 @@ td {
 @media screen and (max-width: 1200px) {
   .search-input-box {
     padding: 20px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .search-local-options {
+    margin-top: 20px;
   }
 }
 
