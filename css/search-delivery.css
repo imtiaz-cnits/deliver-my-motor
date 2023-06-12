@@ -691,7 +691,7 @@ td {
 .search-input-box {
   border: 1px solid rgba(7, 118, 238, 0.35);
   border-radius: 6px;
-  height: 250px;
+  /* height: 250px; */
   display: grid;
   align-items: center;
   padding: 20px 30px;
@@ -756,25 +756,41 @@ td {
 }
 
 .search-deliver-tabs-btn {
-  margin-top: 10px;
+  margin-top: 50px;
+  position: relative;
 }
 
-.search-deliver-tabs-btn button {
+.search-deliver-tabs-btn .search-btn {
   border: none;
   color: var(--white);
-  padding: 12px 25px;
+  padding: 12px 45px !important;
   margin: 10px;
   font-size: 1em;
   font-family: var(--header-font);
   border-radius: 6px;
+  background-color: var(--tomato);
 }
 
-.search-deliver-tabs-btn button:nth-child(1) {
+.search-deliver-tabs-btn .back-btn {
+  text-decoration: none;
+  border: none;
+  color: var(--white);
+  padding: 12px 30px !important;
+  margin: 10px;
+  font-size: 1em;
+  font-family: var(--header-font);
+  border-radius: 6px;
   background-color: var(--light-blue);
 }
 
-.search-deliver-tabs-btn button:nth-child(2) {
-  background-color: var(--tomato);
+.search-deliver-tabs-btn .search-btn {
+  border: none;
+  color: var(--white);
+  padding: 12px 45px !important;
+  margin: 10px;
+  font-size: 1em;
+  font-family: var(--header-font);
+  border-radius: 6px;
 }
 
 .search-deliver-tabs-btn button span {
@@ -783,18 +799,29 @@ td {
 
 .search-radius-label {
   color: var(--blue) !important;
-  padding-bottom: 20px;
+  padding-top: 20px;
 }
 
 .search-local-options {
   margin-bottom: -10px;
 }
 
-.search-btn {
-  padding: 12px 45px !important;
+.reset-btn {
+  position: absolute;
+  top: -30px;
+  right: 10px;
+  border: none;
+  padding: 0 !important;
+  background-color: transparent !important;
+  color: var(--black) !important;
 }
 
-.reset-btn {
+.reset-btn span {
+  margin-right: 3px !important;
+}
+
+.local-search-btn {
+  position: relative;
 }
 
 @media screen and (max-width: 1400px) {
@@ -805,24 +832,23 @@ td {
 
 @media screen and (max-width: 1200px) {
   .search-input-box {
-    padding: 10px;
+    padding: 20px;
   }
 }
 
-@media screen and (max-width: 990px) {
-  .search-input-box {
-    height: auto;
+@media screen and (max-width: 768px) {
+  .search-local-options {
+    margin-top: 20px;
   }
 }
 
-@media screen and (max-width: 500px) {
-  .sub-tabs {
-    width: 300px;
+@media screen and (max-width: 450px) {
+  .search-deliver-tabs-btn .search-btn {
+    padding: 10px 30px !important;
   }
 
-  .sub-tabs .nav-link {
-    font-size: 0.8em !important;
-    padding: 6px 8px;
+  .search-deliver-tabs-btn .back-btn {
+    padding: 10px 25px !important;
   }
 }
 
