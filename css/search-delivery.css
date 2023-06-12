@@ -900,6 +900,11 @@ td {
   overflow-x: auto;
 }
 
+.search-table a {
+  text-decoration: none;
+  color: var(--light-blue);
+}
+
 .transporter-table-box {
   margin-top: 50px;
   display: none;
@@ -910,8 +915,7 @@ td {
 }
 
 .transporter-table-box:hover {
-  background-color: var(--tomato);
-  color: var(--white);
+  background-color: rgb(247, 245, 245);
 }
 
 .avatar-img p {
@@ -925,7 +929,7 @@ td {
 }
 
 .fast-text {
-  padding-left: 50px;
+  padding-left: 60px;
 }
 
 .dropdown {
@@ -974,6 +978,16 @@ td {
     z-index: 1000;
     border-radius: 10px;
     width: 100%;
+  }
+
+  .transporter-table-box .avatar-img img {
+    padding: 10px;
+    border-radius: 3px;
+  }
+
+  .transporter-table-box a {
+    color: var(--light-blue);
+    text-decoration: none;
   }
 
   .search-main-table {
