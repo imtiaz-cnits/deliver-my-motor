@@ -756,13 +756,13 @@ td {
 }
 
 .search-deliver-tabs-btn {
-  margin-top: 30px;
+  margin-top: 10px;
 }
 
 .search-deliver-tabs-btn button {
   border: none;
   color: var(--white);
-  padding: 8px 25px;
+  padding: 12px 25px;
   margin: 10px;
   font-size: 1em;
   font-family: var(--header-font);
@@ -779,6 +779,22 @@ td {
 
 .search-deliver-tabs-btn button span {
   margin-right: 8px;
+}
+
+.search-radius-label {
+  color: var(--blue) !important;
+  padding-bottom: 20px;
+}
+
+.search-local-options {
+  margin-bottom: -10px;
+}
+
+.search-btn {
+  padding: 12px 45px !important;
+}
+
+.reset-btn {
 }
 
 @media screen and (max-width: 1400px) {
