@@ -72,3 +72,15 @@ thirdStepBackBtn.addEventListener("click", function () {
 //     blah.src = URL.createObjectURL(file)
 //   }
 // }
+
+
+$(document).ready(function() {
+
+  $('#clickable-row').click(function() {
+      var href = $(this).find("a").attr("href");
+      if(href) {
+          window.location = href;
+      }
+  });
+
+});
