@@ -415,18 +415,20 @@ td {
 /* search delivery category page start */
 
 #search-delivery-page {
-  padding-top: 180px;
+  padding: 80px;
 }
 
 .search-category-box {
   border: 1px solid var(--blue);
   border-radius: 10px;
-  padding: 80px;
+  padding: 80px 0;
 }
 
 .check-box {
   font-size: 20px;
-  margin: 15px;
+  /* margin: 15px; */
+  width: 220px;
+  margin: auto;
 }
 
 .search-delivery-header h1 {
@@ -460,28 +462,31 @@ td {
 }
 
 .check-box-btn {
-  padding-top: 8%;
+  padding-top: 40px;
 }
 
 .check-box-btn a {
   text-decoration: none;
-  font-size: 15px;
-  padding: 10px 70px;
-  font-weight: 650;
-  background: var(--tomato);
-  border-radius: 80px;
-  transition: 0.5s;
+  border: none;
   color: var(--white);
+  padding: 12px 45px !important;
+  margin: 10px;
+  font-size: 1em;
+  display: inline-block;
+  font-family: var(--header-font);
+  border-radius: 6px;
+  background-color: var(--light-blue);
+  transition: 0.5s;
 }
 
 .check-box-btn a:hover {
-  background: var(--blue);
+  background: var(--tomato);
   color: var(--white);
 }
 
 @media screen and (max-width: 1273px) {
   .check-box {
-    font-size: 12px;
+    font-size: 1em;
   }
 }
 
@@ -494,9 +499,9 @@ td {
   }
 
   .check-box {
-    padding-left: 35%;
+    width: 170px;
+    margin: auto;
     font-size: 15px;
-    margin: 2px;
   }
 
   .search-category-box {
@@ -516,19 +521,6 @@ td {
   .search-delivery-header h1 {
     font-size: 1.8rem;
   }
-
-  .check-box {
-    padding-left: 25%;
-    font-size: 20px;
-  }
-
-  .check-box-btn {
-    padding-top: 14%;
-  }
-
-  .check-box-btn a {
-    font-size: 0.9rem;
-  }
 }
 
 @media screen and (max-width: 450px) {
@@ -537,44 +529,11 @@ td {
   }
 
   .search-delivery-header h1 {
-    font-size: 1.3rem;
-  }
-
-  .check-box {
-    padding-left: 20%;
-    font-size: 15px;
-  }
-
-  .check-box-btn {
-    padding-top: 22%;
-  }
-
-  .check-box-btn a {
-    font-size: 0.7rem;
+    font-size: 1.6rem;
   }
 
   .devider {
     width: 150px !important;
-    height: 3px;
-  }
-}
-
-@media screen and (max-width: 400px) {
-  .search-delivery-header h1 {
-    font-size: 1rem;
-  }
-
-  .check-box {
-    padding-left: 20%;
-    font-size: 12px;
-  }
-
-  .check-box-btn a {
-    font-size: 6px;
-  }
-
-  .devider {
-    width: 130px !important;
     height: 3px;
   }
 }
@@ -591,7 +550,7 @@ td {
   background-size: cover;
   position: relative;
   z-index: 10 !important;
-  margin-top: 285px;
+  /* margin-top: 285px; */
 }
 
 .tarnsport-company-content {
@@ -640,7 +599,7 @@ td {
 
 #footer {
   background-color: #161616;
-  padding: 70px 0;
+  padding: 85px 0;
   color: var(--white);
   position: relative;
   z-index: 10;
