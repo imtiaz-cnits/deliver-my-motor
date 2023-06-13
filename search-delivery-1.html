@@ -1,602 +1,852 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Search Delivery 01 - Deliver My Motor</title>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Search Delivery 01 - Deliver My Motor</title>
+    <!-- CSS Link -->
+    <link rel="stylesheet" href="./css/search-delivery.css" />
 
-  <!-- CSS Link -->
-  <link rel="stylesheet" href="./css/search-delivery.css" />
+    <!-- Bootstrap Link -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
 
-  <!-- Bootstrap Link -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" />
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Font Awesome Link -->
+    <script
+      src="https://kit.fontawesome.com/44f1800e1f.js"
+      crossorigin="anonymous"
+    ></script>
 
-  <!-- Font Awesome Link -->
-  <script src="https://kit.fontawesome.com/44f1800e1f.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./fontawesome-free-6.4.0-desktop/" />
+  </head>
 
-  <link rel="stylesheet" href="./fontawesome-free-6.4.0-desktop/" />
-</head>
-
-<body>
-  <!-- sidebar Start -->
-  <div class="dashboard-sidebar close">
-    <div class="dahsboard-navbar" id="sidenavbar">
-      <div class="sidebar-header d-flex justify-content-between">
-        <img src="./img/footer-logo.png" alt="" class="sidebar-logo" />
-        <button type="button" id="sideNavbarXmarkIcon" class="toggles">
-          <i class="fa-solid fa-xmark"></i>
-        </button>
+  <body>
+    <!-- sidebar Start -->
+    <div class="dashboard-sidebar close">
+      <div class="dahsboard-navbar" id="sidenavbar">
+        <div class="sidebar-header d-flex justify-content-between">
+          <img src="./img/footer-logo.png" alt="" class="sidebar-logo" />
+          <button type="button" id="sideNavbarXmarkIcon" class="toggles">
+            <i class="fa-solid fa-xmark"></i>
+          </button>
+        </div>
+        <ul class="navbar-nav">
+          <li>
+            <a href="#"><i class="fa-solid fa-house-user"></i> Dashboard</a>
+          </li>
+          <li>
+            <a href="#"><i class="fa-regular fa-comment-dots"></i> Messages</a>
+          </li>
+          <li>
+            <a href="#"><i class="fa-regular fa-file"></i> My Quotes</a>
+          </li>
+          <li>
+            <a href="#"><i class="fa-solid fa-briefcase"></i> My Jobs</a>
+          </li>
+          <li>
+            <a href="#"
+              ><i class="fa-solid fa-pen-to-square"></i> Post New Jobs</a
+            >
+          </li>
+          <li>
+            <a href="#"><i class="fa-regular fa-thumbs-up"></i> Reviews</a>
+          </li>
+          <li>
+            <a href="#"
+              ><i class="fa-sharp fa-solid fa-circle-info"></i> Help And FAQ</a
+            >
+          </li>
+          <li>
+            <a href="#"
+              ><i class="fa-solid fa-arrow-right-from-bracket"></i> Logout</a
+            >
+          </li>
+        </ul>
       </div>
-      <ul class="navbar-nav">
-        <li>
-          <a href="#"><i class="fa-solid fa-house-user"></i> Dashboard</a>
-        </li>
-        <li>
-          <a href="#"><i class="fa-regular fa-comment-dots"></i> Messages</a>
-        </li>
-        <li>
-          <a href="#"><i class="fa-regular fa-file"></i> My Quotes</a>
-        </li>
-        <li>
-          <a href="#"><i class="fa-solid fa-briefcase"></i> My Jobs</a>
-        </li>
-        <li>
-          <a href="#"><i class="fa-solid fa-pen-to-square"></i> Post New Jobs</a>
-        </li>
-        <li>
-          <a href="#"><i class="fa-regular fa-thumbs-up"></i> Reviews</a>
-        </li>
-        <li>
-          <a href="#"><i class="fa-sharp fa-solid fa-circle-info"></i> Help And FAQ</a>
-        </li>
-        <li>
-          <a href="#"><i class="fa-solid fa-arrow-right-from-bracket"></i> Logout</a>
-        </li>
-      </ul>
     </div>
-  </div>
-  <!-- sidebar End -->
+    <!-- sidebar End -->
 
-  <div class="home">
-    <!-- Navbar Start -->
-    <nav class="navbar navbar-expand-lg">
-      <div class="container">
-        <button type="button" id="sideNavbarIcon" class="toggle">
-          <i class="fa-solid fa-bars-staggered"></i>
-        </button>
-        <a class="navbar-brand" href="#"><img src="./img/logo.png" alt="logo" class="logo dashboard-navbar-logo" /></a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#yournavbar">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="mynavbar">
-          <ul class="navbar-nav ms-auto">
-            <li class="nav-item">
-              <a class="nav-link" href="#">Dashboard</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Messages
-                <span class="badge rounded-circle bg-danger">2</span></a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Live Jobs</a>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </nav>
-    <!-- Navbar End -->
-
-    <!-- Dashboard search deliveri Start -->
-
-    <div class="container">
-      <!-- search header -->
-      <div class="search-deliveri-header d-block">
-        <h1>Search <span>Deliveries</span></h1>
-        <div class="devider"></div>
-      </div>
-
-      <!-- search tabs -->
-      <div class="row justify-content-center">
-        <div class="col-lg-10">
-          <nav>
-            <div class="nav nav-tabs main-tabs justify-content-center" id="nav-tab" role="tablist">
-              <button class="nav-link active" id="nav-check-tab" data-bs-toggle="tab" data-bs-target="#nav-check"
-                type="button" role="tab" aria-controls="nav-check" aria-selected="true">
-                Local Search
-              </button>
-            </div>
-          </nav>
-
-          <div class="tab-content" id="nav-tabContent">
-            <div class="tab-pane fade show active" id="nav-check" role="tabpanel" aria-labelledby="nav-check-tab">
-              <div class="search-tab-content">
-                <div class="row justify-content-center">
-                  <div class="col-lg-8">
-                    <div class="search-input-box">
-                      <label>Collection / Delivery</label>
-                      <div class="input-box-items">
-                        <input type="text" class="input-box" />
-                        <span><i class="fa-solid fa-location-dot"></i></span>
-                      </div>
-
-                      <div class="row align-items-end">
-                        <div class="col-md-6">
-                          <label class="search-radius-label">Search Radius</label>
-                          <div class="search-radius-select">
-                            <select class="form-select">
-                              <option>10</option>
-                              <option>20</option>
-                              <option>30</option>
-                              <option>40</option>
-                              <option>50</option>
-                            </select>
-                          </div>
-                        </div>
-                        <div class="col-md-6">
-                          <div class="search-local-options">
-                            <div class="form-check">
-                              <input class="form-check-input" type="checkbox" id="check1" name="option1"
-                                value="something" checked />
-                              <label class="form-check-label" for="check1">Origin must be in local area</label>
-                            </div>
-                            <div class="form-check">
-                              <input class="form-check-input" type="checkbox" id="check2" name="option2"
-                                value="something" />
-                              <label class="form-check-label" for="check2">Destination must be in local area</label>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <!-- search deliveri tab btn -->
-                <div class="row">
-                  <div class="col-sm-12">
-                    <div class="search-deliver-tabs-btn d-flex justify-content-center">
-                      <a href="#" class="back-btn">
-                        <i class="fa-solid fa-arrow-left"></i> Back
-                      </a>
-                      <div class="local-search-btn">
-                        <button type="button" class="search-btn">
-                          <span><i class="fa-solid fa-magnifying-glass"></i></span>Search
-                        </button>
-                        <button type="button" class="reset-btn">
-                          <span><i class="fa-solid fa-arrows-rotate"></i></span>Reset
-                        </button>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <!-- search table -->
-      <div class="row justify-content-center">
-        <div class="col-sm-10">
-          <div class="search-table-pagination">
-            <div class="pagination-result">
-              <p>Results: <b>1-50</b> of <span>17,768</span></p>
-            </div>
-            <ul class="pagination">
-              <li class="page-item">
-                <a class="page-link" href="#">Previous</a>
+    <div class="home">
+      <!-- Navbar Start -->
+      <nav class="navbar navbar-expand-lg">
+        <div class="container">
+          <button type="button" id="sideNavbarIcon" class="toggle">
+            <i class="fa-solid fa-bars-staggered"></i>
+          </button>
+          <a class="navbar-brand" href="#"
+            ><img
+              src="./img/logo.png"
+              alt="logo"
+              class="logo dashboard-navbar-logo"
+          /></a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#yournavbar"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="mynavbar">
+            <ul class="navbar-nav ms-auto">
+              <li class="nav-item">
+                <a class="nav-link" href="#">Dashboard</a>
               </li>
-              <li class="page-item"><a class="page-link" href="#">1</a></li>
-              <li class="page-item active">
-                <a class="page-link" href="#">2</a>
+              <li class="nav-item">
+                <a class="nav-link" href="#"
+                  >Messages
+                  <span class="badge rounded-circle bg-danger">2</span></a
+                >
               </li>
-              <li class="page-item"><a class="page-link" href="#">3</a></li>
-              <li class="page-item">
-                <a class="page-link" href="#">Next</a>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Live Jobs</a>
               </li>
             </ul>
           </div>
         </div>
-      </div>
+      </nav>
+      <!-- Navbar End -->
 
-      <div class="row justify-content-center">
-        <div class="col-lg-10">
-          <div class="search-main-table">
-            <div class="search-table">
-              <table class="table align-middle">
-                <thead>
-                  <tr>
-                    <th scope="col">Item Name</th>
-                    <th scope="col">Collection</th>
-                    <th scope="col">Delivery</th>
-                    <th scope="col">Miles</th>
-                    <th scope="col">TP’s Quoting</th>
-                  </tr>
-                </thead>
-                <tbody>
+      <!-- Dashboard search deliveri Start -->
 
-                  <tr id="clickable-row">
-                    <td>
-                      <a href="./transporters-dashboard.html">
-                        <img src="./img/transporter-table-avatar.png" class="transporter-table-avatar-img me-2" />
-                        Ford Ranger HT</a>
-                    </td>
-                    <td>Coventry, West Midlands, CV2</td>
-                    <td>Coventry, West Midlands, CV2</td>
-                    <td class="text-center">115</td>
-                    <td class="text-center">2</td>
-                  </tr>
+      <div class="container">
+        <!-- search header -->
+        <div class="search-deliveri-header d-block">
+          <h1>Search <span>Deliveries</span></h1>
+          <div class="devider"></div>
+        </div>
 
-                  <tr>
-                    <td>
-                      <a href="./transporters-dashboard.html">
-                        <img src="./img/transporter-table-avatar.png" class="transporter-table-avatar-img me-2" />
-                        Ford Ranger</a>
-                    </td>
-                    <td>Coventry, West Midlands, CV2</td>
-                    <td>Coventry, West Midlands, CV2</td>
-                    <td class="text-center">115</td>
-                    <td class="text-center">2</td>
-                  </tr>
-                  <tr>
-                    <td>
-                      <a href="./transporters-dashboard.html">
-                        <img src="./img/transporter-table-avatar.png" class="transporter-table-avatar-img me-2" />
-                        Ford Ranger</a>
-                    </td>
-                    <td>Coventry, West Midlands, CV2</td>
-                    <td>Coventry, West Midlands, CV2</td>
-                    <td class="text-center">115</td>
-                    <td class="text-center">2</td>
-                  </tr>
-                  <tr>
-                    <td>
-                      <a href="./transporters-dashboard.html">
-                        <img src="./img/transporter-table-avatar.png" class="transporter-table-avatar-img me-2" />
-                        Ford Ranger</a>
-                    </td>
-                    <td>Coventry, West Midlands, CV2</td>
-                    <td>Coventry, West Midlands, CV2</td>
-                    <td class="text-center">115</td>
-                    <td class="text-center">2</td>
-                  </tr>
-                  <tr>
-                    <td>
-                      <a href="./transporters-dashboard.html">
-                        <img src="./img/transporter-table-avatar.png" class="transporter-table-avatar-img me-2" />
-                        Ford Ranger</a>
-                    </td>
-                    <td>Coventry, West Midlands, CV2</td>
-                    <td>Coventry, West Midlands, CV2</td>
-                    <td class="text-center">115</td>
-                    <td class="text-center">2</td>
-                  </tr>
-                  <tr>
-                    <td>
-                      <a href="./transporters-dashboard.html">
-                        <img src="./img/transporter-table-avatar.png" class="transporter-table-avatar-img me-2" />
-                        Ford Ranger</a>
-                    </td>
-                    <td>Coventry, West Midlands, CV2</td>
-                    <td>Coventry, West Midlands, CV2</td>
-                    <td class="text-center">115</td>
-                    <td class="text-center">2</td>
-                  </tr>
-                </tbody>
-              </table>
-            </div>
+        <!-- search tabs -->
+        <div class="row justify-content-center">
+          <div class="col-lg-10">
+            <nav>
+              <div
+                class="nav nav-tabs main-tabs justify-content-center"
+                id="nav-tab"
+                role="tablist"
+              >
+                <button
+                  class="nav-link active"
+                  id="nav-check-tab"
+                  data-bs-toggle="tab"
+                  data-bs-target="#nav-check"
+                  type="button"
+                  role="tab"
+                  aria-controls="nav-check"
+                  aria-selected="true"
+                >
+                  Local Search
+                </button>
+              </div>
+            </nav>
 
-            <div class="transporter-table-box">
-              <div class="avatar-img d-flex">
-                <a href="./transporters-dashboard.html">
-                  <img src="./img/transporter-table-avatar.png" alt="" />
-                  <span>Ford Ranger</span>
-                </a>
-              </div>
-              <div class="fast-text">
-                <p>
-                  <i class="fa-solid fa-location-dot fa-bounce" style="color: #112ea2"></i>
-                  Coventry, West Midlands, CV2
-                </p>
-                <p>
-                  <i class="fa-solid fa-location-dot fa-bounce" style="color: #ff861c"></i>
-                  Coventry, West Midlands, CV2
-                </p>
-                <p>Milage: 115</p>
-                <p>TP’s Quoting: 2</p>
-              </div>
-            </div>
-            <div class="transporter-table-box">
-              <div class="avatar-img d-flex">
-                <a href="./transporters-dashboard.html">
-                  <img src="./img/transporter-table-avatar.png" alt="" />
-                  <span>Ford Ranger</span>
-                </a>
-              </div>
-              <div class="fast-text">
-                <p>
-                  <i class="fa-solid fa-location-dot fa-bounce" style="color: #112ea2"></i>
-                  Coventry, West Midlands, CV2
-                </p>
-                <p>
-                  <i class="fa-solid fa-location-dot fa-bounce" style="color: #ff861c"></i>
-                  Coventry, West Midlands, CV2
-                </p>
-                <p>Milage: 115</p>
-                <p>TP’s Quoting: 2</p>
-              </div>
-            </div>
-            <div class="transporter-table-box">
-              <div class="avatar-img d-flex">
-                <a href="./transporters-dashboard.html">
-                  <img src="./img/transporter-table-avatar.png" alt="" />
-                  <span>Ford Ranger</span>
-                </a>
-              </div>
-              <div class="fast-text">
-                <p>
-                  <i class="fa-solid fa-location-dot fa-bounce" style="color: #112ea2"></i>
-                  Coventry, West Midlands, CV2
-                </p>
-                <p>
-                  <i class="fa-solid fa-location-dot fa-bounce" style="color: #ff861c"></i>
-                  Coventry, West Midlands, CV2
-                </p>
-                <p>Milage: 115</p>
-                <p>TP’s Quoting: 2</p>
-              </div>
-            </div>
-            <div class="transporter-table-box">
-              <div class="avatar-img d-flex">
-                <a href="./transporters-dashboard.html">
-                  <img src="./img/transporter-table-avatar.png" alt="" />
-                  <span>Ford Ranger</span>
-                </a>
-              </div>
-              <div class="fast-text">
-                <p>
-                  <i class="fa-solid fa-location-dot fa-bounce" style="color: #112ea2"></i>
-                  Coventry, West Midlands, CV2
-                </p>
-                <p>
-                  <i class="fa-solid fa-location-dot fa-bounce" style="color: #ff861c"></i>
-                  Coventry, West Midlands, CV2
-                </p>
-                <p>Milage: 115</p>
-                <p>TP’s Quoting: 2</p>
-              </div>
-            </div>
-            <div class="transporter-table-box">
-              <div class="avatar-img d-flex">
-                <a href="./transporters-dashboard.html">
-                  <img src="./img/transporter-table-avatar.png" alt="" />
-                  <span>Ford Ranger</span>
-                </a>
-              </div>
-              <div class="fast-text">
-                <p>
-                  <i class="fa-solid fa-location-dot fa-bounce" style="color: #112ea2"></i>
-                  Coventry, West Midlands, CV2
-                </p>
-                <p>
-                  <i class="fa-solid fa-location-dot fa-bounce" style="color: #ff861c"></i>
-                  Coventry, West Midlands, CV2
-                </p>
-                <p>Milage: 115</p>
-                <p>TP’s Quoting: 2</p>
-              </div>
-            </div>
-            <div class="transporter-table-box">
-              <div class="avatar-img d-flex">
-                <a href="./transporters-dashboard.html">
-                  <img src="./img/transporter-table-avatar.png" alt="" />
-                  <span>Ford Ranger</span>
-                </a>
-              </div>
-              <div class="fast-text">
-                <p>
-                  <i class="fa-solid fa-location-dot fa-bounce" style="color: #112ea2"></i>
-                  Coventry, West Midlands, CV2
-                </p>
-                <p>
-                  <i class="fa-solid fa-location-dot fa-bounce" style="color: #ff861c"></i>
-                  Coventry, West Midlands, CV2
-                </p>
-                <p>Milage: 115</p>
-                <p>TP’s Quoting: 2</p>
-              </div>
-            </div>
+            <div class="tab-content" id="nav-tabContent">
+              <div
+                class="tab-pane fade show active"
+                id="nav-check"
+                role="tabpanel"
+                aria-labelledby="nav-check-tab"
+              >
+                <div class="search-tab-content">
+                  <div class="row justify-content-center">
+                    <div class="col-lg-8">
+                      <div class="search-input-box">
+                        <label>Collection / Delivery</label>
+                        <div class="input-box-items">
+                          <input type="text" class="input-box" />
+                          <span><i class="fa-solid fa-location-dot"></i></span>
+                        </div>
 
-            <div class="search-table-bottom-pagination">
+                        <div class="row align-items-end">
+                          <div class="col-md-6">
+                            <label class="search-radius-label"
+                              >Search Radius</label
+                            >
+                            <div class="search-radius-select">
+                              <select class="form-select">
+                                <option>10</option>
+                                <option>20</option>
+                                <option>30</option>
+                                <option>40</option>
+                                <option>50</option>
+                              </select>
+                            </div>
+                          </div>
+                          <div class="col-md-6">
+                            <div class="search-local-options">
+                              <div class="form-check">
+                                <input
+                                  class="form-check-input"
+                                  type="checkbox"
+                                  id="check1"
+                                  name="option1"
+                                  value="something"
+                                  checked
+                                />
+                                <label class="form-check-label" for="check1"
+                                  >Origin must be in local area</label
+                                >
+                              </div>
+                              <div class="form-check">
+                                <input
+                                  class="form-check-input"
+                                  type="checkbox"
+                                  id="check2"
+                                  name="option2"
+                                  value="something"
+                                />
+                                <label class="form-check-label" for="check2"
+                                  >Destination must be in local area</label
+                                >
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- search deliveri tab btn -->
+                  <div class="row">
+                    <div class="col-sm-12">
+                      <div
+                        class="search-deliver-tabs-btn d-flex justify-content-center"
+                      >
+                        <a href="#" class="back-btn">
+                          <i class="fa-solid fa-arrow-left"></i> Back
+                        </a>
+                        <div class="local-search-btn">
+                          <button type="button" class="search-btn">
+                            <span
+                              ><i
+                                class="fa-solid fa-magnifying-glass"
+                              ></i></span
+                            >Search
+                          </button>
+                          <button type="button" class="reset-btn">
+                            <span
+                              ><i class="fa-solid fa-arrows-rotate"></i></span
+                            >Reset
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- search table -->
+        <div class="row justify-content-center">
+          <div class="col-sm-10">
+            <div class="search-table-pagination">
+              <div class="pagination-result">
+                <p>Results: <b>1-50</b> of <span>17,768</span></p>
+              </div>
               <ul class="pagination">
                 <li class="page-item">
                   <a class="page-link" href="#">Previous</a>
                 </li>
-                <li class="page-item">
-                  <a class="page-link" href="#">1</a>
-                </li>
+                <li class="page-item"><a class="page-link" href="#">1</a></li>
                 <li class="page-item active">
                   <a class="page-link" href="#">2</a>
                 </li>
-                <li class="page-item">
-                  <a class="page-link" href="#">3</a>
-                </li>
+                <li class="page-item"><a class="page-link" href="#">3</a></li>
                 <li class="page-item">
                   <a class="page-link" href="#">Next</a>
                 </li>
               </ul>
-              <div class="deliver-page-count">
-                <span>Deliveries Per Page</span>
-                <select>
-                  <option>10</option>
-                  <option>20</option>
-                  <option>30</option>
-                  <option>40</option>
-                  <option>50</option>
-                </select>
+            </div>
+          </div>
+        </div>
+
+        <div class="row justify-content-center">
+          <div class="col-lg-10">
+            <div class="search-main-table">
+              <div class="search-table">
+                <table class="table align-middle">
+                  <thead>
+                    <tr>
+                      <th scope="col">Item Name</th>
+                      <th scope="col">Collection</th>
+                      <th scope="col">Delivery</th>
+                      <th scope="col">Miles</th>
+                      <th scope="col">TP’s Quoting</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr id="clickable-row">
+                      <td>
+                        <a href="./transporters-dashboard.html">
+                          <img
+                            src="./img/transporter-table-avatar.png"
+                            class="transporter-table-avatar-img me-2"
+                          />
+                          Ford Ranger HT</a
+                        >
+                      </td>
+                      <td>Coventry, West Midlands, CV2</td>
+                      <td>Coventry, West Midlands, CV2</td>
+                      <td class="text-center">115</td>
+                      <td class="text-center">2</td>
+                    </tr>
+
+                    <tr>
+                      <td>
+                        <a href="./transporters-dashboard.html">
+                          <img
+                            src="./img/transporter-table-avatar.png"
+                            class="transporter-table-avatar-img me-2"
+                          />
+                          Ford Ranger</a
+                        >
+                      </td>
+                      <td>Coventry, West Midlands, CV2</td>
+                      <td>Coventry, West Midlands, CV2</td>
+                      <td class="text-center">115</td>
+                      <td class="text-center">2</td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <a href="./transporters-dashboard.html">
+                          <img
+                            src="./img/transporter-table-avatar.png"
+                            class="transporter-table-avatar-img me-2"
+                          />
+                          Ford Ranger</a
+                        >
+                      </td>
+                      <td>Coventry, West Midlands, CV2</td>
+                      <td>Coventry, West Midlands, CV2</td>
+                      <td class="text-center">115</td>
+                      <td class="text-center">2</td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <a href="./transporters-dashboard.html">
+                          <img
+                            src="./img/transporter-table-avatar.png"
+                            class="transporter-table-avatar-img me-2"
+                          />
+                          Ford Ranger</a
+                        >
+                      </td>
+                      <td>Coventry, West Midlands, CV2</td>
+                      <td>Coventry, West Midlands, CV2</td>
+                      <td class="text-center">115</td>
+                      <td class="text-center">2</td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <a href="./transporters-dashboard.html">
+                          <img
+                            src="./img/transporter-table-avatar.png"
+                            class="transporter-table-avatar-img me-2"
+                          />
+                          Ford Ranger</a
+                        >
+                      </td>
+                      <td>Coventry, West Midlands, CV2</td>
+                      <td>Coventry, West Midlands, CV2</td>
+                      <td class="text-center">115</td>
+                      <td class="text-center">2</td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <a href="./transporters-dashboard.html">
+                          <img
+                            src="./img/transporter-table-avatar.png"
+                            class="transporter-table-avatar-img me-2"
+                          />
+                          Ford Ranger</a
+                        >
+                      </td>
+                      <td>Coventry, West Midlands, CV2</td>
+                      <td>Coventry, West Midlands, CV2</td>
+                      <td class="text-center">115</td>
+                      <td class="text-center">2</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+
+              <div class="transporter-table-box">
+                <div class="avatar-img d-flex">
+                  <a href="./transporters-dashboard.html">
+                    <img src="./img/transporter-table-avatar.png" alt="" />
+                    <span>Ford Ranger</span>
+                  </a>
+                </div>
+                <div class="fast-text">
+                  <p>
+                    <i
+                      class="fa-solid fa-location-dot fa-bounce"
+                      style="color: #112ea2"
+                    ></i>
+                    Coventry, West Midlands, CV2
+                  </p>
+                  <p>
+                    <i
+                      class="fa-solid fa-location-dot fa-bounce"
+                      style="color: #ff861c"
+                    ></i>
+                    Coventry, West Midlands, CV2
+                  </p>
+
+                  <p>
+                    <i
+                      class="fa-solid fa-gauge fa-bounce"
+                      style="color: #112ea2"
+                    ></i>
+                    Milage: 115
+                  </p>
+                  <p>
+                    <i
+                      class="fa-solid fa-quote-left fa-bounce"
+                      style="color: #ff861c"
+                    ></i>
+                    TP's Quoting: 2
+                  </p>
+                </div>
+              </div>
+              <div class="transporter-table-box">
+                <div class="avatar-img d-flex">
+                  <a href="./transporters-dashboard.html">
+                    <img src="./img/transporter-table-avatar.png" alt="" />
+                    <span>Ford Ranger</span>
+                  </a>
+                </div>
+                <div class="fast-text">
+                  <p>
+                    <i
+                      class="fa-solid fa-location-dot fa-bounce"
+                      style="color: #112ea2"
+                    ></i>
+                    Coventry, West Midlands, CV2
+                  </p>
+                  <p>
+                    <i
+                      class="fa-solid fa-location-dot fa-bounce"
+                      style="color: #ff861c"
+                    ></i>
+                    Coventry, West Midlands, CV2
+                  </p>
+                  <p>
+                    <i
+                      class="fa-solid fa-gauge fa-bounce"
+                      style="color: #112ea2"
+                    ></i>
+                    Milage: 115
+                  </p>
+                  <p>
+                    <i
+                      class="fa-solid fa-quote-left fa-bounce"
+                      style="color: #ff861c"
+                    ></i>
+                    TP's Quoting: 2
+                  </p>
+                </div>
+              </div>
+              <div class="transporter-table-box">
+                <div class="avatar-img d-flex">
+                  <a href="./transporters-dashboard.html">
+                    <img src="./img/transporter-table-avatar.png" alt="" />
+                    <span>Ford Ranger</span>
+                  </a>
+                </div>
+                <div class="fast-text">
+                  <p>
+                    <i
+                      class="fa-solid fa-location-dot fa-bounce"
+                      style="color: #112ea2"
+                    ></i>
+                    Coventry, West Midlands, CV2
+                  </p>
+                  <p>
+                    <i
+                      class="fa-solid fa-location-dot fa-bounce"
+                      style="color: #ff861c"
+                    ></i>
+                    Coventry, West Midlands, CV2
+                  </p>
+                  <p>
+                    <i
+                      class="fa-solid fa-gauge fa-bounce"
+                      style="color: #112ea2"
+                    ></i>
+                    Milage: 115
+                  </p>
+                  <p>
+                    <i
+                      class="fa-solid fa-quote-left fa-bounce"
+                      style="color: #ff861c"
+                    ></i>
+                    TP's Quoting: 2
+                  </p>
+                </div>
+              </div>
+              <div class="transporter-table-box">
+                <div class="avatar-img d-flex">
+                  <a href="./transporters-dashboard.html">
+                    <img src="./img/transporter-table-avatar.png" alt="" />
+                    <span>Ford Ranger</span>
+                  </a>
+                </div>
+                <div class="fast-text">
+                  <p>
+                    <i
+                      class="fa-solid fa-location-dot fa-bounce"
+                      style="color: #112ea2"
+                    ></i>
+                    Coventry, West Midlands, CV2
+                  </p>
+                  <p>
+                    <i
+                      class="fa-solid fa-location-dot fa-bounce"
+                      style="color: #ff861c"
+                    ></i>
+                    Coventry, West Midlands, CV2
+                  </p>
+                  <p>
+                    <i
+                      class="fa-solid fa-gauge fa-bounce"
+                      style="color: #112ea2"
+                    ></i>
+                    Milage: 115
+                  </p>
+                  <p>
+                    <i
+                      class="fa-solid fa-quote-left fa-bounce"
+                      style="color: #ff861c"
+                    ></i>
+                    TP's Quoting: 2
+                  </p>
+                </div>
+              </div>
+              <div class="transporter-table-box">
+                <div class="avatar-img d-flex">
+                  <a href="./transporters-dashboard.html">
+                    <img src="./img/transporter-table-avatar.png" alt="" />
+                    <span>Ford Ranger</span>
+                  </a>
+                </div>
+                <div class="fast-text">
+                  <p>
+                    <i
+                      class="fa-solid fa-location-dot fa-bounce"
+                      style="color: #112ea2"
+                    ></i>
+                    Coventry, West Midlands, CV2
+                  </p>
+                  <p>
+                    <i
+                      class="fa-solid fa-location-dot fa-bounce"
+                      style="color: #ff861c"
+                    ></i>
+                    Coventry, West Midlands, CV2
+                  </p>
+                  <p>
+                    <i
+                      class="fa-solid fa-gauge fa-bounce"
+                      style="color: #112ea2"
+                    ></i>
+                    Milage: 115
+                  </p>
+                  <p>
+                    <i
+                      class="fa-solid fa-quote-left fa-bounce"
+                      style="color: #ff861c"
+                    ></i>
+                    TP's Quoting: 2
+                  </p>
+                </div>
+              </div>
+              <div class="transporter-table-box">
+                <div class="avatar-img d-flex">
+                  <a href="./transporters-dashboard.html">
+                    <img src="./img/transporter-table-avatar.png" alt="" />
+                    <span>Ford Ranger</span>
+                  </a>
+                </div>
+                <div class="fast-text">
+                  <p>
+                    <i
+                      class="fa-solid fa-location-dot fa-bounce"
+                      style="color: #112ea2"
+                    ></i>
+                    Coventry, West Midlands, CV2
+                  </p>
+                  <p>
+                    <i
+                      class="fa-solid fa-location-dot fa-bounce"
+                      style="color: #ff861c"
+                    ></i>
+                    Coventry, West Midlands, CV2
+                  </p>
+                  <p>
+                    <i
+                      class="fa-solid fa-gauge fa-bounce"
+                      style="color: #112ea2"
+                    ></i>
+                    Milage: 115
+                  </p>
+                  <p>
+                    <i
+                      class="fa-solid fa-quote-left fa-bounce"
+                      style="color: #ff861c"
+                    ></i>
+                    TP's Quoting: 2
+                  </p>
+                </div>
+              </div>
+
+              <div class="search-table-bottom-pagination">
+                <ul class="pagination">
+                  <li class="page-item">
+                    <a class="page-link" href="#">Previous</a>
+                  </li>
+                  <li class="page-item">
+                    <a class="page-link" href="#">1</a>
+                  </li>
+                  <li class="page-item active">
+                    <a class="page-link" href="#">2</a>
+                  </li>
+                  <li class="page-item">
+                    <a class="page-link" href="#">3</a>
+                  </li>
+                  <li class="page-item">
+                    <a class="page-link" href="#">Next</a>
+                  </li>
+                </ul>
+                <div class="deliver-page-count">
+                  <span>Deliveries Per Page</span>
+                  <select>
+                    <option>10</option>
+                    <option>20</option>
+                    <option>30</option>
+                    <option>40</option>
+                    <option>50</option>
+                  </select>
+                </div>
               </div>
             </div>
           </div>
         </div>
+        <div class="deviders"></div>
+        <!-- search table -->
       </div>
-      <div class="deviders"></div>
-      <!-- search table -->
+
+      <!-- Dashboard search deliveri End -->
     </div>
 
-    <!-- Dashboard search deliveri End -->
-  </div>
-
-  <!-- Transport Company Start -->
-  <section id="transport-company">
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-10">
-          <div class="tarnsport-company-content">
-            <h1>Are you a Transport Company?</h1>
-            <p>
-              Deliver My Motor is used by millions of individuals to get their
-              deliveries done.
-            </p>
-            <p>
-              Use our advanced search tools to identify loads that meet your
-              specifications. Simply state how much you want to be paid.
-            </p>
-            <p>
-              When your quote is accepted, you will receive a booking
-              confirmation email with all of the pickup and delivery
-              information.
-            </p>
-            <p class="mb-5">
-              We run a transparent marketplace with a you choose model
-              integrated into the platform. Sign up Today!
-            </p>
-            <p>
-              <a href="#" class="transport-company-btn">Get Started <i class="fa-regular fa-circle-right"></i></a>
-            </p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-  <!-- Transport Company End -->
-
-  <!-- Footer Start -->
-  <section id="footer">
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-4">
-          <div class="footer-first-cols-content">
-            <img src="./img/footer-logo.png" alt="footer-logo" class="footer-logo" />
-            <ul>
-              <li>
-                <a href="#"><i class="fa-solid fa-chevron-left"></i> About</a>
-              </li>
-              <li>
-                <a href="#"><i class="fa-solid fa-chevron-left"></i> Contact</a>
-              </li>
-              <li>
-                <a href="#"><i class="fa-solid fa-chevron-left"></i> How it Works</a>
-              </li>
-            </ul>
-            <div class="footer-social-icons-item">
-              <a href="#" class="social-icons-link"><i class="fa-brands fa-facebook-f"></i></a>
-              <a href="#" class="social-icons-link"><i class="fa-brands fa-twitter"></i></a>
-              <a href="#" class="social-icons-link"><i class="fa-brands fa-linkedin-in"></i></a>
-              <a href="#" class="social-icons-link"><i class="fa-brands fa-instagram"></i></a>
+    <!-- Transport Company Start -->
+    <section id="transport-company">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-10">
+            <div class="tarnsport-company-content">
+              <h1>Are you a Transport Company?</h1>
+              <p>
+                Deliver My Motor is used by millions of individuals to get their
+                deliveries done.
+              </p>
+              <p>
+                Use our advanced search tools to identify loads that meet your
+                specifications. Simply state how much you want to be paid.
+              </p>
+              <p>
+                When your quote is accepted, you will receive a booking
+                confirmation email with all of the pickup and delivery
+                information.
+              </p>
+              <p class="mb-5">
+                We run a transparent marketplace with a you choose model
+                integrated into the platform. Sign up Today!
+              </p>
+              <p>
+                <a href="#" class="transport-company-btn"
+                  >Get Started <i class="fa-regular fa-circle-right"></i
+                ></a>
+              </p>
             </div>
           </div>
         </div>
-        <div class="col-lg-3">
-          <div class="footer-first-cols-content">
-            <h4>Useful Links</h4>
-            <ul>
-              <li>
-                <a href="#"><i class="fa-solid fa-chevron-left"></i> Car Auction
-                  Collections</a>
-              </li>
-              <li>
-                <a href="#"><i class="fa-solid fa-chevron-left"></i> Car Collection
-                  Delivery</a>
-              </li>
-              <li>
-                <a href="#"><i class="fa-solid fa-chevron-left"></i> Motorcycle
-                  transportation</a>
-              </li>
-              <li>
-                <a href="#"><i class="fa-solid fa-chevron-left"></i> Urgent Breakdown
-                  Recovery</a>
-              </li>
-              <li>
-                <a href="#"><i class="fa-solid fa-chevron-left"></i> Van
-                  Transportation</a>
-              </li>
-              <li>
-                <a href="#"><i class="fa-solid fa-chevron-left"></i> Caravan
-                  Transport</a>
-              </li>
-              <li>
-                <a href="#"><i class="fa-solid fa-chevron-left"></i> Northern Ireland
-                  Transport</a>
-              </li>
-            </ul>
+      </div>
+    </section>
+    <!-- Transport Company End -->
+
+    <!-- Footer Start -->
+    <section id="footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-4">
+            <div class="footer-first-cols-content">
+              <img
+                src="./img/footer-logo.png"
+                alt="footer-logo"
+                class="footer-logo"
+              />
+              <ul>
+                <li>
+                  <a href="#"><i class="fa-solid fa-chevron-left"></i> About</a>
+                </li>
+                <li>
+                  <a href="#"
+                    ><i class="fa-solid fa-chevron-left"></i> Contact</a
+                  >
+                </li>
+                <li>
+                  <a href="#"
+                    ><i class="fa-solid fa-chevron-left"></i> How it Works</a
+                  >
+                </li>
+              </ul>
+              <div class="footer-social-icons-item">
+                <a href="#" class="social-icons-link"
+                  ><i class="fa-brands fa-facebook-f"></i
+                ></a>
+                <a href="#" class="social-icons-link"
+                  ><i class="fa-brands fa-twitter"></i
+                ></a>
+                <a href="#" class="social-icons-link"
+                  ><i class="fa-brands fa-linkedin-in"></i
+                ></a>
+                <a href="#" class="social-icons-link"
+                  ><i class="fa-brands fa-instagram"></i
+                ></a>
+              </div>
+            </div>
           </div>
-        </div>
-        <div class="col-lg-3">
-          <div class="footer-first-cols-content">
-            <h4>Support</h4>
-            <ul>
-              <li>
-                <a href="#"><i class="fa-solid fa-chevron-left"></i> Terms of Use</a>
-              </li>
-              <li>
-                <a href="#"><i class="fa-solid fa-chevron-left"></i> Privacy</a>
-              </li>
-              <li>
-                <a href="#"><i class="fa-solid fa-chevron-left"></i> Site Map</a>
-              </li>
-              <li>
-                <a href="#"><i class="fa-solid fa-chevron-left"></i> Transporter
-                  Rules</a>
-              </li>
-              <li>
-                <a href="#"><i class="fa-solid fa-chevron-left"></i> Help & FAQ's</a>
-              </li>
-            </ul>
+          <div class="col-lg-3">
+            <div class="footer-first-cols-content">
+              <h4>Useful Links</h4>
+              <ul>
+                <li>
+                  <a href="#"
+                    ><i class="fa-solid fa-chevron-left"></i> Car Auction
+                    Collections</a
+                  >
+                </li>
+                <li>
+                  <a href="#"
+                    ><i class="fa-solid fa-chevron-left"></i> Car Collection
+                    Delivery</a
+                  >
+                </li>
+                <li>
+                  <a href="#"
+                    ><i class="fa-solid fa-chevron-left"></i> Motorcycle
+                    transportation</a
+                  >
+                </li>
+                <li>
+                  <a href="#"
+                    ><i class="fa-solid fa-chevron-left"></i> Urgent Breakdown
+                    Recovery</a
+                  >
+                </li>
+                <li>
+                  <a href="#"
+                    ><i class="fa-solid fa-chevron-left"></i> Van
+                    Transportation</a
+                  >
+                </li>
+                <li>
+                  <a href="#"
+                    ><i class="fa-solid fa-chevron-left"></i> Caravan
+                    Transport</a
+                  >
+                </li>
+                <li>
+                  <a href="#"
+                    ><i class="fa-solid fa-chevron-left"></i> Northern Ireland
+                    Transport</a
+                  >
+                </li>
+              </ul>
+            </div>
           </div>
-        </div>
-        <div class="col-lg-2">
-          <div class="footer-first-cols-content">
-            <h4>More</h4>
-            <ul>
-              <li>
-                <a href="#"><i class="fa-solid fa-chevron-left"></i> Blog</a>
-              </li>
-              <li>
-                <a href="#"><i class="fa-solid fa-chevron-left"></i> Transporter</a>
-              </li>
-            </ul>
-            <a href="#"><img src="./img/footer-reviews-trust-logo.png" alt="footer-reviews-trust-logo"
-                class="footer-reviews-trust-logo" /></a>
+          <div class="col-lg-3">
+            <div class="footer-first-cols-content">
+              <h4>Support</h4>
+              <ul>
+                <li>
+                  <a href="#"
+                    ><i class="fa-solid fa-chevron-left"></i> Terms of Use</a
+                  >
+                </li>
+                <li>
+                  <a href="#"
+                    ><i class="fa-solid fa-chevron-left"></i> Privacy</a
+                  >
+                </li>
+                <li>
+                  <a href="#"
+                    ><i class="fa-solid fa-chevron-left"></i> Site Map</a
+                  >
+                </li>
+                <li>
+                  <a href="#"
+                    ><i class="fa-solid fa-chevron-left"></i> Transporter
+                    Rules</a
+                  >
+                </li>
+                <li>
+                  <a href="#"
+                    ><i class="fa-solid fa-chevron-left"></i> Help & FAQ's</a
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-lg-2">
+            <div class="footer-first-cols-content">
+              <h4>More</h4>
+              <ul>
+                <li>
+                  <a href="#"><i class="fa-solid fa-chevron-left"></i> Blog</a>
+                </li>
+                <li>
+                  <a href="#"
+                    ><i class="fa-solid fa-chevron-left"></i> Transporter</a
+                  >
+                </li>
+              </ul>
+              <a href="#"
+                ><img
+                  src="./img/footer-reviews-trust-logo.png"
+                  alt="footer-reviews-trust-logo"
+                  class="footer-reviews-trust-logo"
+              /></a>
+            </div>
           </div>
         </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- Footer End -->
+    <!-- Footer End -->
 
-  <!-- Copyright Footer Start -->
-  <footer id="copyright-footer">
-    Copyright © DeliverMyMotor Ltd. Powered by
-    <span><img class="hostxwhite-img" src="./img/hostoxwhite.png" alt="" width="90px" /></span>
-  </footer>
-  <!-- Copyright Footer End -->
+    <!-- Copyright Footer Start -->
+    <footer id="copyright-footer">
+      Copyright © DeliverMyMotor Ltd. Powered by
+      <span
+        ><img
+          class="hostxwhite-img"
+          src="./img/hostoxwhite.png"
+          alt=""
+          width="90px"
+      /></span>
+    </footer>
+    <!-- Copyright Footer End -->
 
-  <!-- Script Start -->
-  <script src="./js/script.js"></script>
-  <!-- Script End -->
-</body>
-
+    <!-- Script Start -->
+    <script src="./js/script.js"></script>
+    <!-- Script End -->
+  </body>
 </html>
