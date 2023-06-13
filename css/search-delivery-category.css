@@ -46,31 +46,31 @@
 
 @media screen and (max-width: 7680px) {
   .dashboard-sidebar {
-    height: 70%;
+    height: 50%;
   }
 }
 
 @media screen and (max-width: 3840px) {
   .dashboard-sidebar {
-    height: 130%;
+    height: 100%;
   }
 }
 
 @media screen and (max-width: 2560px) {
   .dashboard-sidebar {
-    height: 190%;
+    height: 120%;
   }
 }
 
 @media screen and (max-width: 1920px) {
   .dashboard-sidebar {
-    height: 250%;
+    height: 170%;
   }
 }
 
 @media screen and (max-width: 993px) {
   .dashboard-sidebar {
-    height: 390%;
+    height: 330%;
   }
 }
 
