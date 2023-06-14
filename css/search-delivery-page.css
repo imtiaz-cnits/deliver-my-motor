@@ -46,7 +46,7 @@
 
 @media screen and (max-width: 7680px) {
   .dashboard-sidebar {
-    height: 70%;
+    height: 62%;
   }
 }
 
@@ -64,7 +64,7 @@
 
 @media screen and (max-width: 1920px) {
   .dashboard-sidebar {
-    height: 250%;
+    height: 247%;
   }
 }
 
@@ -415,7 +415,7 @@ td {
 /* search delivery category page start */
 
 #search-delivery-page {
-  padding: 80px 0;
+  padding-top: 130px;
 }
 
 .search-category-box {
@@ -557,7 +557,7 @@ input[type="checkbox"] {
   background-size: cover;
   position: relative;
   z-index: 10 !important;
-  /* margin-top: 285px; */
+  margin-top: 218px;
 }
 
 .tarnsport-company-content {
@@ -930,8 +930,8 @@ input[type="checkbox"] {
   padding: 12px 45px !important;
 }
 
-.reset-btn {
-}
+/* .reset-btn {
+} */
 
 @media screen and (max-width: 1400px) {
   .search-input-box .form-check-label {
