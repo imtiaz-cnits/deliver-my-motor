@@ -47,7 +47,10 @@
 @media screen and (max-width: 7680px) {
   .dashboard-sidebar {
     height: 50%;
+<<<<<<< Updated upstream
     /* height: 62%; */
+=======
+>>>>>>> Stashed changes
   }
 }
 
@@ -66,8 +69,11 @@
 @media screen and (max-width: 1920px) {
   .dashboard-sidebar {
     height: 170%;
+<<<<<<< Updated upstream
 
     /* height: 247%; */
+=======
+>>>>>>> Stashed changes
   }
 }
 
