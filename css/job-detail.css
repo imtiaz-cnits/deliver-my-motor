@@ -682,7 +682,9 @@ td {
 /* Live Job Start */
 
 .live-job-header {
-  background-color: var(--brown);
+  /* background-color: var(--brown); */
+  background-color: #16bc56;
+  /* background-color: var(--tomato); */
   border-top-right-radius: 30px;
   border-bottom-right-radius: 30px;
   text-align: center;
@@ -750,6 +752,157 @@ td {
   color: var(--black);
   background: transparent;
 }
+
+/* Popup CSS Start */
+.popup {
+  background-color: #00000076;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: -27%;
+  justify-content: center;
+  align-items: center;
+  display: none;
+}
+.popup-content {
+  width: 700px;
+  height: 500px;
+  background: #ffffff;
+  border-radius: 6px;
+  position: relative;
+  padding: 50px 50px;
+}
+
+.close-btn {
+  color: #000000;
+  font-size: 25px;
+  top: 15px;
+  right: 15px;
+  position: absolute;
+  cursor: pointer;
+}
+.popup-head {
+  font-family: var(--header-font);
+  font-weight: 700;
+  color: var(--tomato);
+}
+.devider {
+  width: 250px;
+  height: 3px;
+  background-color: var(--black);
+  border-radius: 50px;
+  position: relative;
+  margin: auto;
+  margin-bottom: 40px;
+}
+.devider::after {
+  content: "";
+  position: absolute;
+  width: 70%;
+  height: 4px;
+  background-color: var(--tomato);
+  border-radius: 30px;
+  top: -0.6px;
+  left: 0;
+}
+.btn-send {
+  border: none;
+  color: var(--white);
+  padding: 12px 60px !important;
+  margin-top: 40px;
+  margin-left: 33%;
+  font-size: 1em;
+  font-family: var(--header-font);
+  border-radius: 6px;
+  background-color: var(--light-blue);
+}
+
+@media screen and (max-width: 996px) {
+  .popup-content {
+    top: -12%;
+    padding: 25px 25px;
+  }
+
+  .popup-head {
+    font-size: 1.3rem;
+    padding-top: 35px;
+    padding-bottom: 30px;
+  }
+
+  .devider {
+    display: none;
+  }
+
+  .btn-send {
+    margin-left: 15%;
+  }
+}
+
+/* Report Popup */
+.report-flag {
+  cursor: pointer;
+}
+
+.popup-2 {
+  background-color: #00000076;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: -27%;
+  justify-content: center;
+  align-items: center;
+  display: none;
+}
+.popup-content-2 {
+  width: 700px;
+  height: 500px;
+  background: #ffffff;
+  border-radius: 6px;
+  position: relative;
+  padding: 50px 50px;
+}
+.close-btn-2 {
+  color: #000000;
+  font-size: 25px;
+  top: 15px;
+  right: 15px;
+  position: absolute;
+  cursor: pointer;
+}
+.btn-send-2 {
+  border: none;
+  color: var(--white);
+  padding: 12px 60px !important;
+  margin-top: 40px;
+  margin-left: 33%;
+  font-size: 1em;
+  font-family: var(--header-font);
+  border-radius: 6px;
+  background-color: var(--brown);
+}
+
+@media screen and (max-width: 996px) {
+  .popup-content-2 {
+    top: -12%;
+    padding: 25px 25px;
+  }
+
+  .popup-head {
+    font-size: 1.3rem;
+    padding-top: 35px;
+    padding-bottom: 30px;
+  }
+
+  .devider {
+    display: none;
+  }
+
+  .btn-send-2 {
+    margin-left: 15%;
+  }
+}
+
+/* Popup CSS End */
 
 .car-transport {
   background-color: #c4dffc;
