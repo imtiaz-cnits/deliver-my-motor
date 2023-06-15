@@ -735,6 +735,7 @@ td {
   background-color: var(--brown);
   text-decoration: none;
   font-size: 1em;
+  margin: 20px;
   padding: 10px 0;
   color: var(--white);
   border-radius: 6px;

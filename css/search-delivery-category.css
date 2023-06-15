@@ -46,11 +46,8 @@
 
 @media screen and (max-width: 7680px) {
   .dashboard-sidebar {
-<<<<<<< HEAD:css/search-delivery-category.css
     height: 50%;
-=======
-    height: 62%;
->>>>>>> main:css/search-delivery-page.css
+    /* height: 62%; */
   }
 }
 
@@ -68,11 +65,9 @@
 
 @media screen and (max-width: 1920px) {
   .dashboard-sidebar {
-<<<<<<< HEAD:css/search-delivery-category.css
     height: 170%;
-=======
-    height: 247%;
->>>>>>> main:css/search-delivery-page.css
+
+    /* height: 247%; */
   }
 }
 
@@ -434,7 +429,7 @@ td {
 
 .check-box {
   font-size: 1.2em;
-  width: 220px;
+  width: 245px;
   margin: 10px auto;
 }
 
