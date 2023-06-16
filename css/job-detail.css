@@ -736,8 +736,10 @@ td {
 .live-job-profile-upgrade-btn {
   background-color: var(--brown);
   text-decoration: none;
+  border: none;
+  width: 90%;
   font-size: 1em;
-  margin: 20px;
+  margin: 0 auto 20px;
   padding: 10px 0;
   color: var(--white);
   border-radius: 6px;
@@ -886,7 +888,6 @@ td {
 
 @media screen and (max-width: 996px) {
   .popup-content-2 {
-    top: -12%;
     padding: 25px 25px;
   }
 
