@@ -634,20 +634,31 @@ td {
   box-shadow: 0px 0px 15px rgb(0, 0, 0, 0.2);
   padding: 20px;
   border-radius: 6px;
-  margin-top: 20px;
-  display: flex;
-  justify-content: center;
-}
-
-.job-inform-time-cards-icon {
-  width: 50px;
-  text-align: center;
+  margin-bottom: 20px;
   display: flex;
   align-items: center;
 }
 
+.job-inform-time-cards-icon {
+  width: 50px;
+  height: 50px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 5px 15px;
+  border-radius: 6px;
+  margin-right: 10px;
+  background-color: #e4ecf9;
+}
+
+.job-inform-time-cards-icon i {
+  font-size: 25px;
+  color: var(--brown);
+}
+
 .job-inform-time-cards-icon img {
-  width: 40px;
+  width: 30px;
 }
 
 .job-inform-time-cards-content p {
@@ -832,14 +843,6 @@ td {
   cursor: pointer;
 }
 
-.popup-head {
-  font-family: var(--header-font);
-  font-weight: 700;
-  color: #fff;
-  background-image: url(../img/job-detail-head-bg.svg);
-  background-position: center center;
-  background-repeat: no-repeat;
-}
 .devider {
   width: 250px;
   height: 3px;
