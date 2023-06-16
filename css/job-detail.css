@@ -765,6 +765,7 @@ td {
   justify-content: center;
   align-items: center;
   display: none;
+  z-index: 999 !important;
 }
 .popup-content {
   width: 700px;
@@ -852,6 +853,7 @@ td {
   justify-content: center;
   align-items: center;
   display: none;
+  z-index: 999 !important;
 }
 .popup-content-2 {
   width: 700px;
