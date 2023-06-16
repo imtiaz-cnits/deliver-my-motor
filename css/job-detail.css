@@ -14,7 +14,7 @@
   --tomato: #ff861c;
   --blue: #055dbc;
   --light-blue: #0776ee;
-  --brown: #9d1f1f;
+  --brown: #c90606;
   --white: #ffffff;
   --black: #000000;
 }
@@ -617,7 +617,7 @@ td {
 
 .job-inform-card {
   background-color: var(--white);
-  box-shadow: 0px 0px 15px rgb(0, 0, 0, 0.2);
+  box-shadow: 0px 0px 15px #0000001a;
   padding: 10px 20px;
   text-align: center;
   border-radius: 6px;
@@ -691,7 +691,7 @@ td {
 .job-inform-comment p {
   font-family: var(--header-font);
   color: var(--black);
-  box-shadow: 0px 0px 15px rgb(0, 0, 0, 0.2);
+  box-shadow: 0px 0px 15px #0000001a;
   font-size: 1em;
   font-weight: 500;
   padding: 10px 0 10px 20px;
@@ -727,7 +727,7 @@ td {
 .live-job-profile {
   background-color: var(--white);
   border-radius: 6px;
-  box-shadow: 0px 0px 15px rgb(0, 0, 0, 0.2);
+  box-shadow: 0px 0px 15px #0000001a;
   padding: 40px 20px;
   margin-top: 30px;
 }
@@ -1041,7 +1041,7 @@ td {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: right center;
-  box-shadow: 0px 0px 15px rgb(0, 0, 0, 0.2);
+  box-shadow: 0px 0px 15px #0000001a;
   padding: 40px;
   margin-top: 30px;
 }
@@ -1069,7 +1069,7 @@ td {
   border-radius: 6px;
   margin-top: 40px;
   margin-bottom: 80px;
-  box-shadow: 0px 0px 15px rgb(0, 0, 0, 0.2);
+  box-shadow: 0px 0px 15px #0000001a;
 }
 
 .job-details-comment p {
@@ -1144,7 +1144,7 @@ td {
 
 .transporter-card {
   background-color: var(--white);
-  box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.125);
+  box-shadow: 0px 0px 15px #0000001a;
   padding: 10px 20px;
   text-align: center;
   border-radius: 6px;
@@ -1354,7 +1354,7 @@ td {
   background-size: cover;
   padding: 30px;
   border-radius: 6px;
-  box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.125);
+  box-shadow: 0px 0px 15px #0000001a;
   margin-top: 60px;
 }
 
