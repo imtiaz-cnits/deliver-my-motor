@@ -750,7 +750,28 @@ td {
   transition: 0.5s;
 }
 
+.live-job-profile-upgrade-btn-1 {
+  background-color: var(--brown);
+  text-decoration: none;
+  border: none;
+  font-size: 1em;
+  margin: 0 auto 20px;
+  padding: 10px 70px;
+  color: var(--white);
+  border-radius: 6px;
+  text-align: center;
+  font-family: var(--header-font);
+  border: 1px solid #aaaaaa;
+  display: block;
+  transition: 0.5s;
+}
+
 .live-job-profile-upgrade-btn:hover {
+  color: var(--black);
+  background: transparent;
+}
+
+.live-job-profile-upgrade-btn-1:hover {
   color: var(--black);
   background: transparent;
 }
@@ -769,9 +790,24 @@ td {
   display: none;
   z-index: 999 !important;
 }
+
+.popup-1 {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #00000076;
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+  display: none;
+  z-index: 999 !important;
+}
+
 .popup-content {
   width: 700px;
-  height: 500px;
+  /* height: 500px; */
   background: #ffffff;
   border-radius: 6px;
   position: relative;
@@ -786,6 +822,16 @@ td {
   position: absolute;
   cursor: pointer;
 }
+
+.close-btn-1 {
+  color: #000000;
+  font-size: 25px;
+  top: 15px;
+  right: 15px;
+  position: absolute;
+  cursor: pointer;
+}
+
 .popup-head {
   font-family: var(--header-font);
   font-weight: 700;
@@ -831,7 +877,7 @@ td {
   }
 
   .devider {
-    display: none;
+    width: 140px;
   }
 
   .btn-send {
@@ -895,10 +941,6 @@ td {
     font-size: 1.3rem;
     padding-top: 35px;
     padding-bottom: 30px;
-  }
-
-  .devider {
-    display: none;
   }
 
   .btn-send-2 {
