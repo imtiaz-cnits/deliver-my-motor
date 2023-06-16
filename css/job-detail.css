@@ -835,7 +835,10 @@ td {
 .popup-head {
   font-family: var(--header-font);
   font-weight: 700;
-  color: var(--tomato);
+  color: #fff;
+  background-image: url(../img/job-detail-head-bg.svg);
+  background-position: center center;
+  background-repeat: no-repeat;
 }
 .devider {
   width: 250px;
