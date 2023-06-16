@@ -673,6 +673,12 @@ td {
   margin-bottom: 0;
 }
 
+.job-map {
+  background-color: #fff;
+  box-shadow: 0px 0px 15px #0000001a;
+  border-radius: 10px;
+}
+
 .job-inform-map {
   margin-top: 30px;
 }
