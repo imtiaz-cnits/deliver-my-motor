@@ -593,6 +593,14 @@ td {
 
 /* Job Details Start */
 
+.job-details-head {
+  background: url(../img/job-detail-head-bg.svg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  margin: auto;
+  color: #fff;
+}
+
 .job-information-header {
   background-color: var(--light-blue);
   border-top-left-radius: 30px;
@@ -690,6 +698,14 @@ td {
   border-radius: 6px;
 }
 
+@media screen and (max-width: 768px) {
+  .job-details-head {
+    background-size: contain;
+  }
+  .job-details-head h1 {
+    font-size: 2rem;
+  }
+}
 /* Live Job Start */
 
 .live-job-header {
