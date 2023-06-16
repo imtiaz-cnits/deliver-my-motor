@@ -755,11 +755,13 @@ td {
 
 /* Popup CSS Start */
 .popup {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   background-color: #00000076;
   width: 100%;
   height: 100%;
-  position: absolute;
-  top: -27%;
   justify-content: center;
   align-items: center;
   display: none;
@@ -810,7 +812,8 @@ td {
   color: var(--white);
   padding: 12px 60px !important;
   margin-top: 40px;
-  margin-left: 33%;
+  /* margin-left: 33%; */
+  display: inline-block;
   font-size: 1em;
   font-family: var(--header-font);
   border-radius: 6px;
@@ -818,11 +821,6 @@ td {
 }
 
 @media screen and (max-width: 996px) {
-  .popup-content {
-    top: -12%;
-    padding: 25px 25px;
-  }
-
   .popup-head {
     font-size: 1.3rem;
     padding-top: 35px;
@@ -834,7 +832,7 @@ td {
   }
 
   .btn-send {
-    margin-left: 15%;
+    padding: 10px 35px !important;
   }
 }
 
@@ -847,8 +845,10 @@ td {
   background-color: #00000076;
   width: 100%;
   height: 100%;
-  position: absolute;
-  top: -27%;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   justify-content: center;
   align-items: center;
   display: none;
@@ -874,7 +874,8 @@ td {
   color: var(--white);
   padding: 12px 60px !important;
   margin-top: 40px;
-  margin-left: 33%;
+  display: inline-block;
+  /* margin-left: 33%; */
   font-size: 1em;
   font-family: var(--header-font);
   border-radius: 6px;
@@ -899,6 +900,15 @@ td {
 
   .btn-send-2 {
     margin-left: 15%;
+  }
+}
+
+@media screen and (max-width: 475px) {
+  .popup-content {
+    padding: 50px 20px;
+  }
+  .popup-content-2 {
+    padding: 50px 20px;
   }
 }
 
