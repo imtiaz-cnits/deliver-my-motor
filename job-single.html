@@ -1,618 +1,521 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Job Single Page - Deliver My Motor</title>
 
-    <!-- CSS Link -->
-    <link rel="stylesheet" href="./css/job-detail.css" />
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Job Single Page - Deliver My Motor</title>
 
-    <!-- Bootstrap Link -->
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-    />
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- CSS Link -->
+  <link rel="stylesheet" href="./css/job-detail.css" />
 
-    <!-- Font Awesome Link -->
-    <script
-      src="https://kit.fontawesome.com/44f1800e1f.js"
-      crossorigin="anonymous"
-    ></script>
-  </head>
+  <!-- Bootstrap Link -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
 
-  <body>
-    <!-- sidebar Start -->
-    <div class="dashboard-sidebar close">
-      <div class="dahsboard-navbar" id="sidenavbar">
-        <div class="sidebar-header d-flex justify-content-between">
-          <img src="./img/footer-logo.png" alt="" class="sidebar-logo" />
-          <button type="button" id="sideNavbarXmarkIcon" class="toggles">
-            <i class="fa-solid fa-xmark"></i>
-          </button>
+  <!-- Font Awesome Link -->
+  <script src="https://kit.fontawesome.com/44f1800e1f.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+  <!-- sidebar Start -->
+  <div class="dashboard-sidebar close">
+    <div class="dahsboard-navbar" id="sidenavbar">
+      <div class="sidebar-header d-flex justify-content-between">
+        <img src="./img/footer-logo.png" alt="" class="sidebar-logo" />
+        <button type="button" id="sideNavbarXmarkIcon" class="toggles">
+          <i class="fa-solid fa-xmark"></i>
+        </button>
+      </div>
+      <ul class="navbar-nav">
+        <li>
+          <a href="#"><i class="fa-solid fa-house-user"></i> Dashboard</a>
+        </li>
+        <li>
+          <a href="#"><i class="fa-regular fa-thumbs-up"></i> Reviews</a>
+        </li>
+        <li>
+          <a href="#"><i class="fa-sharp fa-solid fa-circle-info"></i> Help And FAQ</a>
+        </li>
+        <li>
+          <a href="#"><i class="fa-solid fa-arrow-right-from-bracket"></i> Logout</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+  <!-- sidebar End -->
+
+  <div class="home">
+    <!-- Navbar Start -->
+    <nav class="navbar navbar-expand-lg">
+      <div class="container">
+        <button type="button" id="sideNavbarIcon" class="toggle">
+          <i class="fa-solid fa-bars-staggered"></i>
+        </button>
+        <a class="navbar-brand" href="#"><img src="./img/logo.png" alt="logo" class="logo dashboard-navbar-logo" /></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#yournavbar">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="mynavbar">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="#">Dashboard</a>
+            </li>
+          </ul>
         </div>
-        <ul class="navbar-nav">
-          <li>
-            <a href="#"><i class="fa-solid fa-house-user"></i> Dashboard</a>
-          </li>
-          <li>
-            <a href="#"><i class="fa-regular fa-thumbs-up"></i> Reviews</a>
-          </li>
-          <li>
-            <a href="#"
-              ><i class="fa-sharp fa-solid fa-circle-info"></i> Help And FAQ</a
-            >
-          </li>
-          <li>
-            <a href="#"
-              ><i class="fa-solid fa-arrow-right-from-bracket"></i> Logout</a
-            >
-          </li>
-        </ul>
+      </div>
+    </nav>
+    <!-- Navbar End -->
+
+    <!-- Job Details Start -->
+    <section id="job-details">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-12">
+            <div class="popup-head text-center mb-5">
+              <h1>BMW <span style="color: #000">218d</span></h1>
+              <div class="devider"></div>
+              <button class="live-job-profile-upgrade-btn" id="qbutton" style="width: 20%;">Provide Quote</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-lg-8">
+            <div class="row">
+              <div class="col-lg-4">
+                <div class="job-inform-card">
+                  <p>
+                    <i class="fa-sharp fa-solid fa-location-dot"></i>
+                  </p>
+                  <h4>Collection</h4>
+                  <p>Christchurch Avenue, London, NW6 7BB, UK</p>
+                </div>
+              </div>
+              <div class="col-lg-4">
+                <div class="job-inform-card">
+                  <p>
+                    <i class="fa-solid fa-truck-arrow-right"></i>
+                  </p>
+                  <h4>Delivery</h4>
+                  <p>5270 Ajdovščina, Slovenia</p>
+                </div>
+              </div>
+              <div class="col-lg-4">
+                <div class="job-inform-card">
+                  <p>
+                    <i class="fa-solid fa-calendar-days"></i>
+                  </p>
+                  <h4>Date Listed</h4>
+                  <p>Listed 16 Jan</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="col-lg-6">
+                <div class="job-inform-time-cards">
+                  <div class="job-inform-time-cards-icon">
+                    <img src="./icon/calender-icon.svg" alt="" />
+                  </div>
+                  <div class="job-inform-time-cards-content">
+                    <h4>Time Scale</h4>
+                    <p>2 Week</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-6">
+                <div class="job-inform-time-cards">
+                  <div class="job-inform-time-cards-icon">
+                    <img src="./icon/plane-icon.svg" alt="" />
+                  </div>
+                  <div class="job-inform-time-cards-content">
+                    <h4>Travel Time</h4>
+                    <p>1064 minutes</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="col-sm-12">
+                <div class="job-inform-map">
+                  <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d158857.7281078505!2d-0.2416804375114147!3d51.52877184053824!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47d8a00baf21de75%3A0x52963a5addd52a99!2sLondon%2C%20UK!5e0!3m2!1sen!2sbd!4v1678808390172!5m2!1sen!2sbd"
+                    style="border: 0" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="col-lg-4">
+                <div class="job-inform-card mt-4">
+                  <p>DISTANCE</p>
+                  <p>
+                    <img src="./icon/location-icon.svg" alt="" />
+                  </p>
+                  <h4>1049 Miles</h4>
+                </div>
+              </div>
+              <div class="col-lg-4">
+                <div class="job-inform-card mt-4">
+                  <p>NUMBER OF VEHICLES</p>
+                  <p>
+                    <img src="./icon/bus-icon.svg" alt="" />
+                  </p>
+                  <h4>1 Vehicles</h4>
+                </div>
+              </div>
+              <div class="col-lg-4">
+                <div class="job-inform-card mt-4">
+                  <p>DRIVEN/TRANSPORTED?</p>
+                  <h4>BOTH</h4>
+                </div>
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="col-lg-8">
+                <div class="job-inform-comment">
+                  <p>I need my car transported to Slovenia.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4">
+            <div class="row">
+              <div class="col-sm-12">
+                <div class="live-job-header">
+                  <h1>LIVE JOB</h1>
+                </div>
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="col-sm-12">
+                <div class="live-job-profile">
+                  <div class="live-job-profile-avatar">
+                    <img src="./icon/live-job-avatar.png" alt="" />
+                  </div>
+                  <p class="live-job-profile-btn">
+                    <a class="live-job-profile-btn" href="#">Polona</a><span>
+                      -
+                      <span class="text-danger report-flag"><i class="fa-solid fa-flag" id="rbutton"></i></span></span>
+                  </p>
+
+                  <p class="text-center mt-3 mb-5">
+                    (No ratings)<span>(0)</span>
+                  </p>
+                  <button type="button" class="live-job-profile-upgrade-btn" id="qbutton">
+                    Provide Quote
+                  </button>
+
+                  <a href="#" class="live-job-profile-upgrade-btn">Ask Question</a>
+
+                  <div class="car-transport">
+                    <p>Listed In: <a href="#">Car Transport</a></p>
+                    <p>There are no pictures posted.</p>
+                  </div>
+
+                  <div class="live-job-profile-social-icons">
+                    <p>Share this job on your Socials.</p>
+
+                    <a href="#" class="social-icons-link"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="#" class="social-icons-link"><i class="fa-brands fa-twitter"></i></a>
+                    <a href="#" class="social-icons-link"><i class="fa-brands fa-linkedin-in"></i></a>
+                    <a href="#" class="social-icons-link"><i class="fa-brands fa-instagram"></i></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Popup Button for Provide Quote Start -->
+      <div class="popup">
+        <div class="popup-content m-3">
+          <i class="fa-solid fa-xmark close-btn"></i>
+          <h2 class="popup-head text-center">
+            SUBMIT A QUOTE <span style="color: black"> THIS JOB</span>
+          </h2>
+          <div class="devider"></div>
+          <form action="">
+            <p style="color: var(--blue); font-weight: 600">Your Quote</p>
+            <input type="text" class="form-control" placeholder="£" />
+            <p class="pt-4" style="color: var(--tomato); font-weight: 600">
+              Message
+            </p>
+            <textarea class="form-control"
+              placeholder="Do not post Company names or Telephone numbers, number input is disabled. Follow the rules."
+              rows="3"></textarea>
+            <div class="send-button text-center">
+              <button type="button" class="btn-send">Send Quote</button>
+            </div>
+          </form>
+        </div>
+      </div>
+
+      <!-- Report Popup -->
+      <div class="popup-2">
+        <div class="popup-content-2 m-3">
+          <i class="fa-solid fa-xmark close-btn-2"></i>
+          <h2 class="popup-head text-center">
+            Report About<span style="color: black"> Post/ User</span>
+          </h2>
+          <div class="devider"></div>
+          <form action="">
+            <p class="pt-4" style="color: var(--tomato); font-weight: 600">
+              Message
+            </p>
+            <textarea class="form-control" placeholder="Write Something..." rows="5"></textarea>
+            <div class="send-button text-center">
+              <button type="button" class="btn-send-2">Report</button>
+            </div>
+          </form>
+        </div>
+      </div>
+      <!-- Popup Button for Provide Quote -->
+    </section>
+
+    <!-- job-details-comment-dashboard -->
+    <section id="job-details-comment-dashboard">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-12">
+            <div class="job-details-comment-dashboard-content">
+              <table class="job-table align-middle">
+                <thead>
+                  <tr>
+                    <th scope="col" style="width: 20%">Provider</th>
+                    <th scope="col" style="width: 10%">Quoted</th>
+                    <th scope="col" style="width: 10%">Date</th>
+                    <th scope="col">Comment</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="table-recovery">
+                      <p><a href="#">Motivate Recovery</a></p>
+                      <p>(No ratings)<span>(0)</span></p>
+                    </td>
+                    <td>Private</td>
+                    <td>28, Jan</td>
+                    <td>
+                      Please contact me before you accept my quote to check my
+                      availability.* Price is for run and drive cars only. If
+                      your car is not running please let me know at least one
+                      day before day of collection. Regards.
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="table-rating">
+                      <span><i class="fa-solid fa-star"></i></span>
+                      <span><i class="fa-solid fa-star"></i></span>
+                      <span><i class="fa-solid fa-star"></i></span>
+                      <span><i class="fa-solid fa-star"></i></span>
+                      <span><i class="fa-regular fa-star"></i></span>
+                      <span>(4)</span>
+                    </td>
+                    <td>Private</td>
+                    <td>18, Jan</td>
+                    <td>
+                      Hi I have availability next week if happy with quote
+                      please get intouch thanks
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-lg-5">
+            <div class="job-details-comment">
+              <p>I need my car transported to Slovenia.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Job Details End -->
+  </div>
+
+  <!-- Transport Company Start -->
+  <section id="transport-company">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-10">
+          <div class="tarnsport-company-content">
+            <h1>Are you a Transport Company?</h1>
+            <p>
+              Deliver My Motor is used by millions of individuals to get their
+              deliveries done.
+            </p>
+            <p>
+              Use our advanced search tools to identify loads that meet your
+              specifications. Simply state how much you want to be paid.
+            </p>
+            <p>
+              When your quote is accepted, you will receive a booking
+              confirmation email with all of the pickup and delivery
+              information.
+            </p>
+            <p class="mb-5">
+              We run a transparent marketplace with a you choose model
+              integrated into the platform. Sign up Today!
+            </p>
+            <p>
+              <a href="#" class="transport-company-btn">Get Started <i class="fa-regular fa-circle-right"></i></a>
+            </p>
+          </div>
+        </div>
       </div>
     </div>
-    <!-- sidebar End -->
+  </section>
+  <!-- Transport Company End -->
 
-    <div class="home">
-      <!-- Navbar Start -->
-      <nav class="navbar navbar-expand-lg">
-        <div class="container">
-          <button type="button" id="sideNavbarIcon" class="toggle">
-            <i class="fa-solid fa-bars-staggered"></i>
-          </button>
-          <a class="navbar-brand" href="#"
-            ><img
-              src="./img/logo.png"
-              alt="logo"
-              class="logo dashboard-navbar-logo"
-          /></a>
-          <button
-            class="navbar-toggler"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#yournavbar"
-          >
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="mynavbar">
-            <ul class="navbar-nav ms-auto">
-              <li class="nav-item">
-                <a class="nav-link" href="#">Dashboard</a>
+  <!-- Footer Start -->
+  <section id="footer">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-4">
+          <div class="footer-first-cols-content">
+            <img src="./img/footer-logo.png" alt="footer-logo" class="footer-logo" />
+            <ul>
+              <li>
+                <a href="#"><i class="fa-solid fa-chevron-left"></i> About</a>
+              </li>
+              <li>
+                <a href="#"><i class="fa-solid fa-chevron-left"></i> Contact</a>
+              </li>
+              <li>
+                <a href="#"><i class="fa-solid fa-chevron-left"></i> How it Works</a>
+              </li>
+            </ul>
+            <div class="footer-social-icons-item">
+              <a href="#" class="social-icons-link"><i class="fa-brands fa-facebook-f"></i></a>
+              <a href="#" class="social-icons-link"><i class="fa-brands fa-twitter"></i></a>
+              <a href="#" class="social-icons-link"><i class="fa-brands fa-linkedin-in"></i></a>
+              <a href="#" class="social-icons-link"><i class="fa-brands fa-instagram"></i></a>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3">
+          <div class="footer-first-cols-content">
+            <h4>Useful Links</h4>
+            <ul>
+              <li>
+                <a href="#"><i class="fa-solid fa-chevron-left"></i> Car Auction
+                  Collections</a>
+              </li>
+              <li>
+                <a href="#"><i class="fa-solid fa-chevron-left"></i> Car Collection
+                  Delivery</a>
+              </li>
+              <li>
+                <a href="#"><i class="fa-solid fa-chevron-left"></i> Motorcycle
+                  transportation</a>
+              </li>
+              <li>
+                <a href="#"><i class="fa-solid fa-chevron-left"></i> Urgent Breakdown
+                  Recovery</a>
+              </li>
+              <li>
+                <a href="#"><i class="fa-solid fa-chevron-left"></i> Van
+                  Transportation</a>
+              </li>
+              <li>
+                <a href="#"><i class="fa-solid fa-chevron-left"></i> Caravan
+                  Transport</a>
+              </li>
+              <li>
+                <a href="#"><i class="fa-solid fa-chevron-left"></i> Northern Ireland
+                  Transport</a>
               </li>
             </ul>
           </div>
         </div>
-      </nav>
-      <!-- Navbar End -->
-
-      <!-- Job Details Start -->
-      <section id="job-details">
-        <div class="container">
-          <div class="row">
-            <div class="col-sm-12">
-              <div class="popup-head text-center">
-                <h1>BMW <span style="color: #000">218d</span></h1>
-                <div class="devider"></div>
-              </div>
-            </div>
-          </div>
-
-          <div class="row">
-            <div class="col-lg-8">
-              <div class="row">
-                <div class="col-lg-4">
-                  <div class="job-inform-card">
-                    <p>
-                      <i class="fa-sharp fa-solid fa-location-dot"></i>
-                    </p>
-                    <h4>Collection</h4>
-                    <p>Christchurch Avenue, London, NW6 7BB, UK</p>
-                  </div>
-                </div>
-                <div class="col-lg-4">
-                  <div class="job-inform-card">
-                    <p>
-                      <i class="fa-solid fa-truck-arrow-right"></i>
-                    </p>
-                    <h4>Delivery</h4>
-                    <p>5270 Ajdovščina, Slovenia</p>
-                  </div>
-                </div>
-                <div class="col-lg-4">
-                  <div class="job-inform-card">
-                    <p>
-                      <i class="fa-solid fa-calendar-days"></i>
-                    </p>
-                    <h4>Date Listed</h4>
-                    <p>Listed 16 Jan</p>
-                  </div>
-                </div>
-              </div>
-
-              <div class="row">
-                <div class="col-lg-6">
-                  <div class="job-inform-time-cards">
-                    <div class="job-inform-time-cards-icon">
-                      <img src="./icon/calender-icon.svg" alt="" />
-                    </div>
-                    <div class="job-inform-time-cards-content">
-                      <h4>Time Scale</h4>
-                      <p>2 Week</p>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-lg-6">
-                  <div class="job-inform-time-cards">
-                    <div class="job-inform-time-cards-icon">
-                      <img src="./icon/plane-icon.svg" alt="" />
-                    </div>
-                    <div class="job-inform-time-cards-content">
-                      <h4>Travel Time</h4>
-                      <p>1064 minutes</p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-              <div class="row">
-                <div class="col-sm-12">
-                  <div class="job-inform-map">
-                    <iframe
-                      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d158857.7281078505!2d-0.2416804375114147!3d51.52877184053824!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47d8a00baf21de75%3A0x52963a5addd52a99!2sLondon%2C%20UK!5e0!3m2!1sen!2sbd!4v1678808390172!5m2!1sen!2sbd"
-                      style="border: 0"
-                      allowfullscreen=""
-                      loading="lazy"
-                      referrerpolicy="no-referrer-when-downgrade"
-                    ></iframe>
-                  </div>
-                </div>
-              </div>
-
-              <div class="row">
-                <div class="col-lg-4">
-                  <div class="job-inform-card mt-4">
-                    <p>DISTANCE</p>
-                    <p>
-                      <img src="./icon/location-icon.svg" alt="" />
-                    </p>
-                    <h4>1049 Miles</h4>
-                  </div>
-                </div>
-                <div class="col-lg-4">
-                  <div class="job-inform-card mt-4">
-                    <p>NUMBER OF VEHICLES</p>
-                    <p>
-                      <img src="./icon/bus-icon.svg" alt="" />
-                    </p>
-                    <h4>1 Vehicles</h4>
-                  </div>
-                </div>
-                <div class="col-lg-4">
-                  <div class="job-inform-card mt-4">
-                    <p>DRIVEN/TRANSPORTED?</p>
-                    <h4>BOTH</h4>
-                  </div>
-                </div>
-              </div>
-
-              <div class="row">
-                <div class="col-lg-8">
-                  <div class="job-inform-comment">
-                    <p>I need my car transported to Slovenia.</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <div class="col-lg-4">
-              <div class="row">
-                <div class="col-sm-12">
-                  <div class="live-job-header">
-                    <h1>LIVE JOB</h1>
-                  </div>
-                </div>
-              </div>
-
-              <div class="row">
-                <div class="col-sm-12">
-                  <div class="live-job-profile">
-                    <div class="live-job-profile-avatar">
-                      <img src="./icon/live-job-avatar.png" alt="" />
-                    </div>
-                    <p class="live-job-profile-btn">
-                      <a class="live-job-profile-btn" href="#">Polona</a
-                      ><span>
-                        -
-                        <span class="text-danger report-flag"
-                          ><i class="fa-solid fa-flag" id="rbutton"></i></span
-                      ></span>
-                    </p>
-
-                    <p class="text-center mt-3 mb-5">
-                      (No ratings)<span>(0)</span>
-                    </p>
-                    <button
-                      type="button"
-                      class="live-job-profile-upgrade-btn"
-                      id="qbutton"
-                    >
-                      Provide Quote
-                    </button>
-
-                    <a href="#" class="live-job-profile-upgrade-btn"
-                      >Ask Question</a
-                    >
-
-                    <div class="car-transport">
-                      <p>Listed In: <a href="#">Car Transport</a></p>
-                      <p>There are no pictures posted.</p>
-                    </div>
-
-                    <div class="live-job-profile-social-icons">
-                      <p>Share this job on your Socials.</p>
-
-                      <a href="#" class="social-icons-link"
-                        ><i class="fa-brands fa-facebook-f"></i
-                      ></a>
-                      <a href="#" class="social-icons-link"
-                        ><i class="fa-brands fa-twitter"></i
-                      ></a>
-                      <a href="#" class="social-icons-link"
-                        ><i class="fa-brands fa-linkedin-in"></i
-                      ></a>
-                      <a href="#" class="social-icons-link"
-                        ><i class="fa-brands fa-instagram"></i
-                      ></a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
+        <div class="col-lg-3">
+          <div class="footer-first-cols-content">
+            <h4>Support</h4>
+            <ul>
+              <li>
+                <a href="#"><i class="fa-solid fa-chevron-left"></i> Terms of Use</a>
+              </li>
+              <li>
+                <a href="#"><i class="fa-solid fa-chevron-left"></i> Privacy</a>
+              </li>
+              <li>
+                <a href="#"><i class="fa-solid fa-chevron-left"></i> Site Map</a>
+              </li>
+              <li>
+                <a href="#"><i class="fa-solid fa-chevron-left"></i> Transporter
+                  Rules</a>
+              </li>
+              <li>
+                <a href="#"><i class="fa-solid fa-chevron-left"></i> Help & FAQ's</a>
+              </li>
+            </ul>
           </div>
         </div>
-
-        <!-- Popup Button for Provide Quote Start -->
-        <div class="popup">
-          <div class="popup-content m-3">
-            <i class="fa-solid fa-xmark close-btn"></i>
-            <h2 class="popup-head text-center">
-              SUBMIT A QUOTE <span style="color: black"> THIS JOB</span>
-            </h2>
-            <div class="devider"></div>
-            <form action="">
-              <p style="color: var(--blue); font-weight: 600">Your Quote</p>
-              <input type="text" class="form-control" placeholder="£" />
-              <p class="pt-4" style="color: var(--tomato); font-weight: 600">
-                Message
-              </p>
-              <textarea
-                class="form-control"
-                placeholder="Do not post Company names or Telephone numbers, number input is disabled. Follow the rules."
-                rows="3"
-              ></textarea>
-              <div class="send-button text-center">
-                <button type="button" class="btn-send">Send Quote</button>
-              </div>
-            </form>
+        <div class="col-lg-2">
+          <div class="footer-first-cols-content">
+            <h4>More</h4>
+            <ul>
+              <li>
+                <a href="#"><i class="fa-solid fa-chevron-left"></i> Blog</a>
+              </li>
+              <li>
+                <a href="#"><i class="fa-solid fa-chevron-left"></i> Transporter</a>
+              </li>
+            </ul>
+            <a href="#"><img src="./img/footer-reviews-trust-logo.png" alt="footer-reviews-trust-logo"
+                class="footer-reviews-trust-logo" /></a>
           </div>
         </div>
-
-        <!-- Report Popup -->
-        <div class="popup-2">
-          <div class="popup-content-2 m-3">
-            <i class="fa-solid fa-xmark close-btn-2"></i>
-            <h2 class="popup-head text-center">
-              Report About<span style="color: black"> Post/ User</span>
-            </h2>
-            <div class="devider"></div>
-            <form action="">
-              <p class="pt-4" style="color: var(--tomato); font-weight: 600">
-                Message
-              </p>
-              <textarea
-                class="form-control"
-                placeholder="Write Something..."
-                rows="5"
-              ></textarea>
-              <div class="send-button text-center">
-                <button type="button" class="btn-send-2">Report</button>
-              </div>
-            </form>
-          </div>
-        </div>
-        <!-- Popup Button for Provide Quote -->
-      </section>
-
-      <!-- job-details-comment-dashboard -->
-      <section id="job-details-comment-dashboard">
-        <div class="container">
-          <div class="row">
-            <div class="col-sm-12">
-              <div class="job-details-comment-dashboard-content">
-                <table class="job-table align-middle">
-                  <thead>
-                    <tr>
-                      <th scope="col" style="width: 20%">Provider</th>
-                      <th scope="col" style="width: 10%">Quoted</th>
-                      <th scope="col" style="width: 10%">Date</th>
-                      <th scope="col">Comment</th>
-                    </tr>
-                  </thead>
-                  <tbody>
-                    <tr>
-                      <td class="table-recovery">
-                        <p><a href="#">Motivate Recovery</a></p>
-                        <p>(No ratings)<span>(0)</span></p>
-                      </td>
-                      <td>Private</td>
-                      <td>28, Jan</td>
-                      <td>
-                        Please contact me before you accept my quote to check my
-                        availability.* Price is for run and drive cars only. If
-                        your car is not running please let me know at least one
-                        day before day of collection. Regards.
-                      </td>
-                    </tr>
-                    <tr>
-                      <td class="table-rating">
-                        <span><i class="fa-solid fa-star"></i></span>
-                        <span><i class="fa-solid fa-star"></i></span>
-                        <span><i class="fa-solid fa-star"></i></span>
-                        <span><i class="fa-solid fa-star"></i></span>
-                        <span><i class="fa-regular fa-star"></i></span>
-                        <span>(4)</span>
-                      </td>
-                      <td>Private</td>
-                      <td>18, Jan</td>
-                      <td>
-                        Hi I have availability next week if happy with quote
-                        please get intouch thanks
-                      </td>
-                    </tr>
-                  </tbody>
-                </table>
-              </div>
-            </div>
-          </div>
-
-          <div class="row">
-            <div class="col-lg-5">
-              <div class="job-details-comment">
-                <p>I need my car transported to Slovenia.</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-      <!-- Job Details End -->
+      </div>
     </div>
+  </section>
 
-    <!-- Transport Company Start -->
-    <section id="transport-company">
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-10">
-            <div class="tarnsport-company-content">
-              <h1>Are you a Transport Company?</h1>
-              <p>
-                Deliver My Motor is used by millions of individuals to get their
-                deliveries done.
-              </p>
-              <p>
-                Use our advanced search tools to identify loads that meet your
-                specifications. Simply state how much you want to be paid.
-              </p>
-              <p>
-                When your quote is accepted, you will receive a booking
-                confirmation email with all of the pickup and delivery
-                information.
-              </p>
-              <p class="mb-5">
-                We run a transparent marketplace with a you choose model
-                integrated into the platform. Sign up Today!
-              </p>
-              <p>
-                <a href="#" class="transport-company-btn"
-                  >Get Started <i class="fa-regular fa-circle-right"></i
-                ></a>
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- Transport Company End -->
+  <!-- Footer End -->
 
-    <!-- Footer Start -->
-    <section id="footer">
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-4">
-            <div class="footer-first-cols-content">
-              <img
-                src="./img/footer-logo.png"
-                alt="footer-logo"
-                class="footer-logo"
-              />
-              <ul>
-                <li>
-                  <a href="#"><i class="fa-solid fa-chevron-left"></i> About</a>
-                </li>
-                <li>
-                  <a href="#"
-                    ><i class="fa-solid fa-chevron-left"></i> Contact</a
-                  >
-                </li>
-                <li>
-                  <a href="#"
-                    ><i class="fa-solid fa-chevron-left"></i> How it Works</a
-                  >
-                </li>
-              </ul>
-              <div class="footer-social-icons-item">
-                <a href="#" class="social-icons-link"
-                  ><i class="fa-brands fa-facebook-f"></i
-                ></a>
-                <a href="#" class="social-icons-link"
-                  ><i class="fa-brands fa-twitter"></i
-                ></a>
-                <a href="#" class="social-icons-link"
-                  ><i class="fa-brands fa-linkedin-in"></i
-                ></a>
-                <a href="#" class="social-icons-link"
-                  ><i class="fa-brands fa-instagram"></i
-                ></a>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-3">
-            <div class="footer-first-cols-content">
-              <h4>Useful Links</h4>
-              <ul>
-                <li>
-                  <a href="#"
-                    ><i class="fa-solid fa-chevron-left"></i> Car Auction
-                    Collections</a
-                  >
-                </li>
-                <li>
-                  <a href="#"
-                    ><i class="fa-solid fa-chevron-left"></i> Car Collection
-                    Delivery</a
-                  >
-                </li>
-                <li>
-                  <a href="#"
-                    ><i class="fa-solid fa-chevron-left"></i> Motorcycle
-                    transportation</a
-                  >
-                </li>
-                <li>
-                  <a href="#"
-                    ><i class="fa-solid fa-chevron-left"></i> Urgent Breakdown
-                    Recovery</a
-                  >
-                </li>
-                <li>
-                  <a href="#"
-                    ><i class="fa-solid fa-chevron-left"></i> Van
-                    Transportation</a
-                  >
-                </li>
-                <li>
-                  <a href="#"
-                    ><i class="fa-solid fa-chevron-left"></i> Caravan
-                    Transport</a
-                  >
-                </li>
-                <li>
-                  <a href="#"
-                    ><i class="fa-solid fa-chevron-left"></i> Northern Ireland
-                    Transport</a
-                  >
-                </li>
-              </ul>
-            </div>
-          </div>
-          <div class="col-lg-3">
-            <div class="footer-first-cols-content">
-              <h4>Support</h4>
-              <ul>
-                <li>
-                  <a href="#"
-                    ><i class="fa-solid fa-chevron-left"></i> Terms of Use</a
-                  >
-                </li>
-                <li>
-                  <a href="#"
-                    ><i class="fa-solid fa-chevron-left"></i> Privacy</a
-                  >
-                </li>
-                <li>
-                  <a href="#"
-                    ><i class="fa-solid fa-chevron-left"></i> Site Map</a
-                  >
-                </li>
-                <li>
-                  <a href="#"
-                    ><i class="fa-solid fa-chevron-left"></i> Transporter
-                    Rules</a
-                  >
-                </li>
-                <li>
-                  <a href="#"
-                    ><i class="fa-solid fa-chevron-left"></i> Help & FAQ's</a
-                  >
-                </li>
-              </ul>
-            </div>
-          </div>
-          <div class="col-lg-2">
-            <div class="footer-first-cols-content">
-              <h4>More</h4>
-              <ul>
-                <li>
-                  <a href="#"><i class="fa-solid fa-chevron-left"></i> Blog</a>
-                </li>
-                <li>
-                  <a href="#"
-                    ><i class="fa-solid fa-chevron-left"></i> Transporter</a
-                  >
-                </li>
-              </ul>
-              <a href="#"
-                ><img
-                  src="./img/footer-reviews-trust-logo.png"
-                  alt="footer-reviews-trust-logo"
-                  class="footer-reviews-trust-logo"
-              /></a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
+  <!-- Copyright Footer Start -->
+  <footer id="copyright-footer">
+    Copyright © DeliverMyMotor Ltd. Powered by
+    <span><img class="hostxwhite-img" src="./img/hostoxwhite.png" alt="" width="90px" /></span>
+  </footer>
+  <!-- Copyright Footer End -->
 
-    <!-- Footer End -->
+  <!-- Script Start -->
+  <script src="./js/script.js"></script>
 
-    <!-- Copyright Footer Start -->
-    <footer id="copyright-footer">
-      Copyright © DeliverMyMotor Ltd. Powered by
-      <span
-        ><img
-          class="hostxwhite-img"
-          src="./img/hostoxwhite.png"
-          alt=""
-          width="90px"
-      /></span>
-    </footer>
-    <!-- Copyright Footer End -->
-
-    <!-- Script Start -->
-    <script src="./js/script.js"></script>
-
-    <script>
-      //Quote Popup Function
-      document.getElementById("qbutton").addEventListener("click", function () {
-        document.querySelector(".popup").style.display = "flex";
+  <script>
+    //Quote Popup Function
+    document.getElementById("qbutton").addEventListener("click", function () {
+      document.querySelector(".popup").style.display = "flex";
+    });
+    document
+      .querySelector(".close-btn")
+      .addEventListener("click", function () {
+        document.querySelector(".popup").style.display = "none";
       });
-      document
-        .querySelector(".close-btn")
-        .addEventListener("click", function () {
-          document.querySelector(".popup").style.display = "none";
-        });
 
-      //Report Popup Function
-      document.getElementById("rbutton").addEventListener("click", function () {
-        document.querySelector(".popup-2").style.display = "flex";
+    //Report Popup Function
+    document.getElementById("rbutton").addEventListener("click", function () {
+      document.querySelector(".popup-2").style.display = "flex";
+    });
+    document
+      .querySelector(".close-btn-2")
+      .addEventListener("click", function () {
+        document.querySelector(".popup-2").style.display = "none";
       });
-      document
-        .querySelector(".close-btn-2")
-        .addEventListener("click", function () {
-          document.querySelector(".popup-2").style.display = "none";
-        });
-    </script>
-    <!-- Script End -->
-  </body>
+  </script>
+  <!-- Script End -->
+</body>
+
 </html>
