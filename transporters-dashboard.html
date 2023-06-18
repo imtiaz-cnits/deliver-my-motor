@@ -202,29 +202,17 @@
                       <td>£375.00</td>
                       <td>21-Mar</td>
                       <td>
-                        <div class="dropdown">
-                          <a
-                            class="btn btn-danger dropdown-toggle"
-                            href="#"
-                            role="button"
-                            id="dropdownMenuLink"
-                            data-bs-toggle="dropdown"
-                            aria-expanded="false"
-                          >
+                        <div class="dropdowns-btn">
+                          <span>
                             <i class="fa-solid fa-gear"></i>
-                          </a>
-
-                          <ul
-                            class="dropdown-menu"
-                            aria-labelledby="dropdownMenuLink"
-                          >
+                            <i class="fa-sharp fa-solid fa-caret-down"></i>
+                          </span>
+                          <ul class="dropdown-items">
                             <li>
-                              <a class="dropdown-item" href="#"
-                                >View Job Page</a
-                              >
+                              <a href="#">View Job Page</a>
                             </li>
                             <li>
-                              <a class="dropdown-item" href="#">Retract Bid</a>
+                              <a href="#">Retract Bid</a>
                             </li>
                           </ul>
                         </div>
@@ -241,29 +229,17 @@
                       <td>£295.00</td>
                       <td>21-Mar</td>
                       <td>
-                        <div class="dropdown">
-                          <a
-                            class="btn btn-danger dropdown-toggle"
-                            href="#"
-                            role="button"
-                            id="dropdownMenuLink"
-                            data-bs-toggle="dropdown"
-                            aria-expanded="false"
-                          >
+                        <div class="dropdowns-btn">
+                          <span>
                             <i class="fa-solid fa-gear"></i>
-                          </a>
-
-                          <ul
-                            class="dropdown-menu"
-                            aria-labelledby="dropdownMenuLink"
-                          >
+                            <i class="fa-sharp fa-solid fa-caret-down"></i>
+                          </span>
+                          <ul class="dropdown-items">
                             <li>
-                              <a class="dropdown-item" href="#"
-                                >View Job Page</a
-                              >
+                              <a href="#">View Job Page</a>
                             </li>
                             <li>
-                              <a class="dropdown-item" href="#">Retract Bid</a>
+                              <a href="#">Retract Bid</a>
                             </li>
                           </ul>
                         </div>
@@ -658,6 +634,23 @@
       toggles.addEventListener("click", () => {
         sidebar.classList.toggle("close");
         toggle.style.visibility = "visible";
+      });
+
+      // dropdown
+      let dropdownBtn = document.querySelector(".dropdowns-btn span");
+      let dropdownItems = document.querySelector(".dropdown-items");
+      let isClicked = true;
+
+      dropdownBtn.addEventListener("click", () => {
+        if (isClicked) {
+          dropdownItems.style.display = "block";
+          dropdownItems.style.transform = "scale(1)";
+          isClicked = false;
+        } else {
+          dropdownItems.style.display = "none";
+          dropdownItems.style.transform = "scale(0.5)";
+          isClicked = true;
+        }
       });
     </script>
     <!-- Script End -->
