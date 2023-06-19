@@ -715,12 +715,20 @@ td {
 /* Live Job Start */
 
 .live-job-header {
-  /* background-color: var(--brown); */
-  background-color: #16bc56;
+  background-color: var(--brown);
+  /* background-color: #16bc56; */
   /* background-color: var(--tomato); */
   border-top-right-radius: 30px;
   border-bottom-right-radius: 30px;
   text-align: center;
+}
+
+.live-job-header:active {
+  background-color: #16bc56;
+}
+
+.live-job-header:hover {
+  background-color: var(--tomato);
 }
 
 .live-job-header h1 {
@@ -1372,6 +1380,62 @@ td {
 .transporter-table-btn a {
   text-decoration: none;
   color: #0776ee;
+}
+
+.transporter-table .dropdowns-btn {
+  position: relative;
+}
+
+.transporter-table .dropdowns-btn span {
+  background-color: var(--brown);
+  padding: 8px 15px;
+  border-radius: 6px;
+  cursor: pointer;
+  display: inline-block;
+}
+
+.transporter-table .dropdowns-btn span i {
+  color: var(--white);
+}
+
+.dropdowns-btn .fa-caret-down {
+  font-size: 12px;
+  margin-left: 5px;
+}
+
+.dropdowns-btn .dropdown-items {
+  position: absolute;
+  left: -145px;
+  top: 0;
+  background: var(--white);
+  width: 140px;
+  height: 90px;
+  box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.15);
+  list-style: none;
+  padding-left: 0;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border-radius: 4px;
+  z-index: 999;
+  transform: scale(0.5);
+  display: none;
+  transition: 0.5s;
+}
+
+.dropdowns-btn .dropdown-items li {
+  padding: 5px;
+  border-radius: 3px;
+}
+
+.dropdowns-btn .dropdown-items li:hover {
+  background-color: rgba(243, 243, 243, 0.781);
+}
+
+.dropdowns-btn .dropdown-items li a {
+  text-decoration: none;
+  color: var(--black);
 }
 
 .transporter-table-avatar-img {
