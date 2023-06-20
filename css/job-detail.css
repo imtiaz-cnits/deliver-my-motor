@@ -1387,6 +1387,10 @@ td {
   background-color: transparent !important;
 }
 
+.transporter-table table td .dropdown {
+  display: inline-block;
+}
+
 .transporter-table table td img {
   width: 50px;
   height: 50px;
