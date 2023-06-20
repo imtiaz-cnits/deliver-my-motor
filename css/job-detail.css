@@ -1469,6 +1469,13 @@ td {
   margin-right: 10px;
 }
 
+#miTabla_filter {
+  display: none;
+}
+#miTabla_length {
+  display: none;
+}
+
 /* Transporter Table End */
 
 /* Transporter Dashboard End */
