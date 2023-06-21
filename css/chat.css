@@ -1148,15 +1148,9 @@ td {
 /* live chat 2 */
 
 .profile-about-2 h4 {
-  font-size: 1rem;
+  font-size: 1.1rem;
   padding: 10px 0;
   margin-bottom: 0;
-}
-
-.profile-about-2 p {
-  font-size: 0.8rem;
-  color: #888;
-  margin-bottom: 5px;
 }
 
 .profile-about-2 ul {
@@ -1165,16 +1159,34 @@ td {
 }
 
 .profile-about-2 ul li {
-  font-size: 0.8rem;
-  color: #888;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 0.9rem;
+  color: var(--black);
   margin: 6px 0;
+  font-family: var(--header-font);
+  background-color: var(--white);
+  padding: 10px;
+  border-radius: 4px;
+  margin: 10px 0 15px;
+  box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.15);
 }
 
-.profile-about-2 ul li a {
-  font-size: 0.7rem;
-  text-decoration: none;
-  color: #888;
-  padding-left: 5px;
+.profile-about-2 ul li .bid-job-name {
+  font-weight: 500;
+}
+
+.profile-about-2 ul li .bid {
+  font-weight: 400;
+}
+
+.profile-about-2 ul li .bid-btn {
+  border: none;
+  background-color: var(--light-blue);
+  padding: 5px 10px;
+  border-radius: 6px;
+  color: var(--white);
 }
 
 /* Dashboard Chat End */
