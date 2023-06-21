@@ -1476,6 +1476,11 @@ td {
   display: none;
 }
 
+table.dataTable thead th,
+table.dataTable thead td {
+  padding-left: 0 !important;
+}
+
 /* Transporter Table End */
 
 /* Transporter Dashboard End */
