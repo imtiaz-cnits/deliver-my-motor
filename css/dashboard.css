@@ -353,6 +353,90 @@ td {
   padding-right: 40px;
 }
 
+.actions-btn button {
+  border: none;
+  padding: 0 10px;
+  background-color: var(--light-blue);
+  border-radius: 6px;
+  line-height: 0;
+  height: 38px;
+  color: var(--white);
+}
+
+.actions-btn button i {
+  font-size: 1.3em;
+  color: var(--white);
+}
+
+.actions-btn #accept-btn {
+  background-color: #ca1f26;
+}
+
+.actions-btn #accept-btn2 {
+  background-color: #ca1f26;
+}
+
+/* Popup CSS Start */
+.popup {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #00000076;
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+  display: none;
+  z-index: 999 !important;
+}
+
+.popup-content {
+  width: 500px;
+  /* height: 500px; */
+  background: #ffffff;
+  border-radius: 6px;
+  position: relative;
+  padding: 50px 50px;
+  position: relative;
+}
+
+.popup-content p {
+  font-size: 1.2em;
+  color: var(--black);
+  font-family: var(--header-font);
+  font-weight: 600;
+}
+
+.popup-content-btn {
+  margin-top: 50px;
+}
+
+.popup-content-btn button {
+  border: none;
+  background-color: var(--light-blue);
+  color: var(--white);
+  padding: 10px 30px;
+  border-radius: 6px;
+  margin: 0 10px;
+}
+
+.popup-content-btn .no-btn {
+  background-color: var(--tomato);
+}
+
+.close-btn {
+  color: #000000;
+  font-size: 25px;
+  top: 10px;
+  right: 15px;
+  position: absolute;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 996px) {
+}
+
 .tb-view-btn a {
   background-color: var(--blue);
   padding: 8px;

@@ -590,21 +590,13 @@
                                                                 <td>December 8, 2022</td>
                                                                 <td>December 8, 2022</td>
                                                                 <td>
-                                                                    <div class="dropdown">
-                                                                        <a class="btn btn-danger dropdown-toggle"
-                                                                            href="#" role="button" id="dropdownMenuLink"
-                                                                            data-bs-toggle="dropdown"
-                                                                            aria-expanded="false">
-                                                                            <i class="fa-solid fa-gear"></i>
-                                                                        </a>
-
-                                                                        <ul class="dropdown-menu"
-                                                                            aria-labelledby="dropdownMenuLink">
-                                                                            <li><a class="dropdown-item" href="#">Order
-                                                                                    Page</a></li>
-                                                                            <li><a class="dropdown-item" href="#">Mark
-                                                                                    Complete</a></li>
-                                                                        </ul>
+                                                                    <div class="actions-btn">
+                                                                        <button type="button">
+                                                                            <i class="fa-solid fa-envelope"></i>
+                                                                        </button>
+                                                                        <button type="button" id="accept-btn">
+                                                                            Accept
+                                                                        </button>
                                                                     </div>
                                                                 </td>
                                                             </tr>
@@ -615,26 +607,33 @@
                                                                 <td>December 8, 2022</td>
                                                                 <td>December 8, 2022</td>
                                                                 <td>
-                                                                    <div class="dropdown">
-                                                                        <a class="btn btn-danger dropdown-toggle"
-                                                                            href="#" role="button" id="dropdownMenuLink"
-                                                                            data-bs-toggle="dropdown"
-                                                                            aria-expanded="false">
-                                                                            <i class="fa-solid fa-gear"></i>
-                                                                        </a>
-
-                                                                        <ul class="dropdown-menu"
-                                                                            aria-labelledby="dropdownMenuLink">
-                                                                            <li><a class="dropdown-item" href="#">Order
-                                                                                    Page</a></li>
-                                                                            <li><a class="dropdown-item" href="#">Mark
-                                                                                    Complete</a></li>
-                                                                        </ul>
+                                                                    <div class="actions-btn">
+                                                                        <button type="button">
+                                                                            <i class="fa-solid fa-envelope"></i>
+                                                                        </button>
+                                                                        <button type="button" id="accept-btn2">
+                                                                            Accept
+                                                                        </button>
                                                                     </div>
                                                                 </td>
                                                             </tr>
                                                         </tbody>
                                                     </table>
+
+                                                    <!-- Popup Button for Provide Quote Start -->
+                                                    <div class="popup">
+                                                        <!-- <div class="popup-content m-3"> -->
+                                                            <div class="popup-content text-center">
+                                                            <i class="fa-solid fa-xmark close-btn"></i>
+                                                            <p>Are you Confirm?</p>
+
+                                                            <div class="popup-content-btn">
+                                                                <button type="button">Yes</button>
+                                                                <button type="button" class="no-btn">No</button>
+                                                            </div>
+                                                        </div>
+                                                        </div>
+                                                    </div>
 
                                                     <nav aria-label="..." class="pt-3">
                                                         <ul class="pagination">
@@ -841,6 +840,26 @@
 
     <!-- Script Start -->
     <script src="./js/script.js"></script>
+    <script>
+        //Quote Popup Function
+    document.getElementById("accept-btn").addEventListener("click", function () {
+      document.querySelector(".popup").style.display = "flex";
+    });
+    document
+      .querySelector(".close-btn")
+      .addEventListener("click", function () {
+        document.querySelector(".popup").style.display = "none";
+      });
+        //Quote Popup Function
+    document.getElementById("accept-btn2").addEventListener("click", function () {
+      document.querySelector(".popup").style.display = "flex";
+    });
+    document
+      .querySelector(".close-btn")
+      .addEventListener("click", function () {
+        document.querySelector(".popup").style.display = "none";
+      });
+    </script>
     <!-- Script End -->
 </body>
 
