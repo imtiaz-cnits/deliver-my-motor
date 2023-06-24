@@ -74,10 +74,13 @@
   }
 }
 
+/* this code removes the invisibity of navbar */
 .dashboard-sidebar.close {
-  width: 0px;
-  opacity: 0;
+  width: 0;
+  padding: 20px 0;
+  visibility: hidden;
 }
+/* this code removes the invisibity of navbar */
 
 .home {
   position: relative;
@@ -434,6 +437,76 @@ td {
   cursor: pointer;
 }
 
+/* Custom Rating Star Code */
+#full-stars-example {
+  /* use display:inline-flex to prevent whitespace issues. alternatively, you can put all the children of .rating-group on a single line */
+  .rating-group {
+    display: inline-flex;
+  }
+
+  /* make hover effect work properly in IE */
+  .rating__icon {
+    pointer-events: none;
+  }
+
+  /* hide radio inputs */
+  .rating__input {
+    position: absolute !important;
+    left: -9999px !important;
+  }
+
+  /* set icon padding and size */
+  .rating__label {
+    cursor: pointer;
+    padding: 0 0.1em;
+    font-size: 2rem;
+  }
+
+  /* set default star color */
+  .rating__icon--star {
+    color: var(--tomato);
+  }
+
+  /* set color of none icon when unchecked */
+  .rating__icon--none {
+    color: #eee;
+  }
+
+  /* if none icon is checked, make it red */
+  .rating__input--none:checked + .rating__label .rating__icon--none {
+    color: red;
+  }
+
+  /* if any input is checked, make its following siblings grey */
+  .rating__input:checked ~ .rating__label .rating__icon--star {
+    color: #ddd;
+  }
+
+  /* make all stars orange on rating group hover */
+  .rating-group:hover .rating__label .rating__icon--star {
+    color: var(--tomato);
+  }
+
+  /* make hovered input's following siblings grey on hover */
+  .rating__input:hover ~ .rating__label .rating__icon--star {
+    color: #ddd;
+  }
+
+  /* make none icon grey on rating group hover */
+  .rating-group:hover
+    .rating__input--none:not(:hover)
+    + .rating__label
+    .rating__icon--none {
+    color: #eee;
+  }
+
+  /* make none icon red on hover */
+  .rating__input--none:hover + .rating__label .rating__icon--none {
+    color: red;
+  }
+}
+/* Custom Rating Star Code */
+
 /* popup rate */
 
 .popup-rate {
@@ -452,7 +525,6 @@ td {
 
 .popup-rate-content {
   width: 500px;
-  /* height: 500px; */
   background: #ffffff;
   border-radius: 6px;
   position: relative;
@@ -486,11 +558,6 @@ td {
   color: var(--white);
   font-family: var(--header-font);
   border-radius: 6px;
-}
-
-.rate-star i {
-  font-size: 1.8em;
-  color: var(--tomato);
 }
 
 .popup-rate-content-btn {
@@ -1037,3 +1104,127 @@ td {
 }
 
 /* MY JOB Page */
+
+/* Transporter Table Satrt */
+
+.transporter-table {
+  background: url(../img/search-deliver-bg.png);
+  background-repeat: no-repeat;
+  background-position: right bottom;
+  background-size: cover;
+  padding: 30px;
+  border-radius: 6px;
+  box-shadow: 0px 0px 15px #0000001a;
+  margin-top: 60px;
+}
+
+.transporter-table {
+  white-space: nowrap;
+  overflow-x: auto;
+}
+
+.transporter-table table {
+  border: none !important;
+}
+
+.transporter-table table tr {
+  background-color: transparent !important;
+}
+
+.transporter-table table tr .sorting_1::before {
+  margin-top: 15px;
+}
+
+.transporter-table table td {
+  background-color: transparent !important;
+}
+
+.transporter-table table td .dropdown {
+  display: inline-block;
+}
+
+.transporter-table table td img {
+  width: 50px;
+  height: 50px;
+  margin-right: 10px;
+}
+
+.transporter-table-btn a {
+  text-decoration: none;
+  color: #0776ee;
+}
+
+.transporter-table .dropdowns-btn {
+  position: relative;
+}
+
+.transporter-table .dropdowns-btn span {
+  background-color: var(--brown);
+  padding: 8px 15px;
+  border-radius: 6px;
+  cursor: pointer;
+  display: inline-block;
+}
+
+.transporter-table .dropdowns-btn span i {
+  color: var(--white);
+}
+
+.dropdowns-btn .fa-caret-down {
+  font-size: 12px;
+  margin-left: 5px;
+}
+
+.dropdowns-btn .dropdown-items {
+  position: absolute;
+  left: -145px;
+  top: 0;
+  background: var(--white);
+  width: 140px;
+  height: 90px;
+  box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.15);
+  list-style: none;
+  padding-left: 0;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border-radius: 4px;
+  z-index: 999;
+  transform: scale(0.5);
+  display: none;
+  transition: 0.5s;
+}
+
+.dropdowns-btn .dropdown-items li {
+  padding: 5px;
+  border-radius: 3px;
+}
+
+.dropdowns-btn .dropdown-items li:hover {
+  background-color: rgba(243, 243, 243, 0.781);
+}
+
+.dropdowns-btn .dropdown-items li a {
+  text-decoration: none;
+  color: var(--black);
+}
+
+.transporter-table-avatar-img {
+  width: 50px;
+  margin-right: 10px;
+}
+
+#miTabla_filter {
+  display: none;
+}
+#miTabla_length {
+  display: none;
+}
+
+table.dataTable thead th,
+table.dataTable thead td {
+  padding-left: 0 !important;
+}
+
+/* Transporter Table End */

@@ -74,10 +74,13 @@
   }
 }
 
+/* this code removes the invisibity of navbar */
 .dashboard-sidebar.close {
-  width: 0px;
-  opacity: 0;
+  width: 0;
+  padding: 20px 0;
+  visibility: hidden;
 }
+/* this code removes the invisibity of navbar */
 
 .home {
   position: relative;
@@ -574,10 +577,10 @@ td {
 /* alert msg */
 
 .alert-msg p {
-  background-color: rgba(202, 31, 38, 0.4);
+  background-color: rgb(193, 41, 41);
   padding: 10px 20px 10px;
   border-radius: 6px;
-  color: var(--black);
+  color: var(--white);
   font-size: 1rem;
   font-weight: 400;
   margin-top: 50px;
@@ -654,6 +657,8 @@ td {
 }
 
 .cover-photo-input {
+  background-color: var(--light-blue);
+  border-radius: 3px;
   position: absolute;
   right: 0;
   bottom: 0;

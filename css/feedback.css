@@ -1,0 +1,151 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300&display=swap");
+
+/* Universal Start */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: var(--header-font);
+}
+
+:root {
+  --header-font: "Rubik", sans-serif;
+  --tomato: #ff861c;
+  --blue: #055dbc;
+  --light-blue: #0776ee;
+  --white: #ffffff;
+  --black: #000000;
+}
+
+/* Universal End */
+
+.container {
+  margin-top: 130px;
+}
+.back-to-job-btn {
+  width: 30%;
+  margin: auto;
+  margin-bottom: 30px;
+}
+
+.back-btn {
+  background-color: var(--tomato) !important;
+  color: var(--white) !important;
+  font-size: 1.1rem !important;
+}
+
+/* Feeback textarea start */
+.rate-textarea {
+  width: 100%;
+  padding: 10px;
+  resize: none;
+  height: 120px;
+  margin-bottom: 30px;
+  border-radius: 6px;
+  border: 1px solid #ddd;
+}
+
+.rate-textarea:focus {
+  outline: none;
+}
+/* Feeback textarea end */
+
+/* Custom Rating Star Code */
+#full-stars-example {
+  /* use display:inline-flex to prevent whitespace issues. alternatively, you can put all the children of .rating-group on a single line */
+  .rating-group {
+    display: inline-flex;
+  }
+
+  /* make hover effect work properly in IE */
+  .rating__icon {
+    pointer-events: none;
+  }
+
+  /* hide radio inputs */
+  .rating__input {
+    position: absolute !important;
+    left: -9999px !important;
+  }
+
+  /* set icon padding and size */
+  .rating__label {
+    cursor: pointer;
+    padding: 0 0.1em;
+    font-size: 2rem;
+  }
+
+  /* set default star color */
+  .rating__icon--star {
+    color: var(--tomato);
+  }
+
+  /* set color of none icon when unchecked */
+  .rating__icon--none {
+    color: #eee;
+  }
+
+  /* if none icon is checked, make it red */
+  .rating__input--none:checked + .rating__label .rating__icon--none {
+    color: red;
+  }
+
+  /* if any input is checked, make its following siblings grey */
+  .rating__input:checked ~ .rating__label .rating__icon--star {
+    color: #ddd;
+  }
+
+  /* make all stars orange on rating group hover */
+  .rating-group:hover .rating__label .rating__icon--star {
+    color: var(--tomato);
+  }
+
+  /* make hovered input's following siblings grey on hover */
+  .rating__input:hover ~ .rating__label .rating__icon--star {
+    color: #ddd;
+  }
+
+  /* make none icon grey on rating group hover */
+  .rating-group:hover
+    .rating__input--none:not(:hover)
+    + .rating__label
+    .rating__icon--none {
+    color: #eee;
+  }
+
+  /* make none icon red on hover */
+  .rating__input--none:hover + .rating__label .rating__icon--none {
+    color: red;
+  }
+}
+/* Custom Rating Star Code */
+
+.popup-rate-content-btn {
+  margin-top: 30px;
+}
+
+.popup-rate-content-btn .submit-btn {
+  background-color: var(--light-blue);
+  border: none;
+  border: var(--white);
+  padding: 8px 20px;
+  color: var(--white);
+  font-family: var(--header-font);
+  border-radius: 6px;
+}
+
+@media screen and (max-width: 1440px) {
+  .back-to-job-btn {
+    width: 40%;
+    margin: auto;
+    margin-bottom: 30px;
+  }
+}
+@media screen and (max-width: 575px) {
+  .back-to-job-btn {
+    width: 45%;
+    margin: auto;
+    margin-bottom: 30px;
+  }
+}

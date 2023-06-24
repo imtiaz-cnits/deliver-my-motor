@@ -1,586 +1,443 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Profile Edit - Deliver My Motor</title>
 
-    <!-- CSS Link -->
-    <link rel="stylesheet" href="./css/profile-edit.css" />
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Profile Edit - Deliver My Motor</title>
 
-    <!-- Bootstrap Link -->
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-    />
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- CSS Link -->
+  <link rel="stylesheet" href="./css/profile-edit.css" />
 
-    <!-- Font Awesome Link -->
-    <script
-      src="https://kit.fontawesome.com/44f1800e1f.js"
-      crossorigin="anonymous"
-    ></script>
-  </head>
+  <!-- Bootstrap Link -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
 
-  <body>
-    <!-- sidebar Start -->
-    <div class="dashboard-sidebar close">
-      <div class="dahsboard-navbar" id="sidenavbar">
-        <div class="sidebar-header d-flex justify-content-between">
-          <img src="./img/footer-logo.png" alt="" class="sidebar-logo" />
-          <button type="button" id="sideNavbarXmarkIcon" class="toggles">
-            <i class="fa-solid fa-xmark"></i>
-          </button>
+  <!-- Font Awesome Link -->
+  <script src="https://kit.fontawesome.com/44f1800e1f.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+  <!-- sidebar Start -->
+  <div class="dashboard-sidebar close">
+    <div class="dahsboard-navbar" id="sidenavbar">
+      <div class="sidebar-header d-flex justify-content-between">
+        <img src="./img/footer-logo.png" alt="" class="sidebar-logo" />
+        <button type="button" id="sideNavbarXmarkIcon" class="toggles">
+          <i class="fa-solid fa-xmark"></i>
+        </button>
+      </div>
+      <ul class="navbar-nav">
+        <li>
+          <a href="#"><i class="fa-solid fa-house-user"></i> Dashboard</a>
+        </li>
+        <li>
+          <a href="#"><i class="fa-regular fa-comment-dots"></i> Messages</a>
+        </li>
+        <li>
+          <a href="#"><i class="fa-regular fa-file"></i> My Quotes</a>
+        </li>
+        <li>
+          <a href="#"><i class="fa-solid fa-briefcase"></i> My Jobs</a>
+        </li>
+        <li>
+          <a href="#"><i class="fa-solid fa-pen-to-square"></i> Post New Jobs</a>
+        </li>
+        <li>
+          <a href="#"><i class="fa-regular fa-thumbs-up"></i> Reviews</a>
+        </li>
+        <li>
+          <a href="#"><i class="fa-sharp fa-solid fa-circle-info"></i> Help And FAQ</a>
+        </li>
+        <li>
+          <a href="#"><i class="fa-solid fa-arrow-right-from-bracket"></i> Logout</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+  <!-- sidebar End -->
+
+  <div class="home">
+    <!-- Navbar Start -->
+    <nav class="navbar navbar-expand-lg">
+      <div class="container">
+        <button type="button" id="sideNavbarIcon" class="toggle">
+          <i class="fa-solid fa-bars-staggered"></i>
+        </button>
+        <a class="navbar-brand" href="#"><img src="./img/logo.png" alt="logo" class="logo dashboard-navbar-logo" /></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#yournavbar">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="mynavbar">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="#">Dashboard</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Messages
+                <span class="badge rounded-circle bg-danger">2</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Live Jobs</a>
+            </li>
+          </ul>
         </div>
-        <ul class="navbar-nav">
-          <li>
-            <a href="#"><i class="fa-solid fa-house-user"></i> Dashboard</a>
-          </li>
-          <li>
-            <a href="#"><i class="fa-regular fa-comment-dots"></i> Messages</a>
-          </li>
-          <li>
-            <a href="#"><i class="fa-regular fa-file"></i> My Quotes</a>
-          </li>
-          <li>
-            <a href="#"><i class="fa-solid fa-briefcase"></i> My Jobs</a>
-          </li>
-          <li>
-            <a href="#"
-              ><i class="fa-solid fa-pen-to-square"></i> Post New Jobs</a
-            >
-          </li>
-          <li>
-            <a href="#"><i class="fa-regular fa-thumbs-up"></i> Reviews</a>
-          </li>
-          <li>
-            <a href="#"
-              ><i class="fa-sharp fa-solid fa-circle-info"></i> Help And FAQ</a
-            >
-          </li>
-          <li>
-            <a href="#"
-              ><i class="fa-solid fa-arrow-right-from-bracket"></i> Logout</a
-            >
-          </li>
-        </ul>
+      </div>
+    </nav>
+    <!-- Navbar End -->
+
+    <!-- Dashboard profile edit Start -->
+    <div class="container">
+      <!-- profile edit msg -->
+      <div class="row">
+        <div class="col-sm-12">
+          <div class="alert-msg">
+            <p>
+              Please do not post telephone numbers, emails or Company logos on
+              public display. Your account will be suspended.
+              <span id="close"><i class="fa-solid fa-xmark"></i></span>
+            </p>
+          </div>
+          <div class="profile-edit-msg">
+            <h3>Edit <span class="fw-bold">Profile</span></h3>
+          </div>
+        </div>
+      </div>
+
+      <!-- profile edit -->
+
+      <div class="row justify-content-center">
+        <div class="col-lg-6">
+          <div class="profile-upload-img-box">
+            <div class="cover-photo">
+              <img src="./img/bg-multiple-car.png" alt="" />
+              <div class="cover-photo-input">
+                <button type="button" class="file-input">
+                  + Upload Cover Photo
+                  <input type="file" />
+                </button>
+              </div>
+
+              <div class="profile-photo-box">
+                <div class="profile-photo">
+                  <img src="./img/car-img.png" alt="" />
+                </div>
+                <div class="profile-photo-input">
+                  <button type="button" class="file-input">
+                    + Upload Profile
+                    <input type="file" />
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-md-12">
+          <div class="main-profile-forms">
+            <div class="row">
+              <div class="col-sm-12">
+                <div class="forms-header">
+                  <h2><span>Personal</span> Information</h2>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-6">
+                <div class="main-profile-forms-input">
+                  <label class="form-label">First name:</label>
+                  <input type="text" class="form-control" placeholder="Ex. John" />
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="main-profile-forms-input">
+                  <label class="form-label">Last name:</label>
+                  <input type="text" class="form-control" placeholder="Ex. Doe" />
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-6">
+                <div class="main-profile-forms-input">
+                  <label class="form-label">Your Location:</label>
+                  <input type="text" class="form-control" placeholder="Ex. California" />
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="main-profile-forms-input">
+                  <label class="form-label">GIT Insurance Cover Level:</label>
+                  <input type="text" class="form-control" placeholder="GIT Insurance Cover Level" />
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-6">
+                <div class="main-profile-forms-input">
+                  <label class="form-label">Profile Descriptions:</label>
+                  <textarea class="form-control" placeholder="Profile Descriptions"></textarea>
+                </div>
+              </div>
+              <div class="col-md-6"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-md-12">
+          <div class="password-forms">
+            <div class="row">
+              <div class="col-sm-12">
+                <div class="password-forms-header">
+                  <h2>Passwords</h2>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-6">
+                <div class="main-profile-forms-input">
+                  <label class="form-label">Enter Your Password</label>
+                  <input type="password" class="form-control" placeholder="Password" />
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="main-profile-forms-input">
+                  <label class="form-label">Retype Password:</label>
+                  <input type="password" class="form-control" placeholder="Re enter Your Password" />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="row justify-content-center">
+        <div class="col-md-6">
+          <div class="payment-method-header">
+            <h3>Payment Method:</h3>
+          </div>
+          <div class="row">
+            <div class="col-md-6">
+              <div class="payment-method-items">
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" name="credit" id="credit" />
+                  <label class="form-check-label">Credit / Debit Card</label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" name="paypal" id="paypal" />
+                  <label class="form-check-label">Paypal</label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" name="Cheque" id="Cheque" />
+                  <label class="form-check-label">Cheque</label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" name="Cash" id="Cash" />
+                  <label class="form-check-label">Cash</label>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="payment-method-items">
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" name="Transfer" id="Transfer" />
+                  <label class="form-check-label">Bank Transfer</label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" name="BACS" id="BACS" />
+                  <label class="form-check-label">BACS</label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" name="Delivery" id="Delivery" />
+                  <label class="form-check-label">Payment or Delivery</label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" name="Front" id="Front" />
+                  <label class="form-check-label">Payment up Front</label>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-md-12">
+          <div class="active-method">
+            <h3>Active Method:</h3>
+            <p>Cash, Bank Transfer, Payment up Front</p>
+          </div>
+          <div class="update-profile-btn text-center">
+            <button type="button">Update Profile</button>
+          </div>
+          <div class="devider"></div>
+        </div>
       </div>
     </div>
-    <!-- sidebar End -->
+    <!-- Dashboard profile edit End -->
+  </div>
 
-    <div class="home">
-      <!-- Navbar Start -->
-      <nav class="navbar navbar-expand-lg">
-        <div class="container">
-          <button type="button" id="sideNavbarIcon" class="toggle">
-            <i class="fa-solid fa-bars-staggered"></i>
-          </button>
-          <a class="navbar-brand" href="#"
-            ><img
-              src="./img/logo.png"
-              alt="logo"
-              class="logo dashboard-navbar-logo"
-          /></a>
-          <button
-            class="navbar-toggler"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#yournavbar"
-          >
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="mynavbar">
-            <ul class="navbar-nav ms-auto">
-              <li class="nav-item">
-                <a class="nav-link" href="#">Dashboard</a>
+  <!-- Transport Company Start -->
+  <section id="transport-company">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-10">
+          <div class="tarnsport-company-content">
+            <h1>Are you a Transport Company?</h1>
+            <p>
+              Deliver My Motor is used by millions of individuals to get their
+              deliveries done.
+            </p>
+            <p>
+              Use our advanced search tools to identify loads that meet your
+              specifications. Simply state how much you want to be paid.
+            </p>
+            <p>
+              When your quote is accepted, you will receive a booking
+              confirmation email with all of the pickup and delivery
+              information.
+            </p>
+            <p class="mb-5">
+              We run a transparent marketplace with a you choose model
+              integrated into the platform. Sign up Today!
+            </p>
+            <p>
+              <a href="#" class="transport-company-btn">Get Started <i class="fa-regular fa-circle-right"></i></a>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Transport Company End -->
+
+  <!-- Footer Start -->
+  <section id="footer">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-4">
+          <div class="footer-first-cols-content">
+            <img src="./img/footer-logo.png" alt="footer-logo" class="footer-logo" />
+            <ul>
+              <li>
+                <a href="#"><i class="fa-solid fa-chevron-left"></i> About</a>
               </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#"
-                  >Messages
-                  <span class="badge rounded-circle bg-danger">2</span></a
-                >
+              <li>
+                <a href="#"><i class="fa-solid fa-chevron-left"></i> Contact</a>
               </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Live Jobs</a>
+              <li>
+                <a href="#"><i class="fa-solid fa-chevron-left"></i> How it Works</a>
+              </li>
+            </ul>
+            <div class="footer-social-icons-item">
+              <a href="#" class="social-icons-link"><i class="fa-brands fa-facebook-f"></i></a>
+              <a href="#" class="social-icons-link"><i class="fa-brands fa-twitter"></i></a>
+              <a href="#" class="social-icons-link"><i class="fa-brands fa-linkedin-in"></i></a>
+              <a href="#" class="social-icons-link"><i class="fa-brands fa-instagram"></i></a>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3">
+          <div class="footer-first-cols-content">
+            <h4>Useful Links</h4>
+            <ul>
+              <li>
+                <a href="#"><i class="fa-solid fa-chevron-left"></i> Car Auction
+                  Collections</a>
+              </li>
+              <li>
+                <a href="#"><i class="fa-solid fa-chevron-left"></i> Car Collection
+                  Delivery</a>
+              </li>
+              <li>
+                <a href="#"><i class="fa-solid fa-chevron-left"></i> Motorcycle
+                  transportation</a>
+              </li>
+              <li>
+                <a href="#"><i class="fa-solid fa-chevron-left"></i> Urgent Breakdown
+                  Recovery</a>
+              </li>
+              <li>
+                <a href="#"><i class="fa-solid fa-chevron-left"></i> Van
+                  Transportation</a>
+              </li>
+              <li>
+                <a href="#"><i class="fa-solid fa-chevron-left"></i> Caravan
+                  Transport</a>
+              </li>
+              <li>
+                <a href="#"><i class="fa-solid fa-chevron-left"></i> Northern Ireland
+                  Transport</a>
               </li>
             </ul>
           </div>
         </div>
-      </nav>
-      <!-- Navbar End -->
-
-      <!-- Dashboard profile edit Start -->
-      <div class="container">
-        <!-- profile edit msg -->
-        <div class="row">
-          <div class="col-sm-12">
-            <div class="alert-msg">
-              <p>
-                Please do not post telephone numbers, emails or Company logos on
-                public display. Your account will be suspended.
-                <span id="close"><i class="fa-solid fa-xmark"></i></span>
-              </p>
-            </div>
-            <div class="profile-edit-msg">
-              <h3>Edit <span class="fw-bold">Profile</span></h3>
-            </div>
+        <div class="col-lg-3">
+          <div class="footer-first-cols-content">
+            <h4>Support</h4>
+            <ul>
+              <li>
+                <a href="#"><i class="fa-solid fa-chevron-left"></i> Terms of Use</a>
+              </li>
+              <li>
+                <a href="#"><i class="fa-solid fa-chevron-left"></i> Privacy</a>
+              </li>
+              <li>
+                <a href="#"><i class="fa-solid fa-chevron-left"></i> Site Map</a>
+              </li>
+              <li>
+                <a href="#"><i class="fa-solid fa-chevron-left"></i> Transporter
+                  Rules</a>
+              </li>
+              <li>
+                <a href="#"><i class="fa-solid fa-chevron-left"></i> Help & FAQ's</a>
+              </li>
+            </ul>
           </div>
         </div>
-
-        <!-- profile edit -->
-
-        <div class="row justify-content-center">
-          <div class="col-lg-6">
-            <div class="profile-upload-img-box">
-              <div class="cover-photo">
-                <img src="./img/bg-multiple-car.png" alt="" />
-                <div class="cover-photo-input">
-                  <button type="button" class="file-input">
-                    + Upload Cover
-                    <input type="file" />
-                  </button>
-                </div>
-
-                <div class="profile-photo-box">
-                  <div class="profile-photo">
-                    <img src="./img/car-img.png" alt="" />
-                  </div>
-                  <div class="profile-photo-input">
-                    <button type="button" class="file-input">
-                      + Upload Profile
-                      <input type="file" />
-                    </button>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="row">
-          <div class="col-md-12">
-            <div class="main-profile-forms">
-              <div class="row">
-                <div class="col-sm-12">
-                  <div class="forms-header">
-                    <h2><span>Personal</span> Information</h2>
-                  </div>
-                </div>
-              </div>
-              <div class="row">
-                <div class="col-md-6">
-                  <div class="main-profile-forms-input">
-                    <!-- <label class="form-label">First name:</label> -->
-                    <input
-                      type="text"
-                      class="form-control"
-                      placeholder="First Name"
-                    />
-                  </div>
-                </div>
-                <div class="col-md-6">
-                  <div class="main-profile-forms-input">
-                    <!-- <label class="form-label">Last name:</label> -->
-                    <input
-                      type="text"
-                      class="form-control"
-                      placeholder="Last Name"
-                    />
-                  </div>
-                </div>
-              </div>
-              <div class="row">
-                <div class="col-md-6">
-                  <div class="main-profile-forms-input">
-                    <!-- <label class="form-label">Your Location:</label> -->
-                    <input
-                      type="text"
-                      class="form-control"
-                      placeholder="Your Location"
-                    />
-                  </div>
-                </div>
-                <div class="col-md-6">
-                  <div class="main-profile-forms-input">
-                    <!-- <label class="form-label">GIT Insurance Cover Level:</label> -->
-                    <input
-                      type="text"
-                      class="form-control"
-                      placeholder="GIT Insurance Cover Level"
-                    />
-                  </div>
-                </div>
-              </div>
-              <div class="row">
-                <div class="col-md-6">
-                  <div class="main-profile-forms-input">
-                    <!-- <label class="form-label">Profile Descriptions:</label> -->
-                    <textarea
-                      class="form-control"
-                      placeholder="Profile Descriptions"
-                    ></textarea>
-                  </div>
-                </div>
-                <div class="col-md-6"></div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="row">
-          <div class="col-md-12">
-            <div class="password-forms">
-              <div class="row">
-                <div class="col-sm-12">
-                  <div class="password-forms-header">
-                    <h2>Passwords</h2>
-                  </div>
-                </div>
-              </div>
-              <div class="row">
-                <div class="col-md-6">
-                  <div class="main-profile-forms-input">
-                    <!-- <label class="form-label">First name:</label> -->
-                    <input
-                      type="password"
-                      class="form-control"
-                      placeholder="First Name"
-                    />
-                  </div>
-                </div>
-                <div class="col-md-6">
-                  <div class="main-profile-forms-input">
-                    <!-- <label class="form-label">Last name:</label> -->
-                    <input
-                      type="password"
-                      class="form-control"
-                      placeholder="Last Name"
-                    />
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="row justify-content-center">
-          <div class="col-md-6">
-            <div class="payment-method-header">
-              <h3>Payment Method:</h3>
-            </div>
-            <div class="row">
-              <div class="col-md-6">
-                <div class="payment-method-items">
-                  <div class="form-check">
-                    <input
-                      class="form-check-input"
-                      type="checkbox"
-                      name="credit"
-                      id="credit"
-                    />
-                    <label class="form-check-label">Credit / Debit Card</label>
-                  </div>
-                  <div class="form-check">
-                    <input
-                      class="form-check-input"
-                      type="checkbox"
-                      name="paypal"
-                      id="paypal"
-                    />
-                    <label class="form-check-label">Paypal</label>
-                  </div>
-                  <div class="form-check">
-                    <input
-                      class="form-check-input"
-                      type="checkbox"
-                      name="Cheque"
-                      id="Cheque"
-                    />
-                    <label class="form-check-label">Cheque</label>
-                  </div>
-                  <div class="form-check">
-                    <input
-                      class="form-check-input"
-                      type="checkbox"
-                      name="Cash"
-                      id="Cash"
-                    />
-                    <label class="form-check-label">Cash</label>
-                  </div>
-                </div>
-              </div>
-              <div class="col-md-6">
-                <div class="payment-method-items">
-                  <div class="form-check">
-                    <input
-                      class="form-check-input"
-                      type="checkbox"
-                      name="Transfer"
-                      id="Transfer"
-                    />
-                    <label class="form-check-label">Bank Transfer</label>
-                  </div>
-                  <div class="form-check">
-                    <input
-                      class="form-check-input"
-                      type="checkbox"
-                      name="BACS"
-                      id="BACS"
-                    />
-                    <label class="form-check-label">BACS</label>
-                  </div>
-                  <div class="form-check">
-                    <input
-                      class="form-check-input"
-                      type="checkbox"
-                      name="Delivery"
-                      id="Delivery"
-                    />
-                    <label class="form-check-label">Payment or Delivery</label>
-                  </div>
-                  <div class="form-check">
-                    <input
-                      class="form-check-input"
-                      type="checkbox"
-                      name="Front"
-                      id="Front"
-                    />
-                    <label class="form-check-label">Payment up Front</label>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="row">
-          <div class="col-md-12">
-            <div class="active-method">
-              <h3>Active Method:</h3>
-              <p>Cash, Bank Transfer, Payment up Front</p>
-            </div>
-            <div class="update-profile-btn text-center">
-              <button type="button">Update Profile</button>
-            </div>
-            <div class="devider"></div>
+        <div class="col-lg-2">
+          <div class="footer-first-cols-content">
+            <h4>More</h4>
+            <ul>
+              <li>
+                <a href="#"><i class="fa-solid fa-chevron-left"></i> Blog</a>
+              </li>
+              <li>
+                <a href="#"><i class="fa-solid fa-chevron-left"></i> Transporter</a>
+              </li>
+            </ul>
+            <a href="#"><img src="./img/footer-reviews-trust-logo.png" alt="footer-reviews-trust-logo"
+                class="footer-reviews-trust-logo" /></a>
           </div>
         </div>
       </div>
-      <!-- Dashboard profile edit End -->
     </div>
+  </section>
 
-    <!-- Transport Company Start -->
-    <section id="transport-company">
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-10">
-            <div class="tarnsport-company-content">
-              <h1>Are you a Transport Company?</h1>
-              <p>
-                Deliver My Motor is used by millions of individuals to get their
-                deliveries done.
-              </p>
-              <p>
-                Use our advanced search tools to identify loads that meet your
-                specifications. Simply state how much you want to be paid.
-              </p>
-              <p>
-                When your quote is accepted, you will receive a booking
-                confirmation email with all of the pickup and delivery
-                information.
-              </p>
-              <p class="mb-5">
-                We run a transparent marketplace with a you choose model
-                integrated into the platform. Sign up Today!
-              </p>
-              <p>
-                <a href="#" class="transport-company-btn"
-                  >Get Started <i class="fa-regular fa-circle-right"></i
-                ></a>
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- Transport Company End -->
+  <!-- Footer End -->
 
-    <!-- Footer Start -->
-    <section id="footer">
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-4">
-            <div class="footer-first-cols-content">
-              <img
-                src="./img/footer-logo.png"
-                alt="footer-logo"
-                class="footer-logo"
-              />
-              <ul>
-                <li>
-                  <a href="#"><i class="fa-solid fa-chevron-left"></i> About</a>
-                </li>
-                <li>
-                  <a href="#"
-                    ><i class="fa-solid fa-chevron-left"></i> Contact</a
-                  >
-                </li>
-                <li>
-                  <a href="#"
-                    ><i class="fa-solid fa-chevron-left"></i> How it Works</a
-                  >
-                </li>
-              </ul>
-              <div class="footer-social-icons-item">
-                <a href="#" class="social-icons-link"
-                  ><i class="fa-brands fa-facebook-f"></i
-                ></a>
-                <a href="#" class="social-icons-link"
-                  ><i class="fa-brands fa-twitter"></i
-                ></a>
-                <a href="#" class="social-icons-link"
-                  ><i class="fa-brands fa-linkedin-in"></i
-                ></a>
-                <a href="#" class="social-icons-link"
-                  ><i class="fa-brands fa-instagram"></i
-                ></a>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-3">
-            <div class="footer-first-cols-content">
-              <h4>Useful Links</h4>
-              <ul>
-                <li>
-                  <a href="#"
-                    ><i class="fa-solid fa-chevron-left"></i> Car Auction
-                    Collections</a
-                  >
-                </li>
-                <li>
-                  <a href="#"
-                    ><i class="fa-solid fa-chevron-left"></i> Car Collection
-                    Delivery</a
-                  >
-                </li>
-                <li>
-                  <a href="#"
-                    ><i class="fa-solid fa-chevron-left"></i> Motorcycle
-                    transportation</a
-                  >
-                </li>
-                <li>
-                  <a href="#"
-                    ><i class="fa-solid fa-chevron-left"></i> Urgent Breakdown
-                    Recovery</a
-                  >
-                </li>
-                <li>
-                  <a href="#"
-                    ><i class="fa-solid fa-chevron-left"></i> Van
-                    Transportation</a
-                  >
-                </li>
-                <li>
-                  <a href="#"
-                    ><i class="fa-solid fa-chevron-left"></i> Caravan
-                    Transport</a
-                  >
-                </li>
-                <li>
-                  <a href="#"
-                    ><i class="fa-solid fa-chevron-left"></i> Northern Ireland
-                    Transport</a
-                  >
-                </li>
-              </ul>
-            </div>
-          </div>
-          <div class="col-lg-3">
-            <div class="footer-first-cols-content">
-              <h4>Support</h4>
-              <ul>
-                <li>
-                  <a href="#"
-                    ><i class="fa-solid fa-chevron-left"></i> Terms of Use</a
-                  >
-                </li>
-                <li>
-                  <a href="#"
-                    ><i class="fa-solid fa-chevron-left"></i> Privacy</a
-                  >
-                </li>
-                <li>
-                  <a href="#"
-                    ><i class="fa-solid fa-chevron-left"></i> Site Map</a
-                  >
-                </li>
-                <li>
-                  <a href="#"
-                    ><i class="fa-solid fa-chevron-left"></i> Transporter
-                    Rules</a
-                  >
-                </li>
-                <li>
-                  <a href="#"
-                    ><i class="fa-solid fa-chevron-left"></i> Help & FAQ's</a
-                  >
-                </li>
-              </ul>
-            </div>
-          </div>
-          <div class="col-lg-2">
-            <div class="footer-first-cols-content">
-              <h4>More</h4>
-              <ul>
-                <li>
-                  <a href="#"><i class="fa-solid fa-chevron-left"></i> Blog</a>
-                </li>
-                <li>
-                  <a href="#"
-                    ><i class="fa-solid fa-chevron-left"></i> Transporter</a
-                  >
-                </li>
-              </ul>
-              <a href="#"
-                ><img
-                  src="./img/footer-reviews-trust-logo.png"
-                  alt="footer-reviews-trust-logo"
-                  class="footer-reviews-trust-logo"
-              /></a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
+  <!-- Copyright Footer Start -->
+  <footer id="copyright-footer">
+    Copyright © DeliverMyMotor Ltd. Powered by
+    <span><img class="hostxwhite-img" src="./img/hostoxwhite.png" alt="" width="90px" /></span>
+  </footer>
+  <!-- Copyright Footer End -->
 
-    <!-- Footer End -->
+  <!-- Script Start -->
+  <script src="./js/script.js"></script>
 
-    <!-- Copyright Footer Start -->
-    <footer id="copyright-footer">
-      Copyright © DeliverMyMotor Ltd. Powered by
-      <span
-        ><img
-          class="hostxwhite-img"
-          src="./img/hostoxwhite.png"
-          alt=""
-          width="90px"
-      /></span>
-    </footer>
-    <!-- Copyright Footer End -->
+  <script>
+    let closesBtn = document.querySelector("#close");
+    let contentsBox = document.querySelector(".alert-msg");
 
-    <!-- Script Start -->
-    <script src="./js/script.js"></script>
+    closesBtn.addEventListener("click", () => {
+      contentsBox.style.display = "none";
+    });
+  </script>
+  <!-- Script End -->
+</body>
 
-    <script>
-      let closesBtn = document.querySelector("#close");
-      let contentsBox = document.querySelector(".alert-msg");
-
-      closesBtn.addEventListener("click", () => {
-        contentsBox.style.display = "none";
-      });
-    </script>
-    <!-- Script End -->
-  </body>
 </html>

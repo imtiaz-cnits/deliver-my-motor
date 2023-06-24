@@ -81,10 +81,13 @@
   }
 }
 
+/* this code removes the invisibity of navbar */
 .dashboard-sidebar.close {
-  width: 0px;
-  opacity: 0;
+  width: 0;
+  padding: 20px 0;
+  visibility: hidden;
 }
+/* this code removes the invisibity of navbar */
 
 .home {
   position: relative;
