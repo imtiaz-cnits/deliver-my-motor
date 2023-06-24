@@ -431,6 +431,37 @@ td {
 
 /* Transporters profileDashboard Start  */
 
+.profile-notice {
+  margin-top: 60px;
+  background-color: rgba(201, 6, 6, 0.3);
+  padding: 10px 20px;
+  border-radius: 6px;
+  position: relative;
+  transition: 0.5s;
+}
+
+.profile-notice p {
+  margin-bottom: 0;
+  color: var(--black);
+}
+
+.profile-notice p a {
+  color: var(--black);
+}
+
+.profile-notice p a:hover {
+  color: var(--light-blue);
+}
+
+#close {
+  position: absolute;
+  top: 5px;
+  right: 10px;
+  font-size: 1.1em;
+  color: var(--black);
+  cursor: pointer;
+}
+
 #tranporter-profile-dashboard {
   padding-top: 50px;
 }

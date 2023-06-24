@@ -533,7 +533,7 @@ td {
   margin-bottom: 80px;
   padding: 40px 40px 40px;
   width: 100%;
-  border: 1px solid var(--tomato);
+  box-shadow: 0px 0px 7px rgba(0, 0, 0, 0.1);
   transition: 0.5s;
   border-radius: 10px;
 }
@@ -558,13 +558,14 @@ td {
   position: relative;
 }
 
-.vip-icon {
+.active-icon {
   position: absolute;
-  bottom: 0;
-  right: 0;
-  width: 40px;
-  height: 40px;
-  background-color: var(--tomato);
+  bottom: 10px;
+  right: 0px;
+  width: 20px;
+  height: 20px;
+  background-color: #45bf54;
+  border: 3px solid var(--white);
   border-radius: 50%;
   display: flex;
   align-items: center;
@@ -573,8 +574,10 @@ td {
 }
 
 .vip-icon img {
-  width: 30px;
-  height: 30px;
+  width: 100px;
+  height: 100px;
+  display: block;
+  margin: auto;
   z-index: 99;
   object-fit: contain;
 }
@@ -659,7 +662,7 @@ td {
 /* description */
 
 .description {
-  border: 1px solid var(--light-blue);
+  box-shadow: 0px 0px 7px rgba(0, 0, 0, 0.1);
   border-radius: 10px;
   padding: 40px 30px;
   margin-bottom: 80px;

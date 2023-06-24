@@ -660,18 +660,108 @@
                                 </div>
                                 <!-- Delivered Tab Start -->
 
-                                <!-- Delivered Tab Start -->
+                                <!-- completed Tab Start -->
                                 <div class="tab-pane fade show container bg-white pb-5 pt-5"
                                     style="border-radius: 0 0 5px 5px" id="completed">
                                     <div class="container-fluid table-bg">
                                         <div class="row">
                                             <div class="col-sm-12 p-5">
-                                                <h3 class="p-5 text-center">You do not have any active jobs.</h3>
+                                                <table class="job-table table align-middle">
+                                                    <thead>
+                                                        <tr>
+                                                            <th scope="col">Job Title</th>
+                                                            <th scope="col">Provider</th>
+                                                            <th scope="col">Price</th>
+                                                            <th scope="col">Date Made</th>
+                                                            <th scope="col">Completed On</th>
+                                                            <th scope="col">Options</th>
+                                                        </tr>
+                                                    </thead>
+                                                    <tbody>
+                                                        <tr>
+                                                            <td>Sports Car Freights</td>
+                                                            <td>Transporter</td>
+                                                            <td>$100</td>
+                                                            <td>December 8, 2022</td>
+                                                            <td>December 8, 2022</td>
+                                                            <td>
+                                                                <div class="rate-btn">
+                                                                    <button type="button" class="popup-btn">
+                                                                        Rate Me
+                                                                    </button>
+                                                                </div>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>Sports Car Freights</td>
+                                                            <td>spbanned</td>
+                                                            <td>$100</td>
+                                                            <td>December 8, 2022</td>
+                                                            <td>December 8, 2022</td>
+                                                            <td>
+                                                                <div class="rate-btn">
+                                                                    <button type="button" class="popup-btn">
+                                                                        Rate Me
+                                                                    </button>
+                                                                </div>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>Sports Car Freights</td>
+                                                            <td>spbanned</td>
+                                                            <td>$100</td>
+                                                            <td>December 8, 2022</td>
+                                                            <td>December 8, 2022</td>
+                                                            <td>
+                                                                <div class="rate-btn">
+                                                                    <button type="button" class="popup-btn">
+                                                                        Rate Me
+                                                                    </button>
+                                                                </div>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>Sports Car Freights</td>
+                                                            <td>spbanned</td>
+                                                            <td>$100</td>
+                                                            <td>December 8, 2022</td>
+                                                            <td>December 8, 2022</td>
+                                                            <td>
+                                                                <div class="rate-btn">
+                                                                    <button type="button" class="popup-btn">
+                                                                        Rate Me
+                                                                    </button>
+                                                                </div>
+                                                            </td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                            </div>
+                                            <!-- Popup Button for rate me Start -->
+                                            <div class="popup-rate">
+                                                <div class="popup-rate-content text-center">
+                                                    <i class="fa-solid fa-xmark close-rate-btn"></i>
+                                                    <p>Please Give Your Feedback?</p>
+
+                                                    <textarea class="rate-textarea" placeholder="Message"></textarea>
+
+                                                    <div class="rate-star">
+                                                        <i class="fa-regular fa-star"></i>
+                                                        <i class="fa-regular fa-star"></i>
+                                                        <i class="fa-regular fa-star"></i>
+                                                        <i class="fa-regular fa-star"></i>
+                                                        <i class="fa-regular fa-star"></i>
+                                                    </div>
+                                                    <div class="popup-rate-content-btn">
+                                                        <button type="button" class="submit-btn">Submit</button>
+                                                    </div>
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
-                                <!-- Delivered Tab Start -->
+                                 
+                                <!-- completed Tab Start -->
 
                                 <!-- cancelled jobs Start -->
                                 <div class="tab-pane fade show container bg-white pb-5 pt-5"
@@ -685,7 +775,6 @@
                                     </div>
                                 </div>
                                 <!-- cancelled jobsStart -->
-
 
                             </div>
         </section>
@@ -865,6 +954,24 @@
             .addEventListener("click", function () {
                 document.querySelector(".popup").style.display = "none";
             });
+
+        // popup rate 
+        let popupRateBtn = document.querySelectorAll(".popup-btn");
+        let popupRateBox= document.querySelector(".popup-rate");
+        let xmarkBtn = document.querySelector(".close-rate-btn");
+
+        for (let i = 0; i < popupRateBtn.length; i++) {
+            popupRateBtn[i].addEventListener("click", () => {
+                popupRateBox.style.display = 'block';
+               
+            });
+        }
+        xmarkBtn.addEventListener("click", () => {
+            popupRateBox.style.display = 'none';
+            
+        });
+       
+        // closeBtn.addEventListener
     </script>
     <!-- Script End -->
 </body>
