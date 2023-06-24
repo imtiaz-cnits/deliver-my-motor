@@ -119,7 +119,7 @@
               <p>
                 Please do not post telephone numbers, emails or Company logos on
                 public display. Your account will be suspended.
-                <span><i class="fa-solid fa-xmark"></i></span>
+                <span id="close"><i class="fa-solid fa-xmark"></i></span>
               </p>
             </div>
             <div class="profile-edit-msg">
@@ -130,22 +130,29 @@
 
         <!-- profile edit -->
 
-        <div class="row">
-          <div class="col-sm-12">
-            <div class="profile-avatar">
-              <div class="avatar">
-                <span>
-                  <i class="fa-solid fa-plus"></i>
-                  Profile <br />
-                  Avatar
-                </span>
-              </div>
-              <div class="avatar-input">
-                <button type="button" class="file-input">
-                  Choose File
-                  <input type="file" />
-                </button>
-                <p>No photos with Numbers or Company names</p>
+        <div class="row justify-content-center">
+          <div class="col-lg-6">
+            <div class="profile-upload-img-box">
+              <div class="cover-photo">
+                <img src="./img/bg-multiple-car.png" alt="" />
+                <div class="cover-photo-input">
+                  <button type="button" class="file-input">
+                    + Upload Cover
+                    <input type="file" />
+                  </button>
+                </div>
+
+                <div class="profile-photo-box">
+                  <div class="profile-photo">
+                    <img src="./img/car-img.png" alt="" />
+                  </div>
+                  <div class="profile-photo-input">
+                    <button type="button" class="file-input">
+                      + Upload Profile
+                      <input type="file" />
+                    </button>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
@@ -507,6 +514,15 @@
 
     <!-- Script Start -->
     <script src="./js/script.js"></script>
+
+    <script>
+      let closesBtn = document.querySelector("#close");
+      let contentsBox = document.querySelector(".alert-msg");
+
+      closesBtn.addEventListener("click", () => {
+        contentsBox.style.display = "none";
+      });
+    </script>
     <!-- Script End -->
   </body>
 </html>

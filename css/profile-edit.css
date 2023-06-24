@@ -574,12 +574,12 @@ td {
 /* alert msg */
 
 .alert-msg p {
-  background-color: var(--light-blue);
+  background-color: rgba(202, 31, 38, 0.4);
   padding: 10px 20px 10px;
   border-radius: 6px;
-  color: var(--white);
+  color: var(--black);
   font-size: 1rem;
-  font-weight: 300;
+  font-weight: 400;
   margin-top: 50px;
   position: relative;
 }
@@ -632,16 +632,12 @@ td {
   font-family: var(--header-font);
 }
 
-.avatar-input {
-  margin-left: 20px;
-}
-
 .file-input {
   position: relative;
   padding: 10px 20px;
   overflow: hidden;
   border: none;
-  background-color: var(--tomato);
+  background-color: transparent;
   color: var(--white);
   border-radius: 6px;
   font-family: var(--header-font);
@@ -657,9 +653,46 @@ td {
   opacity: 0;
 }
 
-.avatar-input p {
-  margin-top: 10px;
-  margin-bottom: 0;
+.cover-photo-input {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+}
+
+.profile-photo-input {
+  position: absolute;
+  bottom: -100px;
+  left: 40px;
+}
+
+.profile-photo-input .file-input {
+  color: var(--black);
+}
+
+.cover-photo {
+  position: relative;
+}
+
+.cover-photo img {
+  width: 100%;
+}
+
+.profile-photo-box {
+  position: relative;
+}
+
+.profile-photo {
+  width: 130px;
+  height: 130px;
+  position: absolute;
+  left: 50px;
+  bottom: -65px;
+}
+
+.profile-photo img {
+  width: 100%;
+  border-radius: 50%;
+  border: 4px solid var(--light-blue);
 }
 
 @media screen and (max-width: 575px) {
