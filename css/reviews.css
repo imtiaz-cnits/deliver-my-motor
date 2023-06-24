@@ -679,6 +679,10 @@ td {
 
 /* reviews-comments */
 
+.reviews-comment {
+  padding-left: 50px;
+}
+
 .reviews-search-box {
   width: 70%;
   height: 40px;
@@ -800,6 +804,7 @@ td {
 
   .reviews-comment {
     margin-bottom: 80px;
+    padding-left: 10px;
   }
 }
 
