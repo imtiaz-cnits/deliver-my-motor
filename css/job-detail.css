@@ -35,17 +35,17 @@
 }
 
 .dashboard-sidebar {
-  position: absolute;
+  position: fixed;
   width: 300px;
   top: 0;
   left: 0;
-  height: 180%;
+  height: 100vh;
   background-color: #0776ee;
   padding: 20px;
   transition: 0.5s;
 }
 
-@media screen and (max-width: 7680px) {
+/* @media screen and (max-width: 7680px) {
   .dashboard-sidebar {
     height: 75%;
   }
@@ -73,7 +73,7 @@
   .dashboard-sidebar {
     height: 310%;
   }
-}
+} */
 
 @media screen and (max-width: 575px) {
   .dashboard-sidebar {
@@ -576,10 +576,12 @@ td {
 /* Copyright Footer Start */
 
 #copyright-footer {
+  position: relative;
   background-color: var(--black);
   padding: 20px;
   text-align: center;
   color: var(--white);
+  z-index: 10000 !important;
 }
 
 @media screen and (max-width: 575px) {
