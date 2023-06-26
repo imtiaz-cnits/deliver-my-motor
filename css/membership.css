@@ -587,7 +587,7 @@ td {
 }
 
 .membership-header h3 {
-  font-size: 1.8em;
+  font-size: 2.5em;
   color: var(--black);
   font-family: var(--header-font);
   font-weight: 700;
@@ -777,7 +777,8 @@ td {
 
 @media screen and (max-width: 990px) {
   .information h1,
-  .payment-information h2 {
+  .payment-information h2,
+  .membership-header h3 {
     font-size: 1.6em;
   }
 
