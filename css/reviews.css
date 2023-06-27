@@ -534,11 +534,25 @@ td {
 .transporter-profile {
   background: #ffffff;
   margin-bottom: 80px;
-  padding: 40px 40px 40px;
   width: 100%;
   box-shadow: 0px 0px 7px rgba(0, 0, 0, 0.1);
   transition: 0.5s;
   border-radius: 10px;
+}
+
+.trasporter-profile-content {
+  padding: 40px 40px 40px;
+}
+
+.transporter-profile-cover {
+  position: relative;
+}
+
+.transporter-profile-cover img {
+  width: 100%;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+  pointer-events: none;
 }
 
 .transporter-profile img {
@@ -547,6 +561,13 @@ td {
   background-size: cover;
   z-index: -20 !important;
   background-repeat: no-repeat;
+}
+
+.profile-img-box {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: -60px;
 }
 
 .profile-img {
@@ -559,6 +580,10 @@ td {
   z-index: 1000;
   border-radius: 50%;
   position: relative;
+}
+
+.profile-img img {
+  border-radius: 50%;
 }
 
 .active-icon {
@@ -574,6 +599,10 @@ td {
   align-items: center;
   justify-content: center;
   z-index: 1;
+}
+
+.vip-icon {
+  margin-top: 30px;
 }
 
 .vip-icon img {
@@ -652,14 +681,22 @@ td {
   color: var(--white);
 }
 
-.reviews-tagged p span {
+.reviews-tagged span {
   display: inline-block;
 }
 
-.reviews-tagged p span i {
+.reviews-tagged span i {
   color: var(--tomato);
   font-size: 1.2em;
   margin-right: 5px;
+}
+
+.review-profile-info-items {
+  margin: 6px 0;
+}
+
+.profile-info-right {
+  text-align: right;
 }
 
 /* description */
@@ -823,11 +860,6 @@ td {
     font-size: 25px;
   }
 
-  .transporter-profile {
-    font-size: 20px;
-    padding: 50px 15px;
-  }
-
   .register p:nth-child(2) {
     padding-left: 18px;
   }
@@ -845,6 +877,9 @@ td {
   .transporter-Earning-details {
     width: 100%;
     height: 40vh;
+  }
+  .trasporter-profile-content {
+    padding: 20px 20px 20px;
   }
 }
 
