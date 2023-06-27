@@ -632,7 +632,8 @@ td {
 }
 
 .membership-card-price {
-  width: 130px;
+  width: auto;
+  max-width: 170px;
   margin: auto;
   text-align: right;
 }
