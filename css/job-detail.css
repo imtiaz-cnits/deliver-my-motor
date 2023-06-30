@@ -1486,6 +1486,12 @@ table.dataTable thead td {
   padding-left: 0 !important;
 }
 
+@media screen and (max-width: 576px) {
+  #thmob {
+    visibility: hidden;
+  }
+}
+
 /* Transporter Table End */
 
 /* Transporter Dashboard End */
