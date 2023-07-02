@@ -914,7 +914,6 @@ td {
   margin-top: 50px;
   display: none;
   width: 100%;
-  height: 25vh;
   transition: 0.5s;
   box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.125);
 }
@@ -951,9 +950,6 @@ td {
 
   .fast-text {
     padding-top: 5px;
-  }
-
-  .fast-text span {
     font-weight: 700;
     color: var(--light-blue);
   }
@@ -971,9 +967,6 @@ td {
 
   .fast-text {
     padding-top: 5px;
-  }
-
-  .fast-text span {
     font-weight: 700;
     color: var(--light-blue);
   }
@@ -1008,18 +1001,40 @@ td {
     display: block;
     margin: 20px auto;
     z-index: 1000;
-    border-radius: 10px;
+    border-radius: 6px;
     width: 100%;
+    padding: 20px 10px;
   }
 
-  .transporter-table-box .avatar-img img {
-    padding: 10px;
-    border-radius: 3px;
+  .transporter-mobile-table {
+    display: flex;
+    align-items: center;
   }
 
-  .transporter-table-box a {
-    color: var(--light-blue);
+  .transporter-mobile-table-img {
+    width: 50px;
+    margin-right: 15px;
+  }
+
+  .transporter-mobile-table-img img {
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+  }
+
+  .transporter-mobile-table-name p {
+    margin-bottom: 0;
+  }
+
+  .transporter-mobile-table-name p a {
     text-decoration: none;
+    color: var(--light-blue);
+    font-family: var(--header-font);
+    font-weight: 500;
+  }
+
+  .transporter-mobile-table-location {
+    margin-top: 20px;
   }
 
   .search-main-table {
