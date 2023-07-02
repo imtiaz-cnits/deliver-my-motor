@@ -775,7 +775,7 @@ td {
 
 @media screen and (max-width: 575px) {
   #footer {
-    text-align: center;
+    text-align: left;
   }
 }
 

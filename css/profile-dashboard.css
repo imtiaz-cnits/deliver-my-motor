@@ -28,7 +28,7 @@
 }
 
 .dashboard-sidebar {
-  position: relative;
+  position: fixed;
   width: 300px;
   top: 0;
   left: 0;
@@ -1075,7 +1075,7 @@ td {
 
 @media screen and (max-width: 575px) {
   #footer {
-    text-align: center;
+    text-align: left;
   }
 }
 
