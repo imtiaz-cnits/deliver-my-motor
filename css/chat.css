@@ -41,7 +41,7 @@
   height: 100vh;
   background-color: #0776ee;
   padding: 20px;
-  transition: 0.5s;
+  /* transition: 0.5s; */
 }
 
 /* @media screen and (max-width: 7680px) {
@@ -86,7 +86,7 @@
   position: relative;
   left: 300px;
   width: calc(100% - 300px);
-  transition: 0.5s;
+  /* transition: 0.5s; */
 }
 
 .dashboard-sidebar.close ~ .home {
@@ -115,7 +115,7 @@
 
 .dashboard-sidebar .navbar-nav li {
   padding: 8px;
-  transition: 0.5s;
+  /* transition: 0.5s; */
 }
 
 .dashboard-sidebar .navbar-nav li a {
@@ -222,7 +222,7 @@
 
 #sidenavbar {
   left: -100%;
-  transition: 0.5s;
+  /* transition: 0.5s; */
 }
 
 .showSidebar {
@@ -278,7 +278,7 @@
     position: relative;
     left: 0px;
     width: calc(100%);
-    transition: 0.5s;
+    /* transition: 0.5s; */
   }
 
   #sideNavbarIcon {
