@@ -939,11 +939,6 @@ td {
 }
 
 @media screen and (max-width: 985px) {
-  .transporter-table-box {
-    width: 100%;
-    height: auto;
-    padding: 10px 0;
-  }
   .fast-title {
     margin-bottom: 10px;
   }
@@ -992,6 +987,7 @@ td {
   }
 }
 
+/* <!---------------------------------------- Copy Codes From here -----------------------------------------------> */
 @media screen and (max-width: 985px) {
   .search-table {
     display: none;
@@ -1003,7 +999,7 @@ td {
     z-index: 1000;
     border-radius: 6px;
     width: 100%;
-    padding: 20px 10px;
+    padding: 0;
   }
 
   .transporter-mobile-table {
@@ -1020,10 +1016,15 @@ td {
     width: 50px;
     height: 50px;
     object-fit: cover;
+    border-radius: 6px 0 0 0;
   }
 
   .transporter-mobile-table-name p {
     margin-bottom: 0;
+    color: var(--blue);
+    font-weight: 700;
+    padding-top: 20px;
+    padding-right: 20px;
   }
 
   .transporter-mobile-table-name p a {
@@ -1035,6 +1036,7 @@ td {
 
   .transporter-mobile-table-location {
     margin-top: 20px;
+    padding-right: 20px;
   }
 
   .search-main-table {
@@ -1044,7 +1046,49 @@ td {
     background-size: cover;
     z-index: -20;
   }
+
+  .featured-box {
+    margin-bottom: -30px;
+  }
+
+  .featured-badge {
+    background-color: #ca1f26;
+    color: #fff;
+    width: 30%;
+    font-size: 16px;
+    padding: 3px 15px 3px 10px;
+    border-radius: 6px;
+    margin-left: 70%;
+    text-align: center;
+  }
 }
+
+.milage-box {
+  background-color: #5d3fd3;
+  padding: 10px 20px;
+  border-radius: 0 0 6px 6px;
+  color: #fff;
+}
+
+.horizontal-pipe {
+  border-left: 1px solid #fff;
+  height: 30px;
+}
+
+.featured-badge-dektop {
+  position: absolute;
+  font-size: 11px;
+  background-color: #ca1f26;
+  color: #fff;
+  padding-left: 5px;
+  padding-right: 5px;
+  border-radius: 3px;
+  margin-top: -8px;
+  margin-left: 0px;
+}
+
+/* <!---------------------------------------- Copy Codes From here -----------------------------------------------> */
+
 /* search table */
 
 /* Dashboard Search Deliveri End */
