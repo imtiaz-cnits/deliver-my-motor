@@ -598,6 +598,15 @@ td {
   padding-bottom: 100px;
 }
 
+/* mobile chat */
+
+.mobile-dashboard-chat {
+  padding-bottom: 100px;
+  display: none;
+}
+
+/* mobile chat */
+
 .response {
   display: flex;
   justify-content: space-between;
@@ -993,6 +1002,19 @@ td {
 @media screen and (max-width: 990px) {
   .chat-landing-tab a {
     font-size: 14px;
+  }
+
+  .dashboard-chat {
+    display: none;
+  }
+
+  .mobile-dashboard-chat {
+    display: block;
+  }
+
+  .mobile-profile-info {
+    margin-top: 0 !important;
+    margin-bottom: 70px;
   }
 }
 

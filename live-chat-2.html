@@ -1,265 +1,571 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Live Chat - Deliver My Motor</title>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Live Chat - Deliver My Motor</title>
+    <!-- CSS Link -->
+    <link rel="stylesheet" href="./css/chat.css" />
 
-  <!-- CSS Link -->
-  <link rel="stylesheet" href="./css/chat.css" />
+    <!-- Bootstrap Link -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
 
-  <!-- Bootstrap Link -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" />
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Font Awesome Link -->
+    <script
+      src="https://kit.fontawesome.com/44f1800e1f.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
 
-  <!-- Font Awesome Link -->
-  <script src="https://kit.fontawesome.com/44f1800e1f.js" crossorigin="anonymous"></script>
-</head>
-
-<body>
-  <!-- sidebar Start -->
-  <div class="dashboard-sidebar close">
-    <div class="dahsboard-navbar" id="sidenavbar">
-      <div class="sidebar-header d-flex justify-content-between">
-        <img src="./img/footer-logo.png" alt="" class="sidebar-logo" />
-        <button type="button" id="sideNavbarXmarkIcon" class="toggles">
-          <i class="fa-solid fa-xmark"></i>
-        </button>
+  <body>
+    <!-- sidebar Start -->
+    <div class="dashboard-sidebar close">
+      <div class="dahsboard-navbar" id="sidenavbar">
+        <div class="sidebar-header d-flex justify-content-between">
+          <img src="./img/footer-logo.png" alt="" class="sidebar-logo" />
+          <button type="button" id="sideNavbarXmarkIcon" class="toggles">
+            <i class="fa-solid fa-xmark"></i>
+          </button>
+        </div>
+        <ul class="navbar-nav">
+          <li>
+            <a href="#"><i class="fa-solid fa-house-user"></i> Dashboard</a>
+          </li>
+          <li>
+            <a href="#"><i class="fa-regular fa-comment-dots"></i> Messages</a>
+          </li>
+          <li>
+            <a href="#"><i class="fa-regular fa-file"></i> My Quotes</a>
+          </li>
+          <li>
+            <a href="#"><i class="fa-solid fa-briefcase"></i> My Jobs</a>
+          </li>
+          <li>
+            <a href="#"
+              ><i class="fa-solid fa-pen-to-square"></i> Post New Jobs</a
+            >
+          </li>
+          <li>
+            <a href="#"><i class="fa-regular fa-thumbs-up"></i> Reviews</a>
+          </li>
+          <li>
+            <a href="#"
+              ><i class="fa-sharp fa-solid fa-circle-info"></i> Help And FAQ</a
+            >
+          </li>
+          <li>
+            <a href="#"
+              ><i class="fa-solid fa-arrow-right-from-bracket"></i> Logout</a
+            >
+          </li>
+        </ul>
       </div>
-      <ul class="navbar-nav">
-        <li>
-          <a href="#"><i class="fa-solid fa-house-user"></i> Dashboard</a>
-        </li>
-        <li>
-          <a href="#"><i class="fa-regular fa-comment-dots"></i> Messages</a>
-        </li>
-        <li>
-          <a href="#"><i class="fa-regular fa-file"></i> My Quotes</a>
-        </li>
-        <li>
-          <a href="#"><i class="fa-solid fa-briefcase"></i> My Jobs</a>
-        </li>
-        <li>
-          <a href="#"><i class="fa-solid fa-pen-to-square"></i> Post New Jobs</a>
-        </li>
-        <li>
-          <a href="#"><i class="fa-regular fa-thumbs-up"></i> Reviews</a>
-        </li>
-        <li>
-          <a href="#"><i class="fa-sharp fa-solid fa-circle-info"></i> Help And FAQ</a>
-        </li>
-        <li>
-          <a href="#"><i class="fa-solid fa-arrow-right-from-bracket"></i> Logout</a>
-        </li>
-      </ul>
     </div>
-  </div>
-  <!-- sidebar End -->
+    <!-- sidebar End -->
 
-  <div class="home">
-    <!-- Navbar Start -->
-    <nav class="navbar navbar-expand-lg">
+    <div class="home">
+      <!-- Navbar Start -->
+      <nav class="navbar navbar-expand-lg">
+        <div class="container">
+          <button type="button" id="sideNavbarIcon" class="toggle">
+            <i class="fa-solid fa-bars-staggered"></i>
+          </button>
+          <a class="navbar-brand" href="#"
+            ><img
+              src="./img/logo.png"
+              alt="logo"
+              class="logo dashboard-navbar-logo"
+          /></a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#yournavbar"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="mynavbar">
+            <ul class="navbar-nav ms-auto">
+              <li class="nav-item">
+                <a class="nav-link" href="#">Dashboard</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#"
+                  >Messages
+                  <span class="badge rounded-circle bg-danger">2</span></a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Live Jobs</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <!-- Navbar End -->
+
+      <!-- Dashboard Chat Start -->
       <div class="container">
-        <button type="button" id="sideNavbarIcon" class="toggle">
-          <i class="fa-solid fa-bars-staggered"></i>
-        </button>
-        <a class="navbar-brand" href="#"><img src="./img/logo.png" alt="logo" class="logo dashboard-navbar-logo" /></a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#yournavbar">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="mynavbar">
-          <ul class="navbar-nav ms-auto">
-            <li class="nav-item">
-              <a class="nav-link" href="#">Dashboard</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Messages
-                <span class="badge rounded-circle bg-danger">2</span></a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Live Jobs</a>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </nav>
-    <!-- Navbar End -->
-
-    <!-- Dashboard Chat Start -->
-    <div class="container">
-      <!-- welcome msg -->
-      <div class="row">
-        <div class="col-sm-12">
-          <div class="welcome-chat-msg">
-            <h3>Welcome to <span class="fw-bold">Live Chat!</span></h3>
-          </div>
-        </div>
-      </div>
-
-      <!-- chat -->
-      <div class="dashboard-chat">
+        <!-- welcome msg -->
         <div class="row">
-          <div class="col-lg-8">
-            <div class="chat">
-              <div class="response">
-                <div class="response-text">
-                  <h4>Chat Response</h4>
-                  <p>Responsed to messages, set up automations and more.</p>
+          <div class="col-sm-12">
+            <div class="welcome-chat-msg">
+              <h3>Welcome to <span class="fw-bold">Live Chat!</span></h3>
+            </div>
+          </div>
+        </div>
+
+        <!-- chat -->
+        <div class="dashboard-chat">
+          <div class="row">
+            <div class="col-lg-8">
+              <div class="chat">
+                <div class="response">
+                  <div class="response-text">
+                    <h4>Chat Response</h4>
+                    <p>Responsed to messages, set up automations and more.</p>
+                  </div>
+                  <ul>
+                    <li>
+                      <a href="#">
+                        <i class="fa-regular fa-clock"></i>
+                        Available
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#">
+                        <i class="fa-solid fa-screwdriver-wrench"></i>
+                      </a>
+                    </li>
+                  </ul>
                 </div>
-                <ul>
-                  <li>
-                    <a href="#">
-                      <i class="fa-regular fa-clock"></i>
-                      Available
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#">
-                      <i class="fa-solid fa-screwdriver-wrench"></i>
-                    </a>
-                  </li>
-                </ul>
-              </div>
 
-              <div class="devider-border"></div>
+                <div class="devider-border"></div>
 
-              <div class="row">
-                <div class="col-lg-12">
-                  <div class="chat-field" id="mainChatField">
-                    <div class="chat-field-profile">
-                      <div class="chat-field-profile-name">
-                        <a href="./live-chat-1.html" id="back-btn">
-                          <div class="back-btn">
-                            <i class="fa-solid fa-arrow-left"></i>
+                <div class="row">
+                  <div class="col-lg-12">
+                    <div class="chat-field" id="mainChatField">
+                      <div class="chat-field-profile">
+                        <div class="chat-field-profile-name">
+                          <a href="./live-chat-1.html" id="back-btn">
+                            <div class="back-btn">
+                              <i class="fa-solid fa-arrow-left"></i>
+                            </div>
+                          </a>
+                          <div class="avatars">
+                            <img src="./img/avatar-1.png" alt="avatar1" />
                           </div>
-                        </a>
-                        <div class="avatars">
-                          <img src="./img/avatar-1.png" alt="avatar1" />
+                          <div class="name-descs">
+                            <h4>Jhon Doe</h4>
+                            <p>Active Now</p>
+                          </div>
                         </div>
-                        <div class="name-descs">
-                          <h4>Jhon Doe</h4>
-                          <p>Active Now</p>
+                        <div class="chat-field-profile-icon">
+                          <a href="#">
+                            <i class="fa-solid fa-clipboard-list"></i>
+                          </a>
+                          <a href="#">
+                            <i class="fa-solid fa-exclamation"></i>
+                          </a>
+                          <a href="#">
+                            <i class="fa-solid fa-trash-can"></i>
+                          </a>
+                          <a href="#">
+                            <i class="fa-regular fa-envelope"></i>
+                          </a>
+                          <a href="#">
+                            <i class="fa-solid fa-check"></i>
+                          </a>
                         </div>
                       </div>
-                      <div class="chat-field-profile-icon">
-                        <a href="#">
-                          <i class="fa-solid fa-clipboard-list"></i>
-                        </a>
-                        <a href="#">
-                          <i class="fa-solid fa-exclamation"></i>
-                        </a>
-                        <a href="#">
-                          <i class="fa-solid fa-trash-can"></i>
-                        </a>
-                        <a href="#">
-                          <i class="fa-regular fa-envelope"></i>
-                        </a>
-                        <a href="#">
-                          <i class="fa-solid fa-check"></i>
-                        </a>
+
+                      <div class="devider-border"></div>
+
+                      <div class="main-chat-field">
+                        <div class="text-replyer">
+                          <div class="text-replyer-avatar">
+                            <a href="#">
+                              <img src="./img/avatar-1.png" />
+                            </a>
+                          </div>
+                          <div class="replyer-texts">
+                            <p>
+                              Hi there
+                              <span class="chat-text-date"
+                                >06/02/2023, 11:42 AM</span
+                              >
+                            </p>
+                            <i class="fa-solid fa-ellipsis-vertical"></i>
+                          </div>
+                        </div>
+
+                        <div class="text-sender">
+                          <p class="text-sender-msg">
+                            Hello, How are you?
+                            <span class="chat-text-date"
+                              >06/02/2023, 11:42 AM</span
+                            >
+                          </p>
+                        </div>
+
+                        <div class="text-sender">
+                          <img src="./img/emoji.png" />
+                        </div>
+
+                        <div class="text-replyer">
+                          <div class="text-replyer-avatar">
+                            <a href="#">
+                              <img src="./img/avatar-1.png" />
+                            </a>
+                          </div>
+                          <div class="replyer-texts">
+                            <p>
+                              Am fine,
+                              <span class="chat-text-date"
+                                >06/02/2023, 11:42 AM</span
+                              >
+                            </p>
+                            <i class="fa-solid fa-ellipsis-vertical"></i>
+                          </div>
+                        </div>
+
+                        <div class="text-replyer">
+                          <div class="text-replyer-avatar">
+                            <a href="#">
+                              <img src="./img/avatar-1.png" />
+                            </a>
+                          </div>
+                          <div class="replyer-texts">
+                            <p>
+                              Do you know about Deliver My Motor Features?
+                              <span class="chat-text-date"
+                                >06/02/2023, 11:42 AM</span
+                              >
+                            </p>
+                            <i class="fa-solid fa-ellipsis-vertical"></i>
+                          </div>
+                        </div>
+
+                        <div class="text-sender">
+                          <p class="text-sender-msg">
+                            Yes, I know, but not all. Can you tell me about
+                            others?
+                            <span class="chat-text-date"
+                              >06/02/2023, 11:42 AM</span
+                            >
+                          </p>
+                        </div>
+
+                        <div class="text-replyer">
+                          <div class="text-replyer-avatar">
+                            <a href="#">
+                              <img src="./img/avatar-1.png" />
+                            </a>
+                          </div>
+                          <div class="replyer-texts">
+                            <p>
+                              Do you know about Deliver My Motor Features?
+                              <span class="chat-text-date"
+                                >06/02/2023, 11:42 AM</span
+                              >
+                            </p>
+                            <i class="fa-solid fa-ellipsis-vertical"></i>
+                          </div>
+                        </div>
+
+                        <div class="text-sender">
+                          <p class="text-sender-msg">
+                            Yes, I know, but not all. Can you tell me about
+                            others?
+                            <span class="chat-text-date"
+                              >06/02/2023, 11:42 AM</span
+                            >
+                          </p>
+                        </div>
+                      </div>
+
+                      <div class="chat-text-sent-area">
+                        <div class="text-sent-area">
+                          <div class="avatar">
+                            <img src="./img/avatar-1.png" />
+                          </div>
+                          <textarea placeholder="Reply in Chat..."></textarea>
+                          <i class="fa-solid fa-paper-plane"></i>
+                        </div>
                       </div>
                     </div>
+                  </div>
+                </div>
+              </div>
+            </div>
 
-                    <div class="devider-border"></div>
+            <div class="col-lg-4">
+              <div class="profile-info">
+                <!-- about -->
+                <div class="profile-about-2">
+                  <h4>Running Bids</h4>
+                  <ul>
+                    <li>
+                      <span class="bid-job-name">BMW 12024</span>
+                      <span class="bid">€370</span>
+                      <button type="button" class="bid-btn">Accept Bid</button>
+                    </li>
+                    <li>
+                      <span class="bid-job-name">BMW 12024</span>
+                      <span class="bid">€370</span>
+                      <button type="button" class="bid-btn">Accept Bid</button>
+                    </li>
+                    <li>
+                      <span class="bid-job-name">BMW 12024</span>
+                      <span class="bid">€370</span>
+                      <button type="button" class="bid-btn">Accept Bid</button>
+                    </li>
+                    <li>
+                      <span class="bid-job-name">BMW 12024</span>
+                      <span class="bid">€370</span>
+                      <button type="button" class="bid-btn">Accept Bid</button>
+                    </li>
+                    <li>
+                      <span class="bid-job-name">BMW 12024</span>
+                      <span class="bid">€370</span>
+                      <button type="button" class="bid-btn">Accept Bid</button>
+                    </li>
+                    <li>
+                      <span class="bid-job-name">BMW 12024</span>
+                      <span class="bid">€370</span>
+                      <button type="button" class="bid-btn">Accept Bid</button>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
 
-                    <div class="main-chat-field">
-                      <div class="text-replyer">
-                        <div class="text-replyer-avatar">
+        <!-- mobile chat -->
+        <div class="mobile-dashboard-chat">
+          <div class="row">
+            <div class="col-lg-4">
+              <div class="profile-info mobile-profile-info">
+                <!-- about -->
+                <div class="profile-about-2">
+                  <h4>Running Bids</h4>
+                  <ul>
+                    <li>
+                      <span class="bid-job-name">BMW 12024</span>
+                      <span class="bid">€370</span>
+                      <button type="button" class="bid-btn">Accept Bid</button>
+                    </li>
+                    <li>
+                      <span class="bid-job-name">BMW 12024</span>
+                      <span class="bid">€370</span>
+                      <button type="button" class="bid-btn">Accept Bid</button>
+                    </li>
+                    <li>
+                      <span class="bid-job-name">BMW 12024</span>
+                      <span class="bid">€370</span>
+                      <button type="button" class="bid-btn">Accept Bid</button>
+                    </li>
+                    <li>
+                      <span class="bid-job-name">BMW 12024</span>
+                      <span class="bid">€370</span>
+                      <button type="button" class="bid-btn">Accept Bid</button>
+                    </li>
+                    <li>
+                      <span class="bid-job-name">BMW 12024</span>
+                      <span class="bid">€370</span>
+                      <button type="button" class="bid-btn">Accept Bid</button>
+                    </li>
+                    <li>
+                      <span class="bid-job-name">BMW 12024</span>
+                      <span class="bid">€370</span>
+                      <button type="button" class="bid-btn">Accept Bid</button>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-8">
+              <div class="chat">
+                <div class="response">
+                  <div class="response-text">
+                    <h4>Chat Response</h4>
+                    <p>Responsed to messages, set up automations and more.</p>
+                  </div>
+                  <ul>
+                    <li>
+                      <a href="#">
+                        <i class="fa-regular fa-clock"></i>
+                        Available
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#">
+                        <i class="fa-solid fa-screwdriver-wrench"></i>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+
+                <div class="devider-border"></div>
+
+                <div class="row">
+                  <div class="col-lg-12">
+                    <div class="chat-field" id="mainChatField">
+                      <div class="chat-field-profile">
+                        <div class="chat-field-profile-name">
+                          <a href="./live-chat-1.html" id="back-btn">
+                            <div class="back-btn">
+                              <i class="fa-solid fa-arrow-left"></i>
+                            </div>
+                          </a>
+                          <div class="avatars">
+                            <img src="./img/avatar-1.png" alt="avatar1" />
+                          </div>
+                          <div class="name-descs">
+                            <h4>Jhon Doe</h4>
+                            <p>Active Now</p>
+                          </div>
+                        </div>
+                        <div class="chat-field-profile-icon">
                           <a href="#">
-                            <img src="./img/avatar-1.png" />
+                            <i class="fa-solid fa-clipboard-list"></i>
+                          </a>
+                          <a href="#">
+                            <i class="fa-solid fa-exclamation"></i>
+                          </a>
+                          <a href="#">
+                            <i class="fa-solid fa-trash-can"></i>
+                          </a>
+                          <a href="#">
+                            <i class="fa-regular fa-envelope"></i>
+                          </a>
+                          <a href="#">
+                            <i class="fa-solid fa-check"></i>
                           </a>
                         </div>
-                        <div class="replyer-texts">
-                          <p>
-                            Hi there
-                            <span class="chat-text-date">06/02/2023, 11:42 AM</span>
+                      </div>
+
+                      <div class="devider-border"></div>
+
+                      <div class="main-chat-field">
+                        <div class="text-replyer">
+                          <div class="text-replyer-avatar">
+                            <a href="#">
+                              <img src="./img/avatar-1.png" />
+                            </a>
+                          </div>
+                          <div class="replyer-texts">
+                            <p>
+                              Hi there
+                              <span class="chat-text-date"
+                                >06/02/2023, 11:42 AM</span
+                              >
+                            </p>
+                            <i class="fa-solid fa-ellipsis-vertical"></i>
+                          </div>
+                        </div>
+
+                        <div class="text-sender">
+                          <p class="text-sender-msg">
+                            Hello, How are you?
+                            <span class="chat-text-date"
+                              >06/02/2023, 11:42 AM</span
+                            >
                           </p>
-                          <i class="fa-solid fa-ellipsis-vertical"></i>
+                        </div>
+
+                        <div class="text-sender">
+                          <img src="./img/emoji.png" />
+                        </div>
+
+                        <div class="text-replyer">
+                          <div class="text-replyer-avatar">
+                            <a href="#">
+                              <img src="./img/avatar-1.png" />
+                            </a>
+                          </div>
+                          <div class="replyer-texts">
+                            <p>
+                              Am fine,
+                              <span class="chat-text-date"
+                                >06/02/2023, 11:42 AM</span
+                              >
+                            </p>
+                            <i class="fa-solid fa-ellipsis-vertical"></i>
+                          </div>
+                        </div>
+
+                        <div class="text-replyer">
+                          <div class="text-replyer-avatar">
+                            <a href="#">
+                              <img src="./img/avatar-1.png" />
+                            </a>
+                          </div>
+                          <div class="replyer-texts">
+                            <p>
+                              Do you know about Deliver My Motor Features?
+                              <span class="chat-text-date"
+                                >06/02/2023, 11:42 AM</span
+                              >
+                            </p>
+                            <i class="fa-solid fa-ellipsis-vertical"></i>
+                          </div>
+                        </div>
+
+                        <div class="text-sender">
+                          <p class="text-sender-msg">
+                            Yes, I know, but not all. Can you tell me about
+                            others?
+                            <span class="chat-text-date"
+                              >06/02/2023, 11:42 AM</span
+                            >
+                          </p>
+                        </div>
+
+                        <div class="text-replyer">
+                          <div class="text-replyer-avatar">
+                            <a href="#">
+                              <img src="./img/avatar-1.png" />
+                            </a>
+                          </div>
+                          <div class="replyer-texts">
+                            <p>
+                              Do you know about Deliver My Motor Features?
+                              <span class="chat-text-date"
+                                >06/02/2023, 11:42 AM</span
+                              >
+                            </p>
+                            <i class="fa-solid fa-ellipsis-vertical"></i>
+                          </div>
+                        </div>
+
+                        <div class="text-sender">
+                          <p class="text-sender-msg">
+                            Yes, I know, but not all. Can you tell me about
+                            others?
+                            <span class="chat-text-date"
+                              >06/02/2023, 11:42 AM</span
+                            >
+                          </p>
                         </div>
                       </div>
 
-                      <div class="text-sender">
-                        <p class="text-sender-msg">
-                          Hello, How are you?
-                          <span class="chat-text-date">06/02/2023, 11:42 AM</span>
-                        </p>
-                      </div>
-
-                      <div class="text-sender">
-                        <img src="./img/emoji.png" />
-                      </div>
-
-                      <div class="text-replyer">
-                        <div class="text-replyer-avatar">
-                          <a href="#">
+                      <div class="chat-text-sent-area">
+                        <div class="text-sent-area">
+                          <div class="avatar">
                             <img src="./img/avatar-1.png" />
-                          </a>
+                          </div>
+                          <textarea placeholder="Reply in Chat..."></textarea>
+                          <i class="fa-solid fa-paper-plane"></i>
                         </div>
-                        <div class="replyer-texts">
-                          <p>
-                            Am fine,
-                            <span class="chat-text-date">06/02/2023, 11:42 AM</span>
-                          </p>
-                          <i class="fa-solid fa-ellipsis-vertical"></i>
-                        </div>
-                      </div>
-
-                      <div class="text-replyer">
-                        <div class="text-replyer-avatar">
-                          <a href="#">
-                            <img src="./img/avatar-1.png" />
-                          </a>
-                        </div>
-                        <div class="replyer-texts">
-                          <p>
-                            Do you know about Deliver My Motor Features?
-                            <span class="chat-text-date">06/02/2023, 11:42 AM</span>
-                          </p>
-                          <i class="fa-solid fa-ellipsis-vertical"></i>
-                        </div>
-                      </div>
-
-                      <div class="text-sender">
-                        <p class="text-sender-msg">
-                          Yes, I know, but not all. Can you tell me about
-                          others?
-                          <span class="chat-text-date">06/02/2023, 11:42 AM</span>
-                        </p>
-                      </div>
-
-                      <div class="text-replyer">
-                        <div class="text-replyer-avatar">
-                          <a href="#">
-                            <img src="./img/avatar-1.png" />
-                          </a>
-                        </div>
-                        <div class="replyer-texts">
-                          <p>
-                            Do you know about Deliver My Motor Features?
-                            <span class="chat-text-date">06/02/2023, 11:42 AM</span>
-                          </p>
-                          <i class="fa-solid fa-ellipsis-vertical"></i>
-                        </div>
-                      </div>
-
-                      <div class="text-sender">
-                        <p class="text-sender-msg">
-                          Yes, I know, but not all. Can you tell me about
-                          others?
-                          <span class="chat-text-date">06/02/2023, 11:42 AM</span>
-                        </p>
-                      </div>
-                    </div>
-
-                    <div class="chat-text-sent-area">
-                      <div class="text-sent-area">
-                        <div class="avatar">
-                          <img src="./img/avatar-1.png" />
-                        </div>
-                        <textarea placeholder="Reply in Chat..."></textarea>
-                        <i class="fa-solid fa-paper-plane"></i>
                       </div>
                     </div>
                   </div>
@@ -267,215 +573,213 @@
               </div>
             </div>
           </div>
+        </div>
+      </div>
+      <!-- Dashboard Chat End -->
+    </div>
 
+    <!-- Transport Company Start -->
+    <section id="transport-company">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-10">
+            <div class="tarnsport-company-content">
+              <h1>Are you a Transport Company?</h1>
+              <p>
+                Deliver My Motor is used by millions of individuals to get their
+                deliveries done.
+              </p>
+              <p>
+                Use our advanced search tools to identify loads that meet your
+                specifications. Simply state how much you want to be paid.
+              </p>
+              <p>
+                When your quote is accepted, you will receive a booking
+                confirmation email with all of the pickup and delivery
+                information.
+              </p>
+              <p class="mb-5">
+                We run a transparent marketplace with a you choose model
+                integrated into the platform. Sign up Today!
+              </p>
+              <p>
+                <a href="#" class="transport-company-btn"
+                  >Get Started <i class="fa-regular fa-circle-right"></i
+                ></a>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Transport Company End -->
+
+    <!-- Footer Start -->
+    <section id="footer">
+      <div class="container">
+        <div class="row">
           <div class="col-lg-4">
-            <div class="profile-info">
-              <!-- <div class="profile-infos">
-                  <div class="profile-name">
-                    <div class="avatar">
-                      <img src="./img/avatar-1.png" alt="avatar1" />
-                    </div>
-                    <div class="name">
-                      <h4>Jhon Doe</h4>
-                      <p><a href="#">View Profile</a></p>
-                    </div>
-                  </div>
-                </div>
-                <div class="devider-border"></div> -->
-
-              <!-- about -->
-              <div class="profile-about-2">
-                <h4>Running Bids</h4>
-                <ul>
-                  <li>
-                    <span class="bid-job-name">BMW 12024</span>
-                    <span class="bid">€370</span>
-                    <button type="button" class="bid-btn">Accept Bid</button>
-                  </li>
-                  <li>
-                    <span class="bid-job-name">BMW 12024</span>
-                    <span class="bid">€370</span>
-                    <button type="button" class="bid-btn">Accept Bid</button>
-                  </li>
-                  <li>
-                    <span class="bid-job-name">BMW 12024</span>
-                    <span class="bid">€370</span>
-                    <button type="button" class="bid-btn">Accept Bid</button>
-                  </li>
-                  <li>
-                    <span class="bid-job-name">BMW 12024</span>
-                    <span class="bid">€370</span>
-                    <button type="button" class="bid-btn">Accept Bid</button>
-                  </li>
-                  <li>
-                    <span class="bid-job-name">BMW 12024</span>
-                    <span class="bid">€370</span>
-                    <button type="button" class="bid-btn">Accept Bid</button>
-                  </li>
-                  <li>
-                    <span class="bid-job-name">BMW 12024</span>
-                    <span class="bid">€370</span>
-                    <button type="button" class="bid-btn">Accept Bid</button>
-                  </li>
-                </ul>
+            <div class="footer-first-cols-content">
+              <img
+                src="./img/footer-logo.png"
+                alt="footer-logo"
+                class="footer-logo"
+              />
+              <ul>
+                <li>
+                  <a href="#"><i class="fa-solid fa-chevron-left"></i> About</a>
+                </li>
+                <li>
+                  <a href="#"
+                    ><i class="fa-solid fa-chevron-left"></i> Contact</a
+                  >
+                </li>
+                <li>
+                  <a href="#"
+                    ><i class="fa-solid fa-chevron-left"></i> How it Works</a
+                  >
+                </li>
+              </ul>
+              <div class="footer-social-icons-item">
+                <a href="#" class="social-icons-link"
+                  ><i class="fa-brands fa-facebook-f"></i
+                ></a>
+                <a href="#" class="social-icons-link"
+                  ><i class="fa-brands fa-twitter"></i
+                ></a>
+                <a href="#" class="social-icons-link"
+                  ><i class="fa-brands fa-linkedin-in"></i
+                ></a>
+                <a href="#" class="social-icons-link"
+                  ><i class="fa-brands fa-instagram"></i
+                ></a>
               </div>
             </div>
           </div>
-        </div>
-      </div>
-    </div>
-    <!-- Dashboard Chat End -->
-  </div>
-
-  <!-- Transport Company Start -->
-  <section id="transport-company">
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-10">
-          <div class="tarnsport-company-content">
-            <h1>Are you a Transport Company?</h1>
-            <p>
-              Deliver My Motor is used by millions of individuals to get their
-              deliveries done.
-            </p>
-            <p>
-              Use our advanced search tools to identify loads that meet your
-              specifications. Simply state how much you want to be paid.
-            </p>
-            <p>
-              When your quote is accepted, you will receive a booking
-              confirmation email with all of the pickup and delivery
-              information.
-            </p>
-            <p class="mb-5">
-              We run a transparent marketplace with a you choose model
-              integrated into the platform. Sign up Today!
-            </p>
-            <p>
-              <a href="#" class="transport-company-btn">Get Started <i class="fa-regular fa-circle-right"></i></a>
-            </p>
+          <div class="col-lg-3">
+            <div class="footer-first-cols-content">
+              <h4>Useful Links</h4>
+              <ul>
+                <li>
+                  <a href="#"
+                    ><i class="fa-solid fa-chevron-left"></i> Car Auction
+                    Collections</a
+                  >
+                </li>
+                <li>
+                  <a href="#"
+                    ><i class="fa-solid fa-chevron-left"></i> Car Collection
+                    Delivery</a
+                  >
+                </li>
+                <li>
+                  <a href="#"
+                    ><i class="fa-solid fa-chevron-left"></i> Motorcycle
+                    transportation</a
+                  >
+                </li>
+                <li>
+                  <a href="#"
+                    ><i class="fa-solid fa-chevron-left"></i> Urgent Breakdown
+                    Recovery</a
+                  >
+                </li>
+                <li>
+                  <a href="#"
+                    ><i class="fa-solid fa-chevron-left"></i> Van
+                    Transportation</a
+                  >
+                </li>
+                <li>
+                  <a href="#"
+                    ><i class="fa-solid fa-chevron-left"></i> Caravan
+                    Transport</a
+                  >
+                </li>
+                <li>
+                  <a href="#"
+                    ><i class="fa-solid fa-chevron-left"></i> Northern Ireland
+                    Transport</a
+                  >
+                </li>
+              </ul>
+            </div>
           </div>
-        </div>
-      </div>
-    </div>
-  </section>
-  <!-- Transport Company End -->
-
-  <!-- Footer Start -->
-  <section id="footer">
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-4">
-          <div class="footer-first-cols-content">
-            <img src="./img/footer-logo.png" alt="footer-logo" class="footer-logo" />
-            <ul>
-              <li>
-                <a href="#"><i class="fa-solid fa-chevron-left"></i> About</a>
-              </li>
-              <li>
-                <a href="#"><i class="fa-solid fa-chevron-left"></i> Contact</a>
-              </li>
-              <li>
-                <a href="#"><i class="fa-solid fa-chevron-left"></i> How it Works</a>
-              </li>
-            </ul>
-            <div class="footer-social-icons-item">
-              <a href="#" class="social-icons-link"><i class="fa-brands fa-facebook-f"></i></a>
-              <a href="#" class="social-icons-link"><i class="fa-brands fa-twitter"></i></a>
-              <a href="#" class="social-icons-link"><i class="fa-brands fa-linkedin-in"></i></a>
-              <a href="#" class="social-icons-link"><i class="fa-brands fa-instagram"></i></a>
+          <div class="col-lg-3">
+            <div class="footer-first-cols-content">
+              <h4>Support</h4>
+              <ul>
+                <li>
+                  <a href="#"
+                    ><i class="fa-solid fa-chevron-left"></i> Terms of Use</a
+                  >
+                </li>
+                <li>
+                  <a href="#"
+                    ><i class="fa-solid fa-chevron-left"></i> Privacy</a
+                  >
+                </li>
+                <li>
+                  <a href="#"
+                    ><i class="fa-solid fa-chevron-left"></i> Site Map</a
+                  >
+                </li>
+                <li>
+                  <a href="#"
+                    ><i class="fa-solid fa-chevron-left"></i> Transporter
+                    Rules</a
+                  >
+                </li>
+                <li>
+                  <a href="#"
+                    ><i class="fa-solid fa-chevron-left"></i> Help & FAQ's</a
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-lg-2">
+            <div class="footer-first-cols-content">
+              <h4>More</h4>
+              <ul>
+                <li>
+                  <a href="#"><i class="fa-solid fa-chevron-left"></i> Blog</a>
+                </li>
+                <li>
+                  <a href="#"
+                    ><i class="fa-solid fa-chevron-left"></i> Transporter</a
+                  >
+                </li>
+              </ul>
+              <a href="#"
+                ><img
+                  src="./img/footer-reviews-trust-logo.png"
+                  alt="footer-reviews-trust-logo"
+                  class="footer-reviews-trust-logo"
+              /></a>
             </div>
           </div>
         </div>
-        <div class="col-lg-3">
-          <div class="footer-first-cols-content">
-            <h4>Useful Links</h4>
-            <ul>
-              <li>
-                <a href="#"><i class="fa-solid fa-chevron-left"></i> Car Auction
-                  Collections</a>
-              </li>
-              <li>
-                <a href="#"><i class="fa-solid fa-chevron-left"></i> Car Collection
-                  Delivery</a>
-              </li>
-              <li>
-                <a href="#"><i class="fa-solid fa-chevron-left"></i> Motorcycle
-                  transportation</a>
-              </li>
-              <li>
-                <a href="#"><i class="fa-solid fa-chevron-left"></i> Urgent Breakdown
-                  Recovery</a>
-              </li>
-              <li>
-                <a href="#"><i class="fa-solid fa-chevron-left"></i> Van
-                  Transportation</a>
-              </li>
-              <li>
-                <a href="#"><i class="fa-solid fa-chevron-left"></i> Caravan
-                  Transport</a>
-              </li>
-              <li>
-                <a href="#"><i class="fa-solid fa-chevron-left"></i> Northern Ireland
-                  Transport</a>
-              </li>
-            </ul>
-          </div>
-        </div>
-        <div class="col-lg-3">
-          <div class="footer-first-cols-content">
-            <h4>Support</h4>
-            <ul>
-              <li>
-                <a href="#"><i class="fa-solid fa-chevron-left"></i> Terms of Use</a>
-              </li>
-              <li>
-                <a href="#"><i class="fa-solid fa-chevron-left"></i> Privacy</a>
-              </li>
-              <li>
-                <a href="#"><i class="fa-solid fa-chevron-left"></i> Site Map</a>
-              </li>
-              <li>
-                <a href="#"><i class="fa-solid fa-chevron-left"></i> Transporter
-                  Rules</a>
-              </li>
-              <li>
-                <a href="#"><i class="fa-solid fa-chevron-left"></i> Help & FAQ's</a>
-              </li>
-            </ul>
-          </div>
-        </div>
-        <div class="col-lg-2">
-          <div class="footer-first-cols-content">
-            <h4>More</h4>
-            <ul>
-              <li>
-                <a href="#"><i class="fa-solid fa-chevron-left"></i> Blog</a>
-              </li>
-              <li>
-                <a href="#"><i class="fa-solid fa-chevron-left"></i> Transporter</a>
-              </li>
-            </ul>
-            <a href="#"><img src="./img/footer-reviews-trust-logo.png" alt="footer-reviews-trust-logo"
-                class="footer-reviews-trust-logo" /></a>
-          </div>
-        </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- Footer End -->
+    <!-- Footer End -->
 
-  <!-- Copyright Footer Start -->
-  <footer id="copyright-footer">
-    Copyright © DeliverMyMotor Ltd. Powered by
-    <span><img class="hostxwhite-img" src="./img/hostoxwhite.png" alt="" width="90px" /></span>
-  </footer>
-  <!-- Copyright Footer End -->
+    <!-- Copyright Footer Start -->
+    <footer id="copyright-footer">
+      Copyright © DeliverMyMotor Ltd. Powered by
+      <span
+        ><img
+          class="hostxwhite-img"
+          src="./img/hostoxwhite.png"
+          alt=""
+          width="90px"
+      /></span>
+    </footer>
+    <!-- Copyright Footer End -->
 
-  <!-- Script Start -->
-  <script src="./js/script.js"></script>
-  <!-- Script End -->
-</body>
-
+    <!-- Script Start -->
+    <script src="./js/script.js"></script>
+    <!-- Script End -->
+  </body>
 </html>
