@@ -885,10 +885,6 @@ span.text-highlight {
 /*--Start-Responsiveness--*/
 
 @media (max-width: 992px) {
-  html {
-    font-size: 60%;
-  }
-
   .column-reverse {
     flex-direction: column-reverse;
   }
@@ -905,10 +901,6 @@ span.text-highlight {
 }
 
 @media (max-width: 767px) {
-  html {
-    font-size: 55%;
-  }
-
   section {
     padding: 5rem 0;
   }
@@ -926,17 +918,7 @@ span.text-highlight {
   }
 }
 
-@media (max-width: 567px) {
-  html {
-    font-size: 52%;
-  }
-}
-
 @media (max-width: 467px) {
-  html {
-    font-size: 52%;
-  }
-
   .login-bg-content {
     margin-top: 13rem;
   }

@@ -1210,21 +1210,12 @@ table.dataTable > tbody > tr.child ul.dtr-details {
     font-size: 2.5rem;
   }
 }
-/* 
-@media (max-width: 467px) {
-  .card.card-table table td,
-  .card.card-table table th {
-    padding: 1rem !important;
-  }
 
-  .p-account {
-    margin-left: 2rem;
-    margin-bottom: 2rem;
+@media screen and (max-width: 568px) {
+  .job-details-head h1 {
+    font-size: 1.8em;
+    padding: 10px;
   }
-
-  .card.card-table {
-    padding: 1.5rem;
-  }
-} */
+}
 
 /* Transporter Dashboard End */
