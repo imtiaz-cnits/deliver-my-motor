@@ -229,6 +229,20 @@
   left: 0% !important;
 }
 
+.navbar .nav-link {
+  font-weight: 400;
+  color: var(--black);
+  transition: 0.5s;
+}
+
+.navbar-nav .nav-link:hover {
+  color: var(--tomato);
+}
+
+.navbar-nav .nav-link.active {
+  color: var(--tomato) !important;
+}
+
 @media screen and (max-width: 1400px) {
   .dahsboard-navbar ul {
     padding: 20px 20px 0 20px;
