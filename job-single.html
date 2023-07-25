@@ -1,875 +1,613 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Job Single Page - Deliver My Motor</title>
 
-    <!-- CSS Link -->
-    <link rel="stylesheet" href="./css/job-detail.css" />
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Job Single Page - Deliver My Motor</title>
 
-    <!-- Bootstrap Link -->
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-    />
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- CSS Link -->
+  <link rel="stylesheet" href="./css/job-detail.css" />
 
-    <!-- Font Awesome Link -->
-    <script
-      src="https://kit.fontawesome.com/44f1800e1f.js"
-      crossorigin="anonymous"
-    ></script>
-  </head>
+  <!-- Bootstrap Link -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
 
-  <body>
-    <!-- sidebar Start -->
-    <div class="dashboard-sidebar close">
-      <div class="dahsboard-navbar" id="sidenavbar">
-        <div class="sidebar-header d-flex justify-content-between">
-          <img src="./img/footer-logo.png" alt="" class="sidebar-logo" />
-          <button type="button" id="sideNavbarXmarkIcon" class="toggles">
-            <i class="fa-solid fa-xmark"></i>
-          </button>
+  <!-- Font Awesome Link -->
+  <script src="https://kit.fontawesome.com/44f1800e1f.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+  <!-- sidebar Start -->
+  <div class="dashboard-sidebar close">
+    <div class="dahsboard-navbar" id="sidenavbar">
+      <div class="sidebar-header d-flex justify-content-between">
+        <img src="./img/footer-logo.png" alt="" class="sidebar-logo" />
+        <button type="button" id="sideNavbarXmarkIcon" class="toggles">
+          <i class="fa-solid fa-xmark"></i>
+        </button>
+      </div>
+      <ul class="navbar-nav">
+        <li>
+          <a href="#"><i class="fa-solid fa-house-user"></i> Dashboard</a>
+        </li>
+        <li>
+          <a href="#"><i class="fa-regular fa-thumbs-up"></i> Reviews</a>
+        </li>
+        <li>
+          <a href="#"><i class="fa-sharp fa-solid fa-circle-info"></i> Help And FAQ</a>
+        </li>
+        <li>
+          <a href="#"><i class="fa-solid fa-arrow-right-from-bracket"></i> Logout</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+  <!-- sidebar End -->
+
+  <div class="home">
+    <!-- Navbar Start -->
+    <nav class="navbar navbar-expand-lg">
+      <div class="container">
+        <button type="button" id="sideNavbarIcon" class="toggle">
+          <i class="fa-solid fa-bars-staggered"></i>
+        </button>
+        <a class="navbar-brand" href="#"><img src="./img/logo.png" alt="logo" class="logo dashboard-navbar-logo" /></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#yournavbar">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="mynavbar">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="#">Dashboard</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Messages
+                <span class="badge rounded-circle bg-danger">2</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Accepted Quotes
+                <span class="badge rounded-circle bg-danger">6</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Live Jobs
+                <span class="badge rounded-circle bg-danger">8</span></a>
+            </li>
+          </ul>
         </div>
-        <ul class="navbar-nav">
-          <li>
-            <a href="#"><i class="fa-solid fa-house-user"></i> Dashboard</a>
-          </li>
-          <li>
-            <a href="#"><i class="fa-regular fa-thumbs-up"></i> Reviews</a>
-          </li>
-          <li>
-            <a href="#"
-              ><i class="fa-sharp fa-solid fa-circle-info"></i> Help And FAQ</a
-            >
-          </li>
-          <li>
-            <a href="#"
-              ><i class="fa-solid fa-arrow-right-from-bracket"></i> Logout</a
-            >
-          </li>
-        </ul>
+      </div>
+    </nav>
+    <!-- Navbar End -->
+
+    <!-- Job Details Start -->
+    <section id="job-details">
+      <div class="container">
+        <div class="row mb-5">
+          <div class="col-sm-12 mt-4">
+            <div class="job-details-head text-center mb-5">
+              <h1>toyota mr2</h1>
+            </div>
+            <br />
+          </div>
+        </div>
+
+        <div class="row g-5">
+          <div class="col-lg-8">
+            <div class="card border-0 p-4">
+              <div class="row g-5">
+                <div class="col-lg-4 col-md-6">
+                  <div class="card small-card small-card-1 border-0">
+                    <div class="d-flex justify-content-between align-items-center flex-wrap mb-4">
+                      <div class="job-inform-time-cards-content">
+                        <h3 class="mt-0 mb-0">Collection</h3>
+                      </div>
+                      <div class="icon">
+                        <svg width="39" height="39" viewBox="0 0 39 39" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path
+                            d="M25.3504 25.623L27.6319 14.04C29.1724 13.2015 30.2254 11.6025 30.2254 9.75C30.2254 8.45707 29.7118 7.21709 28.7975 6.30285C27.8833 5.38861 26.6433 4.875 25.3504 4.875C24.0575 4.875 22.8175 5.38861 21.9032 6.30285C20.989 7.21709 20.4754 8.45707 20.4754 9.75C20.4754 11.6025 21.5284 13.2015 23.0689 14.04L25.3504 25.623ZM25.3504 6.825C26.9689 6.825 28.2754 8.1315 28.2754 9.75C28.2754 11.3685 26.9689 12.675 25.3504 12.675C23.7319 12.675 22.4254 11.3685 22.4254 9.75C22.4254 8.1315 23.7319 6.825 25.3504 6.825ZM28.7044 16.185L35.1004 13.5915V31.1415L25.5844 35.1L13.6504 31.1415L3.90039 35.0415V17.4915L13.6504 13.5915L21.9769 16.341L25.3504 30.576L28.7044 16.185Z"
+                            fill="white" />
+                        </svg>
+                      </div>
+                    </div>
+                    <div class="">
+                      <p class="">Blandford Forum, UK</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                  <div class="card small-card small-card-2 border-0">
+                    <div class="d-flex justify-content-between align-items-center flex-wrap mb-4">
+                      <div class="job-inform-time-cards-content">
+                        <h3 class="mt-0 mb-0">Delivery</h3>
+                      </div>
+                      <div class="icon">
+                        <svg width="39" height="39" viewBox="0 0 39 39" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path
+                            d="M19.5 3.25C12.3175 3.25 6.5 4.0625 6.5 9.75V26C6.50366 26.6815 6.65016 27.3546 6.93006 27.976C7.20996 28.5974 7.61703 29.1532 8.125 29.6075V32.5C8.125 32.931 8.29621 33.3443 8.60095 33.649C8.9057 33.9538 9.31902 34.125 9.75 34.125H11.375C11.806 34.125 12.2193 33.9538 12.524 33.649C12.8288 33.3443 13 32.931 13 32.5V30.875H22.75C21.7785 29.1292 21.2224 27.183 21.125 25.1875C21.1395 23.7485 21.4981 22.3338 22.1709 21.0617C22.8437 19.7896 23.8112 18.6969 24.9925 17.875H9.75V9.75H29.25V16.25C29.5206 16.2333 29.7919 16.2333 30.0625 16.25C30.8879 16.2526 31.7086 16.373 32.5 16.6075V9.75C32.5 4.0625 26.6825 3.25 19.5 3.25ZM12.1875 22.75C12.6696 22.75 13.1409 22.893 13.5417 23.1608C13.9425 23.4286 14.255 23.8093 14.4395 24.2547C14.6239 24.7001 14.6722 25.1902 14.5782 25.663C14.4841 26.1359 14.252 26.5702 13.9111 26.9111C13.5702 27.252 13.1359 27.4841 12.663 27.5782C12.1902 27.6722 11.7001 27.6239 11.2547 27.4395C10.8093 27.255 10.4286 26.9425 10.1608 26.5417C9.89296 26.1409 9.75 25.6696 9.75 25.1875C9.75 24.541 10.0068 23.921 10.4639 23.4639C10.921 23.0068 11.541 22.75 12.1875 22.75ZM30.0625 19.5C28.5593 19.5169 27.1225 20.1215 26.0595 21.1845C24.9965 22.2475 24.3919 23.6843 24.375 25.1875C24.375 29.4125 30.0625 35.75 30.0625 35.75C30.0625 35.75 35.75 29.4125 35.75 25.1875C35.7331 23.6843 35.1285 22.2475 34.0655 21.1845C33.0025 20.1215 31.5657 19.5169 30.0625 19.5ZM30.0625 27.3C29.5453 27.3 29.0493 27.0946 28.6836 26.7289C28.3179 26.3632 28.1125 25.8672 28.1125 25.35C28.1125 24.8328 28.3179 24.3368 28.6836 23.9711C29.0493 23.6054 29.5453 23.4 30.0625 23.4C30.5684 23.4342 31.0448 23.6507 31.4033 24.0092C31.7618 24.3677 31.9783 24.8441 32.0125 25.35C32.024 25.6091 31.9815 25.8679 31.8876 26.1097C31.7937 26.3515 31.6504 26.5711 31.467 26.7545C31.2836 26.9379 31.064 27.0812 30.8222 27.1751C30.5804 27.269 30.3216 27.3115 30.0625 27.3Z"
+                            fill="white" />
+                        </svg>
+                      </div>
+                    </div>
+                    <div>
+                      <p class="">Maidstone, UK</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-4">
+                  <div class="card small-card small-card-3 border-0">
+                    <div class="d-flex justify-content-between align-items-center flex-wrap mb-4">
+                      <div class="job-inform-time-cards-content">
+                        <h3 class="mt-0 mb-0">Distance</h3>
+                      </div>
+                      <div class="icon">
+                        <svg width="39" height="39" viewBox="0 0 39 39" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path
+                            d="M10.5625 13.1787C9.11625 13.1787 7.94625 12.0087 7.94625 10.5625C7.94625 9.86863 8.22189 9.20317 8.71253 8.71253C9.20317 8.22189 9.86863 7.94625 10.5625 7.94625C12.0087 7.94625 13.1787 9.11625 13.1787 10.5625C13.1787 11.2564 12.9031 11.9218 12.4125 12.4125C11.9218 12.9031 11.2564 13.1787 10.5625 13.1787ZM10.5625 3.25C6.5 3.25 3.25 6.5 3.25 10.5625C3.25 16.0387 10.5625 24.1475 10.5625 24.1475C10.5625 24.1475 17.875 16.0387 17.875 10.5625C17.875 6.5 14.625 3.25 10.5625 3.25ZM28.4375 13.1787C27.7436 13.1787 27.0782 12.9031 26.5875 12.4125C26.0969 11.9218 25.8213 11.2564 25.8213 10.5625C25.8213 10.2189 25.8889 9.87872 26.0204 9.5613C26.1519 9.24389 26.3446 8.95547 26.5875 8.71253C26.8305 8.46959 27.1189 8.27688 27.4363 8.1454C27.7537 8.01392 28.0939 7.94625 28.4375 7.94625C28.7811 7.94625 29.1213 8.01392 29.4387 8.1454C29.7561 8.27688 30.0445 8.46959 30.2875 8.71253C30.5304 8.95547 30.7231 9.24389 30.8546 9.5613C30.9861 9.87872 31.0538 10.2189 31.0538 10.5625C31.0538 11.2564 30.7781 11.9218 30.2875 12.4125C29.7968 12.9031 29.1314 13.1787 28.4375 13.1787ZM28.4375 3.25C24.375 3.25 21.125 6.5 21.125 10.5625C21.125 16.0387 28.4375 24.1475 28.4375 24.1475C28.4375 24.1475 35.75 16.0387 35.75 10.5625C35.75 6.5 32.5 3.25 28.4375 3.25ZM28.4375 26C26.3738 26 24.5375 27.3 23.855 29.25H15.145C14.7144 28.0338 13.8193 27.0379 12.6557 26.4805C11.4922 25.9231 10.1551 25.8496 8.9375 26.2763C8.33232 26.4883 7.77487 26.8176 7.29701 27.2452C6.81916 27.6728 6.43027 28.1904 6.15259 28.7684C5.8749 29.3464 5.71386 29.9735 5.67867 30.6138C5.64348 31.2541 5.73483 31.895 5.9475 32.5C6.38392 33.7194 7.2851 34.7165 8.45425 35.2737C9.62339 35.8309 10.9655 35.9028 12.1875 35.4737C13.5688 34.9862 14.625 33.8813 15.145 32.5H23.8712C24.765 35.035 27.56 36.3675 30.0625 35.4737C30.6695 35.2639 31.2291 34.9361 31.709 34.5093C32.189 34.0825 32.5799 33.5651 32.8592 32.9867C33.1386 32.4084 33.3009 31.7805 33.3369 31.1393C33.3728 30.498 33.2817 29.8559 33.0688 29.25C32.37 27.3 30.5175 26 28.4375 26ZM28.4375 33.3125C27.791 33.3125 27.171 33.0557 26.7139 32.5986C26.2568 32.1415 26 31.5215 26 30.875C26 30.2285 26.2568 29.6085 26.7139 29.1514C27.171 28.6943 27.791 28.4375 28.4375 28.4375C29.084 28.4375 29.704 28.6943 30.1611 29.1514C30.6182 29.6085 30.875 30.2285 30.875 30.875C30.875 31.5215 30.6182 32.1415 30.1611 32.5986C29.704 33.0557 29.084 33.3125 28.4375 33.3125Z"
+                            fill="white" />
+                        </svg>
+                      </div>
+                    </div>
+                    <div>
+                      <div id="distance">144 Miles</div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-lg-6 col-md-6">
+                  <div class="card small-card small-card-4 job-inform-time-cards">
+                    <div class="d-flex justify-content-between align-items-center flex-wrap mb-4">
+                      <div class="job-inform-time-cards-content">
+                        <h3 class="mt-0 mb-0">Time Scale</h3>
+                      </div>
+                      <div class="icon">
+                        <svg width="39" height="39" viewBox="0 0 39 39" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path
+                            d="M7.96253 2.18768C7.91104 2.18768 7.85924 2.1886 7.8079 2.18997C6.57499 2.2231 5.40262 2.65523 4.42778 3.35159C1.82803 5.20851 0.577517 9.08223 3.0138 12.3947C4.93592 15.0076 4.09826 18.4578 2.10933 20.3855L3.10185 21.4067C5.55763 19.0265 6.54886 14.798 4.16117 11.552C2.16471 8.83764 3.21878 5.96611 5.25615 4.51093C6.27487 3.78318 7.52355 3.44376 8.78138 3.69208C9.98893 3.93019 11.2444 4.70593 12.3544 6.35809L7.79358 8.99783L9.64791 12.2184C5.84709 17.089 5.15468 23.9827 8.42916 29.6713C12.7319 37.1463 22.2557 39.7109 29.7025 35.3987C37.1495 31.0863 39.6991 21.5311 35.3964 14.0561C32.1277 8.37749 25.8437 5.5349 19.7478 6.38666L17.8864 3.15408L13.5874 5.64162C12.2989 3.69223 10.6888 2.61653 9.0575 2.29478C8.69688 2.22362 8.33011 2.18775 7.96253 2.18768ZM20.9213 8.36705C27.0075 8.36705 31.952 13.2685 31.952 19.3548C31.952 25.441 27.0075 30.3879 20.9213 30.3879C14.8351 30.3879 9.93348 25.4409 9.93348 19.3548C9.93348 13.2687 14.8351 8.36705 20.9213 8.36705H20.9213ZM20.2286 10.2856V17.0032C19.2195 17.3225 18.4648 18.2821 18.4648 19.3811C18.4648 20.7313 19.6045 21.8281 20.9547 21.8281C22.2359 21.8281 23.2879 20.8403 23.3922 19.5858L29.2216 15.4059L28.391 14.249L23.0374 18.0886C22.7249 17.5726 22.2344 17.175 21.6521 16.9959V10.2855H20.2286L20.2286 10.2856ZM17.0152 11.1474L15.7821 11.8591L16.8747 13.7515L18.1079 13.0375L17.0153 11.1475L17.0152 11.1474ZM24.8657 11.1474L23.7731 13.0374L25.0061 13.7515L26.0988 11.8591L24.8657 11.1474ZM13.4304 14.211L12.7186 15.444L14.6085 16.5366L15.3203 15.3035L13.4302 14.2109L13.4304 14.211ZM20.9546 18.3147C21.5357 18.3147 21.9782 18.8003 21.9782 19.3811C21.9782 19.962 21.5357 20.4046 20.9548 20.4046C20.3738 20.4046 19.8884 19.9621 19.8884 19.381C19.8884 18.8002 20.3737 18.3146 20.9548 18.3146L20.9546 18.3147ZM11.8569 18.6575V20.0809H14.0397V18.6574L11.8569 18.6575ZM27.8387 18.6575V20.0809H30.0238V18.6574H27.8388L27.8387 18.6575ZM14.6085 22.2041L12.7187 23.2944L13.4303 24.5274L15.3203 23.4348L14.6085 22.2041ZM27.2721 22.2041L26.5605 23.4348L28.4505 24.5274L29.1622 23.2943L27.2721 22.2041ZM16.8746 24.9892L15.7821 26.8792L17.0152 27.5909L18.1078 25.7008L16.8746 24.989L16.8746 24.9892ZM25.006 24.9892L23.7731 25.7009L24.8657 27.5909L26.0987 26.8791L25.0061 24.989L25.006 24.9892ZM20.2287 26.2698V28.4526H21.6521V26.2699H20.2286L20.2287 26.2698Z"
+                            fill="white" />
+                        </svg>
+                      </div>
+                    </div>
+                    <div>
+                      <p class="">ASAP</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-6 col-md-6">
+                  <div class="card small-card small-card-5">
+                    <div class="d-flex justify-content-between align-items-center flex-wrap mb-4">
+                      <div class="job-inform-time-cards-content">
+                        <h3 class="mt-0 mb-0">Travel Time</h3>
+                      </div>
+                      <div class="icon">
+                        <svg width="39" height="39" viewBox="0 0 39 39" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path
+                            d="M5.93105 25.025L7.6373 23.3188L11.6998 23.8875L18.0373 17.55L5.3623 10.6438L7.6373 8.36876L23.1561 12.35L29.4936 6.09376C29.954 5.63335 30.5227 5.40314 31.1998 5.40314C31.8769 5.40314 32.4456 5.63335 32.9061 6.09376C33.3665 6.55418 33.5967 7.12293 33.5967 7.80001C33.5967 8.4771 33.3665 9.04585 32.9061 9.50626L26.6498 15.8438L30.6311 31.3625L28.3561 33.6375L21.4498 20.9625L15.1123 27.3L15.6811 31.3625L13.9748 33.0688L11.1311 27.8688L5.93105 25.025Z"
+                            fill="white" />
+                        </svg>
+                      </div>
+                    </div>
+                    <div>
+                      <div id="duration">157 minutes</div>
+                      <span id="time"></span>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-lg-12">
+                  <div class="job-inform-map">
+                    <div class="map mt-4">
+                      <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d27752904.594463807!2d-29.978074996965546!3d31.884698518674657!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x54eab584e432360b%3A0x1c3bb99243deb742!2sUnited%20States!5e0!3m2!1sen!2sbd!4v1670927167047!5m2!1sen!2sbd"
+                        width="100%" height="400" style="border: 0" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-lg-6 col-md-6">
+                  <div class="card small-card small-card-5">
+                    <div>
+                      <div class="job-inform-time-cards-content">
+                        <h3 class="mt-0 mb-4">NUMBER OF VEHICLES</h3>
+                      </div>
+                    </div>
+                    <div class="d-flex justify-content-between align-items-center flex-wrap">
+                      <p class="m-0">1 Vehicles</p>
+                      <div class="icon">
+                        <svg width="39" height="39" viewBox="0 0 39 39" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path
+                            d="M29.25 30.0625C30.5987 30.0625 31.6875 28.9737 31.6875 27.625C31.6875 26.2763 30.5987 25.1875 29.25 25.1875C27.9013 25.1875 26.8125 26.2763 26.8125 27.625C26.8125 28.9737 27.9013 30.0625 29.25 30.0625ZM31.6875 15.4375H27.625V19.5H34.8725L31.6875 15.4375ZM9.75 30.0625C11.0987 30.0625 12.1875 28.9737 12.1875 27.625C12.1875 26.2763 11.0987 25.1875 9.75 25.1875C8.40125 25.1875 7.3125 26.2763 7.3125 27.625C7.3125 28.9737 8.40125 30.0625 9.75 30.0625ZM32.5 13L37.375 19.5V27.625H34.125C34.125 30.3225 31.9475 32.5 29.25 32.5C26.5525 32.5 24.375 30.3225 24.375 27.625H14.625C14.625 30.3225 12.4475 32.5 9.75 32.5C7.0525 32.5 4.875 30.3225 4.875 27.625H1.625V9.75C1.625 7.94625 3.07125 6.5 4.875 6.5H27.625V13H32.5ZM4.875 9.75V24.375H6.11C7.00375 23.3837 8.30375 22.75 9.75 22.75C11.1962 22.75 12.4962 23.3837 13.39 24.375H24.375V9.75H4.875ZM8.125 17.0625L10.5625 14.625L13 17.0625L18.6875 11.375L21.125 13.8125L13 21.9375L8.125 17.0625Z"
+                            fill="white" />
+                        </svg>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-6 col-md-6">
+                  <div class="card small-card small-card-4">
+                    <div>
+                      <div class="job-inform-time-cards-content">
+                        <h3 class="mt-0 mb-4">DRIVEN/TRANSPORTED</h3>
+                      </div>
+                    </div>
+                    <div class="d-flex justify-content-between align-items-center flex-wrap">
+                      <p class="m-0">Both</p>
+                      <div class="icon">
+                        <svg width="39" height="39" viewBox="0 0 39 39" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path
+                            d="M17.5498 7.80002C17.2912 7.80002 17.0432 7.90275 16.8604 8.0856C16.6775 8.26844 16.5748 8.51644 16.5748 8.77502C16.5748 9.03361 16.6775 9.28161 16.8604 9.46445C17.0432 9.6473 17.2912 9.75002 17.5498 9.75002H21.4498C21.7084 9.75002 21.9564 9.6473 22.1392 9.46445C22.3221 9.28161 22.4248 9.03361 22.4248 8.77502C22.4248 8.51644 22.3221 8.26844 22.1392 8.0856C21.9564 7.90275 21.7084 7.80002 21.4498 7.80002H17.5498ZM5.8498 10.725C5.8498 8.91492 6.56887 7.17896 7.8488 5.89902C9.12874 4.61908 10.8647 3.90002 12.6748 3.90002H26.3248C28.1349 3.90002 29.8709 4.61908 31.1508 5.89902C32.4307 7.17896 33.1498 8.91492 33.1498 10.725V15.6H35.0998C35.3584 15.6 35.6064 15.7027 35.7892 15.8856C35.9721 16.0684 36.0748 16.3164 36.0748 16.575C36.0748 16.8336 35.9721 17.0816 35.7892 17.2645C35.6064 17.4473 35.3584 17.55 35.0998 17.55H33.1498V32.175C33.1498 32.9508 32.8416 33.6948 32.2931 34.2433C31.7445 34.7919 31.0006 35.1 30.2248 35.1H28.2748C27.499 35.1 26.7551 34.7919 26.2065 34.2433C25.658 33.6948 25.3498 32.9508 25.3498 32.175V31.2H13.6498V32.175C13.6498 32.9508 13.3416 33.6948 12.7931 34.2433C12.2445 34.7919 11.5006 35.1 10.7248 35.1H8.7748C7.99905 35.1 7.25506 34.7919 6.70652 34.2433C6.15797 33.6948 5.8498 32.9508 5.8498 32.175V17.55H3.8998C3.64122 17.55 3.39322 17.4473 3.21038 17.2645C3.02753 17.0816 2.9248 16.8336 2.9248 16.575C2.9248 16.3164 3.02753 16.0684 3.21038 15.8856C3.39322 15.7027 3.64122 15.6 3.8998 15.6H5.8498V10.725ZM31.1998 10.725C31.1998 9.43209 30.6862 8.19212 29.772 7.27788C28.8577 6.36364 27.6177 5.85002 26.3248 5.85002H12.6748C11.3819 5.85002 10.1419 6.36364 9.22766 7.27788C8.31342 8.19212 7.7998 9.43209 7.7998 10.725V19.5H31.1998V10.725ZM27.2998 31.2V32.175C27.2998 32.4336 27.4025 32.6816 27.5854 32.8645C27.7682 33.0473 28.0162 33.15 28.2748 33.15H30.2248C30.4834 33.15 30.7314 33.0473 30.9142 32.8645C31.0971 32.6816 31.1998 32.4336 31.1998 32.175V31.2H27.2998ZM7.7998 31.2V32.175C7.7998 32.4336 7.90253 32.6816 8.08538 32.8645C8.26822 33.0473 8.51622 33.15 8.7748 33.15H10.7248C10.9834 33.15 11.2314 33.0473 11.4142 32.8645C11.5971 32.6816 11.6998 32.4336 11.6998 32.175V31.2H7.7998ZM15.5998 25.35C15.5998 24.8329 15.3944 24.3369 15.0287 23.9712C14.663 23.6055 14.167 23.4 13.6498 23.4C13.1326 23.4 12.6366 23.6055 12.2709 23.9712C11.9053 24.3369 11.6998 24.8329 11.6998 25.35C11.6998 25.8672 11.9053 26.3632 12.2709 26.7289C12.6366 27.0946 13.1326 27.3 13.6498 27.3C14.167 27.3 14.663 27.0946 15.0287 26.7289C15.3944 26.3632 15.5998 25.8672 15.5998 25.35ZM25.3498 27.3C25.867 27.3 26.363 27.0946 26.7287 26.7289C27.0944 26.3632 27.2998 25.8672 27.2998 25.35C27.2998 24.8329 27.0944 24.3369 26.7287 23.9712C26.363 23.6055 25.867 23.4 25.3498 23.4C24.8326 23.4 24.3366 23.6055 23.9709 23.9712C23.6053 24.3369 23.3998 24.8329 23.3998 25.35C23.3998 25.8672 23.6053 26.3632 23.9709 26.7289C24.3366 27.0946 24.8326 27.3 25.3498 27.3Z"
+                            fill="white" />
+                        </svg>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-lg-8">
+                  <div class="job-inform-comment">
+                    <p class="">Car has mot and runs/drives</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-8">
+            <div class="row g-5">
+              <div class="col-sm-12">
+                <div class="live-job">
+                  <h3 class="text-center m-0 text-white">LIVE JOB</h3>
+                </div>
+              </div>
+              <div class="col-sm-12">
+                <div class="card live-job-profile">
+                  <div class="live-job-profile-avatar">
+                    <img src="./img/live-job-avatar.png" alt="" />
+                  </div>
+                  <p class="live-job-profile-btn">
+                    <a class="live-job-profile-btn" href="/customer-profile/Q7MWVqqQqS">Q7MWVqqQqS</a><span>
+                      -
+                      <span class="text-danger report-flag"><i class="fa-solid fa-flag" id="rbutton"></i></span></span>
+                  </p>
+
+                  <p class="text-center mt-3 mb-5">
+                    (No ratings)<span>(0)</span>
+                  </p>
+
+                  <button type="button" class="live-job-profile-upgrade-btn" id="qbutton">
+                    Provide Quote
+                  </button>
+
+                  <a href="/inbox/Q7MWVqqQqS" class="live-job-profile-upgrade-btn">Ask Question</a>
+
+                  <div class="car-transport">
+                    <p class="mb-0 text-white">
+                      Listed In: <a href="#">Car Transport</a>
+                    </p>
+                    <p class="mb-0 text-white">
+                      There are no pictures posted.
+                    </p>
+                  </div>
+
+                  <div class="live-job-profile-social-icons">
+                    <p class="mb-4 text-white">
+                      Share this job on your Socials.
+                    </p>
+
+                    <a href="#" class="social-icons-link"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="#" class="social-icons-link"><i class="fa-brands fa-twitter"></i></a>
+                    <a href="#" class="social-icons-link"><i class="fa-brands fa-linkedin-in"></i></a>
+                    <a href="#" class="social-icons-link"><i class="fa-brands fa-instagram"></i></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12">
+            <div class="card card-table border-0 list-card">
+              <h2>Live Bids</h2>
+              <div id="" class="table-responsive">
+                <table id="miTabla2" class="display responsive nowrap dataTable no-footer dtr-inline collapsed"
+                  style="width: 100%" role="grid" aria-describedby="miTabla2_info">
+                  <thead>
+                    <tr role="row">
+                      <th scope="col" class="sorting_asc" tabindex="0" aria-controls="miTabla2" rowspan="1" colspan="1"
+                        style="width: 653px" aria-sort="ascending"
+                        aria-label="Provider: activate to sort column descending">
+                        Provider
+                      </th>
+                      <th scope="col" class="sorting" tabindex="0" aria-controls="miTabla2" rowspan="1" colspan="1"
+                        style="width: 306px" aria-label="Quoted: activate to sort column ascending">
+                        Quoted
+                      </th>
+                      <th scope="col" class="sorting" tabindex="0" aria-controls="miTabla2" rowspan="1" colspan="1"
+                        style="width: 224px" aria-label="Date: activate to sort column ascending">
+                        Date
+                      </th>
+                      <th scope="col" class="sorting" tabindex="0" aria-controls="miTabla2" rowspan="1" colspan="1"
+                        style="width: 0px; display: none" aria-label="Comment: activate to sort column ascending">
+                        Comment
+                      </th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr role="row" class="odd">
+                      <td class="table-rating sorting_1 text-nowrap" tabindex="0">
+                        <p class="p-account">
+                          <span class="basic-account">Basic</span><b><img
+                              src="https://app.delivermymotor.com/assets/files/posts/noimg.jpg"
+                              style="border-radius: 50%" width="30px" height="30px"
+                              class="transporter-table-avatar-img me-2" /><a
+                              href="/profile-view/ibm0026">ibm0026</a></b>
+                        </p>
+                        <span><i class="fa-regular fa-star"></i></span>
+                        <span><i class="fa-regular fa-star"></i></span>
+                        <span><i class="fa-regular fa-star"></i></span>
+                        <span><i class="fa-regular fa-star"></i></span>
+                        <span><i class="fa-regular fa-star"></i></span>
+                        <span>(0)</span>
+                      </td>
+
+                      <td>£129</td>
+                      <td>6 Jul</td>
+                    </tr>
+                    <tr role="row" class="even">
+                      <td class="table-rating sorting_1 text-nowrap" tabindex="0">
+                        <p class="p-account">
+                          <span class="basic-account">Basic</span><b><img
+                              src="https://app.delivermymotor.com/assets/files/profile/3c38031043a7e368ae6d1afa5f7574d3.jpeg"
+                              style="border-radius: 50%" width="30px" height="30px"
+                              class="transporter-table-avatar-img me-2" /><a
+                              href="/profile-view/Tela777">Tela777</a></b>
+                        </p>
+                        <span><i class="fa-regular fa-star"></i></span>
+                        <span><i class="fa-regular fa-star"></i></span>
+                        <span><i class="fa-regular fa-star"></i></span>
+                        <span><i class="fa-regular fa-star"></i></span>
+                        <span><i class="fa-regular fa-star"></i></span>
+                        <span>(0)</span>
+                      </td>
+
+                      <td>£200</td>
+                      <td>9 Jul</td>
+                    </tr>
+                    <tr role="row" class="odd">
+                      <td class="table-rating sorting_1 text-nowrap" tabindex="0">
+                        <p class="p-account">
+                          <span class="premium-account">Premium</span><b><img
+                              src="https://app.delivermymotor.com/assets/files/posts/noimg.jpg"
+                              style="border-radius: 50%" width="30px" height="30px"
+                              class="transporter-table-avatar-img me-2" /><a href="/profile-view/Jacb87">Jacb87<i
+                                class="fa-solid fa-shield-halved" style="color: green"></i></a></b>
+                        </p>
+                        <span><i class="fa-solid fa-star"></i></span>
+                        <span><i class="fa-solid fa-star"></i></span>
+                        <span><i class="fa-solid fa-star"></i></span>
+                        <span><i class="fa-solid fa-star"></i></span>
+                        <span><i class="fa-solid fa-star"></i></span>
+                        <span>(69)</span>
+                      </td>
+
+                      <td>£160</td>
+                      <td>6 Jul</td>
+                    </tr>
+                  </tbody>
+                </table>
+
+                <div class="d-flex justify-content-between align-items-center flex-wrap mb-4 flex-wrap">
+                  <div id="" class="me-3 mt-4" role="status" aria-live="polite">
+                    Showing 1 to 10 of 31 entries
+                  </div>
+                  <div class="d-flex justify-content-end align-items-center mt-4" id="">
+                    <a class="previous disabled me-4" aria-controls="miTabla" data-dt-idx="0" tabindex="0"
+                      id="">Previous</a><span class="d-flex justify-content-end align-items-center"><a
+                        class="pagination active" aria-controls="miTabla" data-dt-idx="1" tabindex="0">1</a><a
+                        class="pagination" aria-controls="miTabla" data-dt-idx="2" tabindex="0">2</a><a
+                        class="pagination" aria-controls="miTabla" data-dt-idx="3" tabindex="0">3</a><a
+                        class="pagination" aria-controls="miTabla" data-dt-idx="4" tabindex="0">4</a></span><a
+                      class="next ms-4" aria-controls="miTabla" data-dt-idx="5" tabindex="0" id="">Next</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Job Details End -->
+  </div>
+
+  <!-- Transport Company Start -->
+  <section id="transport-company">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-10">
+          <div class="tarnsport-company-content">
+            <h1>Are you a Transport Company?</h1>
+            <p>
+              Deliver My Motor is used by millions of individuals to get their
+              deliveries done.
+            </p>
+            <p>
+              Use our advanced search tools to identify loads that meet your
+              specifications. Simply state how much you want to be paid.
+            </p>
+            <p>
+              When your quote is accepted, you will receive a booking
+              confirmation email with all of the pickup and delivery
+              information.
+            </p>
+            <p class="mb-5">
+              We run a transparent marketplace with a you choose model
+              integrated into the platform. Sign up Today!
+            </p>
+            <p>
+              <a href="#" class="transport-company-btn">Get Started <i class="fa-regular fa-circle-right"></i></a>
+            </p>
+          </div>
+        </div>
       </div>
     </div>
-    <!-- sidebar End -->
+  </section>
+  <!-- Transport Company End -->
 
-    <div class="home">
-      <!-- Navbar Start -->
-      <nav class="navbar navbar-expand-lg">
-        <div class="container">
-          <button type="button" id="sideNavbarIcon" class="toggle">
-            <i class="fa-solid fa-bars-staggered"></i>
-          </button>
-          <a class="navbar-brand" href="#"
-            ><img
-              src="./img/logo.png"
-              alt="logo"
-              class="logo dashboard-navbar-logo"
-          /></a>
-          <button
-            class="navbar-toggler"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#yournavbar"
-          >
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="mynavbar">
-            <ul class="navbar-nav ms-auto">
-              <li class="nav-item">
-                <a class="nav-link" href="#">Dashboard</a>
+  <!-- Footer Start -->
+  <section id="footer">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-4">
+          <div class="footer-first-cols-content">
+            <img src="./img/footer-logo.png" alt="footer-logo" class="footer-logo" />
+            <ul>
+              <li>
+                <a href="#"><i class="fa-solid fa-chevron-left"></i> About</a>
+              </li>
+              <li>
+                <a href="#"><i class="fa-solid fa-chevron-left"></i> Contact</a>
+              </li>
+              <li>
+                <a href="#"><i class="fa-solid fa-chevron-left"></i> How it Works</a>
+              </li>
+            </ul>
+            <div class="footer-social-icons-item">
+              <a href="#" class="social-icons-link"><i class="fa-brands fa-facebook-f"></i></a>
+              <a href="#" class="social-icons-link"><i class="fa-brands fa-twitter"></i></a>
+              <a href="#" class="social-icons-link"><i class="fa-brands fa-linkedin-in"></i></a>
+              <a href="#" class="social-icons-link"><i class="fa-brands fa-instagram"></i></a>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3">
+          <div class="footer-first-cols-content">
+            <h4>Useful Links</h4>
+            <ul>
+              <li>
+                <a href="#"><i class="fa-solid fa-chevron-left"></i> Car Auction
+                  Collections</a>
+              </li>
+              <li>
+                <a href="#"><i class="fa-solid fa-chevron-left"></i> Car Collection
+                  Delivery</a>
+              </li>
+              <li>
+                <a href="#"><i class="fa-solid fa-chevron-left"></i> Motorcycle
+                  transportation</a>
+              </li>
+              <li>
+                <a href="#"><i class="fa-solid fa-chevron-left"></i> Urgent Breakdown
+                  Recovery</a>
+              </li>
+              <li>
+                <a href="#"><i class="fa-solid fa-chevron-left"></i> Van
+                  Transportation</a>
+              </li>
+              <li>
+                <a href="#"><i class="fa-solid fa-chevron-left"></i> Caravan
+                  Transport</a>
+              </li>
+              <li>
+                <a href="#"><i class="fa-solid fa-chevron-left"></i> Northern Ireland
+                  Transport</a>
               </li>
             </ul>
           </div>
         </div>
-      </nav>
-      <!-- Navbar End -->
-
-      <!-- Job Details Start -->
-      <section id="job-details">
-        <div class="container">
-          <div class="row mb-5">
-            <div class="col-sm-12 mt-4">
-              <div class="job-details-head text-center mb-5">
-                <h1>toyota mr2</h1>
-              </div>
-              <br />
-            </div>
-          </div>
-
-          <div class="row g-5">
-            <div class="col-lg-8">
-              <div class="card border-0 p-4">
-                <div class="row g-5">
-                  <div class="col-lg-4 col-md-6">
-                    <div class="card small-card small-card-1 border-0">
-                      <div
-                        class="d-flex justify-content-between align-items-center flex-wrap mb-4"
-                      >
-                        <div class="job-inform-time-cards-content">
-                          <h3 class="mt-0 mb-0">Collection</h3>
-                        </div>
-                        <div class="icon">
-                          <svg
-                            width="39"
-                            height="39"
-                            viewBox="0 0 39 39"
-                            fill="none"
-                            xmlns="http://www.w3.org/2000/svg"
-                          >
-                            <path
-                              d="M25.3504 25.623L27.6319 14.04C29.1724 13.2015 30.2254 11.6025 30.2254 9.75C30.2254 8.45707 29.7118 7.21709 28.7975 6.30285C27.8833 5.38861 26.6433 4.875 25.3504 4.875C24.0575 4.875 22.8175 5.38861 21.9032 6.30285C20.989 7.21709 20.4754 8.45707 20.4754 9.75C20.4754 11.6025 21.5284 13.2015 23.0689 14.04L25.3504 25.623ZM25.3504 6.825C26.9689 6.825 28.2754 8.1315 28.2754 9.75C28.2754 11.3685 26.9689 12.675 25.3504 12.675C23.7319 12.675 22.4254 11.3685 22.4254 9.75C22.4254 8.1315 23.7319 6.825 25.3504 6.825ZM28.7044 16.185L35.1004 13.5915V31.1415L25.5844 35.1L13.6504 31.1415L3.90039 35.0415V17.4915L13.6504 13.5915L21.9769 16.341L25.3504 30.576L28.7044 16.185Z"
-                              fill="white"
-                            />
-                          </svg>
-                        </div>
-                      </div>
-                      <div class="">
-                        <p class="">Blandford Forum, UK</p>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-lg-4 col-md-6">
-                    <div class="card small-card small-card-2 border-0">
-                      <div
-                        class="d-flex justify-content-between align-items-center flex-wrap mb-4"
-                      >
-                        <div class="job-inform-time-cards-content">
-                          <h3 class="mt-0 mb-0">Delivery</h3>
-                        </div>
-                        <div class="icon">
-                          <svg
-                            width="39"
-                            height="39"
-                            viewBox="0 0 39 39"
-                            fill="none"
-                            xmlns="http://www.w3.org/2000/svg"
-                          >
-                            <path
-                              d="M19.5 3.25C12.3175 3.25 6.5 4.0625 6.5 9.75V26C6.50366 26.6815 6.65016 27.3546 6.93006 27.976C7.20996 28.5974 7.61703 29.1532 8.125 29.6075V32.5C8.125 32.931 8.29621 33.3443 8.60095 33.649C8.9057 33.9538 9.31902 34.125 9.75 34.125H11.375C11.806 34.125 12.2193 33.9538 12.524 33.649C12.8288 33.3443 13 32.931 13 32.5V30.875H22.75C21.7785 29.1292 21.2224 27.183 21.125 25.1875C21.1395 23.7485 21.4981 22.3338 22.1709 21.0617C22.8437 19.7896 23.8112 18.6969 24.9925 17.875H9.75V9.75H29.25V16.25C29.5206 16.2333 29.7919 16.2333 30.0625 16.25C30.8879 16.2526 31.7086 16.373 32.5 16.6075V9.75C32.5 4.0625 26.6825 3.25 19.5 3.25ZM12.1875 22.75C12.6696 22.75 13.1409 22.893 13.5417 23.1608C13.9425 23.4286 14.255 23.8093 14.4395 24.2547C14.6239 24.7001 14.6722 25.1902 14.5782 25.663C14.4841 26.1359 14.252 26.5702 13.9111 26.9111C13.5702 27.252 13.1359 27.4841 12.663 27.5782C12.1902 27.6722 11.7001 27.6239 11.2547 27.4395C10.8093 27.255 10.4286 26.9425 10.1608 26.5417C9.89296 26.1409 9.75 25.6696 9.75 25.1875C9.75 24.541 10.0068 23.921 10.4639 23.4639C10.921 23.0068 11.541 22.75 12.1875 22.75ZM30.0625 19.5C28.5593 19.5169 27.1225 20.1215 26.0595 21.1845C24.9965 22.2475 24.3919 23.6843 24.375 25.1875C24.375 29.4125 30.0625 35.75 30.0625 35.75C30.0625 35.75 35.75 29.4125 35.75 25.1875C35.7331 23.6843 35.1285 22.2475 34.0655 21.1845C33.0025 20.1215 31.5657 19.5169 30.0625 19.5ZM30.0625 27.3C29.5453 27.3 29.0493 27.0946 28.6836 26.7289C28.3179 26.3632 28.1125 25.8672 28.1125 25.35C28.1125 24.8328 28.3179 24.3368 28.6836 23.9711C29.0493 23.6054 29.5453 23.4 30.0625 23.4C30.5684 23.4342 31.0448 23.6507 31.4033 24.0092C31.7618 24.3677 31.9783 24.8441 32.0125 25.35C32.024 25.6091 31.9815 25.8679 31.8876 26.1097C31.7937 26.3515 31.6504 26.5711 31.467 26.7545C31.2836 26.9379 31.064 27.0812 30.8222 27.1751C30.5804 27.269 30.3216 27.3115 30.0625 27.3Z"
-                              fill="white"
-                            />
-                          </svg>
-                        </div>
-                      </div>
-                      <div>
-                        <p class="">Maidstone, UK</p>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-lg-4">
-                    <div class="card small-card small-card-3 border-0">
-                      <div
-                        class="d-flex justify-content-between align-items-center flex-wrap mb-4"
-                      >
-                        <div class="job-inform-time-cards-content">
-                          <h3 class="mt-0 mb-0">Distance</h3>
-                        </div>
-                        <div class="icon">
-                          <svg
-                            width="39"
-                            height="39"
-                            viewBox="0 0 39 39"
-                            fill="none"
-                            xmlns="http://www.w3.org/2000/svg"
-                          >
-                            <path
-                              d="M10.5625 13.1787C9.11625 13.1787 7.94625 12.0087 7.94625 10.5625C7.94625 9.86863 8.22189 9.20317 8.71253 8.71253C9.20317 8.22189 9.86863 7.94625 10.5625 7.94625C12.0087 7.94625 13.1787 9.11625 13.1787 10.5625C13.1787 11.2564 12.9031 11.9218 12.4125 12.4125C11.9218 12.9031 11.2564 13.1787 10.5625 13.1787ZM10.5625 3.25C6.5 3.25 3.25 6.5 3.25 10.5625C3.25 16.0387 10.5625 24.1475 10.5625 24.1475C10.5625 24.1475 17.875 16.0387 17.875 10.5625C17.875 6.5 14.625 3.25 10.5625 3.25ZM28.4375 13.1787C27.7436 13.1787 27.0782 12.9031 26.5875 12.4125C26.0969 11.9218 25.8213 11.2564 25.8213 10.5625C25.8213 10.2189 25.8889 9.87872 26.0204 9.5613C26.1519 9.24389 26.3446 8.95547 26.5875 8.71253C26.8305 8.46959 27.1189 8.27688 27.4363 8.1454C27.7537 8.01392 28.0939 7.94625 28.4375 7.94625C28.7811 7.94625 29.1213 8.01392 29.4387 8.1454C29.7561 8.27688 30.0445 8.46959 30.2875 8.71253C30.5304 8.95547 30.7231 9.24389 30.8546 9.5613C30.9861 9.87872 31.0538 10.2189 31.0538 10.5625C31.0538 11.2564 30.7781 11.9218 30.2875 12.4125C29.7968 12.9031 29.1314 13.1787 28.4375 13.1787ZM28.4375 3.25C24.375 3.25 21.125 6.5 21.125 10.5625C21.125 16.0387 28.4375 24.1475 28.4375 24.1475C28.4375 24.1475 35.75 16.0387 35.75 10.5625C35.75 6.5 32.5 3.25 28.4375 3.25ZM28.4375 26C26.3738 26 24.5375 27.3 23.855 29.25H15.145C14.7144 28.0338 13.8193 27.0379 12.6557 26.4805C11.4922 25.9231 10.1551 25.8496 8.9375 26.2763C8.33232 26.4883 7.77487 26.8176 7.29701 27.2452C6.81916 27.6728 6.43027 28.1904 6.15259 28.7684C5.8749 29.3464 5.71386 29.9735 5.67867 30.6138C5.64348 31.2541 5.73483 31.895 5.9475 32.5C6.38392 33.7194 7.2851 34.7165 8.45425 35.2737C9.62339 35.8309 10.9655 35.9028 12.1875 35.4737C13.5688 34.9862 14.625 33.8813 15.145 32.5H23.8712C24.765 35.035 27.56 36.3675 30.0625 35.4737C30.6695 35.2639 31.2291 34.9361 31.709 34.5093C32.189 34.0825 32.5799 33.5651 32.8592 32.9867C33.1386 32.4084 33.3009 31.7805 33.3369 31.1393C33.3728 30.498 33.2817 29.8559 33.0688 29.25C32.37 27.3 30.5175 26 28.4375 26ZM28.4375 33.3125C27.791 33.3125 27.171 33.0557 26.7139 32.5986C26.2568 32.1415 26 31.5215 26 30.875C26 30.2285 26.2568 29.6085 26.7139 29.1514C27.171 28.6943 27.791 28.4375 28.4375 28.4375C29.084 28.4375 29.704 28.6943 30.1611 29.1514C30.6182 29.6085 30.875 30.2285 30.875 30.875C30.875 31.5215 30.6182 32.1415 30.1611 32.5986C29.704 33.0557 29.084 33.3125 28.4375 33.3125Z"
-                              fill="white"
-                            />
-                          </svg>
-                        </div>
-                      </div>
-                      <div>
-                        <div id="distance">144 Miles</div>
-                      </div>
-                    </div>
-                  </div>
-
-                  <div class="col-lg-6 col-md-6">
-                    <div
-                      class="card small-card small-card-4 job-inform-time-cards"
-                    >
-                      <div
-                        class="d-flex justify-content-between align-items-center flex-wrap mb-4"
-                      >
-                        <div class="job-inform-time-cards-content">
-                          <h3 class="mt-0 mb-0">Time Scale</h3>
-                        </div>
-                        <div class="icon">
-                          <svg
-                            width="39"
-                            height="39"
-                            viewBox="0 0 39 39"
-                            fill="none"
-                            xmlns="http://www.w3.org/2000/svg"
-                          >
-                            <path
-                              d="M7.96253 2.18768C7.91104 2.18768 7.85924 2.1886 7.8079 2.18997C6.57499 2.2231 5.40262 2.65523 4.42778 3.35159C1.82803 5.20851 0.577517 9.08223 3.0138 12.3947C4.93592 15.0076 4.09826 18.4578 2.10933 20.3855L3.10185 21.4067C5.55763 19.0265 6.54886 14.798 4.16117 11.552C2.16471 8.83764 3.21878 5.96611 5.25615 4.51093C6.27487 3.78318 7.52355 3.44376 8.78138 3.69208C9.98893 3.93019 11.2444 4.70593 12.3544 6.35809L7.79358 8.99783L9.64791 12.2184C5.84709 17.089 5.15468 23.9827 8.42916 29.6713C12.7319 37.1463 22.2557 39.7109 29.7025 35.3987C37.1495 31.0863 39.6991 21.5311 35.3964 14.0561C32.1277 8.37749 25.8437 5.5349 19.7478 6.38666L17.8864 3.15408L13.5874 5.64162C12.2989 3.69223 10.6888 2.61653 9.0575 2.29478C8.69688 2.22362 8.33011 2.18775 7.96253 2.18768ZM20.9213 8.36705C27.0075 8.36705 31.952 13.2685 31.952 19.3548C31.952 25.441 27.0075 30.3879 20.9213 30.3879C14.8351 30.3879 9.93348 25.4409 9.93348 19.3548C9.93348 13.2687 14.8351 8.36705 20.9213 8.36705H20.9213ZM20.2286 10.2856V17.0032C19.2195 17.3225 18.4648 18.2821 18.4648 19.3811C18.4648 20.7313 19.6045 21.8281 20.9547 21.8281C22.2359 21.8281 23.2879 20.8403 23.3922 19.5858L29.2216 15.4059L28.391 14.249L23.0374 18.0886C22.7249 17.5726 22.2344 17.175 21.6521 16.9959V10.2855H20.2286L20.2286 10.2856ZM17.0152 11.1474L15.7821 11.8591L16.8747 13.7515L18.1079 13.0375L17.0153 11.1475L17.0152 11.1474ZM24.8657 11.1474L23.7731 13.0374L25.0061 13.7515L26.0988 11.8591L24.8657 11.1474ZM13.4304 14.211L12.7186 15.444L14.6085 16.5366L15.3203 15.3035L13.4302 14.2109L13.4304 14.211ZM20.9546 18.3147C21.5357 18.3147 21.9782 18.8003 21.9782 19.3811C21.9782 19.962 21.5357 20.4046 20.9548 20.4046C20.3738 20.4046 19.8884 19.9621 19.8884 19.381C19.8884 18.8002 20.3737 18.3146 20.9548 18.3146L20.9546 18.3147ZM11.8569 18.6575V20.0809H14.0397V18.6574L11.8569 18.6575ZM27.8387 18.6575V20.0809H30.0238V18.6574H27.8388L27.8387 18.6575ZM14.6085 22.2041L12.7187 23.2944L13.4303 24.5274L15.3203 23.4348L14.6085 22.2041ZM27.2721 22.2041L26.5605 23.4348L28.4505 24.5274L29.1622 23.2943L27.2721 22.2041ZM16.8746 24.9892L15.7821 26.8792L17.0152 27.5909L18.1078 25.7008L16.8746 24.989L16.8746 24.9892ZM25.006 24.9892L23.7731 25.7009L24.8657 27.5909L26.0987 26.8791L25.0061 24.989L25.006 24.9892ZM20.2287 26.2698V28.4526H21.6521V26.2699H20.2286L20.2287 26.2698Z"
-                              fill="white"
-                            />
-                          </svg>
-                        </div>
-                      </div>
-                      <div>
-                        <p class="">ASAP</p>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-lg-6 col-md-6">
-                    <div class="card small-card small-card-5">
-                      <div
-                        class="d-flex justify-content-between align-items-center flex-wrap mb-4"
-                      >
-                        <div class="job-inform-time-cards-content">
-                          <h3 class="mt-0 mb-0">Travel Time</h3>
-                        </div>
-                        <div class="icon">
-                          <svg
-                            width="39"
-                            height="39"
-                            viewBox="0 0 39 39"
-                            fill="none"
-                            xmlns="http://www.w3.org/2000/svg"
-                          >
-                            <path
-                              d="M5.93105 25.025L7.6373 23.3188L11.6998 23.8875L18.0373 17.55L5.3623 10.6438L7.6373 8.36876L23.1561 12.35L29.4936 6.09376C29.954 5.63335 30.5227 5.40314 31.1998 5.40314C31.8769 5.40314 32.4456 5.63335 32.9061 6.09376C33.3665 6.55418 33.5967 7.12293 33.5967 7.80001C33.5967 8.4771 33.3665 9.04585 32.9061 9.50626L26.6498 15.8438L30.6311 31.3625L28.3561 33.6375L21.4498 20.9625L15.1123 27.3L15.6811 31.3625L13.9748 33.0688L11.1311 27.8688L5.93105 25.025Z"
-                              fill="white"
-                            />
-                          </svg>
-                        </div>
-                      </div>
-                      <div>
-                        <div id="duration">157 minutes</div>
-                        <span id="time"></span>
-                      </div>
-                    </div>
-                  </div>
-
-                  <div class="col-lg-12">
-                    <div class="job-inform-map">
-                      <div class="map mt-4">
-                        <iframe
-                          src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d27752904.594463807!2d-29.978074996965546!3d31.884698518674657!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x54eab584e432360b%3A0x1c3bb99243deb742!2sUnited%20States!5e0!3m2!1sen!2sbd!4v1670927167047!5m2!1sen!2sbd"
-                          width="100%"
-                          height="400"
-                          style="border: 0"
-                          allowfullscreen=""
-                          loading="lazy"
-                          referrerpolicy="no-referrer-when-downgrade"
-                        ></iframe>
-                      </div>
-                    </div>
-                  </div>
-
-                  <div class="col-lg-6 col-md-6">
-                    <div class="card small-card small-card-5">
-                      <div>
-                        <div class="job-inform-time-cards-content">
-                          <h3 class="mt-0 mb-4">NUMBER OF VEHICLES</h3>
-                        </div>
-                      </div>
-                      <div
-                        class="d-flex justify-content-between align-items-center flex-wrap"
-                      >
-                        <p class="m-0">1 Vehicles</p>
-                        <div class="icon">
-                          <svg
-                            width="39"
-                            height="39"
-                            viewBox="0 0 39 39"
-                            fill="none"
-                            xmlns="http://www.w3.org/2000/svg"
-                          >
-                            <path
-                              d="M29.25 30.0625C30.5987 30.0625 31.6875 28.9737 31.6875 27.625C31.6875 26.2763 30.5987 25.1875 29.25 25.1875C27.9013 25.1875 26.8125 26.2763 26.8125 27.625C26.8125 28.9737 27.9013 30.0625 29.25 30.0625ZM31.6875 15.4375H27.625V19.5H34.8725L31.6875 15.4375ZM9.75 30.0625C11.0987 30.0625 12.1875 28.9737 12.1875 27.625C12.1875 26.2763 11.0987 25.1875 9.75 25.1875C8.40125 25.1875 7.3125 26.2763 7.3125 27.625C7.3125 28.9737 8.40125 30.0625 9.75 30.0625ZM32.5 13L37.375 19.5V27.625H34.125C34.125 30.3225 31.9475 32.5 29.25 32.5C26.5525 32.5 24.375 30.3225 24.375 27.625H14.625C14.625 30.3225 12.4475 32.5 9.75 32.5C7.0525 32.5 4.875 30.3225 4.875 27.625H1.625V9.75C1.625 7.94625 3.07125 6.5 4.875 6.5H27.625V13H32.5ZM4.875 9.75V24.375H6.11C7.00375 23.3837 8.30375 22.75 9.75 22.75C11.1962 22.75 12.4962 23.3837 13.39 24.375H24.375V9.75H4.875ZM8.125 17.0625L10.5625 14.625L13 17.0625L18.6875 11.375L21.125 13.8125L13 21.9375L8.125 17.0625Z"
-                              fill="white"
-                            />
-                          </svg>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-lg-6 col-md-6">
-                    <div class="card small-card small-card-4">
-                      <div>
-                        <div class="job-inform-time-cards-content">
-                          <h3 class="mt-0 mb-4">DRIVEN/TRANSPORTED</h3>
-                        </div>
-                      </div>
-                      <div
-                        class="d-flex justify-content-between align-items-center flex-wrap"
-                      >
-                        <p class="m-0">Both</p>
-                        <div class="icon">
-                          <svg
-                            width="39"
-                            height="39"
-                            viewBox="0 0 39 39"
-                            fill="none"
-                            xmlns="http://www.w3.org/2000/svg"
-                          >
-                            <path
-                              d="M17.5498 7.80002C17.2912 7.80002 17.0432 7.90275 16.8604 8.0856C16.6775 8.26844 16.5748 8.51644 16.5748 8.77502C16.5748 9.03361 16.6775 9.28161 16.8604 9.46445C17.0432 9.6473 17.2912 9.75002 17.5498 9.75002H21.4498C21.7084 9.75002 21.9564 9.6473 22.1392 9.46445C22.3221 9.28161 22.4248 9.03361 22.4248 8.77502C22.4248 8.51644 22.3221 8.26844 22.1392 8.0856C21.9564 7.90275 21.7084 7.80002 21.4498 7.80002H17.5498ZM5.8498 10.725C5.8498 8.91492 6.56887 7.17896 7.8488 5.89902C9.12874 4.61908 10.8647 3.90002 12.6748 3.90002H26.3248C28.1349 3.90002 29.8709 4.61908 31.1508 5.89902C32.4307 7.17896 33.1498 8.91492 33.1498 10.725V15.6H35.0998C35.3584 15.6 35.6064 15.7027 35.7892 15.8856C35.9721 16.0684 36.0748 16.3164 36.0748 16.575C36.0748 16.8336 35.9721 17.0816 35.7892 17.2645C35.6064 17.4473 35.3584 17.55 35.0998 17.55H33.1498V32.175C33.1498 32.9508 32.8416 33.6948 32.2931 34.2433C31.7445 34.7919 31.0006 35.1 30.2248 35.1H28.2748C27.499 35.1 26.7551 34.7919 26.2065 34.2433C25.658 33.6948 25.3498 32.9508 25.3498 32.175V31.2H13.6498V32.175C13.6498 32.9508 13.3416 33.6948 12.7931 34.2433C12.2445 34.7919 11.5006 35.1 10.7248 35.1H8.7748C7.99905 35.1 7.25506 34.7919 6.70652 34.2433C6.15797 33.6948 5.8498 32.9508 5.8498 32.175V17.55H3.8998C3.64122 17.55 3.39322 17.4473 3.21038 17.2645C3.02753 17.0816 2.9248 16.8336 2.9248 16.575C2.9248 16.3164 3.02753 16.0684 3.21038 15.8856C3.39322 15.7027 3.64122 15.6 3.8998 15.6H5.8498V10.725ZM31.1998 10.725C31.1998 9.43209 30.6862 8.19212 29.772 7.27788C28.8577 6.36364 27.6177 5.85002 26.3248 5.85002H12.6748C11.3819 5.85002 10.1419 6.36364 9.22766 7.27788C8.31342 8.19212 7.7998 9.43209 7.7998 10.725V19.5H31.1998V10.725ZM27.2998 31.2V32.175C27.2998 32.4336 27.4025 32.6816 27.5854 32.8645C27.7682 33.0473 28.0162 33.15 28.2748 33.15H30.2248C30.4834 33.15 30.7314 33.0473 30.9142 32.8645C31.0971 32.6816 31.1998 32.4336 31.1998 32.175V31.2H27.2998ZM7.7998 31.2V32.175C7.7998 32.4336 7.90253 32.6816 8.08538 32.8645C8.26822 33.0473 8.51622 33.15 8.7748 33.15H10.7248C10.9834 33.15 11.2314 33.0473 11.4142 32.8645C11.5971 32.6816 11.6998 32.4336 11.6998 32.175V31.2H7.7998ZM15.5998 25.35C15.5998 24.8329 15.3944 24.3369 15.0287 23.9712C14.663 23.6055 14.167 23.4 13.6498 23.4C13.1326 23.4 12.6366 23.6055 12.2709 23.9712C11.9053 24.3369 11.6998 24.8329 11.6998 25.35C11.6998 25.8672 11.9053 26.3632 12.2709 26.7289C12.6366 27.0946 13.1326 27.3 13.6498 27.3C14.167 27.3 14.663 27.0946 15.0287 26.7289C15.3944 26.3632 15.5998 25.8672 15.5998 25.35ZM25.3498 27.3C25.867 27.3 26.363 27.0946 26.7287 26.7289C27.0944 26.3632 27.2998 25.8672 27.2998 25.35C27.2998 24.8329 27.0944 24.3369 26.7287 23.9712C26.363 23.6055 25.867 23.4 25.3498 23.4C24.8326 23.4 24.3366 23.6055 23.9709 23.9712C23.6053 24.3369 23.3998 24.8329 23.3998 25.35C23.3998 25.8672 23.6053 26.3632 23.9709 26.7289C24.3366 27.0946 24.8326 27.3 25.3498 27.3Z"
-                              fill="white"
-                            />
-                          </svg>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-
-                  <div class="col-lg-8">
-                    <div class="job-inform-comment">
-                      <p class="">Car has mot and runs/drives</p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <div class="col-lg-4 col-md-8">
-              <div class="row g-5">
-                <div class="col-sm-12">
-                  <div class="live-job">
-                    <h3 class="text-center m-0 text-white">LIVE JOB</h3>
-                  </div>
-                </div>
-                <div class="col-sm-12">
-                  <div class="card live-job-profile">
-                    <div class="live-job-profile-avatar">
-                      <img src="./img/live-job-avatar.png" alt="" />
-                    </div>
-                    <p class="live-job-profile-btn">
-                      <a
-                        class="live-job-profile-btn"
-                        href="/customer-profile/Q7MWVqqQqS"
-                        >Q7MWVqqQqS</a
-                      ><span>
-                        -
-                        <span class="text-danger report-flag"
-                          ><i class="fa-solid fa-flag" id="rbutton"></i></span
-                      ></span>
-                    </p>
-
-                    <p class="text-center mt-3 mb-5">
-                      (No ratings)<span>(0)</span>
-                    </p>
-
-                    <button
-                      type="button"
-                      class="live-job-profile-upgrade-btn"
-                      id="qbutton"
-                    >
-                      Provide Quote
-                    </button>
-
-                    <a
-                      href="/inbox/Q7MWVqqQqS"
-                      class="live-job-profile-upgrade-btn"
-                      >Ask Question</a
-                    >
-
-                    <div class="car-transport">
-                      <p class="mb-0 text-white">
-                        Listed In: <a href="#">Car Transport</a>
-                      </p>
-                      <p class="mb-0 text-white">
-                        There are no pictures posted.
-                      </p>
-                    </div>
-
-                    <div class="live-job-profile-social-icons">
-                      <p class="mb-4 text-white">
-                        Share this job on your Socials.
-                      </p>
-
-                      <a href="#" class="social-icons-link"
-                        ><i class="fa-brands fa-facebook-f"></i
-                      ></a>
-                      <a href="#" class="social-icons-link"
-                        ><i class="fa-brands fa-twitter"></i
-                      ></a>
-                      <a href="#" class="social-icons-link"
-                        ><i class="fa-brands fa-linkedin-in"></i
-                      ></a>
-                      <a href="#" class="social-icons-link"
-                        ><i class="fa-brands fa-instagram"></i
-                      ></a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
+        <div class="col-lg-3">
+          <div class="footer-first-cols-content">
+            <h4>Support</h4>
+            <ul>
+              <li>
+                <a href="#"><i class="fa-solid fa-chevron-left"></i> Terms of Use</a>
+              </li>
+              <li>
+                <a href="#"><i class="fa-solid fa-chevron-left"></i> Privacy</a>
+              </li>
+              <li>
+                <a href="#"><i class="fa-solid fa-chevron-left"></i> Site Map</a>
+              </li>
+              <li>
+                <a href="#"><i class="fa-solid fa-chevron-left"></i> Transporter
+                  Rules</a>
+              </li>
+              <li>
+                <a href="#"><i class="fa-solid fa-chevron-left"></i> Help & FAQ's</a>
+              </li>
+            </ul>
           </div>
         </div>
-      </section>
-
-      <section>
-        <div class="container">
-          <div class="row">
-            <div class="col-lg-12">
-              <div class="card card-table border-0 list-card">
-                <h2>Live Bids</h2>
-                <div id="" class="table-responsive">
-                  <table
-                    id="miTabla2"
-                    class="display responsive nowrap dataTable no-footer dtr-inline collapsed"
-                    style="width: 100%"
-                    role="grid"
-                    aria-describedby="miTabla2_info"
-                  >
-                    <thead>
-                      <tr role="row">
-                        <th
-                          scope="col"
-                          class="sorting_asc"
-                          tabindex="0"
-                          aria-controls="miTabla2"
-                          rowspan="1"
-                          colspan="1"
-                          style="width: 653px"
-                          aria-sort="ascending"
-                          aria-label="Provider: activate to sort column descending"
-                        >
-                          Provider
-                        </th>
-                        <th
-                          scope="col"
-                          class="sorting"
-                          tabindex="0"
-                          aria-controls="miTabla2"
-                          rowspan="1"
-                          colspan="1"
-                          style="width: 306px"
-                          aria-label="Quoted: activate to sort column ascending"
-                        >
-                          Quoted
-                        </th>
-                        <th
-                          scope="col"
-                          class="sorting"
-                          tabindex="0"
-                          aria-controls="miTabla2"
-                          rowspan="1"
-                          colspan="1"
-                          style="width: 224px"
-                          aria-label="Date: activate to sort column ascending"
-                        >
-                          Date
-                        </th>
-                        <th
-                          scope="col"
-                          class="sorting"
-                          tabindex="0"
-                          aria-controls="miTabla2"
-                          rowspan="1"
-                          colspan="1"
-                          style="width: 0px; display: none"
-                          aria-label="Comment: activate to sort column ascending"
-                        >
-                          Comment
-                        </th>
-                      </tr>
-                    </thead>
-                    <tbody>
-                      <tr role="row" class="odd">
-                        <td
-                          class="table-rating sorting_1 text-nowrap"
-                          tabindex="0"
-                        >
-                          <p class="p-account">
-                            <span class="basic-account">Basic</span
-                            ><b
-                              ><img
-                                src="https://app.delivermymotor.com/assets/files/posts/noimg.jpg"
-                                style="border-radius: 50%"
-                                width="30px"
-                                height="30px"
-                                class="transporter-table-avatar-img me-2"
-                              /><a href="/profile-view/ibm0026">ibm0026</a></b
-                            >
-                          </p>
-                          <span><i class="fa-regular fa-star"></i></span>
-                          <span><i class="fa-regular fa-star"></i></span>
-                          <span><i class="fa-regular fa-star"></i></span>
-                          <span><i class="fa-regular fa-star"></i></span>
-                          <span><i class="fa-regular fa-star"></i></span>
-                          <span>(0)</span>
-                        </td>
-
-                        <td>£129</td>
-                        <td>6 Jul</td>
-                      </tr>
-                      <tr role="row" class="even">
-                        <td
-                          class="table-rating sorting_1 text-nowrap"
-                          tabindex="0"
-                        >
-                          <p class="p-account">
-                            <span class="basic-account">Basic</span
-                            ><b
-                              ><img
-                                src="https://app.delivermymotor.com/assets/files/profile/3c38031043a7e368ae6d1afa5f7574d3.jpeg"
-                                style="border-radius: 50%"
-                                width="30px"
-                                height="30px"
-                                class="transporter-table-avatar-img me-2"
-                              /><a href="/profile-view/Tela777">Tela777</a></b
-                            >
-                          </p>
-                          <span><i class="fa-regular fa-star"></i></span>
-                          <span><i class="fa-regular fa-star"></i></span>
-                          <span><i class="fa-regular fa-star"></i></span>
-                          <span><i class="fa-regular fa-star"></i></span>
-                          <span><i class="fa-regular fa-star"></i></span>
-                          <span>(0)</span>
-                        </td>
-
-                        <td>£200</td>
-                        <td>9 Jul</td>
-                      </tr>
-                      <tr role="row" class="odd">
-                        <td
-                          class="table-rating sorting_1 text-nowrap"
-                          tabindex="0"
-                        >
-                          <p class="p-account">
-                            <span class="premium-account">Premium</span
-                            ><b
-                              ><img
-                                src="https://app.delivermymotor.com/assets/files/posts/noimg.jpg"
-                                style="border-radius: 50%"
-                                width="30px"
-                                height="30px"
-                                class="transporter-table-avatar-img me-2" /><a
-                                href="/profile-view/Jacb87"
-                                >Jacb87<i
-                                  class="fa-solid fa-shield-halved"
-                                  style="color: green"
-                                ></i></a
-                            ></b>
-                          </p>
-                          <span><i class="fa-solid fa-star"></i></span>
-                          <span><i class="fa-solid fa-star"></i></span>
-                          <span><i class="fa-solid fa-star"></i></span>
-                          <span><i class="fa-solid fa-star"></i></span>
-                          <span><i class="fa-solid fa-star"></i></span>
-                          <span>(69)</span>
-                        </td>
-
-                        <td>£160</td>
-                        <td>6 Jul</td>
-                      </tr>
-                    </tbody>
-                  </table>
-
-                  <div
-                    class="d-flex justify-content-between align-items-center flex-wrap mb-4 flex-wrap"
-                  >
-                    <div
-                      id=""
-                      class="me-3 mt-4"
-                      role="status"
-                      aria-live="polite"
-                    >
-                      Showing 1 to 10 of 31 entries
-                    </div>
-                    <div
-                      class="d-flex justify-content-end align-items-center mt-4"
-                      id=""
-                    >
-                      <a
-                        class="previous disabled me-4"
-                        aria-controls="miTabla"
-                        data-dt-idx="0"
-                        tabindex="0"
-                        id=""
-                        >Previous</a
-                      ><span
-                        class="d-flex justify-content-end align-items-center"
-                        ><a
-                          class="pagination active"
-                          aria-controls="miTabla"
-                          data-dt-idx="1"
-                          tabindex="0"
-                          >1</a
-                        ><a
-                          class="pagination"
-                          aria-controls="miTabla"
-                          data-dt-idx="2"
-                          tabindex="0"
-                          >2</a
-                        ><a
-                          class="pagination"
-                          aria-controls="miTabla"
-                          data-dt-idx="3"
-                          tabindex="0"
-                          >3</a
-                        ><a
-                          class="pagination"
-                          aria-controls="miTabla"
-                          data-dt-idx="4"
-                          tabindex="0"
-                          >4</a
-                        ></span
-                      ><a
-                        class="next ms-4"
-                        aria-controls="miTabla"
-                        data-dt-idx="5"
-                        tabindex="0"
-                        id=""
-                        >Next</a
-                      >
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
+        <div class="col-lg-2">
+          <div class="footer-first-cols-content">
+            <h4>More</h4>
+            <ul>
+              <li>
+                <a href="#"><i class="fa-solid fa-chevron-left"></i> Blog</a>
+              </li>
+              <li>
+                <a href="#"><i class="fa-solid fa-chevron-left"></i> Transporter</a>
+              </li>
+            </ul>
+            <a href="#"><img src="./img/footer-reviews-trust-logo.png" alt="footer-reviews-trust-logo"
+                class="footer-reviews-trust-logo" /></a>
           </div>
         </div>
-      </section>
-      <!-- Job Details End -->
+      </div>
     </div>
+  </section>
 
-    <!-- Transport Company Start -->
-    <section id="transport-company">
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-10">
-            <div class="tarnsport-company-content">
-              <h1>Are you a Transport Company?</h1>
-              <p>
-                Deliver My Motor is used by millions of individuals to get their
-                deliveries done.
-              </p>
-              <p>
-                Use our advanced search tools to identify loads that meet your
-                specifications. Simply state how much you want to be paid.
-              </p>
-              <p>
-                When your quote is accepted, you will receive a booking
-                confirmation email with all of the pickup and delivery
-                information.
-              </p>
-              <p class="mb-5">
-                We run a transparent marketplace with a you choose model
-                integrated into the platform. Sign up Today!
-              </p>
-              <p>
-                <a href="#" class="transport-company-btn"
-                  >Get Started <i class="fa-regular fa-circle-right"></i
-                ></a>
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- Transport Company End -->
+  <!-- Footer End -->
 
-    <!-- Footer Start -->
-    <section id="footer">
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-4">
-            <div class="footer-first-cols-content">
-              <img
-                src="./img/footer-logo.png"
-                alt="footer-logo"
-                class="footer-logo"
-              />
-              <ul>
-                <li>
-                  <a href="#"><i class="fa-solid fa-chevron-left"></i> About</a>
-                </li>
-                <li>
-                  <a href="#"
-                    ><i class="fa-solid fa-chevron-left"></i> Contact</a
-                  >
-                </li>
-                <li>
-                  <a href="#"
-                    ><i class="fa-solid fa-chevron-left"></i> How it Works</a
-                  >
-                </li>
-              </ul>
-              <div class="footer-social-icons-item">
-                <a href="#" class="social-icons-link"
-                  ><i class="fa-brands fa-facebook-f"></i
-                ></a>
-                <a href="#" class="social-icons-link"
-                  ><i class="fa-brands fa-twitter"></i
-                ></a>
-                <a href="#" class="social-icons-link"
-                  ><i class="fa-brands fa-linkedin-in"></i
-                ></a>
-                <a href="#" class="social-icons-link"
-                  ><i class="fa-brands fa-instagram"></i
-                ></a>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-3">
-            <div class="footer-first-cols-content">
-              <h4>Useful Links</h4>
-              <ul>
-                <li>
-                  <a href="#"
-                    ><i class="fa-solid fa-chevron-left"></i> Car Auction
-                    Collections</a
-                  >
-                </li>
-                <li>
-                  <a href="#"
-                    ><i class="fa-solid fa-chevron-left"></i> Car Collection
-                    Delivery</a
-                  >
-                </li>
-                <li>
-                  <a href="#"
-                    ><i class="fa-solid fa-chevron-left"></i> Motorcycle
-                    transportation</a
-                  >
-                </li>
-                <li>
-                  <a href="#"
-                    ><i class="fa-solid fa-chevron-left"></i> Urgent Breakdown
-                    Recovery</a
-                  >
-                </li>
-                <li>
-                  <a href="#"
-                    ><i class="fa-solid fa-chevron-left"></i> Van
-                    Transportation</a
-                  >
-                </li>
-                <li>
-                  <a href="#"
-                    ><i class="fa-solid fa-chevron-left"></i> Caravan
-                    Transport</a
-                  >
-                </li>
-                <li>
-                  <a href="#"
-                    ><i class="fa-solid fa-chevron-left"></i> Northern Ireland
-                    Transport</a
-                  >
-                </li>
-              </ul>
-            </div>
-          </div>
-          <div class="col-lg-3">
-            <div class="footer-first-cols-content">
-              <h4>Support</h4>
-              <ul>
-                <li>
-                  <a href="#"
-                    ><i class="fa-solid fa-chevron-left"></i> Terms of Use</a
-                  >
-                </li>
-                <li>
-                  <a href="#"
-                    ><i class="fa-solid fa-chevron-left"></i> Privacy</a
-                  >
-                </li>
-                <li>
-                  <a href="#"
-                    ><i class="fa-solid fa-chevron-left"></i> Site Map</a
-                  >
-                </li>
-                <li>
-                  <a href="#"
-                    ><i class="fa-solid fa-chevron-left"></i> Transporter
-                    Rules</a
-                  >
-                </li>
-                <li>
-                  <a href="#"
-                    ><i class="fa-solid fa-chevron-left"></i> Help & FAQ's</a
-                  >
-                </li>
-              </ul>
-            </div>
-          </div>
-          <div class="col-lg-2">
-            <div class="footer-first-cols-content">
-              <h4>More</h4>
-              <ul>
-                <li>
-                  <a href="#"><i class="fa-solid fa-chevron-left"></i> Blog</a>
-                </li>
-                <li>
-                  <a href="#"
-                    ><i class="fa-solid fa-chevron-left"></i> Transporter</a
-                  >
-                </li>
-              </ul>
-              <a href="#"
-                ><img
-                  src="./img/footer-reviews-trust-logo.png"
-                  alt="footer-reviews-trust-logo"
-                  class="footer-reviews-trust-logo"
-              /></a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
+  <!-- Copyright Footer Start -->
+  <footer id="copyright-footer">
+    Copyright © DeliverMyMotor Ltd. Powered by
+    <span><img class="hostxwhite-img" src="./img/hostoxwhite.png" alt="" width="90px" /></span>
+  </footer>
+  <!-- Copyright Footer End -->
 
-    <!-- Footer End -->
+  <!-- Script Start -->
+  <script src="./js/script.js"></script>
 
-    <!-- Copyright Footer Start -->
-    <footer id="copyright-footer">
-      Copyright © DeliverMyMotor Ltd. Powered by
-      <span
-        ><img
-          class="hostxwhite-img"
-          src="./img/hostoxwhite.png"
-          alt=""
-          width="90px"
-      /></span>
-    </footer>
-    <!-- Copyright Footer End -->
-
-    <!-- Script Start -->
-    <script src="./js/script.js"></script>
-
-    <script>
-      //Quote Popup Function
-      document.getElementById("qbutton").addEventListener("click", function () {
-        document.querySelector(".popup").style.display = "flex";
+  <script>
+    //Quote Popup Function
+    document.getElementById("qbutton").addEventListener("click", function () {
+      document.querySelector(".popup").style.display = "flex";
+    });
+    document
+      .querySelector(".close-btn")
+      .addEventListener("click", function () {
+        document.querySelector(".popup").style.display = "none";
       });
-      document
-        .querySelector(".close-btn")
-        .addEventListener("click", function () {
-          document.querySelector(".popup").style.display = "none";
-        });
 
-      //Quote Popup Function
-      document
-        .getElementById("qbutton1")
-        .addEventListener("click", function () {
-          document.querySelector(".popup-1").style.display = "flex";
-        });
-      document
-        .querySelector(".close-btn-1")
-        .addEventListener("click", function () {
-          document.querySelector(".popup-1").style.display = "none";
-        });
-
-      //Report Popup Function
-      document.getElementById("rbutton").addEventListener("click", function () {
-        document.querySelector(".popup-2").style.display = "flex";
+    //Quote Popup Function
+    document
+      .getElementById("qbutton1")
+      .addEventListener("click", function () {
+        document.querySelector(".popup-1").style.display = "flex";
       });
-      document
-        .querySelector(".close-btn-2")
-        .addEventListener("click", function () {
-          document.querySelector(".popup-2").style.display = "none";
-        });
-    </script>
-    <!-- Script End -->
-  </body>
+    document
+      .querySelector(".close-btn-1")
+      .addEventListener("click", function () {
+        document.querySelector(".popup-1").style.display = "none";
+      });
+
+    //Report Popup Function
+    document.getElementById("rbutton").addEventListener("click", function () {
+      document.querySelector(".popup-2").style.display = "flex";
+    });
+    document
+      .querySelector(".close-btn-2")
+      .addEventListener("click", function () {
+        document.querySelector(".popup-2").style.display = "none";
+      });
+  </script>
+  <!-- Script End -->
+</body>
+
 </html>
