@@ -1,675 +1,906 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Transporter Dashboard - Deliver My Motor</title>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Transporter Dashboard - Deliver My Motor</title>
+    <!-- CSS Link -->
+    <link rel="stylesheet" href="./css/job-detail.css" />
 
-  <!-- CSS Link -->
-  <link rel="stylesheet" href="./css/job-detail.css" />
+    <!-- Bootstrap Link -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
 
-  <!-- Bootstrap Link -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" />
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Font Awesome Link -->
+    <script
+      src="https://kit.fontawesome.com/44f1800e1f.js"
+      crossorigin="anonymous"
+    ></script>
 
-  <!-- Font Awesome Link -->
-  <script src="https://kit.fontawesome.com/44f1800e1f.js" crossorigin="anonymous"></script>
+    <!-- datatable link -->
+    <script
+      type="text/javascript"
+      src="./datatable/js/jquery-3.3.1.js"
+    ></script>
 
-  <!-- datatable link -->
-  <script type="text/javascript" src="./datatable/js/jquery-3.3.1.js"></script>
+    <script
+      type="text/javascript"
+      src="./datatable/js/jquery.dataTables.min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="./datatable/js/dataTables.responsive.min.js"
+    ></script>
+    <script type="text/javascript" src="./datatable/datatable.js"></script>
 
-  <script type="text/javascript" src="./datatable/js/jquery.dataTables.min.js"></script>
-  <script type="text/javascript" src="./datatable/js/dataTables.responsive.min.js"></script>
-  <script type="text/javascript" src="./datatable/datatable.js"></script>
+    <link rel="stylesheet" href="./datatable/css/jquery.dataTables.min.css" />
+    <link
+      rel="stylesheet"
+      href="./datatable/css/responsive.dataTables.min.css"
+    />
+  </head>
 
-  <link rel="stylesheet" href="./datatable/css/jquery.dataTables.min.css" />
-  <link rel="stylesheet" href="./datatable/css/responsive.dataTables.min.css" />
-</head>
-
-<body>
-  <!-- sidebar Start -->
-  <div class="dashboard-sidebar close">
-    <div class="dahsboard-navbar" id="sidenavbar">
-      <div class="sidebar-header d-flex justify-content-between">
-        <img src="./img/footer-logo.png" alt="" class="sidebar-logo" />
-        <button type="button" id="sideNavbarXmarkIcon" class="toggles">
-          <i class="fa-solid fa-xmark"></i>
-        </button>
-      </div>
-      <ul class="navbar-nav">
-        <li>
-          <a href="#"><i class="fa-solid fa-house-user"></i> Dashboard</a>
-        </li>
-        <li>
-          <a href="#"><i class="fa-regular fa-comment-dots"></i> Messages</a>
-        </li>
-        <li>
-          <a href="#"><i class="fa-regular fa-file"></i> My Quotes</a>
-        </li>
-        <li>
-          <a href="#"><i class="fa-solid fa-briefcase"></i> My Jobs</a>
-        </li>
-        <li>
-          <a href="#"><i class="fa-solid fa-pen-to-square"></i> Post New Jobs</a>
-        </li>
-        <li>
-          <a href="#"><i class="fa-regular fa-thumbs-up"></i> Reviews</a>
-        </li>
-        <li>
-          <a href="#"><i class="fa-sharp fa-solid fa-circle-info"></i> Help And FAQ</a>
-        </li>
-        <li>
-          <a href="#"><i class="fa-solid fa-arrow-right-from-bracket"></i> Logout</a>
-        </li>
-      </ul>
-    </div>
-  </div>
-  <!-- sidebar End -->
-
-  <div class="home">
-    <!-- Navbar Start -->
-    <nav class="navbar navbar-expand-lg">
-      <div class="container">
-        <button type="button" id="sideNavbarIcon">
-          <i class="fa-solid fa-bars-staggered"></i>
-        </button>
-        <a class="navbar-brand" href="#"><img src="./img/logo.png" alt="logo" class="logo dashboard-navbar-logo" /></a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#yournavbar">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="mynavbar">
-          <ul class="navbar-nav ms-auto">
-            <li class="nav-item">
-              <a class="nav-link" href="#">Dashboard</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Messages
-                <span class="badge rounded-circle bg-danger">2</span></a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Live Job</a>
-            </li>
-          </ul>
+  <body>
+    <!-- sidebar Start -->
+    <div class="dashboard-sidebar close">
+      <div class="dahsboard-navbar" id="sidenavbar">
+        <div class="sidebar-header d-flex justify-content-between">
+          <img src="./img/footer-logo.png" alt="" class="sidebar-logo" />
+          <button type="button" id="sideNavbarXmarkIcon" class="toggles">
+            <i class="fa-solid fa-xmark"></i>
+          </button>
         </div>
+        <ul class="navbar-nav">
+          <li>
+            <a href="#"><i class="fa-solid fa-house-user"></i> Dashboard</a>
+          </li>
+          <li>
+            <a href="#"><i class="fa-regular fa-comment-dots"></i> Messages</a>
+          </li>
+          <li>
+            <a href="#"><i class="fa-regular fa-file"></i> My Quotes</a>
+          </li>
+          <li>
+            <a href="#"><i class="fa-solid fa-briefcase"></i> My Jobs</a>
+          </li>
+          <li>
+            <a href="#"
+              ><i class="fa-solid fa-pen-to-square"></i> Post New Jobs</a
+            >
+          </li>
+          <li>
+            <a href="#"><i class="fa-regular fa-thumbs-up"></i> Reviews</a>
+          </li>
+          <li>
+            <a href="#"
+              ><i class="fa-sharp fa-solid fa-circle-info"></i> Help And FAQ</a
+            >
+          </li>
+          <li>
+            <a href="#"
+              ><i class="fa-solid fa-arrow-right-from-bracket"></i> Logout</a
+            >
+          </li>
+        </ul>
       </div>
-    </nav>
-    <!-- Navbar End -->
+    </div>
+    <!-- sidebar End -->
 
-    <!-- Transporter Dashboard Start -->
-    <section id="transporter-dashboard">
-      <div class="container">
-        <div class="row">
-          <div class="col-sm-6">
-            <div class="welcome-back-msg">
-              <h3>Welcome Back, <span class="fw-bold">transporter!</span></h3>
-              <p>0% Comissions? Consider Upgrading to VIP.</p>
-              <p><a href="#">Click Here</a></p>
+    <div class="home">
+      <!-- Navbar Start -->
+      <nav class="navbar navbar-expand-lg">
+        <div class="container">
+          <button type="button" id="sideNavbarIcon">
+            <i class="fa-solid fa-bars-staggered"></i>
+          </button>
+          <a class="navbar-brand" href="#"
+            ><img
+              src="./img/logo.png"
+              alt="logo"
+              class="logo dashboard-navbar-logo"
+          /></a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#yournavbar"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="mynavbar">
+            <ul class="navbar-nav ms-auto">
+              <li class="nav-item">
+                <a class="nav-link" href="#">Dashboard</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#"
+                  >Messages
+                  <span class="badge rounded-circle bg-danger">2</span></a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Live Job</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <!-- Navbar End -->
+
+      <!-- Transporter Dashboard Start -->
+      <section id="transporter-dashboard">
+        <div class="container">
+          <div class="row">
+            <div class="col-sm-6">
+              <div class="welcome-back-msg">
+                <h3>Welcome Back, <span class="fw-bold">transporter!</span></h3>
+                <p>0% Comissions? Consider Upgrading to VIP.</p>
+                <p><a href="#">Click Here</a></p>
+              </div>
+            </div>
+            <div class="col-lg-6">
+              <div class="tranporter-profile">
+                <img src="./img/tranporter-avater.png" alt="" />
+                <h3>transporter</h3>
+                <div class="tranporter-profile-btn text-center">
+                  <a href="#" class="tranporter-profile-view-btn"
+                    >View Profile</a
+                  >
+                </div>
+              </div>
             </div>
           </div>
-          <div class="col-lg-6">
-            <div class="tranporter-profile">
-              <img src="./img/tranporter-avater.png" alt="" />
-              <h3>transporter</h3>
-              <div class="tranporter-profile-btn text-center">
-                <a href="#" class="tranporter-profile-view-btn">View Profile</a>
+
+          <div class="row">
+            <div class="col-lg-3">
+              <div class="transporter-card">
+                <h3>Quick Nav</h3>
+                <p>
+                  <a href="#">Latest Jobs</a>
+                </p>
+              </div>
+            </div>
+            <div class="col-lg-3">
+              <div class="transporter-card">
+                <h3>Messages</h3>
+                <div class="transporter-card-content">
+                  <span class="transporter-card-icon-msg">
+                    <i class="fa-solid fa-envelope-open-text"></i>
+                    <span class="badge rounded-circle bg-danger text-center"
+                      >6</span
+                    >
+                  </span>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3">
+              <div class="transporter-card">
+                <h3>Accepted Quotes</h3>
+                <div class="transporter-card-content">
+                  <span class="transporter-card-icon-7"> 7 </span>
+                  <span class="ps-3">In Progress</span>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3">
+              <div class="transporter-card">
+                <h3>WhatsApp Group</h3>
+                <div class="transporter-card-content">
+                  <span class="transporter-card-icon-whatsapp"
+                    ><i class="fa-brands fa-whatsapp"></i
+                  ></span>
+                  <a href="#">WhatsApp Group</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-lg-12">
+              <div class="transporter-table">
+                <table
+                  id="miTabla"
+                  class="display responsive nowrap"
+                  style="width: 100%"
+                >
+                  <thead>
+                    <tr>
+                      <th>Job Name</th>
+                      <th>Your Qoute</th>
+                      <th>Posted On</th>
+                      <th id="thmob">Actions</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>
+                        <img src="./img/transporter-table-avatar.png" alt="" />
+                        Ford Ranger
+                      </td>
+                      <td>£375.00</td>
+                      <td>21-Mar</td>
+                      <td>
+                        <div class="dropdown">
+                          <a
+                            class="btn btn-danger dropdown-toggle"
+                            href="#"
+                            role="button"
+                            id="dropdownMenuLink"
+                            data-bs-toggle="dropdown"
+                            aria-expanded="false"
+                          >
+                            <i class="fa-solid fa-gear"></i>
+                          </a>
+
+                          <ul
+                            class="dropdown-menu"
+                            aria-labelledby="dropdownMenuLink"
+                          >
+                            <li>
+                              <a class="dropdown-item" href="#"
+                                >View Job Page</a
+                              >
+                            </li>
+                            <li>
+                              <a class="dropdown-item" href="#">Retract Bid</a>
+                            </li>
+                          </ul>
+                        </div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <img src="./img/transporter-table-avatar.png" alt="" />
+                        Ford Ranger
+                      </td>
+                      <td>£375.00</td>
+                      <td>21-Mar</td>
+                      <td>
+                        <div class="dropdown">
+                          <a
+                            class="btn btn-danger dropdown-toggle"
+                            href="#"
+                            role="button"
+                            id="dropdownMenuLink"
+                            data-bs-toggle="dropdown"
+                            aria-expanded="false"
+                          >
+                            <i class="fa-solid fa-gear"></i>
+                          </a>
+
+                          <ul
+                            class="dropdown-menu"
+                            aria-labelledby="dropdownMenuLink"
+                          >
+                            <li>
+                              <a class="dropdown-item" href="#"
+                                >View Job Page</a
+                              >
+                            </li>
+                            <li>
+                              <a class="dropdown-item" href="#">Retract Bid</a>
+                            </li>
+                          </ul>
+                        </div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <img src="./img/transporter-table-avatar.png" alt="" />
+                        Ford Ranger
+                      </td>
+                      <td>£375.00</td>
+                      <td>21-Mar</td>
+                      <td>
+                        <div class="dropdown">
+                          <a
+                            class="btn btn-danger dropdown-toggle"
+                            href="#"
+                            role="button"
+                            id="dropdownMenuLink"
+                            data-bs-toggle="dropdown"
+                            aria-expanded="false"
+                          >
+                            <i class="fa-solid fa-gear"></i>
+                          </a>
+
+                          <ul
+                            class="dropdown-menu"
+                            aria-labelledby="dropdownMenuLink"
+                          >
+                            <li>
+                              <a class="dropdown-item" href="#"
+                                >View Job Page</a
+                              >
+                            </li>
+                            <li>
+                              <a class="dropdown-item" href="#">Retract Bid</a>
+                            </li>
+                          </ul>
+                        </div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <img src="./img/transporter-table-avatar.png" alt="" />
+                        Ford Ranger
+                      </td>
+                      <td>£375.00</td>
+                      <td>21-Mar</td>
+                      <td>
+                        <div class="dropdown">
+                          <a
+                            class="btn btn-danger dropdown-toggle"
+                            href="#"
+                            role="button"
+                            id="dropdownMenuLink"
+                            data-bs-toggle="dropdown"
+                            aria-expanded="false"
+                          >
+                            <i class="fa-solid fa-gear"></i>
+                          </a>
+
+                          <ul
+                            class="dropdown-menu"
+                            aria-labelledby="dropdownMenuLink"
+                          >
+                            <li>
+                              <a class="dropdown-item" href="#"
+                                >View Job Page</a
+                              >
+                            </li>
+                            <li>
+                              <a class="dropdown-item" href="#">Retract Bid</a>
+                            </li>
+                          </ul>
+                        </div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <img src="./img/transporter-table-avatar.png" alt="" />
+                        Ford Ranger
+                      </td>
+                      <td>£375.00</td>
+                      <td>21-Mar</td>
+                      <td>
+                        <div class="dropdown">
+                          <a
+                            class="btn btn-danger dropdown-toggle"
+                            href="#"
+                            role="button"
+                            id="dropdownMenuLink"
+                            data-bs-toggle="dropdown"
+                            aria-expanded="false"
+                          >
+                            <i class="fa-solid fa-gear"></i>
+                          </a>
+
+                          <ul
+                            class="dropdown-menu"
+                            aria-labelledby="dropdownMenuLink"
+                          >
+                            <li>
+                              <a class="dropdown-item" href="#"
+                                >View Job Page</a
+                              >
+                            </li>
+                            <li>
+                              <a class="dropdown-item" href="#">Retract Bid</a>
+                            </li>
+                          </ul>
+                        </div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <img src="./img/transporter-table-avatar.png" alt="" />
+                        Ford Ranger
+                      </td>
+                      <td>£375.00</td>
+                      <td>21-Mar</td>
+                      <td>
+                        <div class="dropdown">
+                          <a
+                            class="btn btn-danger dropdown-toggle"
+                            href="#"
+                            role="button"
+                            id="dropdownMenuLink"
+                            data-bs-toggle="dropdown"
+                            aria-expanded="false"
+                          >
+                            <i class="fa-solid fa-gear"></i>
+                          </a>
+
+                          <ul
+                            class="dropdown-menu"
+                            aria-labelledby="dropdownMenuLink"
+                          >
+                            <li>
+                              <a class="dropdown-item" href="#"
+                                >View Job Page</a
+                              >
+                            </li>
+                            <li>
+                              <a class="dropdown-item" href="#">Retract Bid</a>
+                            </li>
+                          </ul>
+                        </div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <img src="./img/transporter-table-avatar.png" alt="" />
+                        Ford Ranger
+                      </td>
+                      <td>£375.00</td>
+                      <td>21-Mar</td>
+                      <td>
+                        <div class="dropdown">
+                          <a
+                            class="btn btn-danger dropdown-toggle"
+                            href="#"
+                            role="button"
+                            id="dropdownMenuLink"
+                            data-bs-toggle="dropdown"
+                            aria-expanded="false"
+                          >
+                            <i class="fa-solid fa-gear"></i>
+                          </a>
+
+                          <ul
+                            class="dropdown-menu"
+                            aria-labelledby="dropdownMenuLink"
+                          >
+                            <li>
+                              <a class="dropdown-item" href="#"
+                                >View Job Page</a
+                              >
+                            </li>
+                            <li>
+                              <a class="dropdown-item" href="#">Retract Bid</a>
+                            </li>
+                          </ul>
+                        </div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <img src="./img/transporter-table-avatar.png" alt="" />
+                        Ford Ranger
+                      </td>
+                      <td>£375.00</td>
+                      <td>21-Mar</td>
+                      <td>
+                        <div class="dropdown">
+                          <a
+                            class="btn btn-danger dropdown-toggle"
+                            href="#"
+                            role="button"
+                            id="dropdownMenuLink"
+                            data-bs-toggle="dropdown"
+                            aria-expanded="false"
+                          >
+                            <i class="fa-solid fa-gear"></i>
+                          </a>
+
+                          <ul
+                            class="dropdown-menu"
+                            aria-labelledby="dropdownMenuLink"
+                          >
+                            <li>
+                              <a class="dropdown-item" href="#"
+                                >View Job Page</a
+                              >
+                            </li>
+                            <li>
+                              <a class="dropdown-item" href="#">Retract Bid</a>
+                            </li>
+                          </ul>
+                        </div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <img src="./img/transporter-table-avatar.png" alt="" />
+                        Ford Ranger
+                      </td>
+                      <td>£375.00</td>
+                      <td>21-Mar</td>
+                      <td>
+                        <div class="dropdown">
+                          <a
+                            class="btn btn-danger dropdown-toggle"
+                            href="#"
+                            role="button"
+                            id="dropdownMenuLink"
+                            data-bs-toggle="dropdown"
+                            aria-expanded="false"
+                          >
+                            <i class="fa-solid fa-gear"></i>
+                          </a>
+
+                          <ul
+                            class="dropdown-menu"
+                            aria-labelledby="dropdownMenuLink"
+                          >
+                            <li>
+                              <a class="dropdown-item" href="#"
+                                >View Job Page</a
+                              >
+                            </li>
+                            <li>
+                              <a class="dropdown-item" href="#">Retract Bid</a>
+                            </li>
+                          </ul>
+                        </div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <img src="./img/transporter-table-avatar.png" alt="" />
+                        Ford Ranger
+                      </td>
+                      <td>£375.00</td>
+                      <td>21-Mar</td>
+                      <td>
+                        <div class="dropdown">
+                          <a
+                            class="btn btn-danger dropdown-toggle"
+                            href="#"
+                            role="button"
+                            id="dropdownMenuLink"
+                            data-bs-toggle="dropdown"
+                            aria-expanded="false"
+                          >
+                            <i class="fa-solid fa-gear"></i>
+                          </a>
+
+                          <ul
+                            class="dropdown-menu"
+                            aria-labelledby="dropdownMenuLink"
+                          >
+                            <li>
+                              <a class="dropdown-item" href="#"
+                                >View Job Page</a
+                              >
+                            </li>
+                            <li>
+                              <a class="dropdown-item" href="#">Retract Bid</a>
+                            </li>
+                          </ul>
+                        </div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <img src="./img/transporter-table-avatar.png" alt="" />
+                        Ford Ranger
+                      </td>
+                      <td>£375.00</td>
+                      <td>21-Mar</td>
+                      <td>
+                        <div class="dropdown">
+                          <a
+                            class="btn btn-danger dropdown-toggle"
+                            href="#"
+                            role="button"
+                            id="dropdownMenuLink"
+                            data-bs-toggle="dropdown"
+                            aria-expanded="false"
+                          >
+                            <i class="fa-solid fa-gear"></i>
+                          </a>
+
+                          <ul
+                            class="dropdown-menu"
+                            aria-labelledby="dropdownMenuLink"
+                          >
+                            <li>
+                              <a class="dropdown-item" href="#"
+                                >View Job Page</a
+                              >
+                            </li>
+                            <li>
+                              <a class="dropdown-item" href="#">Retract Bid</a>
+                            </li>
+                          </ul>
+                        </div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <img src="./img/transporter-table-avatar.png" alt="" />
+                        Ford Ranger
+                      </td>
+                      <td>£375.00</td>
+                      <td>21-Mar</td>
+                      <td>
+                        <div class="dropdown">
+                          <a
+                            class="btn btn-danger dropdown-toggle"
+                            href="#"
+                            role="button"
+                            id="dropdownMenuLink"
+                            data-bs-toggle="dropdown"
+                            aria-expanded="false"
+                          >
+                            <i class="fa-solid fa-gear"></i>
+                          </a>
+
+                          <ul
+                            class="dropdown-menu"
+                            aria-labelledby="dropdownMenuLink"
+                          >
+                            <li>
+                              <a class="dropdown-item" href="#"
+                                >View Job Page</a
+                              >
+                            </li>
+                            <li>
+                              <a class="dropdown-item" href="#">Retract Bid</a>
+                            </li>
+                          </ul>
+                        </div>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+
+                <div class="transporter-table-btn text-center">
+                  <a href="#"
+                    >View All Quotes
+                    <span><i class="fa-solid fa-caret-down"></i></span
+                  ></a>
+                </div>
               </div>
             </div>
           </div>
         </div>
+        <div class="deviders"></div>
+      </section>
+      <!-- Transporter Dashboard End  -->
+    </div>
 
+    <!-- Transport Company Start -->
+    <section id="transport-company">
+      <div class="container">
         <div class="row">
-          <div class="col-lg-3">
-            <div class="transporter-card">
-              <h3>Quick Nav</h3>
+          <div class="col-lg-10">
+            <div class="tarnsport-company-content">
+              <h1>Are you a Transport Company?</h1>
               <p>
-                <a href="#">Latest Jobs</a>
+                Deliver My Motor is used by millions of individuals to get their
+                deliveries done.
+              </p>
+              <p>
+                Use our advanced search tools to identify loads that meet your
+                specifications. Simply state how much you want to be paid.
+              </p>
+              <p>
+                When your quote is accepted, you will receive a booking
+                confirmation email with all of the pickup and delivery
+                information.
+              </p>
+              <p class="mb-5">
+                We run a transparent marketplace with a you choose model
+                integrated into the platform. Sign up Today!
+              </p>
+              <p>
+                <a href="#" class="transport-company-btn"
+                  >Get Started <i class="fa-regular fa-circle-right"></i
+                ></a>
               </p>
             </div>
           </div>
-          <div class="col-lg-3">
-            <div class="transporter-card">
-              <h3>Messages</h3>
-              <div class="transporter-card-content">
-                <span class="transporter-card-icon-msg">
-                  <i class="fa-solid fa-envelope-open-text"></i>
-                  <span class="badge rounded-circle bg-danger text-center">6</span>
-                </span>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-3">
-            <div class="transporter-card">
-              <h3>Accepted Quotes</h3>
-              <div class="transporter-card-content">
-                <span class="transporter-card-icon-7"> 7 </span>
-                <span class="ps-3">In Progress</span>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-3">
-            <div class="transporter-card">
-              <h3>WhatsApp Group</h3>
-              <div class="transporter-card-content">
-                <span class="transporter-card-icon-whatsapp"><i class="fa-brands fa-whatsapp"></i></span>
-                <a href="#">WhatsApp Group</a>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="row">
-          <div class="col-lg-12">
-            <div class="transporter-table">
-
-              <table id="miTabla" class="display responsive nowrap" style="width: 100%">
-                <thead>
-                  <tr>
-                    <th>Job Name</th>
-                    <th>Your Qoute</th>
-                    <th>Posted On</th>
-                    <th id="thmob">Actions</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr>
-                    <td>
-                      <img src="./img/transporter-table-avatar.png" alt="" />
-                      Ford Ranger
-                    </td>
-                    <td>£375.00</td>
-                    <td>21-Mar</td>
-                    <td>
-                      <div class="dropdown">
-                        <a class="btn btn-danger dropdown-toggle" href="#" role="button" id="dropdownMenuLink"
-                          data-bs-toggle="dropdown" aria-expanded="false">
-                          <i class="fa-solid fa-gear"></i>
-                        </a>
-
-                        <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-                          <li>
-                            <a class="dropdown-item" href="#">View Job Page</a>
-                          </li>
-                          <li>
-                            <a class="dropdown-item" href="#">Retract Bid</a>
-                          </li>
-                        </ul>
-                      </div>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td>
-                      <img src="./img/transporter-table-avatar.png" alt="" />
-                      Ford Ranger
-                    </td>
-                    <td>£375.00</td>
-                    <td>21-Mar</td>
-                    <td>
-                      <div class="dropdown">
-                        <a class="btn btn-danger dropdown-toggle" href="#" role="button" id="dropdownMenuLink"
-                          data-bs-toggle="dropdown" aria-expanded="false">
-                          <i class="fa-solid fa-gear"></i>
-                        </a>
-
-                        <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-                          <li>
-                            <a class="dropdown-item" href="#">View Job Page</a>
-                          </li>
-                          <li>
-                            <a class="dropdown-item" href="#">Retract Bid</a>
-                          </li>
-                        </ul>
-                      </div>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td>
-                      <img src="./img/transporter-table-avatar.png" alt="" />
-                      Ford Ranger
-                    </td>
-                    <td>£375.00</td>
-                    <td>21-Mar</td>
-                    <td>
-                      <div class="dropdown">
-                        <a class="btn btn-danger dropdown-toggle" href="#" role="button" id="dropdownMenuLink"
-                          data-bs-toggle="dropdown" aria-expanded="false">
-                          <i class="fa-solid fa-gear"></i>
-                        </a>
-
-                        <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-                          <li>
-                            <a class="dropdown-item" href="#">View Job Page</a>
-                          </li>
-                          <li>
-                            <a class="dropdown-item" href="#">Retract Bid</a>
-                          </li>
-                        </ul>
-                      </div>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td>
-                      <img src="./img/transporter-table-avatar.png" alt="" />
-                      Ford Ranger
-                    </td>
-                    <td>£375.00</td>
-                    <td>21-Mar</td>
-                    <td>
-                      <div class="dropdown">
-                        <a class="btn btn-danger dropdown-toggle" href="#" role="button" id="dropdownMenuLink"
-                          data-bs-toggle="dropdown" aria-expanded="false">
-                          <i class="fa-solid fa-gear"></i>
-                        </a>
-
-                        <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-                          <li>
-                            <a class="dropdown-item" href="#">View Job Page</a>
-                          </li>
-                          <li>
-                            <a class="dropdown-item" href="#">Retract Bid</a>
-                          </li>
-                        </ul>
-                      </div>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td>
-                      <img src="./img/transporter-table-avatar.png" alt="" />
-                      Ford Ranger
-                    </td>
-                    <td>£375.00</td>
-                    <td>21-Mar</td>
-                    <td>
-                      <div class="dropdown">
-                        <a class="btn btn-danger dropdown-toggle" href="#" role="button" id="dropdownMenuLink"
-                          data-bs-toggle="dropdown" aria-expanded="false">
-                          <i class="fa-solid fa-gear"></i>
-                        </a>
-
-                        <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-                          <li>
-                            <a class="dropdown-item" href="#">View Job Page</a>
-                          </li>
-                          <li>
-                            <a class="dropdown-item" href="#">Retract Bid</a>
-                          </li>
-                        </ul>
-                      </div>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td>
-                      <img src="./img/transporter-table-avatar.png" alt="" />
-                      Ford Ranger
-                    </td>
-                    <td>£375.00</td>
-                    <td>21-Mar</td>
-                    <td>
-                      <div class="dropdown">
-                        <a class="btn btn-danger dropdown-toggle" href="#" role="button" id="dropdownMenuLink"
-                          data-bs-toggle="dropdown" aria-expanded="false">
-                          <i class="fa-solid fa-gear"></i>
-                        </a>
-
-                        <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-                          <li>
-                            <a class="dropdown-item" href="#">View Job Page</a>
-                          </li>
-                          <li>
-                            <a class="dropdown-item" href="#">Retract Bid</a>
-                          </li>
-                        </ul>
-                      </div>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td>
-                      <img src="./img/transporter-table-avatar.png" alt="" />
-                      Ford Ranger
-                    </td>
-                    <td>£375.00</td>
-                    <td>21-Mar</td>
-                    <td>
-                      <div class="dropdown">
-                        <a class="btn btn-danger dropdown-toggle" href="#" role="button" id="dropdownMenuLink"
-                          data-bs-toggle="dropdown" aria-expanded="false">
-                          <i class="fa-solid fa-gear"></i>
-                        </a>
-
-                        <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-                          <li>
-                            <a class="dropdown-item" href="#">View Job Page</a>
-                          </li>
-                          <li>
-                            <a class="dropdown-item" href="#">Retract Bid</a>
-                          </li>
-                        </ul>
-                      </div>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td>
-                      <img src="./img/transporter-table-avatar.png" alt="" />
-                      Ford Ranger
-                    </td>
-                    <td>£375.00</td>
-                    <td>21-Mar</td>
-                    <td>
-                      <div class="dropdown">
-                        <a class="btn btn-danger dropdown-toggle" href="#" role="button" id="dropdownMenuLink"
-                          data-bs-toggle="dropdown" aria-expanded="false">
-                          <i class="fa-solid fa-gear"></i>
-                        </a>
-
-                        <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-                          <li>
-                            <a class="dropdown-item" href="#">View Job Page</a>
-                          </li>
-                          <li>
-                            <a class="dropdown-item" href="#">Retract Bid</a>
-                          </li>
-                        </ul>
-                      </div>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td>
-                      <img src="./img/transporter-table-avatar.png" alt="" />
-                      Ford Ranger
-                    </td>
-                    <td>£375.00</td>
-                    <td>21-Mar</td>
-                    <td>
-                      <div class="dropdown">
-                        <a class="btn btn-danger dropdown-toggle" href="#" role="button" id="dropdownMenuLink"
-                          data-bs-toggle="dropdown" aria-expanded="false">
-                          <i class="fa-solid fa-gear"></i>
-                        </a>
-
-                        <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-                          <li>
-                            <a class="dropdown-item" href="#">View Job Page</a>
-                          </li>
-                          <li>
-                            <a class="dropdown-item" href="#">Retract Bid</a>
-                          </li>
-                        </ul>
-                      </div>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td>
-                      <img src="./img/transporter-table-avatar.png" alt="" />
-                      Ford Ranger
-                    </td>
-                    <td>£375.00</td>
-                    <td>21-Mar</td>
-                    <td>
-                      <div class="dropdown">
-                        <a class="btn btn-danger dropdown-toggle" href="#" role="button" id="dropdownMenuLink"
-                          data-bs-toggle="dropdown" aria-expanded="false">
-                          <i class="fa-solid fa-gear"></i>
-                        </a>
-
-                        <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-                          <li>
-                            <a class="dropdown-item" href="#">View Job Page</a>
-                          </li>
-                          <li>
-                            <a class="dropdown-item" href="#">Retract Bid</a>
-                          </li>
-                        </ul>
-                      </div>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td>
-                      <img src="./img/transporter-table-avatar.png" alt="" />
-                      Ford Ranger
-                    </td>
-                    <td>£375.00</td>
-                    <td>21-Mar</td>
-                    <td>
-                      <div class="dropdown">
-                        <a class="btn btn-danger dropdown-toggle" href="#" role="button" id="dropdownMenuLink"
-                          data-bs-toggle="dropdown" aria-expanded="false">
-                          <i class="fa-solid fa-gear"></i>
-                        </a>
-
-                        <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-                          <li>
-                            <a class="dropdown-item" href="#">View Job Page</a>
-                          </li>
-                          <li>
-                            <a class="dropdown-item" href="#">Retract Bid</a>
-                          </li>
-                        </ul>
-                      </div>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td>
-                      <img src="./img/transporter-table-avatar.png" alt="" />
-                      Ford Ranger
-                    </td>
-                    <td>£375.00</td>
-                    <td>21-Mar</td>
-                    <td>
-                      <div class="dropdown">
-                        <a class="btn btn-danger dropdown-toggle" href="#" role="button" id="dropdownMenuLink"
-                          data-bs-toggle="dropdown" aria-expanded="false">
-                          <i class="fa-solid fa-gear"></i>
-                        </a>
-
-                        <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-                          <li>
-                            <a class="dropdown-item" href="#">View Job Page</a>
-                          </li>
-                          <li>
-                            <a class="dropdown-item" href="#">Retract Bid</a>
-                          </li>
-                        </ul>
-                      </div>
-                    </td>
-                  </tr>
-                </tbody>
-              </table>
-
-              <div class="transporter-table-btn text-center">
-                <a href="#">View All Quotes
-                  <span><i class="fa-solid fa-caret-down"></i></span></a>
-              </div>
-            </div>
-          </div>
         </div>
       </div>
-      <div class="deviders"></div>
     </section>
-    <!-- Transporter Dashboard End  -->
-  </div>
+    <!-- Transport Company End -->
 
-  <!-- Transport Company Start -->
-  <section id="transport-company">
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-10">
-          <div class="tarnsport-company-content">
-            <h1>Are you a Transport Company?</h1>
-            <p>
-              Deliver My Motor is used by millions of individuals to get their
-              deliveries done.
-            </p>
-            <p>
-              Use our advanced search tools to identify loads that meet your
-              specifications. Simply state how much you want to be paid.
-            </p>
-            <p>
-              When your quote is accepted, you will receive a booking
-              confirmation email with all of the pickup and delivery
-              information.
-            </p>
-            <p class="mb-5">
-              We run a transparent marketplace with a you choose model
-              integrated into the platform. Sign up Today!
-            </p>
-            <p>
-              <a href="#" class="transport-company-btn">Get Started <i class="fa-regular fa-circle-right"></i></a>
-            </p>
+    <!-- Footer Start -->
+    <section id="footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-4">
+            <div class="footer-first-cols-content">
+              <img
+                src="./img/footer-logo.png"
+                alt="footer-logo"
+                class="footer-logo"
+              />
+              <ul>
+                <li>
+                  <a href="#"><i class="fa-solid fa-chevron-left"></i> About</a>
+                </li>
+                <li>
+                  <a href="#"
+                    ><i class="fa-solid fa-chevron-left"></i> Contact</a
+                  >
+                </li>
+                <li>
+                  <a href="#"
+                    ><i class="fa-solid fa-chevron-left"></i> How it Works</a
+                  >
+                </li>
+              </ul>
+              <div class="footer-social-icons-item">
+                <a href="#" class="social-icons-link"
+                  ><i class="fa-brands fa-facebook-f"></i
+                ></a>
+                <a href="#" class="social-icons-link"
+                  ><i class="fa-brands fa-twitter"></i
+                ></a>
+                <a href="#" class="social-icons-link"
+                  ><i class="fa-brands fa-linkedin-in"></i
+                ></a>
+                <a href="#" class="social-icons-link"
+                  ><i class="fa-brands fa-instagram"></i
+                ></a>
+              </div>
+            </div>
           </div>
-        </div>
-      </div>
-    </div>
-  </section>
-  <!-- Transport Company End -->
-
-  <!-- Footer Start -->
-  <section id="footer">
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-4">
-          <div class="footer-first-cols-content">
-            <img src="./img/footer-logo.png" alt="footer-logo" class="footer-logo" />
-            <ul>
-              <li>
-                <a href="#"><i class="fa-solid fa-chevron-left"></i> About</a>
-              </li>
-              <li>
-                <a href="#"><i class="fa-solid fa-chevron-left"></i> Contact</a>
-              </li>
-              <li>
-                <a href="#"><i class="fa-solid fa-chevron-left"></i> How it Works</a>
-              </li>
-            </ul>
-            <div class="footer-social-icons-item">
-              <a href="#" class="social-icons-link"><i class="fa-brands fa-facebook-f"></i></a>
-              <a href="#" class="social-icons-link"><i class="fa-brands fa-twitter"></i></a>
-              <a href="#" class="social-icons-link"><i class="fa-brands fa-linkedin-in"></i></a>
-              <a href="#" class="social-icons-link"><i class="fa-brands fa-instagram"></i></a>
+          <div class="col-lg-3">
+            <div class="footer-first-cols-content">
+              <h4>Useful Links</h4>
+              <ul>
+                <li>
+                  <a href="#"
+                    ><i class="fa-solid fa-chevron-left"></i> Car Auction
+                    Collections</a
+                  >
+                </li>
+                <li>
+                  <a href="#"
+                    ><i class="fa-solid fa-chevron-left"></i> Car Collection
+                    Delivery</a
+                  >
+                </li>
+                <li>
+                  <a href="#"
+                    ><i class="fa-solid fa-chevron-left"></i> Motorcycle
+                    transportation</a
+                  >
+                </li>
+                <li>
+                  <a href="#"
+                    ><i class="fa-solid fa-chevron-left"></i> Urgent Breakdown
+                    Recovery</a
+                  >
+                </li>
+                <li>
+                  <a href="#"
+                    ><i class="fa-solid fa-chevron-left"></i> Van
+                    Transportation</a
+                  >
+                </li>
+                <li>
+                  <a href="#"
+                    ><i class="fa-solid fa-chevron-left"></i> Caravan
+                    Transport</a
+                  >
+                </li>
+                <li>
+                  <a href="#"
+                    ><i class="fa-solid fa-chevron-left"></i> Northern Ireland
+                    Transport</a
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-lg-3">
+            <div class="footer-first-cols-content">
+              <h4>Support</h4>
+              <ul>
+                <li>
+                  <a href="#"
+                    ><i class="fa-solid fa-chevron-left"></i> Terms of Use</a
+                  >
+                </li>
+                <li>
+                  <a href="#"
+                    ><i class="fa-solid fa-chevron-left"></i> Privacy</a
+                  >
+                </li>
+                <li>
+                  <a href="#"
+                    ><i class="fa-solid fa-chevron-left"></i> Site Map</a
+                  >
+                </li>
+                <li>
+                  <a href="#"
+                    ><i class="fa-solid fa-chevron-left"></i> Transporter
+                    Rules</a
+                  >
+                </li>
+                <li>
+                  <a href="#"
+                    ><i class="fa-solid fa-chevron-left"></i> Help & FAQ's</a
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-lg-2">
+            <div class="footer-first-cols-content">
+              <h4>More</h4>
+              <ul>
+                <li>
+                  <a href="#"><i class="fa-solid fa-chevron-left"></i> Blog</a>
+                </li>
+                <li>
+                  <a href="#"
+                    ><i class="fa-solid fa-chevron-left"></i> Transporter</a
+                  >
+                </li>
+              </ul>
+              <a href="#"
+                ><img
+                  src="./img/footer-reviews-trust-logo.png"
+                  alt="footer-reviews-trust-logo"
+                  class="footer-reviews-trust-logo"
+              /></a>
             </div>
           </div>
         </div>
-        <div class="col-lg-3">
-          <div class="footer-first-cols-content">
-            <h4>Useful Links</h4>
-            <ul>
-              <li>
-                <a href="#"><i class="fa-solid fa-chevron-left"></i> Car Auction
-                  Collections</a>
-              </li>
-              <li>
-                <a href="#"><i class="fa-solid fa-chevron-left"></i> Car Collection
-                  Delivery</a>
-              </li>
-              <li>
-                <a href="#"><i class="fa-solid fa-chevron-left"></i> Motorcycle
-                  transportation</a>
-              </li>
-              <li>
-                <a href="#"><i class="fa-solid fa-chevron-left"></i> Urgent Breakdown
-                  Recovery</a>
-              </li>
-              <li>
-                <a href="#"><i class="fa-solid fa-chevron-left"></i> Van
-                  Transportation</a>
-              </li>
-              <li>
-                <a href="#"><i class="fa-solid fa-chevron-left"></i> Caravan
-                  Transport</a>
-              </li>
-              <li>
-                <a href="#"><i class="fa-solid fa-chevron-left"></i> Northern Ireland
-                  Transport</a>
-              </li>
-            </ul>
-          </div>
-        </div>
-        <div class="col-lg-3">
-          <div class="footer-first-cols-content">
-            <h4>Support</h4>
-            <ul>
-              <li>
-                <a href="#"><i class="fa-solid fa-chevron-left"></i> Terms of Use</a>
-              </li>
-              <li>
-                <a href="#"><i class="fa-solid fa-chevron-left"></i> Privacy</a>
-              </li>
-              <li>
-                <a href="#"><i class="fa-solid fa-chevron-left"></i> Site Map</a>
-              </li>
-              <li>
-                <a href="#"><i class="fa-solid fa-chevron-left"></i> Transporter
-                  Rules</a>
-              </li>
-              <li>
-                <a href="#"><i class="fa-solid fa-chevron-left"></i> Help & FAQ's</a>
-              </li>
-            </ul>
-          </div>
-        </div>
-        <div class="col-lg-2">
-          <div class="footer-first-cols-content">
-            <h4>More</h4>
-            <ul>
-              <li>
-                <a href="#"><i class="fa-solid fa-chevron-left"></i> Blog</a>
-              </li>
-              <li>
-                <a href="#"><i class="fa-solid fa-chevron-left"></i> Transporter</a>
-              </li>
-            </ul>
-            <a href="#"><img src="./img/footer-reviews-trust-logo.png" alt="footer-reviews-trust-logo"
-                class="footer-reviews-trust-logo" /></a>
-          </div>
-        </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- Footer End -->
+    <!-- Footer End -->
 
-  <!-- Copyright Footer Start -->
-  <footer id="copyright-footer">
-    Copyright © DeliverMyMotor Ltd. Powered by
-    <span><img class="hostxwhite-img" src="./img/hostoxwhite.png" alt="" width="90px" /></span>
-  </footer>
-  <!-- Copyright Footer End -->
+    <!-- Copyright Footer Start -->
+    <footer id="copyright-footer">
+      Copyright © DeliverMyMotor Ltd. Powered by
+      <span
+        ><img
+          class="hostxwhite-img"
+          src="./img/hostoxwhite.png"
+          alt=""
+          width="90px"
+      /></span>
+    </footer>
+    <!-- Copyright Footer End -->
 
-  <!-- Script Start -->
-  <script>
-    const body = document.querySelector("body"),
-      sidebar = body.querySelector(".dashboard-sidebar"),
-      toggle = body.querySelector("#sideNavbarIcon");
-    toggles = body.querySelector("#sideNavbarXmarkIcon");
+    <!-- Script Start -->
+    <script>
+      const body = document.querySelector("body"),
+        sidebar = body.querySelector(".dashboard-sidebar"),
+        toggle = body.querySelector("#sideNavbarIcon");
+      toggles = body.querySelector("#sideNavbarXmarkIcon");
 
-    toggle.addEventListener("click", () => {
-      sidebar.classList.toggle("close");
-      toggle.style.visibility = "hidden";
-    });
+      toggle.addEventListener("click", () => {
+        sidebar.classList.toggle("close");
+        toggle.style.visibility = "hidden";
+      });
 
-    toggles.addEventListener("click", () => {
-      sidebar.classList.toggle("close");
-      toggle.style.visibility = "visible";
-    });
+      toggles.addEventListener("click", () => {
+        sidebar.classList.toggle("close");
+        toggle.style.visibility = "visible";
+      });
 
-    // dropdown
-    let dropdownBtn = document.querySelector(".dropdowns-btn span");
-    let dropdownItems = document.querySelector(".dropdown-items");
-    let isClicked = true;
+      // dropdown
+      let dropdownBtn = document.querySelector(".dropdowns-btn span");
+      let dropdownItems = document.querySelector(".dropdown-items");
+      let isClicked = true;
 
-    dropdownBtn.addEventListener("click", () => {
-      if (isClicked) {
-        dropdownItems.style.display = "block";
-        dropdownItems.style.transform = "scale(1)";
-        isClicked = false;
-      } else {
-        dropdownItems.style.display = "none";
-        dropdownItems.style.transform = "scale(0.5)";
-        isClicked = true;
-      }
-    });
-  </script>
-  <!-- Script End -->
-</body>
-
+      dropdownBtn.addEventListener("click", () => {
+        if (isClicked) {
+          dropdownItems.style.display = "block";
+          dropdownItems.style.transform = "scale(1)";
+          isClicked = false;
+        } else {
+          dropdownItems.style.display = "none";
+          dropdownItems.style.transform = "scale(0.5)";
+          isClicked = true;
+        }
+      });
+    </script>
+    <!-- Script End -->
+  </body>
 </html>
