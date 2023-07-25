@@ -1,0 +1,563 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300&display=swap");
+
+/* Universal Start */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: var(--header-font);
+}
+
+:root {
+  --header-font: "Rubik", sans-serif;
+  --tomato: #ff861c;
+  --blue: #055dbc;
+  --white: #ffffff;
+  --black: #000000;
+}
+
+/* Universal End */
+
+/* Navbar Start */
+
+.logo {
+  width: 100%;
+}
+
+.navbar .nav-link {
+  font-family: var(--header-font);
+  font-size: 16px;
+  font-weight: 400;
+  margin: 0 10px 0 0;
+  color: var(--black);
+  transition: 0.5s;
+}
+
+.nav-item .nav-link:hover {
+  color: var(--tomato);
+}
+
+.nav-item .active {
+  color: var(--tomato) !important;
+}
+
+.menu-btn a {
+  background-color: var(--blue);
+  padding: 10px 15px;
+  text-decoration: none;
+  border-radius: 6px;
+  text-decoration: none;
+  color: #fff;
+}
+
+.menu-btn a:hover {
+  background-color: var(--tomato);
+  color: #fff;
+  transition: 0.3s all;
+}
+
+@media screen and (max-width: 1400px) {
+  .navbar .nav-link {
+    font-size: 15px;
+  }
+
+  .menu-btn a {
+    font-size: 12px;
+  }
+
+  .navbar-brand {
+    width: 200px;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .navbar .nav-link {
+    font-size: 13px;
+  }
+
+  .menu-btn a {
+    font-size: 12px;
+  }
+
+  .navbar-brand {
+    width: 200px;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .navbar .nav-link {
+    font-size: 13px;
+  }
+
+  .menu-btn a {
+    font-size: 12px;
+  }
+
+  .navbar-brand {
+    width: 180px;
+  }
+}
+
+@media screen and (max-width: 990px) {
+  .navbar .nav-link {
+    font-size: 16px;
+  }
+
+  .menu-btn a {
+    font-size: 15px;
+  }
+
+  .navbar-brand {
+    width: 180px;
+  }
+
+  .navbar-nav {
+    padding-left: 30px !important;
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+
+  .navbar-btn {
+    margin-left: 30px !important;
+  }
+}
+
+@media screen and (max-width: 575px) {
+  .navbar-brand {
+    width: 250px;
+  }
+
+  .navbar-nav {
+    padding-left: 30px !important;
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+
+  .navbar .nav-link {
+    font-size: 16px;
+  }
+
+  .menu-btn a {
+    font-size: 15px;
+  }
+
+  .navbar {
+    display: block;
+  }
+
+  .nav-bg {
+    display: none;
+  }
+
+  .navbar-btn {
+    margin-left: 30px !important;
+  }
+}
+
+/* Navbar End */
+
+/* Form Start  */
+
+#from {
+  padding: 100px 0;
+}
+
+.form-header h1 {
+  font-family: var(--header-font);
+  color: var(--tomato);
+  font-size: 2.8em;
+  font-weight: 600;
+}
+
+.form-header h1 span {
+  color: var(--black);
+}
+
+.sign-up-bg-content h2,
+p {
+  font-family: var(--header-font);
+}
+
+.form-cols h2,
+p {
+  font-family: var(--header-font);
+}
+
+.devider {
+  width: 200px;
+  height: 4px;
+  background-color: var(--black);
+  border-radius: 50px;
+  position: relative;
+  margin: auto;
+  margin-bottom: 80px;
+}
+
+.devider::after {
+  content: "";
+  position: absolute;
+  width: 70%;
+  height: 5px;
+  background-color: var(--tomato);
+  border-radius: 30px;
+  top: -0.6px;
+  left: 0;
+}
+
+.form-cols {
+  padding: 0 !important;
+}
+
+.sign-up-bg {
+  background: url(../img/form-bg.png);
+  width: 100%;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  align-items: center;
+  padding: 90px 50px;
+  font-family: var(--header-font);
+  border-top-left-radius: 8px;
+  border-bottom-left-radius: 8px;
+}
+
+.sign-up-bg-content {
+  color: var(--white);
+}
+
+.sign-up-bg-content p:nth-child(3) {
+  font-weight: 500;
+  font-size: 1em;
+  font-family: var(--header-font);
+  margin: 20px 0 40px 0;
+}
+
+.sign-up-bg-content p:nth-child(4) {
+  font-weight: 300;
+  font-size: 1em;
+  font-family: var(--header-font);
+}
+
+.sign-up-bg-content .from-transport-provider {
+  color: var(--white);
+}
+
+.sign-up-bg-content .form-google-btn {
+  color: var(--black);
+  text-decoration: none;
+  background-color: var(--white);
+  display: block;
+  padding: 8px 5px;
+  border-radius: 4px;
+  margin-top: 20px;
+  transition: 0.5s;
+}
+
+.sign-up-bg-content .form-google-btn:hover {
+  background-color: rgb(231, 246, 248);
+}
+
+.form-cols {
+  background: url(../img/form-bg-col-2.png);
+  background-repeat: no-repeat !important;
+  background-size: cover;
+  background-position: center center;
+  border-top-right-radius: 8px;
+  border-bottom-right-radius: 8px;
+}
+
+.main-form {
+  padding: 50px 50px;
+  font-family: var(--header-font);
+}
+
+.main-form input,
+.form-select {
+  margin-bottom: 10px;
+}
+
+.main-form .from-login-btn button {
+  font-size: 14px;
+  background-color: var(--tomato);
+  color: var(--white);
+  padding: 8px 25px;
+  border: none;
+  border-radius: 6px;
+  margin-top: 20px;
+  transition: 0.5s;
+}
+
+.from-login-btn a {
+  text-decoration: none;
+}
+
+.main-form .from-login-btn button:hover {
+  background-color: var(--blue);
+}
+
+.forget-remember div a {
+  text-decoration: none;
+}
+
+@media screen and (max-width: 1400px) {
+  .forget-remember {
+    font-family: var(--header-font);
+    font-size: 13px;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .sign-up-bg {
+    padding: 90px 30px;
+  }
+
+  .main-form {
+    padding: 50px 20px;
+    font-family: var(--header-font);
+  }
+}
+
+@media screen and (max-width: 990px) {
+  .sign-up-bg {
+    padding: 50px 30px;
+  }
+
+  .main-form {
+    padding: 50px 30px;
+    font-family: var(--header-font);
+  }
+
+  .sign-up-bg {
+    border-top-left-radius: 0px;
+    border-bottom-left-radius: 0px;
+    border-top-left-radius: 16px;
+  }
+
+  .form-cols {
+    border-top-right-radius: 0px;
+    border-bottom-right-radius: 0px;
+    border-bottom-right-radius: 16px;
+  }
+}
+
+@media screen and (max-width: 575px) {
+  .sign-up-bg-content {
+    display: none;
+  }
+}
+
+/* Form End  */
+
+/* Devider Start */
+
+.footer-devider {
+  width: 150px;
+  height: 5px;
+  background-color: var(--tomato);
+  border-radius: 30px;
+  margin: auto;
+  margin-bottom: 100px;
+}
+
+/* Devider End */
+
+/* Transport Company Start */
+
+#transport-company {
+  background: url(../img/footer-bg.png);
+  width: 100%;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+}
+
+.tarnsport-company-content {
+  color: var(--white);
+  padding: 50px 0 20px 0;
+  font-family: var(--header-font);
+}
+
+.tarnsport-company-content h1 {
+  color: var(--white);
+  padding-bottom: 20px;
+  font-family: var(--header-font);
+  font-size: 2.4em;
+}
+
+.tarnsport-company-content p {
+  color: var(--white);
+  font-family: var(--header-font);
+  font-size: 1em;
+}
+
+.tarnsport-company-content p:nth-child(4) {
+  margin-top: -15px;
+}
+
+.transport-company-btn {
+  text-decoration: none;
+  border: none;
+  background-color: #ca1f26;
+  color: var(--white);
+  padding: 12px 30px;
+  border-radius: 6px;
+  font-family: var(--header-font);
+  font-size: 14px;
+  transition: 0.5s;
+}
+
+.transport-company-btn:hover {
+  background-color: var(--white);
+  color: var(--black);
+}
+
+/* Transport Company End */
+
+/* Footer Start */
+
+#footer {
+  background-color: #161616;
+  padding: 70px 0;
+  color: var(--white);
+}
+
+.footer-first-cols-content {
+  margin-top: 50px;
+}
+
+.footer-first-cols-content .footer-logo {
+  width: 80%;
+  margin-bottom: 20px;
+}
+
+.footer-first-cols-content ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-first-cols-content ul li {
+  margin: 20px 0;
+}
+
+.footer-first-cols-content ul li a {
+  text-decoration: none;
+  color: var(--white);
+}
+
+.footer-social-icons-item {
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+
+.footer-social-icons-item .social-icons-link i {
+  text-decoration: none;
+  background-color: #055dbc;
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  text-align: center;
+  color: var(--white);
+  border-radius: 50%;
+  margin-right: 5px;
+}
+
+.footer-social-icons-item .social-icons-link .fa-facebook-f {
+  background-color: #2374e0;
+}
+
+.footer-social-icons-item .social-icons-link .fa-twitter {
+  background-color: #1da1f3;
+}
+
+.footer-social-icons-item .social-icons-link .fa-linkedin-in {
+  background-color: #0077b4;
+}
+
+.footer-social-icons-item .social-icons-link .fa-instagram {
+  background: radial-gradient(
+    circle at 30% 107%,
+    #fdf497 0%,
+    #fdf497 5%,
+    #fd5949 45%,
+    #d6249f 60%,
+    #285aeb 90%
+  );
+  font-size: 1.4em;
+}
+
+@media screen and (max-width: 575px) {
+  #footer {
+    text-align: center;
+  }
+}
+
+/* Footer End */
+
+/* Copyright Footer Start */
+
+#copyright-footer {
+  background-color: var(--black);
+  padding: 20px;
+  text-align: center;
+  color: var(--white);
+}
+
+@media screen and (max-width: 575px) {
+  .hostxwhite-img {
+    width: 100px;
+  }
+}
+/* Copyright Footer End */
+
+/* ............................... */
+
+/* LOGIN PAGE CSS */
+/* >>>>>>>>>>>>>>>>>>>>>>>>>> */
+
+/* Form Col 1 Start */
+.form-col {
+  background: url(../img/loginform-bg-col-2.png);
+  background-repeat: no-repeat !important;
+  background-size: cover;
+  background-position: center center;
+  border-top-left-radius: 8px;
+  border-bottom-left-radius: 8px;
+}
+
+.login-bg {
+  background: url(../img/login-form-bg.png);
+  width: 100%;
+  background-position: center center;
+  background-repeat: no-repeat !important;
+  background-size: cover;
+  padding: 90px 50px;
+  color: #fff;
+  border-top-right-radius: 8px;
+  border-bottom-right-radius: 8px;
+}
+
+.login-bg-content {
+  padding: 0 30px 0 30px;
+}
+
+.from-transport-provider {
+  color: #ffffff;
+}
+
+.from-transport-provider:hover {
+  color: var(--tomato);
+}
+
+.form-google-btn {
+  color: var(--black);
+  text-decoration: none;
+  background-color: var(--white);
+  display: block;
+  padding: 8px 5px;
+  border-radius: 4px;
+  margin-top: 20px;
+  transition: 0.5s;
+}
+
+/* ............................... */
