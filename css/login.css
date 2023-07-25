@@ -258,10 +258,10 @@
   .dahsboard-navbar ul li a {
     font-size: 1em;
   }
-
+  /* 
   .navbar-toggler {
     display: none !important;
-  }
+  } */
 
   .dahsboard-navbar ul li a:hover {
     color: #fff !important;
@@ -618,7 +618,7 @@ section {
   margin-bottom: 4rem;
   color: var(--color-black);
   font-size: 2.4rem;
-  font-family: var(--header-font);
+  font-family: var(--header-font) !important;
   margin-top: unset;
   line-height: 1.2;
 }
@@ -692,7 +692,7 @@ section {
 
 span.text-highlight {
   color: #fe6f00;
-  font-family: poppins-bold;
+  font-family: var(--header-font);
 }
 
 .btn {
@@ -700,7 +700,7 @@ span.text-highlight {
   background: var(--color-btn);
   color: var(--color-white);
   font-size: 1.4rem;
-  font-family: poppins-semi-bold;
+  font-family: var(--header-font);
   padding: 1.2rem 3rem;
   margin-top: 2rem;
   border-radius: 1rem;
