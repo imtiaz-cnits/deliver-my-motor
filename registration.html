@@ -7,7 +7,7 @@
     <title>Register Now - Deliver My Motor</title>
 
     <!-- CSS Link -->
-    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/regitration.css" />
 
     <!-- Bootstrap Link -->
     <link
@@ -70,102 +70,129 @@
     <!-- Navbar End -->
 
     <!-- Form Start -->
-    <section id="from">
+    <section class="login-sec">
       <div class="container">
-        <div class="row">
-          <div class="col-sm-12">
-            <div class="form-header text-center">
-              <h1>REGISTER <span>NOW</span></h1>
-              <div class="devider"></div>
+        <div class="">
+          <div class="row">
+            <div class="block-contents section-header mb-5">
+              <div class="section-title center text-center">
+                <h2 class="text-capitalize">
+                  <span class="text-highlight">REGISTER </span>NOW
+                </h2>
+              </div>
             </div>
           </div>
-        </div>
+          <div class="row justify-content-center">
+            <div class="col-lg-9 col-md-8">
+              <div class="card border-0 login-card">
+                <div class="row column-reverse">
+                  <!-- Form Col 2 Start -->
+                  <div class="col-lg-6 login-bg">
+                    <div class="login-top-bg">
+                      <img src="./img/bg-top.svg" alt="" />
+                    </div>
+                    <div class="login-logo">
+                      <img src="./img/white-logo.png" alt="" width="170" />
+                    </div>
+                    <div class="login-bg-content">
+                      <h3>Join our Network</h3>
+                      <p>
+                        Please do not use Company names for usernames or emails
+                        when joining our network - Membership will not be
+                        approved for Company names.
+                      </p>
+                      <br /><br />
+                      <div>
+                        <a
+                          href="https://www.delivermymotor.com/transporter-rules/"
+                          class="from-transport-provider"
+                          >See Our Transport Provider Rules</a
+                        >
+                      </div>
+                      <div class="text-center mt-5 w-100">
+                        <a
+                          href="/login"
+                          class="form-google-btn btn w-100 bg-white text-black"
+                          >Have an account? Login Now</a
+                        >
+                      </div>
+                    </div>
+                  </div>
+                  <!-- Form Col 2 Start -->
+                  <div class="col-lg-6 form-col d-flex align-items-center">
+                    <div class="main-form w-100">
+                      <h3 class="mb-4">Quick Join</h3>
+                      <div class="alert text-center" role="alert">
+                        <span class="pe-2">
+                          <svg
+                            width="20"
+                            height="20"
+                            viewBox="0 0 20 20"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <path
+                              d="M10 1.25C5.125 1.25 1.25 5.125 1.25 10C1.25 14.875 5.125 18.75 10 18.75C14.875 18.75 18.75 14.875 18.75 10C18.75 5.125 14.875 1.25 10 1.25ZM13.375 14.375L10 11L6.625 14.375L5.625 13.375L9 10L5.625 6.625L6.625 5.625L10 9L13.375 5.625L14.375 6.625L11 10L14.375 13.375L13.375 14.375Z"
+                              fill="#E02B22"
+                            />
+                          </svg>
+                        </span>
+                        <strong>Do not use company name as username</strong>
+                      </div>
+                      <br />
 
-        <!-- Form Col 1 Start -->
-        <div class="row">
-          <div class="col-lg-2"></div>
-          <div class="col-lg-8">
-            <div class="row login-box">
-              <div class="col-lg-6 form-cols">
-                <div class="sign-up-bg d-flex">
-                  <div class="sign-up-bg-content">
-                    <h2>Join With Us!</h2>
-                    <p>
-                      Please do not use Company names for usernames or emails
-                      when joining our network - Be unique.
-                    </p>
-                    <br /><br /><br />
-                    <p>
-                      <a href="#" class="from-transport-provider"
-                        >See Our Transport Provider Rules</a
-                      >
-                    </p>
-                    <p class="text-center fw-semibold">
-                      <a href="./login.html" class="form-google-btn"
-                        >Have an account? Login Now</a
-                      >
-                    </p>
+                      <form action="/signupcheck" method="POST">
+                        <input
+                          type="hidden"
+                          name="csrf"
+                          value="5f701c101e0774f75c94f62cc241cf88514dbf9dac3e3b6af97726480e95a02cf1f237ee3071e7c53f57203ea6f98a52a9a0"
+                        />
+
+                        <input
+                          type="text"
+                          name="username"
+                          class="form-control fm-input"
+                          id="username"
+                          placeholder="Username"
+                          value=""
+                          required=""
+                        />
+                        <input
+                          type="email"
+                          name="email"
+                          class="form-control fm-input"
+                          placeholder="Email"
+                          value=""
+                          required=""
+                        />
+                        <select
+                          name="usertype"
+                          id="select"
+                          class="form-select mt-4 mb-5"
+                          required=""
+                        >
+                          <option value="">Customer or Company?</option>
+                          <option value="Transporter">Transporter</option>
+                          <option value="Customer">Customer</option>
+                        </select>
+                        <div
+                          class="forget-remember d-flex justify-content-between"
+                        ></div>
+                        <div class="from-login-btn text-center">
+                          <button
+                            type="submit"
+                            id="signup_btn"
+                            class="btn w-100"
+                          >
+                            JOIN NETWORK
+                          </button>
+                        </div>
+                      </form>
+                    </div>
                   </div>
                 </div>
               </div>
-              <!-- Form Col 1 Start -->
-
-              <!-- Form Col 2 Start -->
-              <div class="col-lg-6 form-cols">
-                <div class="main-form">
-                  <h2 class="">Quick Join</h2>
-                  <form action="#">
-                    <input
-                      type="text"
-                      class="form-control fm-input"
-                      placeholder="Username"
-                    />
-                    <input
-                      type="email"
-                      class="form-control fm-input"
-                      placeholder="Email"
-                    />
-                    <input
-                      type="password"
-                      class="form-control fm-input"
-                      placeholder="Password"
-                    />
-                    <input
-                      type="password"
-                      class="form-control fm-input"
-                      placeholder="Confirm Password"
-                    />
-                    <select name="Select" id="select" class="form-select">
-                      <option value="Customer or Company?">
-                        Customer or Company?
-                      </option>
-                      <option value="Transporter">Transporter</option>
-                      <option value="Customer">Customer</option>
-                    </select>
-                    <div class="forget-remember d-flex justify-content-between">
-                      <label for="#" class="form-check-label">
-                        <input
-                          type="checkbox"
-                          name="#"
-                          id="#"
-                          class="form-check-input"
-                        />
-                        Remember for 30 days
-                      </label>
-                      <div><a href="#">Forgot Password</a></div>
-                    </div>
-                    <div class="from-login-btn text-center">
-                      <button type="button">
-                        <a href="./login.html" class="text-white"
-                          >JOIN NETWORK</a
-                        >
-                      </button>
-                    </div>
-                  </form>
-                </div>
-              </div>
             </div>
-            <div class="col-lg-2"></div>
           </div>
         </div>
       </div>

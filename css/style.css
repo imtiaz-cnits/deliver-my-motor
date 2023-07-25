@@ -15,6 +15,16 @@
   --blue: #055dbc;
   --white: #ffffff;
   --black: #000000;
+  --color-body: #ecf1f4;
+  --color-primary: #fe6f00;
+  --color-white: #ffffff;
+  --color-black: #373737;
+  --color-btn: #fe6f00;
+  --color-link: #0d6efd;
+  --color-hover: #63808e;
+  --color-success: #4cc67f;
+  --box-shadow: 8px 8px 30px rgba(161, 152, 152, 0.1);
+  --border-radius: 10px;
 }
 
 /* Universal End */
